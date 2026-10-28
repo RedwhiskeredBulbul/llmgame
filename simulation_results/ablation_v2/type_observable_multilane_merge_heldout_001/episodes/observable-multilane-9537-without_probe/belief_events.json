@@ -1,0 +1,94 @@
+[
+  {
+    "observation_sim_time": 1.9000000000000006,
+    "observation_wall": 364166.0658592,
+    "latency_ms": 808.9112000307068,
+    "error": null,
+    "prompt_hash": "c43f6c3e6cd39ee9d66865aa4c8c35e7a82699de47b59c9a9d4fa470a7b28307",
+    "response": "{\n  \"1\": [0.1, 0.1, 0.8],\n  \"2\": [0.8, 0.1, 0.1]\n}",
+    "usage": {
+      "completion_tokens": 40,
+      "prompt_tokens": 1963,
+      "total_tokens": 2003,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "observable-multilane-9537-without_probe",
+    "event": "response",
+    "request_id": 1,
+    "probabilities": {
+      "1": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "2": [
+        0.8,
+        0.1,
+        0.1
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 2.9000000000000012,
+    "observation_wall": 364167.2629254,
+    "latency_ms": 755.0644999719225,
+    "error": null,
+    "prompt_hash": "cfaedb73b3f94547a4a9f2950bcfba0bfb4b27eecc2179085f29cd8e08b17524",
+    "response": "{\n  \"1\": [0.1, 0.1, 0.8],\n  \"2\": [0.8, 0.1, 0.1]\n}",
+    "usage": {
+      "completion_tokens": 40,
+      "prompt_tokens": 1961,
+      "total_tokens": 2001,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "observable-multilane-9537-without_probe",
+    "event": "response",
+    "request_id": 2,
+    "probabilities": {
+      "1": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "2": [
+        0.8,
+        0.1,
+        0.1
+      ]
+    }
+  },
+  {
+    "probabilities": {
+      "1": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "2": [
+        0.1,
+        0.1,
+        0.8
+      ]
+    },
+    "observation_sim_time": 5.899999999999995,
+    "observation_wall": 364168.3410338,
+    "latency_ms": 829.4978000340052,
+    "error": null,
+    "prompt_hash": "e13fc02d97c0af1843ffb56a66a1a01eef44398922ecae801180f318a27e8752",
+    "response": "{\n  \"1\": [0.1, 0.1, 0.8],\n  \"2\": [0.1, 0.1, 0.8]\n}",
+    "usage": {
+      "completion_tokens": 40,
+      "prompt_tokens": 1975,
+      "total_tokens": 2015,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "event": "response_after_episode",
+    "episode_id": "observable-multilane-9537-without_probe"
+  }
+]

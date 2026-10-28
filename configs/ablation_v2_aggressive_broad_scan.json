@@ -1,0 +1,41 @@
+{
+  "protocol_version": "ablation-v2-aggressive-broad-development-20261017",
+  "phase": "development_scan",
+  "variants": ["oracle_type", "uniform_belief"],
+  "scenarios": ["traffic"],
+  "seeds": [
+    6000, 6001, 6002, 6003, 6004, 6005, 6006, 6007,
+    6008, 6009, 6010, 6011, 6012, 6013, 6014, 6015,
+    6016, 6017, 6018, 6019, 6020, 6021, 6022, 6023,
+    6024, 6025, 6026, 6027, 6028, 6029, 6030, 6031,
+    6032, 6033, 6034, 6035, 6036, 6037, 6038, 6039,
+    6040, 6041, 6042, 6043, 6044, 6045, 6046, 6047
+  ],
+  "decision": {
+    "control_dt_s": 0.1,
+    "av_optimizer": "scalar_grid",
+    "max_game_iterations": 3,
+    "acceleration_tolerance_ms2": 0.05,
+    "solve_budget_ms": 100.0,
+    "reward_times_s": [0.1, 0.5, 1.0, 2.0, 4.0, 8.0],
+    "route_progress_bonus": 2.0,
+    "switch_penalty": 0.1
+  },
+  "boundary_scan": {
+    "center": {
+      "ego_speed_ms": 25.0,
+      "rear_relative_x_m": -5.0,
+      "rear_relative_speed_ms": 1.0
+    },
+    "half_width": {
+      "ego_speed_ms": 5.0,
+      "rear_relative_x_m": 7.0,
+      "rear_relative_speed_ms": 3.5
+    },
+    "target_lane": 1,
+    "background_behaviour_index": 1,
+    "key_physical_type": "Aggressive",
+    "background_clearance_m": 12.0,
+    "purpose": "broad development localization only; all 48 states retained"
+  }
+}

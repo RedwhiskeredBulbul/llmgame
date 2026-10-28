@@ -1,0 +1,74 @@
+{
+  "samples": 330,
+  "parsed_predictions": 327,
+  "coverage": 0.990909090909091,
+  "accuracy": 0.3303030303030303,
+  "accuracy_95ci_wilson": [
+    0.2817665104475676,
+    0.3827449004609407
+  ],
+  "conditional_accuracy": 0.3333333333333333,
+  "macro_f1": 0.2962191894269622,
+  "per_class": {
+    "Cautious": {
+      "support": 120,
+      "precision": 0.38461538461538464,
+      "recall": 0.375,
+      "f1": 0.37974683544303806
+    },
+    "Normal": {
+      "support": 104,
+      "precision": 0.2994652406417112,
+      "recall": 0.5384615384615384,
+      "f1": 0.3848797250859106
+    },
+    "Aggressive": {
+      "support": 106,
+      "precision": 0.34782608695652173,
+      "recall": 0.07547169811320754,
+      "f1": 0.12403100775193798
+    }
+  },
+  "confusion_matrix": {
+    "Cautious": {
+      "Cautious": 45,
+      "Normal": 65,
+      "Aggressive": 8,
+      "Unparsed": 2
+    },
+    "Normal": {
+      "Cautious": 41,
+      "Normal": 56,
+      "Aggressive": 7,
+      "Unparsed": 0
+    },
+    "Aggressive": {
+      "Cautious": 31,
+      "Normal": 66,
+      "Aggressive": 8,
+      "Unparsed": 1
+    }
+  },
+  "mean_brier_score": 0.7825236199537091,
+  "mean_log_loss": 1.2707486009306777,
+  "mean_confidence": 0.6015805160940061,
+  "mean_latency_s": 2.1893125736363634,
+  "errors": 0,
+  "backend": "qwen",
+  "model": "qwen-turbo",
+  "dataset": "continuous-DF_Cruise-online-ema",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "requests": 110,
+  "temporal_alpha": 0.7
+}

@@ -1,0 +1,233 @@
+{
+  "git_commit": "b724e50f00232468e6980dea696d2252caa2cd11",
+  "protocol_hash": "c18c3682b4b37d63087c2d7d1ab8b079e60d475227b1e2544feb1e7707a14395",
+  "by_variant": {
+    "full_model": {
+      "episodes": 6,
+      "completed": 3,
+      "collisions": 0,
+      "timeouts": 3,
+      "runtime_errors": 0,
+      "llm_requests": 71,
+      "llm_updates": 65,
+      "mean_belief_fallback_fraction": 0.1430091525857655,
+      "mean_restricted_time_s": 11.016666666666657,
+      "mean_min_clearance_m": 1.6711982334521245
+    },
+    "hard_type": {
+      "episodes": 6,
+      "completed": 3,
+      "collisions": 0,
+      "timeouts": 3,
+      "runtime_errors": 0,
+      "llm_requests": 76,
+      "llm_updates": 70,
+      "mean_belief_fallback_fraction": 0.1419674859190988,
+      "mean_restricted_time_s": 11.016666666666657,
+      "mean_min_clearance_m": 1.6711982334521245
+    },
+    "uniform_belief": {
+      "episodes": 6,
+      "completed": 3,
+      "collisions": 0,
+      "timeouts": 3,
+      "runtime_errors": 0,
+      "llm_requests": 0,
+      "llm_updates": 0,
+      "mean_belief_fallback_fraction": 0.0,
+      "mean_restricted_time_s": 11.016666666666657,
+      "mean_min_clearance_m": 1.6711982334521245
+    },
+    "oracle_type": {
+      "episodes": 6,
+      "completed": 3,
+      "collisions": 0,
+      "timeouts": 3,
+      "runtime_errors": 0,
+      "llm_requests": 0,
+      "llm_updates": 0,
+      "mean_belief_fallback_fraction": 0.0,
+      "mean_restricted_time_s": 11.016666666666657,
+      "mean_min_clearance_m": 1.6711982334521245
+    },
+    "without_interaction_response": {
+      "episodes": 6,
+      "completed": 3,
+      "collisions": 0,
+      "timeouts": 3,
+      "runtime_errors": 0,
+      "llm_requests": 56,
+      "llm_updates": 50,
+      "mean_belief_fallback_fraction": 0.18206605222734254,
+      "mean_restricted_time_s": 11.016666666666657,
+      "mean_min_clearance_m": 1.6711982334521245
+    }
+  },
+  "paired_effects": {
+    "hard_type": {
+      "full_better_success": 0,
+      "full_worse_success": 0,
+      "full_fewer_collisions": 0,
+      "full_more_collisions": 0,
+      "mean_time_difference_s": 0.0,
+      "mean_clearance_difference_m": 0.0
+    },
+    "uniform_belief": {
+      "full_better_success": 0,
+      "full_worse_success": 0,
+      "full_fewer_collisions": 0,
+      "full_more_collisions": 0,
+      "mean_time_difference_s": 0.0,
+      "mean_clearance_difference_m": 0.0
+    },
+    "oracle_type": {
+      "full_better_success": 0,
+      "full_worse_success": 0,
+      "full_fewer_collisions": 0,
+      "full_more_collisions": 0,
+      "mean_time_difference_s": 0.0,
+      "mean_clearance_difference_m": 0.0
+    },
+    "without_interaction_response": {
+      "full_better_success": 0,
+      "full_worse_success": 0,
+      "full_fewer_collisions": 0,
+      "full_more_collisions": 0,
+      "mean_time_difference_s": 0.0,
+      "mean_clearance_difference_m": 0.0
+    }
+  },
+  "llm_diagnostics": {
+    "model": "qwen-flash-2025-07-28",
+    "first_in_episode_vehicle_predictions": {
+      "samples": 72,
+      "parsed_predictions": 72,
+      "coverage": 1.0,
+      "accuracy": 0.4305555555555556,
+      "accuracy_95ci_wilson": [
+        0.32257905786705865,
+        0.5455669383268938
+      ],
+      "conditional_accuracy": 0.4305555555555556,
+      "macro_f1": 0.40622976256884735,
+      "per_class": {
+        "Cautious": {
+          "support": 18,
+          "precision": 0.4090909090909091,
+          "recall": 1.0,
+          "f1": 0.5806451612903226
+        },
+        "Normal": {
+          "support": 30,
+          "precision": 0.46153846153846156,
+          "recall": 0.2,
+          "f1": 0.27906976744186046
+        },
+        "Aggressive": {
+          "support": 24,
+          "precision": 0.4666666666666667,
+          "recall": 0.2916666666666667,
+          "f1": 0.35897435897435903
+        }
+      },
+      "confusion_matrix": {
+        "Cautious": {
+          "Cautious": 18,
+          "Normal": 0,
+          "Aggressive": 0,
+          "Unparsed": 0
+        },
+        "Normal": {
+          "Cautious": 16,
+          "Normal": 6,
+          "Aggressive": 8,
+          "Unparsed": 0
+        },
+        "Aggressive": {
+          "Cautious": 10,
+          "Normal": 7,
+          "Aggressive": 7,
+          "Unparsed": 0
+        }
+      },
+      "mean_brier_score": 0.8788277777777779,
+      "mean_log_loss": 5.78559310957149,
+      "mean_confidence": 0.8083333333333333,
+      "mean_latency_s": 1.0286785083355627,
+      "errors": 0
+    },
+    "first_key_vehicle_predictions": {
+      "samples": 18,
+      "parsed_predictions": 18,
+      "coverage": 1.0,
+      "accuracy": 0.3888888888888889,
+      "accuracy_95ci_wilson": [
+        0.2030524657216362,
+        0.613809583977621
+      ],
+      "conditional_accuracy": 0.3888888888888889,
+      "macro_f1": 0.31746031746031744,
+      "per_class": {
+        "Cautious": {
+          "support": 6,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666
+        },
+        "Normal": {
+          "support": 6,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "Aggressive": {
+          "support": 6,
+          "precision": 1.0,
+          "recall": 0.16666666666666666,
+          "f1": 0.2857142857142857
+        }
+      },
+      "confusion_matrix": {
+        "Cautious": {
+          "Cautious": 6,
+          "Normal": 0,
+          "Aggressive": 0,
+          "Unparsed": 0
+        },
+        "Normal": {
+          "Cautious": 6,
+          "Normal": 0,
+          "Aggressive": 0,
+          "Unparsed": 0
+        },
+        "Aggressive": {
+          "Cautious": 0,
+          "Normal": 5,
+          "Aggressive": 1,
+          "Unparsed": 0
+        }
+      },
+      "mean_brier_score": 0.9033333333333334,
+      "mean_log_loss": 1.3464881459470888,
+      "mean_confidence": 0.836111111111111,
+      "mean_latency_s": 1.0856471777806291,
+      "errors": 0
+    },
+    "response_events": 185,
+    "responses_after_episode": 18,
+    "response_errors": 0,
+    "recorded_total_tokens": 244312,
+    "note": "First accepted in-episode prediction per episode/vehicle; repeated temporal predictions are not treated as independent samples."
+  },
+  "gates": {
+    "complete": true,
+    "paired": true,
+    "no_runtime_errors": true,
+    "llm_requested": true,
+    "llm_updated": true,
+    "response_errors_zero": true
+  },
+  "all_gates_pass": true,
+  "algorithm_change": false,
+  "phase": "type-observable LLM traffic pilot; not confirmatory evidence"
+}

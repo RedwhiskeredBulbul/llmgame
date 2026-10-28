@@ -1,0 +1,94 @@
+[
+  {
+    "observation_sim_time": 1.9000000000000006,
+    "observation_wall": 363313.1936339,
+    "latency_ms": 787.8806000226177,
+    "error": null,
+    "prompt_hash": "0bfaa2e414551eeabc341ed20961ff87bef83c86d6b3dd1751bc252ab89ade82",
+    "response": "{\n  \"1\": [0.8, 0.1, 0.1],\n  \"2\": [0.8, 0.1, 0.1]\n}",
+    "usage": {
+      "completion_tokens": 40,
+      "prompt_tokens": 1955,
+      "total_tokens": 1995,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "observable-multilane-9503-full_model",
+    "event": "response",
+    "request_id": 1,
+    "probabilities": {
+      "1": [
+        0.8,
+        0.1,
+        0.1
+      ],
+      "2": [
+        0.8,
+        0.1,
+        0.1
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 2.9000000000000012,
+    "observation_wall": 363314.4411749,
+    "latency_ms": 824.3363999645226,
+    "error": null,
+    "prompt_hash": "e0ff6a63483d201c4ceda49746a9355d0461224387436f7f204d5e2497a8f4d1",
+    "response": "{\n  \"1\": [0.8, 0.1, 0.1],\n  \"2\": [0.8, 0.1, 0.1]\n}",
+    "usage": {
+      "completion_tokens": 40,
+      "prompt_tokens": 1955,
+      "total_tokens": 1995,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "observable-multilane-9503-full_model",
+    "event": "response",
+    "request_id": 2,
+    "probabilities": {
+      "1": [
+        0.8,
+        0.1,
+        0.1
+      ],
+      "2": [
+        0.8,
+        0.1,
+        0.1
+      ]
+    }
+  },
+  {
+    "probabilities": {
+      "1": [
+        0.8,
+        0.1,
+        0.1
+      ],
+      "2": [
+        0.1,
+        0.1,
+        0.8
+      ]
+    },
+    "observation_sim_time": 5.899999999999995,
+    "observation_wall": 363315.5404726,
+    "latency_ms": 2140.142999996897,
+    "error": null,
+    "prompt_hash": "e975476113ed555a427f9d60399e545afac29891491cc161fe11130fad00f193",
+    "response": "{\n  \"1\": [0.8, 0.1, 0.1],\n  \"2\": [0.1, 0.1, 0.8]\n}",
+    "usage": {
+      "completion_tokens": 40,
+      "prompt_tokens": 1940,
+      "total_tokens": 1980,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "event": "response_after_episode",
+    "episode_id": "observable-multilane-9503-full_model"
+  }
+]

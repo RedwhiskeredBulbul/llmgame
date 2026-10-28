@@ -1,0 +1,7 @@
+﻿variant,method,scenario,episodes,failed_episodes,SR_percent,Min_TTC_s,Average_Speed_ms,Acceleration_Variance,P95_Decision_Latency_ms
+deterministic_type,Deterministic Type,Adversarial_merge,1,0,0.0,50.0,16.666666666666668,0.0,128.27620000462048
+deterministic_type,Deterministic Type,DF_3_1,1,0,0.0,13.56923076923077,11.944444444444445,0.0,7365.514000004623
+deterministic_type,Deterministic Type,DF_CutIn,1,0,100.0,50.0,9.722222222222221,0.0,317.34350000624545
+uniform_belief,Uniform Belief,Adversarial_merge,1,0,0.0,50.0,16.666666666666668,0.0,121.47600000025705
+uniform_belief,Uniform Belief,DF_3_1,1,0,0.0,13.56923076923077,11.944444444444445,0.0,289.06230002758093
+uniform_belief,Uniform Belief,DF_CutIn,1,0,100.0,50.0,9.722222222222221,0.0,314.58289999864064

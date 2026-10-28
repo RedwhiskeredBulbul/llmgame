@@ -1,0 +1,24 @@
+{
+  "task": "fresh fictional synthetic trajectories, complete JSON latency",
+  "selected": "qwen-flash",
+  "data_source": "synthetic_cases(seed=90817); no existing project datasets read",
+  "selection_rule": "all trials parse completely, then minimum median latency",
+  "time": "2026-10-16T20:09:46+0800",
+  "summaries": [
+    {
+      "model": "qwen-flash",
+      "trials": 10,
+      "valid": 10,
+      "median_ms": 854.4066000031307,
+      "p95_ms": 2751.631500002983
+    },
+    {
+      "model": "qwen3.5-flash",
+      "trials": 10,
+      "valid": 10,
+      "median_ms": 1276.8585500016343,
+      "p95_ms": 2311.8527999846247
+    }
+  ],
+  "limitations": "Small sequential benchmark; not a universal fastest-model claim."
+}

@@ -1,0 +1,60 @@
+{
+  "protocol_version": "ablation-v2-llm-targeted-pilot-20261017",
+  "phase": "llm_activation_pilot",
+  "variants": [
+    "full_model",
+    "hard_type",
+    "uniform_belief",
+    "oracle_type",
+    "without_probe"
+  ],
+  "scenarios": ["merge"],
+  "seeds": [7000, 7001, 7002, 7003, 7004, 7005],
+  "control_dt_s": 0.1,
+  "execution_mode": "trajectory_point",
+  "time_mode": "paused_simulation",
+  "decision": {
+    "control_dt_s": 0.1,
+    "av_optimizer": "scalar_grid",
+    "max_game_iterations": 3,
+    "acceleration_tolerance_ms2": 0.05,
+    "solve_budget_ms": 100.0,
+    "reward_times_s": [0.1, 0.5, 1.0, 2.0, 4.0, 8.0],
+    "route_progress_bonus": 2.0,
+    "switch_penalty": 0.1
+  },
+  "llm": {
+    "model": "qwen-flash-2025-07-28",
+    "temperature": 0.0,
+    "history_len": 20,
+    "interval_steps": 10,
+    "temporal_alpha": 0.7,
+    "max_belief_age_sim_s": 2.0,
+    "timeout_s": 10.0,
+    "max_retries": 0
+  },
+  "runtime": {
+    "deadline_ms": 100.0,
+    "record_video": false,
+    "resume": true,
+    "max_steps": null
+  },
+  "targeted_interaction": {
+    "templates": [
+      [-12.0, 1.5, 6.0],
+      [-6.0, 2.0, 6.0],
+      [0.0, 2.0, 6.0],
+      [8.0, -1.0, 6.0],
+      [-6.0, 1.0, 4.0],
+      [-12.0, 2.0, 8.0]
+    ],
+    "jitter": {
+      "relative_x_m": 0.75,
+      "relative_speed_ms": 0.2,
+      "ego_speed_ms": 0.25
+    },
+    "template_origin": "frozen targeted interaction templates; no post-LLM-result changes",
+    "negative_controls_retained": [0, 5],
+    "pilot_seed_policy": "7000-7005; all cases and all model responses retained"
+  }
+}

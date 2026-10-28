@@ -1,0 +1,64 @@
+{
+  "case": {
+    "case_id": "merge-state2-type2",
+    "scenario": "merge",
+    "seed": 1012,
+    "difficulty": 1,
+    "behaviour_index": 2
+  },
+  "initial_state": [
+    {
+      "id": 888,
+      "position": [
+        20.0,
+        4.0
+      ],
+      "heading": 0.0,
+      "speed": 6.0,
+      "length": 5.0,
+      "width": 2.0,
+      "behaviour": "AV",
+      "target_speed": null
+    },
+    {
+      "id": 1,
+      "position": [
+        20.0,
+        0.0
+      ],
+      "heading": 0.0,
+      "speed": 8.0,
+      "length": 5.0,
+      "width": 2.0,
+      "behaviour": "Aggressive",
+      "target_speed": 12.0
+    },
+    {
+      "id": 2,
+      "position": [
+        47.0,
+        0.0
+      ],
+      "heading": 0.0,
+      "speed": 6.5,
+      "length": 5.0,
+      "width": 2.0,
+      "behaviour": "Normal",
+      "target_speed": 10.0
+    },
+    {
+      "id": 3,
+      "position": [
+        55.0,
+        4.0
+      ],
+      "heading": 0.0,
+      "speed": 5.0,
+      "length": 5.0,
+      "width": 2.0,
+      "behaviour": "Normal",
+      "target_speed": 10.0
+    }
+  ],
+  "initial_hash": "739b76da8ddc74c4a2711a9e28f9881a8284a9f7d9a25c62a99bb36fdbf4d861"
+}

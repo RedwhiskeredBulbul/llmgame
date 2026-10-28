@@ -1,0 +1,637 @@
+{
+  "git_commit": "771c89f81e755d6c53a979f02b22f5c80db15aec",
+  "protocol_hash": "50d70bbd22b3d231584c728c602add09d2bf7cb8cf2a1a53831637e7a20be4e4",
+  "phase": "type_observable_df_cutin_key_pilot",
+  "by_variant": {
+    "full_model": {
+      "episodes": 12,
+      "completed": 10,
+      "collisions": 2,
+      "timeouts": 0,
+      "runtime_errors": 0,
+      "probe_steps": 64,
+      "mean_speed_ms": 6.796061314552952,
+      "mean_restricted_time_s": 16.999999999999975,
+      "mean_min_clearance_m": 6.244820098814628
+    },
+    "without_probe": {
+      "episodes": 12,
+      "completed": 10,
+      "collisions": 2,
+      "timeouts": 0,
+      "runtime_errors": 0,
+      "probe_steps": 0,
+      "mean_speed_ms": 6.801960201398966,
+      "mean_restricted_time_s": 17.29166666666664,
+      "mean_min_clearance_m": 6.240364862276259
+    },
+    "uniform_belief": {
+      "episodes": 12,
+      "completed": 8,
+      "collisions": 4,
+      "timeouts": 0,
+      "runtime_errors": 0,
+      "probe_steps": 0,
+      "mean_speed_ms": 6.821389505981688,
+      "mean_restricted_time_s": 21.499999999999982,
+      "mean_min_clearance_m": 6.217497050885025
+    },
+    "oracle_type": {
+      "episodes": 12,
+      "completed": 12,
+      "collisions": 0,
+      "timeouts": 0,
+      "runtime_errors": 0,
+      "probe_steps": 126,
+      "mean_speed_ms": 6.7866703252184175,
+      "mean_restricted_time_s": 12.533333333333303,
+      "mean_min_clearance_m": 6.292000027148275
+    }
+  },
+  "by_key_type": {
+    "Cautious": {
+      "full_model": {
+        "episodes": 6,
+        "completed": 6,
+        "collisions": 0,
+        "timeouts": 0
+      },
+      "without_probe": {
+        "episodes": 6,
+        "completed": 6,
+        "collisions": 0,
+        "timeouts": 0
+      },
+      "uniform_belief": {
+        "episodes": 6,
+        "completed": 6,
+        "collisions": 0,
+        "timeouts": 0
+      },
+      "oracle_type": {
+        "episodes": 6,
+        "completed": 6,
+        "collisions": 0,
+        "timeouts": 0
+      }
+    },
+    "Normal": {
+      "full_model": {
+        "episodes": 2,
+        "completed": 2,
+        "collisions": 0,
+        "timeouts": 0
+      },
+      "without_probe": {
+        "episodes": 2,
+        "completed": 2,
+        "collisions": 0,
+        "timeouts": 0
+      },
+      "uniform_belief": {
+        "episodes": 2,
+        "completed": 2,
+        "collisions": 0,
+        "timeouts": 0
+      },
+      "oracle_type": {
+        "episodes": 2,
+        "completed": 2,
+        "collisions": 0,
+        "timeouts": 0
+      }
+    },
+    "Aggressive": {
+      "full_model": {
+        "episodes": 4,
+        "completed": 2,
+        "collisions": 2,
+        "timeouts": 0
+      },
+      "without_probe": {
+        "episodes": 4,
+        "completed": 2,
+        "collisions": 2,
+        "timeouts": 0
+      },
+      "uniform_belief": {
+        "episodes": 4,
+        "completed": 0,
+        "collisions": 4,
+        "timeouts": 0
+      },
+      "oracle_type": {
+        "episodes": 4,
+        "completed": 4,
+        "collisions": 0,
+        "timeouts": 0
+      }
+    }
+  },
+  "by_condition": {
+    "visible": {
+      "cases": 6,
+      "by_variant": {
+        "full_model": {
+          "episodes": 6,
+          "completed": 6,
+          "collisions": 0,
+          "timeouts": 0
+        },
+        "without_probe": {
+          "episodes": 6,
+          "completed": 6,
+          "collisions": 0,
+          "timeouts": 0
+        },
+        "uniform_belief": {
+          "episodes": 6,
+          "completed": 4,
+          "collisions": 2,
+          "timeouts": 0
+        },
+        "oracle_type": {
+          "episodes": 6,
+          "completed": 6,
+          "collisions": 0,
+          "timeouts": 0
+        }
+      },
+      "mcnemar": {
+        "full_model_vs_without_probe": {
+          "better": 0,
+          "worse": 0,
+          "p": 1.0
+        },
+        "full_model_vs_uniform_belief": {
+          "better": 2,
+          "worse": 0,
+          "p": 0.5
+        },
+        "full_model_vs_oracle_type": {
+          "better": 0,
+          "worse": 0,
+          "p": 1.0
+        }
+      }
+    },
+    "occluded": {
+      "cases": 6,
+      "by_variant": {
+        "full_model": {
+          "episodes": 6,
+          "completed": 4,
+          "collisions": 2,
+          "timeouts": 0
+        },
+        "without_probe": {
+          "episodes": 6,
+          "completed": 4,
+          "collisions": 2,
+          "timeouts": 0
+        },
+        "uniform_belief": {
+          "episodes": 6,
+          "completed": 4,
+          "collisions": 2,
+          "timeouts": 0
+        },
+        "oracle_type": {
+          "episodes": 6,
+          "completed": 6,
+          "collisions": 0,
+          "timeouts": 0
+        }
+      },
+      "mcnemar": {
+        "full_model_vs_without_probe": {
+          "better": 0,
+          "worse": 0,
+          "p": 1.0
+        },
+        "full_model_vs_uniform_belief": {
+          "better": 0,
+          "worse": 0,
+          "p": 1.0
+        },
+        "full_model_vs_oracle_type": {
+          "better": 0,
+          "worse": 2,
+          "p": 0.5
+        }
+      }
+    }
+  },
+  "paired_effects": {
+    "oracle_type": {
+      "better_success": 0,
+      "worse_success": 2,
+      "fewer_collisions": 0,
+      "more_collisions": 2,
+      "mean_restricted_time_difference_s": 4.466666666666672,
+      "mean_probe_step_difference": -5.166666666666667
+    },
+    "uniform_belief": {
+      "better_success": 2,
+      "worse_success": 0,
+      "fewer_collisions": 2,
+      "more_collisions": 0,
+      "mean_restricted_time_difference_s": -4.500000000000004,
+      "mean_probe_step_difference": 5.333333333333333
+    },
+    "without_probe": {
+      "better_success": 0,
+      "worse_success": 0,
+      "fewer_collisions": 0,
+      "more_collisions": 0,
+      "mean_restricted_time_difference_s": -0.29166666666666563,
+      "mean_probe_step_difference": 5.333333333333333
+    }
+  },
+  "mcnemar": {
+    "full_model_vs_without_probe": {
+      "better": 0,
+      "worse": 0,
+      "p": 1.0
+    },
+    "full_model_vs_uniform_belief": {
+      "better": 2,
+      "worse": 0,
+      "p": 0.5
+    },
+    "full_model_vs_oracle_type": {
+      "better": 0,
+      "worse": 2,
+      "p": 0.5
+    },
+    "oracle_type_vs_uniform_belief": {
+      "better": 4,
+      "worse": 0,
+      "p": 0.125
+    }
+  },
+  "action_divergence": {
+    "full_model_vs_uniform_belief": {
+      "steps": 1198,
+      "divergent_steps": 48,
+      "divergent_fraction": 0.04006677796327212
+    },
+    "full_model_vs_oracle_type": {
+      "steps": 1348,
+      "divergent_steps": 46,
+      "divergent_fraction": 0.03412462908011869
+    },
+    "oracle_type_vs_uniform_belief": {
+      "steps": 1198,
+      "divergent_steps": 94,
+      "divergent_fraction": 0.07846410684474124
+    }
+  },
+  "key_diagnostics": {
+    "samples": 12,
+    "first_observation_key_present": 6,
+    "first_observation_key_missing": 6,
+    "first_observation": {
+      "samples": 6,
+      "accuracy": 0.8333333333333334,
+      "macro_f1": 0.6190476190476191,
+      "mean_brier_score": 0.29333333333333333,
+      "mean_latency_ms": 1580.2164666674798,
+      "confusion_matrix": {
+        "Cautious": {
+          "Cautious": 3,
+          "Normal": 0,
+          "Aggressive": 0,
+          "Unparsed": 0
+        },
+        "Normal": {
+          "Cautious": 1,
+          "Normal": 0,
+          "Aggressive": 0,
+          "Unparsed": 0
+        },
+        "Aggressive": {
+          "Cautious": 0,
+          "Normal": 0,
+          "Aggressive": 2,
+          "Unparsed": 0
+        }
+      }
+    },
+    "later_prediction": {
+      "samples": 9,
+      "accuracy": 0.7777777777777778,
+      "macro_f1": 0.5833333333333334,
+      "mean_brier_score": 0.35111111111111115,
+      "mean_latency_ms": 1368.1145111073017,
+      "confusion_matrix": {
+        "Cautious": {
+          "Cautious": 3,
+          "Normal": 0,
+          "Aggressive": 0,
+          "Unparsed": 0
+        },
+        "Normal": {
+          "Cautious": 2,
+          "Normal": 0,
+          "Aggressive": 0,
+          "Unparsed": 0
+        },
+        "Aggressive": {
+          "Cautious": 0,
+          "Normal": 0,
+          "Aggressive": 4,
+          "Unparsed": 0
+        }
+      }
+    },
+    "by_true_label": {
+      "Cautious": {
+        "samples": 6,
+        "first_present": 3,
+        "first_missing": 3,
+        "first_accuracy": 1.0,
+        "first_predictions": {
+          "Cautious": 3,
+          "Normal": 0,
+          "Aggressive": 0
+        }
+      },
+      "Normal": {
+        "samples": 2,
+        "first_present": 1,
+        "first_missing": 1,
+        "first_accuracy": 0.0,
+        "first_predictions": {
+          "Cautious": 1,
+          "Normal": 0,
+          "Aggressive": 0
+        }
+      },
+      "Aggressive": {
+        "samples": 4,
+        "first_present": 2,
+        "first_missing": 2,
+        "first_accuracy": 1.0,
+        "first_predictions": {
+          "Cautious": 0,
+          "Normal": 0,
+          "Aggressive": 2
+        }
+      }
+    },
+    "records": [
+      {
+        "case_id": "df-cutin-key-9800",
+        "key_type": "Cautious",
+        "occluded": true,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": false,
+        "first_predicted": null,
+        "first_probabilities": null,
+        "first_latency_ms": 1133.767799998168,
+        "later_predicted": null,
+        "later_probabilities": null,
+        "later_latency_ms": 0.0,
+        "first_correct": false,
+        "later_correct": false
+      },
+      {
+        "case_id": "df-cutin-key-9801",
+        "key_type": "Aggressive",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Aggressive",
+        "first_probabilities": [
+          0.1,
+          0.1,
+          0.8
+        ],
+        "first_latency_ms": 990.7600999868009,
+        "later_predicted": "Aggressive",
+        "later_probabilities": [
+          0.1,
+          0.1,
+          0.8
+        ],
+        "later_latency_ms": 990.7600999868009,
+        "first_correct": true,
+        "later_correct": true
+      },
+      {
+        "case_id": "df-cutin-key-9802",
+        "key_type": "Normal",
+        "occluded": true,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": false,
+        "first_predicted": null,
+        "first_probabilities": null,
+        "first_latency_ms": 1037.8536999924108,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.2,
+          0.0
+        ],
+        "later_latency_ms": 996.4860999898519,
+        "first_correct": false,
+        "later_correct": false
+      },
+      {
+        "case_id": "df-cutin-key-9803",
+        "key_type": "Cautious",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "first_latency_ms": 1217.8635000018403,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "later_latency_ms": 1217.8635000018403,
+        "first_correct": true,
+        "later_correct": true
+      },
+      {
+        "case_id": "df-cutin-key-9804",
+        "key_type": "Aggressive",
+        "occluded": true,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": false,
+        "first_predicted": null,
+        "first_probabilities": null,
+        "first_latency_ms": 1083.8310999970417,
+        "later_predicted": "Aggressive",
+        "later_probabilities": [
+          0.1,
+          0.1,
+          0.8
+        ],
+        "later_latency_ms": 818.9926999912132,
+        "first_correct": false,
+        "later_correct": true
+      },
+      {
+        "case_id": "df-cutin-key-9805",
+        "key_type": "Normal",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "first_latency_ms": 1178.5924000141677,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "later_latency_ms": 1178.5924000141677,
+        "first_correct": false,
+        "later_correct": false
+      },
+      {
+        "case_id": "df-cutin-key-9806",
+        "key_type": "Cautious",
+        "occluded": true,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": false,
+        "first_predicted": null,
+        "first_probabilities": null,
+        "first_latency_ms": 1140.9303000255022,
+        "later_predicted": null,
+        "later_probabilities": null,
+        "later_latency_ms": 0.0,
+        "first_correct": false,
+        "later_correct": false
+      },
+      {
+        "case_id": "df-cutin-key-9807",
+        "key_type": "Cautious",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "first_latency_ms": 1137.798699986888,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "later_latency_ms": 1137.798699986888,
+        "first_correct": true,
+        "later_correct": true
+      },
+      {
+        "case_id": "df-cutin-key-9808",
+        "key_type": "Cautious",
+        "occluded": true,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": false,
+        "first_predicted": null,
+        "first_probabilities": null,
+        "first_latency_ms": 1366.7263999814168,
+        "later_predicted": null,
+        "later_probabilities": null,
+        "later_latency_ms": 0.0,
+        "first_correct": false,
+        "later_correct": false
+      },
+      {
+        "case_id": "df-cutin-key-9809",
+        "key_type": "Cautious",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "first_latency_ms": 1132.1068000106607,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "later_latency_ms": 1132.1068000106607,
+        "first_correct": true,
+        "later_correct": true
+      },
+      {
+        "case_id": "df-cutin-key-9810",
+        "key_type": "Aggressive",
+        "occluded": true,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": false,
+        "first_predicted": null,
+        "first_probabilities": null,
+        "first_latency_ms": 1075.463299988769,
+        "later_predicted": "Aggressive",
+        "later_probabilities": [
+          0.1,
+          0.1,
+          0.8
+        ],
+        "later_latency_ms": 1016.2529999797698,
+        "first_correct": false,
+        "later_correct": true
+      },
+      {
+        "case_id": "df-cutin-key-9811",
+        "key_type": "Aggressive",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Aggressive",
+        "first_probabilities": [
+          0.1,
+          0.1,
+          0.8
+        ],
+        "first_latency_ms": 3824.1773000045214,
+        "later_predicted": "Aggressive",
+        "later_probabilities": [
+          0.1,
+          0.1,
+          0.8
+        ],
+        "later_latency_ms": 3824.1773000045214,
+        "first_correct": true,
+        "later_correct": true
+      }
+    ]
+  },
+  "gates": {
+    "complete": true,
+    "paired": true,
+    "no_runtime_errors": true,
+    "llm_requested": true,
+    "response_errors_zero": true
+  },
+  "all_gates_pass": true,
+  "algorithm_change": false,
+  "scene_change_only": true,
+  "interpretation": "DF_2_2 native road, native random-type background, and a native rear key vehicle whose initial speed and crossing response are type-consistent. On alternating seeds three constant-speed native vehicles are closer than the key at the first synchronous prompt, so the nearest-three observation omits the key. The occlusion condition and the key response do not depend on the controller variant. This is a mechanism demonstration, not an unmodified native DF_2_2 benchmark; inference should be conditioned on the visible/occluded split."
+}

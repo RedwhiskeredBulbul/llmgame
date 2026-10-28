@@ -1,0 +1,109 @@
+[
+  {
+    "observation_sim_time": 1.9000000000000006,
+    "observation_wall": 1079.5845026,
+    "latency_ms": 949.3228000001181,
+    "error": null,
+    "prompt_hash": "74dfa28bf16679528195e508750919cedd8f8002fa13683da24d83ef69d3b922",
+    "response": "{\n  \"1\": [0.1, 0.1, 0.8],\n  \"2\": [0.1, 0.1, 0.8],\n  \"3\": [0.1, 0.1, 0.8]\n}",
+    "usage": {
+      "completion_tokens": 59,
+      "prompt_tokens": 2297,
+      "total_tokens": 2356,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "observable-df-workzone-9577-without_probe",
+    "event": "response",
+    "request_id": 1,
+    "probabilities": {
+      "1": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "2": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "3": [
+        0.1,
+        0.1,
+        0.8
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 2.9000000000000012,
+    "observation_wall": 1081.0400154,
+    "latency_ms": 1037.5385999998343,
+    "error": null,
+    "prompt_hash": "048aa751ed3ce8ac39a792f475245238b7bd2baa36c0d1bdaecbcbb997e36e05",
+    "response": "{\n  \"1\": [0.1, 0.1, 0.8],\n  \"2\": [0.1, 0.8, 0.1],\n  \"3\": [0.1, 0.8, 0.1]\n}",
+    "usage": {
+      "completion_tokens": 59,
+      "prompt_tokens": 2297,
+      "total_tokens": 2356,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "observable-df-workzone-9577-without_probe",
+    "event": "response",
+    "request_id": 2,
+    "probabilities": {
+      "1": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "2": [
+        0.1,
+        0.31000000000000005,
+        0.59
+      ],
+      "3": [
+        0.1,
+        0.31000000000000005,
+        0.59
+      ]
+    }
+  },
+  {
+    "probabilities": {
+      "1": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "2": [
+        0.33,
+        0.67,
+        0.0
+      ],
+      "3": [
+        0.33,
+        0.67,
+        0.0
+      ]
+    },
+    "observation_sim_time": 5.899999999999995,
+    "observation_wall": 1082.3061599,
+    "latency_ms": 1847.366700000066,
+    "error": null,
+    "prompt_hash": "5d6bd7ccce12f70dc8d4f43ea21f51b717f55b8024c52aa16def069be6d8c2e7",
+    "response": "{\n  \"1\": [0.1, 0.1, 0.8],\n  \"2\": [0.33, 0.67, 0.0],\n  \"3\": [0.33, 0.67, 0.0]\n}",
+    "usage": {
+      "completion_tokens": 63,
+      "prompt_tokens": 2317,
+      "total_tokens": 2380,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "event": "response_after_episode",
+    "episode_id": "observable-df-workzone-9577-without_probe"
+  }
+]

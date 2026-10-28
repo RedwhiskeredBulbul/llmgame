@@ -1,0 +1,113 @@
+{
+  "protocol_version": "ablation-v2-v6-style-diagnostic-df-v5-20261023",
+  "phase": "v6_style_diagnostic_df_v5",
+  "variants": [
+    "full_model"
+  ],
+  "scenarios": [
+    "cutin"
+  ],
+  "seeds": [
+    10200,
+    10201,
+    10202,
+    10203,
+    10204,
+    10205,
+    10206,
+    10207,
+    10208,
+    10209,
+    10210,
+    10211,
+    10212,
+    10213,
+    10214,
+    10215,
+    10216,
+    10217,
+    10218,
+    10219,
+    10220,
+    10221,
+    10222,
+    10223
+  ],
+  "control_dt_s": 0.1,
+  "execution_mode": "trajectory_point",
+  "time_mode": "paused_simulation",
+  "decision": {
+    "control_dt_s": 0.1,
+    "av_optimizer": "scalar_grid",
+    "max_game_iterations": 3,
+    "acceleration_tolerance_ms2": 0.05,
+    "solve_budget_ms": 100.0,
+    "reward_times_s": [
+      0.1,
+      0.5,
+      1.0,
+      2.0,
+      4.0,
+      8.0
+    ],
+    "route_progress_bonus": 50.0,
+    "switch_penalty": 0.1
+  },
+  "llm": {
+    "model": "qwen-flash-2025-07-28",
+    "temperature": 0.0,
+    "prompt_version": "relative_evidence_v5",
+    "history_len": 20,
+    "interval_steps": 10,
+    "temporal_alpha": 0.7,
+    "max_belief_age_sim_s": 3.0,
+    "sync_first_observation": true,
+    "timeout_s": 10.0,
+    "max_retries": 0,
+    "diagnostic_uniform_control": true
+  },
+  "runtime": {
+    "deadline_ms": 100.0,
+    "record_video": false,
+    "resume": true,
+    "max_steps": null
+  },
+  "df_cutin_key": {
+    "required_target_lane": 0,
+    "required_progress_m": 290.0,
+    "horizon_s": 40.0,
+    "decision_open_x_m": 230.0,
+    "route_end_x_m": 350.0,
+    "ego_speed_ms": 7.0,
+    "speed_limit_ms": 7.0,
+    "clear_ahead_m": 250.0,
+    "clear_behind_m": 40.0,
+    "key_relative_x_m": -22.0,
+    "key_speed_ms": {
+      "Cautious": 6.0,
+      "Normal": 8.5,
+      "Aggressive": 10.5
+    },
+    "key_target_speed_ms": {
+      "Cautious": 6.0,
+      "Normal": 8.5,
+      "Aggressive": 12.0
+    },
+    "key_response": {
+      "Cautious": "yield",
+      "Normal": "idm",
+      "Aggressive": "force"
+    },
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "design": "CutinEnv native road, dense lane-0 traffic, and independent random native type labels. The nearest native vehicle behind the ego is kept as the key; its native label is preserved and its initial speed, target speed, and crossing response are set by that label. Aggressive keys approach at 10.5 m/s and accelerate after the ego starts crossing; Normal keys keep native cooperative IDM; Cautious keys yield. No occlusion vehicles are used: the key is available in the first synchronous observation for all 50 seeds. Other lane-0 vehicles within [-40,+250] m of the ego are removed to open a merge corridor; all outside traffic and labels remain native. Ego starts in lane 1 at 7 m/s, the cut-in to lane 0 is required, and completion requires x>=310 m. Only Full Model and Uniform Belief are run. No controller or reward change; the key response is type-scripted and variant-independent. Diagnostic recognition run: the controller receives the uniform prior, so the state trajectory does not depend on the prompt; only the logged prompt version differs between the v5 and v6 runs. This isolates prompt generalization from closed-loop feedback.",
+    "occlusion": false
+  }
+}

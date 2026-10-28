@@ -1,0 +1,27 @@
+{
+  "episodes": 6,
+  "summary": [
+    {
+      "scenario": "traffic",
+      "variant": "full_model",
+      "episodes": 6,
+      "completed": 3,
+      "collisions": 0,
+      "timeouts": 3,
+      "runtime_errors": 0,
+      "smoke_episodes": 0,
+      "success_rate": 0.5,
+      "restricted_task_time_s": 11.016666666666657,
+      "average_speed_ms": 25.898065682064004,
+      "min_clearance_m": 1.6711982334521245,
+      "jerk_rms": 0.46588431181991324,
+      "control_p95_ms": 121.67082832893357,
+      "deadline_miss_rate": 0.49050499231950845,
+      "probe_selected_steps": 0.0,
+      "belief_fallback_fraction": 0.2029441884280594,
+      "llm_updates": 7.666666666666667,
+      "solver_fallback_count": 0.0
+    }
+  ],
+  "exploratory_pairs": []
+}

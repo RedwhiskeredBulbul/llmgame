@@ -1,0 +1,262 @@
+{
+  "git_commit": "1bdcb3c0a91fb4ca4182dd1984afa40005908a69",
+  "protocol_hash": "02f6ad6dec51882c2391cb2384e5e54f7890c75ef32239902e26d50a1fecaf5d",
+  "phase": "df_cutin_key_smoke",
+  "by_variant": {
+    "full_model": {
+      "episodes": 4,
+      "completed": 4,
+      "collisions": 0,
+      "timeouts": 0,
+      "runtime_errors": 0,
+      "probe_steps": 64,
+      "mean_speed_ms": 6.763317285676174,
+      "mean_restricted_time_s": 12.64999999999997,
+      "mean_min_clearance_m": 0.830969143788824
+    },
+    "uniform_belief": {
+      "episodes": 4,
+      "completed": 2,
+      "collisions": 2,
+      "timeouts": 0,
+      "runtime_errors": 0,
+      "probe_steps": 0,
+      "mean_speed_ms": 6.838837622977345,
+      "mean_restricted_time_s": 26.149999999999984,
+      "mean_min_clearance_m": 0.7490000000000094
+    },
+    "oracle_type": {
+      "episodes": 4,
+      "completed": 4,
+      "collisions": 0,
+      "timeouts": 0,
+      "runtime_errors": 0,
+      "probe_steps": 64,
+      "mean_speed_ms": 6.763317285676174,
+      "mean_restricted_time_s": 12.64999999999997,
+      "mean_min_clearance_m": 0.830969143788824
+    }
+  },
+  "by_key_type": {
+    "Cautious": {
+      "full_model": {
+        "episodes": 1,
+        "completed": 1,
+        "collisions": 0,
+        "timeouts": 0
+      },
+      "uniform_belief": {
+        "episodes": 1,
+        "completed": 1,
+        "collisions": 0,
+        "timeouts": 0
+      },
+      "oracle_type": {
+        "episodes": 1,
+        "completed": 1,
+        "collisions": 0,
+        "timeouts": 0
+      }
+    },
+    "Normal": {
+      "full_model": {
+        "episodes": 1,
+        "completed": 1,
+        "collisions": 0,
+        "timeouts": 0
+      },
+      "uniform_belief": {
+        "episodes": 1,
+        "completed": 1,
+        "collisions": 0,
+        "timeouts": 0
+      },
+      "oracle_type": {
+        "episodes": 1,
+        "completed": 1,
+        "collisions": 0,
+        "timeouts": 0
+      }
+    },
+    "Aggressive": {
+      "full_model": {
+        "episodes": 2,
+        "completed": 2,
+        "collisions": 0,
+        "timeouts": 0
+      },
+      "uniform_belief": {
+        "episodes": 2,
+        "completed": 0,
+        "collisions": 2,
+        "timeouts": 0
+      },
+      "oracle_type": {
+        "episodes": 2,
+        "completed": 2,
+        "collisions": 0,
+        "timeouts": 0
+      }
+    }
+  },
+  "paired_effects": {
+    "oracle_type": {
+      "better_success": 0,
+      "worse_success": 0,
+      "fewer_collisions": 0,
+      "more_collisions": 0,
+      "mean_restricted_time_difference_s": 0.0,
+      "mean_probe_step_difference": 0.0
+    },
+    "uniform_belief": {
+      "better_success": 2,
+      "worse_success": 0,
+      "fewer_collisions": 2,
+      "more_collisions": 0,
+      "mean_restricted_time_difference_s": -13.500000000000014,
+      "mean_probe_step_difference": 16.0
+    }
+  },
+  "mcnemar": {
+    "full_model_vs_uniform_belief": {
+      "better": 2,
+      "worse": 0,
+      "p": 0.5
+    },
+    "full_model_vs_oracle_type": {
+      "better": 0,
+      "worse": 0,
+      "p": 1.0
+    },
+    "oracle_type_vs_uniform_belief": {
+      "better": 2,
+      "worse": 0,
+      "p": 0.5
+    }
+  },
+  "action_divergence": {
+    "full_model_vs_uniform_belief": {
+      "steps": 356,
+      "divergent_steps": 48,
+      "divergent_fraction": 0.1348314606741573
+    },
+    "full_model_vs_oracle_type": {
+      "steps": 506,
+      "divergent_steps": 0,
+      "divergent_fraction": 0.0
+    },
+    "oracle_type_vs_uniform_belief": {
+      "steps": 356,
+      "divergent_steps": 48,
+      "divergent_fraction": 0.1348314606741573
+    }
+  },
+  "key_diagnostics": {
+    "samples": 4,
+    "predicted_samples": 3,
+    "accuracy": 0.6666666666666666,
+    "macro_f1": 0.26666666666666666,
+    "mean_brier_score": 0.3392666666666666,
+    "mean_latency_ms": 1083.142066655758,
+    "confusion_matrix": {
+      "Cautious": {
+        "Cautious": 0,
+        "Normal": 0,
+        "Aggressive": 0,
+        "Unparsed": 0
+      },
+      "Normal": {
+        "Cautious": 0,
+        "Normal": 0,
+        "Aggressive": 1,
+        "Unparsed": 0
+      },
+      "Aggressive": {
+        "Cautious": 0,
+        "Normal": 0,
+        "Aggressive": 2,
+        "Unparsed": 0
+      }
+    },
+    "by_true_label": {
+      "Aggressive": {
+        "samples": 2,
+        "accuracy": 1.0,
+        "predictions": {
+          "Cautious": 0,
+          "Normal": 0,
+          "Aggressive": 2
+        }
+      },
+      "Normal": {
+        "samples": 1,
+        "accuracy": 0.0,
+        "predictions": {
+          "Cautious": 0,
+          "Normal": 0,
+          "Aggressive": 1
+        }
+      }
+    },
+    "records": [
+      {
+        "case_id": "df-cutin-key-9800",
+        "key_type": "Cautious",
+        "occluded": true,
+        "predicted": null,
+        "correct": false,
+        "probabilities": null
+      },
+      {
+        "case_id": "df-cutin-key-9801",
+        "key_type": "Aggressive",
+        "occluded": false,
+        "predicted": "Aggressive",
+        "correct": true,
+        "probabilities": [
+          0.1,
+          0.1,
+          0.8
+        ],
+        "latency_ms": 1042.4349999811966
+      },
+      {
+        "case_id": "df-cutin-key-9802",
+        "key_type": "Normal",
+        "occluded": true,
+        "predicted": "Aggressive",
+        "correct": false,
+        "probabilities": [
+          0.0,
+          0.33,
+          0.67
+        ],
+        "latency_ms": 1159.0802999853622
+      },
+      {
+        "case_id": "df-cutin-key-9804",
+        "key_type": "Aggressive",
+        "occluded": false,
+        "predicted": "Aggressive",
+        "correct": true,
+        "probabilities": [
+          0.1,
+          0.1,
+          0.8
+        ],
+        "latency_ms": 1047.9109000007156
+      }
+    ]
+  },
+  "gates": {
+    "complete": true,
+    "paired": true,
+    "no_runtime_errors": true,
+    "llm_requested": true,
+    "response_errors_zero": true
+  },
+  "all_gates_pass": true,
+  "algorithm_change": false,
+  "scene_change_only": true,
+  "interpretation": "DF_2_2 native random-type background plus a native-type key vehicle behind the ego. Aggressive keys have a visible and a occlusion subset; the response is type-scripted and independent of the controller variant. Development/mechanism scene, not a confirmatory benchmark."
+}

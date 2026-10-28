@@ -1,0 +1,27 @@
+{
+  "episodes": 24,
+  "summary": [
+    {
+      "scenario": "cutin",
+      "variant": "full_model",
+      "episodes": 24,
+      "completed": 18,
+      "collisions": 6,
+      "timeouts": 0,
+      "runtime_errors": 0,
+      "smoke_episodes": 0,
+      "success_rate": 0.75,
+      "restricted_task_time_s": 19.14999999999998,
+      "average_speed_ms": 6.990137485952995,
+      "min_clearance_m": 12.777934956191674,
+      "jerk_rms": 0.011810944530494576,
+      "control_p95_ms": 63.94886749994836,
+      "deadline_miss_rate": 0.025366368604073524,
+      "probe_selected_steps": 0.0,
+      "belief_fallback_fraction": 0.0,
+      "llm_updates": 4.333333333333333,
+      "solver_fallback_count": 0.0
+    }
+  ],
+  "exploratory_pairs": []
+}

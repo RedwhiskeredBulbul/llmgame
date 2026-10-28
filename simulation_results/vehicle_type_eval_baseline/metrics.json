@@ -1,0 +1,61 @@
+{
+  "samples": 300,
+  "parsed_predictions": 300,
+  "coverage": 1.0,
+  "accuracy": 0.8,
+  "accuracy_95ci_wilson": [
+    0.7510710762322137,
+    0.8413431410330587
+  ],
+  "conditional_accuracy": 0.8,
+  "macro_f1": 0.7977941176470589,
+  "per_class": {
+    "Cautious": {
+      "support": 100,
+      "precision": 0.8269230769230769,
+      "recall": 0.86,
+      "f1": 0.8431372549019608
+    },
+    "Normal": {
+      "support": 100,
+      "precision": 0.717391304347826,
+      "recall": 0.66,
+      "f1": 0.6875
+    },
+    "Aggressive": {
+      "support": 100,
+      "precision": 0.8461538461538461,
+      "recall": 0.88,
+      "f1": 0.8627450980392156
+    }
+  },
+  "confusion_matrix": {
+    "Cautious": {
+      "Cautious": 86,
+      "Normal": 14,
+      "Aggressive": 0,
+      "Unparsed": 0
+    },
+    "Normal": {
+      "Cautious": 18,
+      "Normal": 66,
+      "Aggressive": 16,
+      "Unparsed": 0
+    },
+    "Aggressive": {
+      "Cautious": 0,
+      "Normal": 12,
+      "Aggressive": 88,
+      "Unparsed": 0
+    }
+  },
+  "mean_brier_score": 0.2950108365590394,
+  "mean_log_loss": 0.48353194605026184,
+  "mean_confidence": 0.7682166712713496,
+  "mean_latency_s": 0.0,
+  "errors": 0,
+  "backend": "heuristic",
+  "model": "motion-heuristic-baseline",
+  "dataset": "synthetic-balanced-smoke-test",
+  "seed": 42
+}

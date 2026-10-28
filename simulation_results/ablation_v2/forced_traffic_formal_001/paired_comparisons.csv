@@ -1,0 +1,13 @@
+﻿baseline,ci_high,ci_low,comparison,mean_difference,metric,n_pairs,n_seed_clusters,p_holm_primary,p_sign_flip
+oracle_type,0.0,-0.1,oracle_without_interaction_response,-0.03333333333333333,success,30,30,1.0,1.0
+oracle_type,0.16666666666666666,0.0,oracle_without_interaction_response,0.06666666666666667,collision,30,30,,0.5043495650434956
+oracle_type,0.8900000000000023,-0.06999999999999976,oracle_without_interaction_response,0.2733333333333342,restricted_task_time_s,30,30,1.0,1.0
+oracle_type,0.0,-0.2738093297496005,oracle_without_interaction_response,-0.1054937254818346,min_clearance_m,30,30,,0.252974702529747
+oracle_type,0.3712284238740937,-0.14511438182270933,oracle_without_interaction_response,0.07537134735046146,jerk_rms,30,30,,0.7494250574942506
+oracle_type,53.51975592503001,38.62102117903365,oracle_without_interaction_response,45.71427583165737,control_p95_ms,30,30,0.0005999400059994001,9.999000099990002e-05
+oracle_type,0.0,0.0,uniform_belief,0.0,success,30,30,1.0,1.0
+oracle_type,0.0,0.0,uniform_belief,0.0,collision,30,30,,1.0
+oracle_type,0.0,0.0,uniform_belief,0.0,restricted_task_time_s,30,30,1.0,1.0
+oracle_type,0.0,0.0,uniform_belief,0.0,min_clearance_m,30,30,,1.0
+oracle_type,0.0,0.0,uniform_belief,0.0,jerk_rms,30,30,,1.0
+oracle_type,14.249153237846828,-2.8755835538977417,uniform_belief,3.9569828369712776,control_p95_ms,30,30,1.0,0.5447455254474552

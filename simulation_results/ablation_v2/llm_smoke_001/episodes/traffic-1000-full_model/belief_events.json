@@ -1,0 +1,43 @@
+[
+  {
+    "probabilities": {
+      "1": [
+        0.95,
+        0.05,
+        0.0
+      ],
+      "4": [
+        0.1,
+        0.8,
+        0.1
+      ],
+      "7": [
+        0.9,
+        0.1,
+        0.0
+      ]
+    },
+    "observation_sim_time": 1.9000000000000006,
+    "observation_wall": 142363.8658795,
+    "latency_ms": 2333.0051000230014,
+    "error": null,
+    "prompt_hash": "0315097fbcaa0c31377f3ad6594fe0e13c556fbfd0129af5c6f7aee9aebbea07",
+    "response": "{\n  \"1\": [0.95, 0.05, 0.0],\n  \"4\": [0.1, 0.8, 0.1],\n  \"7\": [0.9, 0.1, 0.0]\n}",
+    "usage": {
+      "completion_tokens": 61,
+      "prompt_tokens": 1097,
+      "total_tokens": 1158,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null
+      }
+    },
+    "event": "response_after_episode",
+    "episode_id": "traffic-1000-full_model"
+  }
+]

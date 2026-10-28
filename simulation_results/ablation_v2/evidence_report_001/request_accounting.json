@@ -1,0 +1,46 @@
+[
+  {
+    "run": "pilot_stratified_001",
+    "requests": 1408,
+    "logged_responses": 1408,
+    "error_responses": 4,
+    "late_after_episode": 58,
+    "total_tokens": 1679880,
+    "median_request_latency_ms": 920.9938999847509,
+    "p95_request_latency_ms": 1202.6067899787447,
+    "summed_episode_wall_s": 5292.603991900018
+  },
+  {
+    "run": "interaction_diagnostic_001",
+    "requests": 0,
+    "logged_responses": 0,
+    "error_responses": 0,
+    "late_after_episode": 0,
+    "total_tokens": 0,
+    "median_request_latency_ms": null,
+    "p95_request_latency_ms": null,
+    "summed_episode_wall_s": 568.7016472000105
+  },
+  {
+    "run": "interaction_diagnostic_002",
+    "requests": 0,
+    "logged_responses": 0,
+    "error_responses": 0,
+    "late_after_episode": 0,
+    "total_tokens": 0,
+    "median_request_latency_ms": null,
+    "p95_request_latency_ms": null,
+    "summed_episode_wall_s": 1994.7569198999554
+  },
+  {
+    "run": "probe_fixed_merge_pilot_001",
+    "requests": 67,
+    "logged_responses": 67,
+    "error_responses": 0,
+    "late_after_episode": 19,
+    "total_tokens": 77839,
+    "median_request_latency_ms": 960.5899000016507,
+    "p95_request_latency_ms": 1206.7812499881254,
+    "summed_episode_wall_s": 250.14921619999222
+  }
+]

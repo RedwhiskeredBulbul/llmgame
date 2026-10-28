@@ -1,0 +1,156 @@
+[
+  {
+    "observation_sim_time": 1.9000000000000006,
+    "observation_wall": 363304.5562477,
+    "latency_ms": 948.8766000140458,
+    "error": null,
+    "prompt_hash": "0bfaa2e414551eeabc341ed20961ff87bef83c86d6b3dd1751bc252ab89ade82",
+    "response": "{\n  \"1\": [0.8, 0.1, 0.1],\n  \"2\": [0.8, 0.1, 0.1]\n}",
+    "usage": {
+      "completion_tokens": 40,
+      "prompt_tokens": 1955,
+      "total_tokens": 1995,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "observable-multilane-9503-without_probe",
+    "event": "response",
+    "request_id": 1,
+    "probabilities": {
+      "1": [
+        0.8,
+        0.1,
+        0.1
+      ],
+      "2": [
+        0.8,
+        0.1,
+        0.1
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 2.9000000000000012,
+    "observation_wall": 363305.8951322,
+    "latency_ms": 586.0951000358909,
+    "error": null,
+    "prompt_hash": "e0ff6a63483d201c4ceda49746a9355d0461224387436f7f204d5e2497a8f4d1",
+    "response": "{\n  \"1\": [0.8, 0.1, 0.1],\n  \"2\": [0.8, 0.1, 0.1]\n}",
+    "usage": {
+      "completion_tokens": 40,
+      "prompt_tokens": 1955,
+      "total_tokens": 1995,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "observable-multilane-9503-without_probe",
+    "event": "response",
+    "request_id": 2,
+    "probabilities": {
+      "1": [
+        0.8,
+        0.1,
+        0.1
+      ],
+      "2": [
+        0.8,
+        0.1,
+        0.1
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 4.899999999999999,
+    "observation_wall": 363306.7672381,
+    "latency_ms": 681.3984999898821,
+    "error": null,
+    "prompt_hash": "97192cd62b58d30497710d31e6830af179251853f14270c2a87751e8e28d8966",
+    "response": "{\n  \"1\": [0.8, 0.1, 0.1],\n  \"2\": [0.1, 0.1, 0.8]\n}",
+    "usage": {
+      "completion_tokens": 40,
+      "prompt_tokens": 1944,
+      "total_tokens": 1984,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "observable-multilane-9503-without_probe",
+    "event": "response",
+    "request_id": 3,
+    "probabilities": {
+      "1": [
+        0.8,
+        0.1,
+        0.1
+      ],
+      "2": [
+        0.59,
+        0.1,
+        0.31000000000000005
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 6.8999999999999915,
+    "observation_wall": 363307.6253388,
+    "latency_ms": 745.7171999849379,
+    "error": null,
+    "prompt_hash": "0ab47062bfe5ad104264015e0d9cee6c9a2605f9fe8c6aeacc2f038d4d0dae31",
+    "response": "{\n  \"1\": [0.8, 0.1, 0.1],\n  \"2\": [0.1, 0.1, 0.8]\n}",
+    "usage": {
+      "completion_tokens": 40,
+      "prompt_tokens": 1942,
+      "total_tokens": 1982,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "observable-multilane-9503-without_probe",
+    "event": "response",
+    "request_id": 4,
+    "probabilities": {
+      "1": [
+        0.8,
+        0.1,
+        0.1
+      ],
+      "2": [
+        0.443,
+        0.1,
+        0.4570000000000001
+      ]
+    }
+  },
+  {
+    "probabilities": {
+      "1": [
+        0.8,
+        0.1,
+        0.1
+      ],
+      "2": [
+        0.1,
+        0.1,
+        0.8
+      ]
+    },
+    "observation_sim_time": 8.899999999999984,
+    "observation_wall": 363308.408488,
+    "latency_ms": 674.1339999716729,
+    "error": null,
+    "prompt_hash": "d98948e8f4f3e594b31896c0e1b1f0d4f0b576c52a1d4ee4cd17d180f5ab61d1",
+    "response": "{\n  \"1\": [0.8, 0.1, 0.1],\n  \"2\": [0.1, 0.1, 0.8]\n}",
+    "usage": {
+      "completion_tokens": 40,
+      "prompt_tokens": 1942,
+      "total_tokens": 1982,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "event": "response_after_episode",
+    "episode_id": "observable-multilane-9503-without_probe"
+  }
+]

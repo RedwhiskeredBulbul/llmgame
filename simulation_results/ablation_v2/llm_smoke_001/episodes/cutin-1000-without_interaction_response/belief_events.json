@@ -1,0 +1,43 @@
+[
+  {
+    "probabilities": {
+      "1": [
+        0.95,
+        0.05,
+        0.0
+      ],
+      "3": [
+        0.0,
+        0.7,
+        0.3
+      ],
+      "2": [
+        0.8,
+        0.2,
+        0.0
+      ]
+    },
+    "observation_sim_time": 1.9000000000000006,
+    "observation_wall": 142313.9914321,
+    "latency_ms": 2330.849899997702,
+    "error": null,
+    "prompt_hash": "03867bd758a4519d2c84995c1c3bf919d7e2a0007500936e97651c2d5a17b49b",
+    "response": "{\n  \"1\": [0.95, 0.05, 0.00],\n  \"3\": [0.00, 0.70, 0.30],\n  \"2\": [0.80, 0.20, 0.00]\n}",
+    "usage": {
+      "completion_tokens": 68,
+      "prompt_tokens": 1125,
+      "total_tokens": 1193,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 1024,
+        "image_tokens": null,
+        "text_tokens": null
+      }
+    },
+    "event": "response_after_episode",
+    "episode_id": "cutin-1000-without_interaction_response"
+  }
+]

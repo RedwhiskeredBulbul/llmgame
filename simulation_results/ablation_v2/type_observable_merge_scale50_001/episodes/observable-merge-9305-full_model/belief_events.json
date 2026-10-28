@@ -1,0 +1,361 @@
+[
+  {
+    "observation_sim_time": 1.9000000000000006,
+    "observation_wall": 294121.7210353,
+    "latency_ms": 1157.3756000143476,
+    "error": null,
+    "prompt_hash": "d8263470c91d4bbbe453501db41d8c84cec1909c32c7fcf1f4cff9b088485bd7",
+    "response": "{\n  \"1\": [0.1, 0.1, 0.8],\n  \"2\": [0.1, 0.1, 0.8],\n  \"3\": [0.1, 0.1, 0.8]\n}",
+    "usage": {
+      "completion_tokens": 59,
+      "prompt_tokens": 2296,
+      "total_tokens": 2355,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "observable-merge-9305-full_model",
+    "event": "response",
+    "request_id": 1,
+    "probabilities": {
+      "1": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "2": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "3": [
+        0.1,
+        0.1,
+        0.8
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 2.9000000000000012,
+    "observation_wall": 294124.0218606,
+    "latency_ms": 936.160099983681,
+    "error": null,
+    "prompt_hash": "51d79910a1149314c77cce6499f15da73acebc70cdea73f5ddc9e68664f56d43",
+    "response": "{\n  \"1\": [0.1, 0.1, 0.8],\n  \"2\": [0.1, 0.8, 0.1],\n  \"3\": [0.1, 0.1, 0.8]\n}",
+    "usage": {
+      "completion_tokens": 59,
+      "prompt_tokens": 2297,
+      "total_tokens": 2356,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "observable-merge-9305-full_model",
+    "event": "response",
+    "request_id": 2,
+    "probabilities": {
+      "1": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "2": [
+        0.1,
+        0.31000000000000005,
+        0.59
+      ],
+      "3": [
+        0.1,
+        0.1,
+        0.8
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 3.900000000000002,
+    "observation_wall": 294125.3061469,
+    "latency_ms": 1153.684200020507,
+    "error": null,
+    "prompt_hash": "03aefefe219d20de9e7a705f8cb35e383c7a89baec49bcc79fce3c413418f8f4",
+    "response": "{\n  \"1\": [0.1, 0.1, 0.8],\n  \"2\": [0.8, 0.1, 0.1],\n  \"3\": [0.6, 0.2, 0.2]\n}",
+    "usage": {
+      "completion_tokens": 59,
+      "prompt_tokens": 2299,
+      "total_tokens": 2358,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "observable-merge-9305-full_model",
+    "event": "response",
+    "request_id": 3,
+    "probabilities": {
+      "1": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "2": [
+        0.31000000000000005,
+        0.24700000000000003,
+        0.443
+      ],
+      "3": [
+        0.25,
+        0.13,
+        0.62
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 4.899999999999999,
+    "observation_wall": 294126.5516547,
+    "latency_ms": 938.609299948439,
+    "error": null,
+    "prompt_hash": "ee8d3fd0d784b8a051d1453a3dfdc94a38a27f5b77bf7271b0adc36a16479331",
+    "response": "{\n  \"1\": [0.1, 0.1, 0.8],\n  \"2\": [0.8, 0.1, 0.1],\n  \"3\": [0.8, 0.1, 0.1]\n}",
+    "usage": {
+      "completion_tokens": 59,
+      "prompt_tokens": 2297,
+      "total_tokens": 2356,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "observable-merge-9305-full_model",
+    "event": "response",
+    "request_id": 4,
+    "probabilities": {
+      "1": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "2": [
+        0.4570000000000001,
+        0.2029,
+        0.3401
+      ],
+      "3": [
+        0.41500000000000004,
+        0.121,
+        0.464
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 5.899999999999995,
+    "observation_wall": 294128.0003519,
+    "latency_ms": 893.0422000121325,
+    "error": null,
+    "prompt_hash": "122ba38dcf09debc881f17d13eb467637350b25a67c62796ab0d28bc280224db",
+    "response": "{\n  \"1\": [0.1, 0.1, 0.8],\n  \"2\": [0.8, 0.1, 0.1],\n  \"3\": [0.8, 0.1, 0.1]\n}",
+    "usage": {
+      "completion_tokens": 59,
+      "prompt_tokens": 2294,
+      "total_tokens": 2353,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "observable-merge-9305-full_model",
+    "event": "response",
+    "request_id": 5,
+    "probabilities": {
+      "1": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "2": [
+        0.5599000000000001,
+        0.17203,
+        0.26807000000000003
+      ],
+      "3": [
+        0.5305,
+        0.1147,
+        0.3548
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 6.8999999999999915,
+    "observation_wall": 294129.3263824,
+    "latency_ms": 888.0219000275247,
+    "error": null,
+    "prompt_hash": "1c47852077190afe35115d4a5a1692bfebef33e88697ac58c4bc7d64dedf24f8",
+    "response": "{\n  \"1\": [0.1, 0.1, 0.8],\n  \"2\": [0.8, 0.1, 0.1],\n  \"3\": [0.8, 0.1, 0.1]\n}",
+    "usage": {
+      "completion_tokens": 59,
+      "prompt_tokens": 2289,
+      "total_tokens": 2348,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "observable-merge-9305-full_model",
+    "event": "response",
+    "request_id": 6,
+    "probabilities": {
+      "1": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "2": [
+        0.6319300000000001,
+        0.150421,
+        0.217649
+      ],
+      "3": [
+        0.6113500000000001,
+        0.11029,
+        0.27836
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 7.899999999999988,
+    "observation_wall": 294130.51042,
+    "latency_ms": 816.0788000095636,
+    "error": null,
+    "prompt_hash": "baedd5de3dfffc4fecd16424eb2aaabef363a10d0d905dc1ae41026b7191e042",
+    "response": "{\n  \"1\": [0.8, 0.1, 0.1],\n  \"2\": [0.8, 0.1, 0.1],\n  \"3\": [0.8, 0.1, 0.1]\n}",
+    "usage": {
+      "completion_tokens": 59,
+      "prompt_tokens": 2294,
+      "total_tokens": 2353,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "observable-merge-9305-full_model",
+    "event": "response",
+    "request_id": 7,
+    "probabilities": {
+      "1": [
+        0.31000000000000005,
+        0.1,
+        0.59
+      ],
+      "2": [
+        0.682351,
+        0.13529469999999996,
+        0.18235429999999997
+      ],
+      "3": [
+        0.667945,
+        0.10720299999999999,
+        0.224852
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 8.899999999999984,
+    "observation_wall": 294131.79718,
+    "latency_ms": 969.5854000165127,
+    "error": null,
+    "prompt_hash": "88c4520325bdcc1c8baa4f605fdcbb544739df6684a1d0f8f8c7cd95bcab390c",
+    "response": "{\n  \"1\": [0.8, 0.1, 0.1],\n  \"2\": [0.1, 0.8, 0.1],\n  \"3\": [0.1, 0.8, 0.1]\n}",
+    "usage": {
+      "completion_tokens": 59,
+      "prompt_tokens": 2303,
+      "total_tokens": 2362,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "observable-merge-9305-full_model",
+    "event": "response",
+    "request_id": 8,
+    "probabilities": {
+      "1": [
+        0.4570000000000001,
+        0.1,
+        0.443
+      ],
+      "2": [
+        0.5076457,
+        0.33470629,
+        0.15764800999999998
+      ],
+      "3": [
+        0.4975615,
+        0.31504210000000005,
+        0.1873964
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 10.899999999999977,
+    "observation_wall": 294133.0645411,
+    "latency_ms": 1004.2653999989852,
+    "error": null,
+    "prompt_hash": "287e35298c387f56a584be09831e36afeb531f72ba16c73d39f140139711dd60",
+    "response": "{\n  \"1\": [0.8, 0.1, 0.1],\n  \"2\": [0.8, 0.1, 0.1],\n  \"3\": [0.8, 0.1, 0.1]\n}",
+    "usage": {
+      "completion_tokens": 59,
+      "prompt_tokens": 2312,
+      "total_tokens": 2371,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "observable-merge-9305-full_model",
+    "event": "response",
+    "request_id": 9,
+    "probabilities": {
+      "1": [
+        0.5599000000000001,
+        0.1,
+        0.3401
+      ],
+      "2": [
+        0.5953519899999999,
+        0.264294403,
+        0.140353607
+      ],
+      "3": [
+        0.5882930500000001,
+        0.25052947000000003,
+        0.16117747999999998
+      ]
+    }
+  },
+  {
+    "probabilities": {
+      "1": [
+        0.8,
+        0.1,
+        0.1
+      ],
+      "2": [
+        0.33,
+        0.34,
+        0.33
+      ],
+      "3": [
+        0.33,
+        0.34,
+        0.33
+      ]
+    },
+    "observation_sim_time": 13.899999999999967,
+    "observation_wall": 294134.5491746,
+    "latency_ms": 1021.2355999974534,
+    "error": null,
+    "prompt_hash": "f8962a47fb0c03c9e118c4d93c033cda4410e7b00f089a95bd82694c32c951a1",
+    "response": "{\n  \"1\": [0.8, 0.1, 0.1],\n  \"2\": [0.33, 0.34, 0.33],\n  \"3\": [0.33, 0.34, 0.33]\n}",
+    "usage": {
+      "completion_tokens": 65,
+      "prompt_tokens": 2315,
+      "total_tokens": 2380,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "event": "response_after_episode",
+    "episode_id": "observable-merge-9305-full_model"
+  }
+]

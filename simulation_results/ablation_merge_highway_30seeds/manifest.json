@@ -1,0 +1,74 @@
+{
+  "variants": [
+    "deterministic_type",
+    "uniform_belief",
+    "without_fast_slow",
+    "full_model"
+  ],
+  "scenarios": [
+    "DF_Merge",
+    "DF_Highway"
+  ],
+  "seeds": "0:30",
+  "max_steps": 500,
+  "style": "Normal",
+  "history_len": 20,
+  "llm_interval_steps": 10,
+  "model": "qwen-turbo",
+  "base_url": null,
+  "prototype_file": null,
+  "ttc_cap_s": 50.0,
+  "output_dir": "simulation_results/ablation_merge_highway_30seeds",
+  "verbose_solver": false,
+  "skip_warmup": false,
+  "variants_resolved": [
+    "deterministic_type",
+    "uniform_belief",
+    "without_fast_slow",
+    "full_model"
+  ],
+  "scenarios_resolved": [
+    "DF_Merge",
+    "DF_Highway"
+  ],
+  "seeds_resolved": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "metric_definition": {
+    "SR": "collision-free objective completion; route means normal road-end termination; survive means reaching the evaluation horizon without collision",
+    "Min_TTC": "mean episode-minimum heading-aligned corridor TTC, capped at ttc_cap_s",
+    "Average_Speed": "mean of episode-average ego speeds",
+    "Acceleration_Variance": "mean of within-episode population variances",
+    "P95_Decision_Latency": "pooled per-step P95 from belief handling through low-level action"
+  },
+  "created_at": "2026-09-04T11:10:37+0800"
+}

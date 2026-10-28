@@ -1,0 +1,93 @@
+[
+  {
+    "observation_sim_time": 1.9000000000000006,
+    "observation_wall": 203333.0761316,
+    "latency_ms": 3824.1773000045214,
+    "error": null,
+    "prompt_hash": "25c6eb688cd8bd0102c089559510c002eab363711d567e4a605e247aff88526b",
+    "response": "{\n  \"10\": [0.1, 0.1, 0.8],\n  \"6\": [0.8, 0.1, 0.1],\n  \"5\": [0.8, 0.1, 0.1]\n}",
+    "usage": {
+      "completion_tokens": 60,
+      "prompt_tokens": 2297,
+      "total_tokens": 2357,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "df-cutin-key-9811-full_model",
+    "event": "response",
+    "request_id": 1,
+    "probabilities": {
+      "10": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "6": [
+        0.8,
+        0.1,
+        0.1
+      ],
+      "5": [
+        0.8,
+        0.1,
+        0.1
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 2.9000000000000012,
+    "observation_wall": 203337.7180369,
+    "latency_ms": 3816.9654000084847,
+    "error": null,
+    "prompt_hash": "78ce15fc369fa9929ae3dda60e621c3738adb6ada14035fde20123112905d20a",
+    "response": "{\n  \"10\": [0.1, 0.1, 0.8],\n  \"6\": [0.8, 0.1, 0.1],\n  \"5\": [0.8, 0.1, 0.1]\n}",
+    "usage": {
+      "completion_tokens": 60,
+      "prompt_tokens": 2299,
+      "total_tokens": 2359,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "df-cutin-key-9811-full_model",
+    "event": "response",
+    "request_id": 2,
+    "probabilities": {
+      "10": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "6": [
+        0.8,
+        0.1,
+        0.1
+      ],
+      "5": [
+        0.8,
+        0.1,
+        0.1
+      ]
+    }
+  },
+  {
+    "probabilities": null,
+    "observation_sim_time": 5.899999999999995,
+    "observation_wall": 203343.4976443,
+    "latency_ms": 10013.395000016317,
+    "error": "APITimeoutError: Request timed out.",
+    "prompt_hash": "9200faaea98ab1107db0989f3a8d4456395e7a1c1931d1974a7e89d4f8ca1812",
+    "response": null,
+    "usage": {
+      "completion_tokens": 60,
+      "prompt_tokens": 2299,
+      "total_tokens": 2359,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "event": "response_after_episode",
+    "episode_id": "df-cutin-key-9811-full_model"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "step": -1,
+    "sim_time": 0.0,
+    "old_key_id": null,
+    "new_key_id": 11,
+    "old_key_type": null,
+    "new_key_type": "Aggressive",
+    "gap": 32.0,
+    "reason": "initial"
+  },
+  {
+    "step": 98,
+    "sim_time": 9.89999999999998,
+    "old_key_id": 11,
+    "new_key_id": 10,
+    "old_key_type": "Aggressive",
+    "new_key_type": "Aggressive",
+    "gap": 47.508157625190364,
+    "reason": "promotion"
+  },
+  {
+    "step": 250,
+    "sim_time": 25.100000000000087,
+    "old_key_id": 10,
+    "new_key_id": null,
+    "old_key_type": "Aggressive",
+    "new_key_type": null,
+    "gap": null,
+    "reason": "no_key_in_range"
+  }
+]

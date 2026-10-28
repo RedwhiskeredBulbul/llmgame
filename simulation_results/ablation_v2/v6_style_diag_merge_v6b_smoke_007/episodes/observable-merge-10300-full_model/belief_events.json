@@ -1,0 +1,38 @@
+[
+  {
+    "observation_sim_time": 1.9000000000000006,
+    "observation_wall": 64319.4401926,
+    "latency_ms": 1118.316500003857,
+    "error": null,
+    "prompt_hash": "f21e605d90672f919d677c016e7f51ae589acdf72ae729db47bdb4e3b896fbf0",
+    "response": "{\n  \"1\": [0.8, 0.2, 0.0],\n  \"2\": [0.3, 0.7, 0.0],\n  \"3\": [0.1, 0.2, 0.7]\n}",
+    "usage": {
+      "completion_tokens": 59,
+      "prompt_tokens": 2846,
+      "total_tokens": 2905,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "observable-merge-10300-full_model",
+    "event": "response",
+    "request_id": 1,
+    "probabilities": {
+      "1": [
+        0.8,
+        0.2,
+        0.0
+      ],
+      "2": [
+        0.3,
+        0.7,
+        0.0
+      ],
+      "3": [
+        0.1,
+        0.2,
+        0.7
+      ]
+    }
+  }
+]

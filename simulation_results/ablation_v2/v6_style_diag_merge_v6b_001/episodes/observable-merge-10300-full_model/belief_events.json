@@ -1,0 +1,73 @@
+[
+  {
+    "observation_sim_time": 1.9000000000000006,
+    "observation_wall": 64979.9515905,
+    "latency_ms": 1193.4063000007882,
+    "error": null,
+    "prompt_hash": "274d1e7ab1b37f12f65c5da124bec5bebaa780d00c4b3c3238121c728b783715",
+    "response": "{\n  \"1\": [0.1, 0.2, 0.7],\n  \"2\": [0.8, 0.1, 0.1],\n  \"3\": [0.1, 0.2, 0.7]\n}",
+    "usage": {
+      "completion_tokens": 59,
+      "prompt_tokens": 2852,
+      "total_tokens": 2911,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "observable-merge-10300-full_model",
+    "event": "response",
+    "request_id": 1,
+    "probabilities": {
+      "1": [
+        0.1,
+        0.2,
+        0.7
+      ],
+      "2": [
+        0.8,
+        0.1,
+        0.1
+      ],
+      "3": [
+        0.1,
+        0.2,
+        0.7
+      ]
+    }
+  },
+  {
+    "probabilities": {
+      "1": [
+        0.05,
+        0.15,
+        0.8
+      ],
+      "2": [
+        0.7,
+        0.2,
+        0.1
+      ],
+      "3": [
+        0.1,
+        0.2,
+        0.7
+      ]
+    },
+    "observation_sim_time": 2.9000000000000012,
+    "observation_wall": 64981.5505532,
+    "latency_ms": 1096.8004999958794,
+    "error": null,
+    "prompt_hash": "90b784d66e4612f9831c3f9ea9713691d08ee93d831b03106163c2405be0c213",
+    "response": "{\n  \"1\": [0.05, 0.15, 0.80],\n  \"2\": [0.70, 0.20, 0.10],\n  \"3\": [0.10, 0.20, 0.70]\n}",
+    "usage": {
+      "completion_tokens": 68,
+      "prompt_tokens": 2852,
+      "total_tokens": 2920,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "event": "response_after_episode",
+    "episode_id": "observable-merge-10300-full_model"
+  }
+]

@@ -1,0 +1,13 @@
+﻿baseline,ci_high,ci_low,comparison,mean_difference,metric,n_pairs,n_seed_clusters,p_holm_primary,p_sign_flip
+full_model,0.0,0.0,oracle_type,0.0,success,4,4,1.0,1.0
+full_model,0.0,0.0,oracle_type,0.0,collision,4,4,,1.0
+full_model,0.0,0.0,oracle_type,0.0,restricted_task_time_s,4,4,1.0,1.0
+full_model,0.0,0.0,oracle_type,0.0,min_clearance_m,4,4,,1.0
+full_model,0.0,0.0,oracle_type,0.0,jerk_rms,4,4,,1.0
+full_model,12.073422507819487,3.0295424890937284,oracle_type,8.201468748666224,control_p95_ms,4,4,0.7205279472052795,0.12008799120087991
+full_model,1.0,0.0,uniform_belief,0.5,success,4,4,1.0,0.49325067493250674
+full_model,0.0,-1.0,uniform_belief,-0.5,collision,4,4,,0.49325067493250674
+full_model,0.0,-27.00000000000003,uniform_belief,-13.500000000000014,restricted_task_time_s,4,4,1.0,0.49325067493250674
+full_model,0.16393828757762913,0.0,uniform_belief,0.08196914378881456,min_clearance_m,4,4,,0.49325067493250674
+full_model,0.5177757946949404,0.0,uniform_belief,0.2588878973474702,jerk_rms,4,4,,0.49325067493250674
+full_model,107.54372251321911,-2.5311749981483302,uniform_belief,52.506273757535396,control_p95_ms,4,4,1.0,0.49325067493250674

@@ -1,0 +1,13 @@
+﻿variant,method,scenario,seed,step,speed_ms,acceleration_ms2,ttc_s,decision_latency_ms,selected_target_lane,llm_update,llm_latency_ms,llm_error
+deterministic_type,Deterministic Type,DF_3_1,1,0,14.444444444444445,0.0,9.840000000000002,169.36110000824556,0,0,,
+deterministic_type,Deterministic Type,DF_3_1,1,1,14.497804081123364,0.6737327863500058,9.685688263431754,58.97660000482574,0,0,,
+uniform_belief,Uniform Belief,DF_3_1,1,0,14.444444444444445,0.0,9.840000000000002,176.6712000244297,0,0,,
+uniform_belief,Uniform Belief,DF_3_1,1,1,14.497804081123364,0.6737327863500058,9.685688263431754,53.042100014863536,0,0,,
+deterministic_type,Deterministic Type,Adversarial_merge,1,0,16.666666666666668,0.0,50.0,96.56629999517463,3,0,,
+deterministic_type,Deterministic Type,Adversarial_merge,1,1,16.587466666666668,-1.0,50.0,44.17949999333359,3,0,,
+uniform_belief,Uniform Belief,Adversarial_merge,1,0,16.666666666666668,0.0,50.0,98.00230001565069,3,0,,
+uniform_belief,Uniform Belief,Adversarial_merge,1,1,16.587466666666668,-1.0,50.0,37.30960001121275,3,0,,
+deterministic_type,Deterministic Type,DF_CutIn,1,0,9.722222222222221,0.0,50.0,273.36980000836775,1,0,,
+deterministic_type,Deterministic Type,DF_CutIn,1,1,9.801422222222222,1.0,50.0,76.67780001065694,1,0,,
+uniform_belief,Uniform Belief,DF_CutIn,1,0,9.722222222222221,0.0,50.0,266.61640001111664,1,0,,
+uniform_belief,Uniform Belief,DF_CutIn,1,1,9.801422222222222,1.0,50.0,84.51630000490695,1,0,,

@@ -1,0 +1,62 @@
+{
+  "samples": 150,
+  "parsed_predictions": 150,
+  "coverage": 1.0,
+  "accuracy": 0.3933333333333333,
+  "accuracy_95ci_wilson": [
+    0.318759856976774,
+    0.47323379515508224
+  ],
+  "conditional_accuracy": 0.3933333333333333,
+  "macro_f1": 0.18819776714513556,
+  "per_class": {
+    "Cautious": {
+      "support": 59,
+      "precision": 0.3933333333333333,
+      "recall": 1.0,
+      "f1": 0.5645933014354066
+    },
+    "Normal": {
+      "support": 43,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "Aggressive": {
+      "support": 48,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    }
+  },
+  "confusion_matrix": {
+    "Cautious": {
+      "Cautious": 59,
+      "Normal": 0,
+      "Aggressive": 0,
+      "Unparsed": 0
+    },
+    "Normal": {
+      "Cautious": 43,
+      "Normal": 0,
+      "Aggressive": 0,
+      "Unparsed": 0
+    },
+    "Aggressive": {
+      "Cautious": 48,
+      "Normal": 0,
+      "Aggressive": 0,
+      "Unparsed": 0
+    }
+  },
+  "mean_brier_score": 1.2133293144109139,
+  "mean_log_loss": 15.052504953566789,
+  "mean_confidence": 0.9999981193728219,
+  "mean_latency_s": 0.0,
+  "errors": 0,
+  "backend": "heuristic",
+  "model": "motion-heuristic-baseline",
+  "dataset": "simulation_results\\vehicle_type_dataset_v2_20f.jsonl",
+  "seed": 42,
+  "temporal_alpha": 0.0
+}

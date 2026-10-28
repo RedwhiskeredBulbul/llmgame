@@ -1,0 +1,80 @@
+{
+  "case": {
+    "case_id": "observable-merge-9348",
+    "scenario": "merge",
+    "seed": 9348,
+    "difficulty": 1,
+    "behaviour_index": 0,
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -27.5,
+    "key_initial_speed_ms": 7.5,
+    "key_target_speed_ms": 8.0,
+    "key_response": "yield",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "merge_open_x_m": 40.0,
+    "horizon_s": 40.0
+  },
+  "initial_state": [
+    {
+      "id": 888,
+      "position": [
+        20.0,
+        4.0
+      ],
+      "heading": 0.0,
+      "speed": 7.0,
+      "length": 5.0,
+      "width": 2.0,
+      "behaviour": "AV",
+      "target_speed": null
+    },
+    {
+      "id": 1,
+      "position": [
+        -7.5,
+        0.0
+      ],
+      "heading": 0.0,
+      "speed": 7.5,
+      "length": 5.0,
+      "width": 2.0,
+      "behaviour": "Cautious",
+      "target_speed": 8.0
+    },
+    {
+      "id": 2,
+      "position": [
+        80.0,
+        0.0
+      ],
+      "heading": 0.0,
+      "speed": 6.5,
+      "length": 5.0,
+      "width": 2.0,
+      "behaviour": "Normal",
+      "target_speed": 10.0
+    },
+    {
+      "id": 3,
+      "position": [
+        95.0,
+        4.0
+      ],
+      "heading": 0.0,
+      "speed": 5.0,
+      "length": 5.0,
+      "width": 2.0,
+      "behaviour": "Normal",
+      "target_speed": 10.0
+    }
+  ],
+  "initial_hash": "965bce63598036c02ca0c958749ec24e2d8a685c84fb3515444a89d075124da0"
+}

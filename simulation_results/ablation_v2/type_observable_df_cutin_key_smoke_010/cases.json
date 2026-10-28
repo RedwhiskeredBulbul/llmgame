@@ -1,0 +1,215 @@
+[
+  {
+    "case_id": "df-cutin-key-9800",
+    "scenario": "cutin",
+    "seed": 9800,
+    "difficulty": 1,
+    "behaviour_index": 0,
+    "required_target_lane": 0,
+    "required_progress_m": 290.0,
+    "horizon_s": 40.0,
+    "decision_open_x_m": 230.0,
+    "route_end_x_m": 350.0,
+    "ego_speed_ms": 7.0,
+    "speed_limit_ms": 7.0,
+    "clear_ahead_m": 250.0,
+    "clear_behind_m": 40.0,
+    "key_id": 10,
+    "key_type": "Cautious",
+    "key_relative_x_m": -22.0,
+    "key_initial_speed_ms": 6.0,
+    "key_target_speed_ms": 6.0,
+    "key_response": "yield",
+    "occluded": true,
+    "distractors": [
+      {
+        "id": 11,
+        "relative_x_m": -6.5,
+        "speed_ms": 7.0
+      },
+      {
+        "id": 12,
+        "relative_x_m": -12.5,
+        "speed_ms": 7.0
+      },
+      {
+        "id": 9,
+        "relative_x_m": 6.5,
+        "speed_ms": 11.0
+      }
+    ],
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    }
+  },
+  {
+    "case_id": "df-cutin-key-9801",
+    "scenario": "cutin",
+    "seed": 9801,
+    "difficulty": 1,
+    "behaviour_index": 2,
+    "required_target_lane": 0,
+    "required_progress_m": 290.0,
+    "horizon_s": 40.0,
+    "decision_open_x_m": 230.0,
+    "route_end_x_m": 350.0,
+    "ego_speed_ms": 7.0,
+    "speed_limit_ms": 7.0,
+    "clear_ahead_m": 250.0,
+    "clear_behind_m": 40.0,
+    "key_id": 12,
+    "key_type": "Aggressive",
+    "key_relative_x_m": -22.0,
+    "key_initial_speed_ms": 10.5,
+    "key_target_speed_ms": 12.0,
+    "key_response": "force",
+    "occluded": false,
+    "distractors": [],
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    }
+  },
+  {
+    "case_id": "df-cutin-key-9802",
+    "scenario": "cutin",
+    "seed": 9802,
+    "difficulty": 1,
+    "behaviour_index": 1,
+    "required_target_lane": 0,
+    "required_progress_m": 290.0,
+    "horizon_s": 40.0,
+    "decision_open_x_m": 230.0,
+    "route_end_x_m": 350.0,
+    "ego_speed_ms": 7.0,
+    "speed_limit_ms": 7.0,
+    "clear_ahead_m": 250.0,
+    "clear_behind_m": 40.0,
+    "key_id": 13,
+    "key_type": "Normal",
+    "key_relative_x_m": -22.0,
+    "key_initial_speed_ms": 8.5,
+    "key_target_speed_ms": 8.5,
+    "key_response": "idm",
+    "occluded": true,
+    "distractors": [
+      {
+        "id": 14,
+        "relative_x_m": -6.5,
+        "speed_ms": 7.0
+      },
+      {
+        "id": 12,
+        "relative_x_m": -12.5,
+        "speed_ms": 7.0
+      },
+      {
+        "id": 11,
+        "relative_x_m": 6.5,
+        "speed_ms": 11.0
+      }
+    ],
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    }
+  },
+  {
+    "case_id": "df-cutin-key-9803",
+    "scenario": "cutin",
+    "seed": 9803,
+    "difficulty": 1,
+    "behaviour_index": 0,
+    "required_target_lane": 0,
+    "required_progress_m": 290.0,
+    "horizon_s": 40.0,
+    "decision_open_x_m": 230.0,
+    "route_end_x_m": 350.0,
+    "ego_speed_ms": 7.0,
+    "speed_limit_ms": 7.0,
+    "clear_ahead_m": 250.0,
+    "clear_behind_m": 40.0,
+    "key_id": 11,
+    "key_type": "Cautious",
+    "key_relative_x_m": -22.0,
+    "key_initial_speed_ms": 6.0,
+    "key_target_speed_ms": 6.0,
+    "key_response": "yield",
+    "occluded": false,
+    "distractors": [],
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    }
+  },
+  {
+    "case_id": "df-cutin-key-9804",
+    "scenario": "cutin",
+    "seed": 9804,
+    "difficulty": 1,
+    "behaviour_index": 2,
+    "required_target_lane": 0,
+    "required_progress_m": 290.0,
+    "horizon_s": 40.0,
+    "decision_open_x_m": 230.0,
+    "route_end_x_m": 350.0,
+    "ego_speed_ms": 7.0,
+    "speed_limit_ms": 7.0,
+    "clear_ahead_m": 250.0,
+    "clear_behind_m": 40.0,
+    "key_id": 13,
+    "key_type": "Aggressive",
+    "key_relative_x_m": -22.0,
+    "key_initial_speed_ms": 10.5,
+    "key_target_speed_ms": 12.0,
+    "key_response": "force",
+    "occluded": true,
+    "distractors": [
+      {
+        "id": 14,
+        "relative_x_m": -6.5,
+        "speed_ms": 7.0
+      },
+      {
+        "id": 12,
+        "relative_x_m": -12.5,
+        "speed_ms": 7.0
+      },
+      {
+        "id": 11,
+        "relative_x_m": 6.5,
+        "speed_ms": 11.0
+      }
+    ],
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    }
+  }
+]

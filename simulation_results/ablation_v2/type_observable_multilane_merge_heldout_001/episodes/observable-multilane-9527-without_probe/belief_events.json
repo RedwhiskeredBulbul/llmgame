@@ -1,0 +1,156 @@
+[
+  {
+    "observation_sim_time": 1.9000000000000006,
+    "observation_wall": 363793.7509627,
+    "latency_ms": 1124.9116000253707,
+    "error": null,
+    "prompt_hash": "117b3caed58e1a2c7c7fc6d0d960e2090975f8221df8a9247e92087126c81150",
+    "response": "{\n  \"1\": [0.33, 0.67, 0.00],\n  \"2\": [0.80, 0.20, 0.00]\n}",
+    "usage": {
+      "completion_tokens": 46,
+      "prompt_tokens": 1955,
+      "total_tokens": 2001,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "observable-multilane-9527-without_probe",
+    "event": "response",
+    "request_id": 1,
+    "probabilities": {
+      "1": [
+        0.33,
+        0.67,
+        0.0
+      ],
+      "2": [
+        0.8,
+        0.2,
+        0.0
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 2.9000000000000012,
+    "observation_wall": 363795.2564856,
+    "latency_ms": 771.9951000181027,
+    "error": null,
+    "prompt_hash": "963676fa84f5ccac06e054582d09fd59376352b821f512964b01a1fa06cfac93",
+    "response": "{\n  \"1\": [0.1, 0.6, 0.3],\n  \"2\": [0.8, 0.1, 0.1]\n}",
+    "usage": {
+      "completion_tokens": 40,
+      "prompt_tokens": 1954,
+      "total_tokens": 1994,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "observable-multilane-9527-without_probe",
+    "event": "response",
+    "request_id": 2,
+    "probabilities": {
+      "1": [
+        0.261,
+        0.649,
+        0.09000000000000001
+      ],
+      "2": [
+        0.8,
+        0.16999999999999998,
+        0.030000000000000006
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 4.899999999999999,
+    "observation_wall": 363796.0648,
+    "latency_ms": 756.7640000488609,
+    "error": null,
+    "prompt_hash": "b72e68f91a7f76b00f51a6ac0ae006796f075f27ab27d91c826505d44c9c855c",
+    "response": "{\n  \"1\": [0.1, 0.1, 0.8],\n  \"2\": [0.8, 0.1, 0.1]\n}",
+    "usage": {
+      "completion_tokens": 40,
+      "prompt_tokens": 1979,
+      "total_tokens": 2019,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "observable-multilane-9527-without_probe",
+    "event": "response",
+    "request_id": 3,
+    "probabilities": {
+      "1": [
+        0.2127,
+        0.4843,
+        0.30300000000000005
+      ],
+      "2": [
+        0.8,
+        0.149,
+        0.051000000000000004
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 6.8999999999999915,
+    "observation_wall": 363796.9511371,
+    "latency_ms": 858.8112000143155,
+    "error": null,
+    "prompt_hash": "69f23d73be3e7c115cdb980d01665dc7fbb1ce21dd2b42714f8ab3987e062abe",
+    "response": "{\n  \"1\": [0.8, 0.1, 0.1],\n  \"2\": [0.1, 0.1, 0.8]\n}",
+    "usage": {
+      "completion_tokens": 40,
+      "prompt_tokens": 1963,
+      "total_tokens": 2003,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "observable-multilane-9527-without_probe",
+    "event": "response",
+    "request_id": 4,
+    "probabilities": {
+      "1": [
+        0.38889000000000007,
+        0.36901,
+        0.2421
+      ],
+      "2": [
+        0.59,
+        0.1343,
+        0.27570000000000006
+      ]
+    }
+  },
+  {
+    "probabilities": {
+      "1": [
+        0.8,
+        0.1,
+        0.1
+      ],
+      "2": [
+        0.1,
+        0.1,
+        0.8
+      ]
+    },
+    "observation_sim_time": 8.899999999999984,
+    "observation_wall": 363797.8573296,
+    "latency_ms": 806.7841000156477,
+    "error": null,
+    "prompt_hash": "b20403cbcf5de6b4589bddb2da5c4c5227b1bd7029ed26469a32e818dd6afafb",
+    "response": "{\n  \"1\": [0.8, 0.1, 0.1],\n  \"2\": [0.1, 0.1, 0.8]\n}",
+    "usage": {
+      "completion_tokens": 40,
+      "prompt_tokens": 1966,
+      "total_tokens": 2006,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "event": "response_after_episode",
+    "episode_id": "observable-multilane-9527-without_probe"
+  }
+]

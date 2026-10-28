@@ -1,0 +1,7 @@
+﻿variant,method,scenario,seed,status,success,collision,objective,objective_completed,steps,duration_s,min_ttc_s,average_speed_ms,acceleration_variance,p95_decision_latency_ms,mean_decision_latency_ms,llm_updates,llm_failures,termination,error
+deterministic_type,Deterministic Type,DF_3_1,1,ok,0,0,merge,0,2,0.2,9.685688263431754,14.471124262783905,0.11347896685073564,163.84187500807457,114.16885000653565,0,0,max_steps,
+uniform_belief,Uniform Belief,DF_3_1,1,ok,0,0,merge,0,2,0.2,9.685688263431754,14.471124262783905,0.11347896685073564,170.4897450239514,114.85665001964662,0,0,max_steps,
+deterministic_type,Deterministic Type,Adversarial_merge,1,ok,0,0,merge,0,2,0.2,50.0,16.627066666666668,0.25,93.94695999508258,70.37289999425411,0,0,max_steps,
+uniform_belief,Uniform Belief,Adversarial_merge,1,ok,0,0,merge,0,2,0.2,50.0,16.627066666666668,0.25,94.96766501542879,67.65595001343172,0,0,max_steps,
+deterministic_type,Deterministic Type,DF_CutIn,1,ok,1,0,survive,1,2,0.2,50.0,9.761822222222222,0.25,263.5352000084822,175.02380000951234,0,0,max_steps,
+uniform_belief,Uniform Belief,DF_CutIn,1,ok,1,0,survive,1,2,0.2,50.0,9.761822222222222,0.25,257.51139501080615,175.5663500080118,0,0,max_steps,

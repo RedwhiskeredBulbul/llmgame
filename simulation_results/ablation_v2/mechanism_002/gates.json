@@ -1,0 +1,22 @@
+{
+  "gates": {
+    "type_responses_differ": true,
+    "candidate_scores_depend_on_belief": true,
+    "action_changes_observed": true,
+    "order_independent": true,
+    "probe_physical_response": true,
+    "async_nonblocking": true
+  },
+  "changed_score_states": [
+    1,
+    4,
+    5
+  ],
+  "changed_action_states": [
+    4
+  ],
+  "probe_response_changed_pairs": 9,
+  "probe_pairs": 9,
+  "formal_gate_passed": true,
+  "interpretation": "Mechanism evidence only; not closed-loop or LLM performance evidence."
+}

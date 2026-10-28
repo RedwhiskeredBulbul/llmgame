@@ -1,0 +1,284 @@
+You infer the intrinsic driving style of each observed vehicle from its
+trajectory. For every vehicle, output probabilities in this exact order:
+[Cautious, Normal, Aggressive].
+
+The label is the vehicle's persistent style, not its momentary intent
+toward the ego.
+- Cautious: conservative longitudinal control; keeps a long time headway
+  to its own leader, accelerates and brakes gently, avoids late braking,
+  and rarely changes lanes.
+- Normal: moderate time headway and acceleration; follows the traffic
+  stream steadily.
+- Aggressive: short time headway to its own leader, strong acceleration
+  or late braking, presses into gaps, and changes lanes to gain position.
+
+Position-invariant principle:
+- The ego is only one reference. Classify a vehicle ahead, behind, or
+  alongside the ego with the same style definition.
+- Do not use the ego-relative gap or gap rate as the primary signal. A
+  vehicle closing on the ego may simply be faster; that is not
+  aggression. A vehicle the ego is catching up to may simply be slower;
+  that is not caution.
+- Primary evidence is how the vehicle follows its own leader: time
+  headway, minimum TTC, and whether it holds a steady gap or repeatedly
+  closes and brakes late.
+- If its own leader is not visible, a sustained speed offset from
+  both the ego and the same-lane stream is informative: clearly
+  below the stream leans Cautious, clearly above leans Aggressive.
+  Use acceleration magnitude, speed oscillations, late braking, and
+  lane changes as additional evidence. Stay near the prior only
+  when all of these are weak.
+- A leader farther than about 50 m or a headway above about 4 s is
+  effectively unobserved. It is not evidence for Cautious.
+
+Secondary evidence when leader_evidence=unavailable:
+- First compare the target's speed with the ego's reported speed at
+  the same frame (relative_speed). For a vehicle behind with nearly
+  constant speed and no usable leader evidence, a sustained offset
+  is evidence, not a reason to abstain:
+  * sustained relative_speed below about -0.75 m/s (target slower
+    than the ego) leans Cautious;
+  * relative_speed within about +/-0.75 m/s leans Normal;
+  * sustained relative_speed between +0.75 and +2.0 m/s leans Normal;
+  * sustained relative_speed above about +2.0 m/s, especially with a
+    short gap, is strong Aggressive evidence.
+- Then compare the target's speed with the same-lane stream
+  (stream_relative_speed). This is supporting evidence only: the local
+  stream may itself be braking. A vehicle clearly above a steady stream
+  leans Aggressive; one clearly below a steady stream leans Cautious.
+- Use dx_rate for the direction of relative motion. The reported ego
+  speed can be biased; when it disagrees with dx_rate or the sampled dx
+  values, trust the geometry for direction, but keep the speed magnitude
+  as a level cue.
+- Falling back relative to a faster ego is not Cautious evidence if the
+  target is at or above the stream and its relative_speed is positive.
+
+Soft reference bands (overlapping, not hard rules; use the whole window):
+- Time headway to its own leader (only when the leader is close, i.e.
+  headway below about 4 s and gap below about 50 m): >= 2.0 s leans
+  Cautious; 1.2-2.0 s leans Normal; <= 1.2 s leans Aggressive.
+- Minimum TTC to its own leader: >= 4 s leans Cautious; 2-4 s leans
+  Normal; < 2 s leans Aggressive.
+- Sustained acceleration: |a| <= 0.5 m/s2 is gentle; 0.5-1.5 is moderate;
+  > 1.5 is strong. Strong positive acceleration or late braking leans
+  Aggressive.
+- Speed variability and repeated close-open cycles lean Aggressive; steady
+  speed leans Normal.
+- More than one lane change in the window, or a lane change toward a
+  smaller gap, leans Aggressive.
+- Absolute speed is weak evidence in congested or heterogeneous
+  traffic. However, a large, sustained speed offset from both the ego
+  and the same-lane stream is informative; do not ignore it.
+  Do not label a slow vehicle Cautious if it keeps a short headway and
+  brakes late.
+
+Counterexamples:
+- A vehicle behind the ego that closes the gap because the ego is slower,
+  while keeping a normal headway to its own leader, is Normal, not
+  Aggressive.
+- A vehicle ahead that the ego approaches because it is slower, while
+  keeping a long headway to its own leader and braking gently, is
+  Cautious, not Normal.
+- A vehicle in a dense platoon with a short gap may be constrained by
+  traffic. If it does not accelerate hard or brake late, do not call it
+  Aggressive solely from the short gap.
+- A vehicle with no visible leader and a constant speed is weak
+  evidence only if its speed is close to both the ego and the stream;
+  a large sustained offset is informative (below -> Cautious, above
+  -> Aggressive).
+- A vehicle with a very large headway to a distant leader is unconstrained,
+  not Cautious; use its speed and acceleration instead.
+
+The three styles are equally frequent in this benchmark. Do not default to
+Normal or Cautious. Evidence is ordinal but overlapping; 0.9 means strong
+evidence, while weak evidence stays near 0.33.
+Classify each vehicle independently. Do not copy one vehicle's label to
+another or infer every vehicle from the scene-level impression.
+If a vehicle has near-constant speed (speed_std below about 0.1 m/s),
+no hard acceleration or braking, no lane changes, and unavailable
+leader evidence, do not automatically abstain. When its speed is
+persistently offset from both the ego and the same-lane stream, use
+the offset: about -0.75 m/s or less -> Cautious; about +2.0 m/s or
+more -> Aggressive; otherwise near [0.33, 0.33, 0.33]. Do not choose
+Aggressive just because another vehicle in the scene is aggressive.
+
+For each vehicle, use this order:
+1. Check whether leader_evidence is available. If it is unavailable,
+   skip the headway/TTC bands and use the secondary evidence above.
+2. If available, read its own-leader headway and minimum TTC over the
+   whole window.
+3. Check acceleration and braking, especially late braking and strong
+   positive acceleration.
+4. Check lane changes and lateral motion.
+5. Use ego-relative motion only as secondary evidence, never as the
+   primary label.
+6. If evidence is mixed, keep the distribution near the prior.
+
+Sampling interval: 0.100 s; ego current speed: 7.00 m/s.
+front_gap/headway/TTC are measured from the target vehicle to its own
+observed leader. NA means no leader or no meaningful closing TTC was
+observable.
+
+Vehicle summaries:
+- id=13: position=behind (dx_signed=-29.3m, dy=-4.0m), observed_frames=20 over 1.9s
+  own_style_evidence: leader_evidence=unavailable (leader too distant or missing); do not use headway/TTC bands; leader_relative_speed=NA; stream(mean)=4.50m/s; stream_relative=+1.49m/s
+  speed(start/mean/end/std)=6.0/6.0/6.0/0.01m/s, speed_slope=-0.01m/s2, accel(mean/min/max)=-0.01/-0.01/-0.01m/s2, hard_braking_frames=0, hard_acceleration_frames=0, lane_changes=0
+  interaction_context (secondary evidence; combine with speed level, acceleration, and gap trend): ego_relative_gap_rate=+3.85m/s, dx_rate=-3.85m/s, relative_speed=-1.01m/s, closing_speed=0.0m/s
+  sampled trajectory: t=0.0:v=6.0,dx=-22.0,dy=-4.0,lane=0 | t=0.5:v=6.0,dx=-23.7,dy=-4.0,lane=0 | t=1.0:v=6.0,dx=-25.7,dy=-4.0,lane=0 | t=1.5:v=6.0,dx=-27.7,dy=-4.0,lane=0 | t=1.9:v=6.0,dx=-29.3,dy=-4.0,lane=0
+- id=9: position=behind (dx_signed=-57.4m, dy=-1.2m), observed_frames=20 over 1.9s
+  own_style_evidence: leader_evidence=unavailable (leader too distant or missing); do not use headway/TTC bands; leader_relative_speed=NA; stream(mean)=4.89m/s; stream_relative=-1.19m/s
+  speed(start/mean/end/std)=6.9/3.7/1.2/1.95m/s, speed_slope=-3.03m/s2, accel(mean/min/max)=-3.03/-6.45/-1.33m/s2, hard_braking_frames=16, hard_acceleration_frames=0, lane_changes=1
+  interaction_context (secondary evidence; combine with speed level, acceleration, and gap trend): ego_relative_gap_rate=+6.34m/s, dx_rate=-6.34m/s, relative_speed=-3.30m/s, closing_speed=0.0m/s
+  sampled trajectory: t=0.0:v=6.9,dx=-45.3,dy=-4.0,lane=0 | t=0.5:v=5.2,dx=-47.1,dy=-2.6,lane=0 | t=1.0:v=3.1,dx=-50.1,dy=-1.9,lane=1 | t=1.5:v=1.8,dx=-53.9,dy=-1.4,lane=1 | t=1.9:v=1.2,dx=-57.4,dy=-1.2,lane=1
+- id=8: position=behind (dx_signed=-62.2m, dy=-4.0m), observed_frames=20 over 1.9s
+  own_style_evidence: leader_evidence=unavailable (leader too distant or missing); do not use headway/TTC bands; leader_relative_speed=NA; stream(mean)=5.30m/s; stream_relative=-1.78m/s
+  speed(start/mean/end/std)=6.9/3.5/1.1/1.90m/s, speed_slope=-3.07m/s2, accel(mean/min/max)=-3.07/-6.04/-1.24m/s2, hard_braking_frames=17, hard_acceleration_frames=0, lane_changes=0
+  interaction_context (secondary evidence; combine with speed level, acceleration, and gap trend): ego_relative_gap_rate=+6.09m/s, dx_rate=-6.09m/s, relative_speed=-3.49m/s, closing_speed=0.0m/s
+  sampled trajectory: t=0.0:v=6.9,dx=-50.6,dy=-4.0,lane=0 | t=0.5:v=4.9,dx=-52.3,dy=-4.0,lane=0 | t=1.0:v=2.9,dx=-55.3,dy=-4.0,lane=0 | t=1.5:v=1.7,dx=-59.1,dy=-4.0,lane=0 | t=1.9:v=1.1,dx=-62.2,dy=-4.0,lane=0
+Return one JSON object only, keyed by vehicle id. Each array must
+contain three non-negative numbers summing to 1, in the order
+[Cautious, Normal, Aggressive].
+{"13": ["p_cautious", "p_normal", "p_aggressive"], "9": ["p_cautious", "p_normal", "p_aggressive"], "8": ["p_cautious", "p_normal", "p_aggressive"]}
+================================================================================
+You infer the intrinsic driving style of each observed vehicle from its
+trajectory. For every vehicle, output probabilities in this exact order:
+[Cautious, Normal, Aggressive].
+
+The label is the vehicle's persistent style, not its momentary intent
+toward the ego.
+- Cautious: conservative longitudinal control; keeps a long time headway
+  to its own leader, accelerates and brakes gently, avoids late braking,
+  and rarely changes lanes.
+- Normal: moderate time headway and acceleration; follows the traffic
+  stream steadily.
+- Aggressive: short time headway to its own leader, strong acceleration
+  or late braking, presses into gaps, and changes lanes to gain position.
+
+Position-invariant principle:
+- The ego is only one reference. Classify a vehicle ahead, behind, or
+  alongside the ego with the same style definition.
+- Do not use the ego-relative gap or gap rate as the primary signal. A
+  vehicle closing on the ego may simply be faster; that is not
+  aggression. A vehicle the ego is catching up to may simply be slower;
+  that is not caution.
+- Primary evidence is how the vehicle follows its own leader: time
+  headway, minimum TTC, and whether it holds a steady gap or repeatedly
+  closes and brakes late.
+- If its own leader is not visible, a sustained speed offset from
+  both the ego and the same-lane stream is informative: clearly
+  below the stream leans Cautious, clearly above leans Aggressive.
+  Use acceleration magnitude, speed oscillations, late braking, and
+  lane changes as additional evidence. Stay near the prior only
+  when all of these are weak.
+- A leader farther than about 50 m or a headway above about 4 s is
+  effectively unobserved. It is not evidence for Cautious.
+
+Secondary evidence when leader_evidence=unavailable:
+- First compare the target's speed with the ego's reported speed at
+  the same frame (relative_speed). For a vehicle behind with nearly
+  constant speed and no usable leader evidence, a sustained offset
+  is evidence, not a reason to abstain:
+  * sustained relative_speed below about -0.75 m/s (target slower
+    than the ego) leans Cautious;
+  * relative_speed within about +/-0.75 m/s leans Normal;
+  * sustained relative_speed between +0.75 and +2.0 m/s leans Normal;
+  * sustained relative_speed above about +2.0 m/s, especially with a
+    short gap, is strong Aggressive evidence.
+- Then compare the target's speed with the same-lane stream
+  (stream_relative_speed). This is supporting evidence only: the local
+  stream may itself be braking. A vehicle clearly above a steady stream
+  leans Aggressive; one clearly below a steady stream leans Cautious.
+- Use dx_rate for the direction of relative motion. The reported ego
+  speed can be biased; when it disagrees with dx_rate or the sampled dx
+  values, trust the geometry for direction, but keep the speed magnitude
+  as a level cue.
+- Falling back relative to a faster ego is not Cautious evidence if the
+  target is at or above the stream and its relative_speed is positive.
+
+Soft reference bands (overlapping, not hard rules; use the whole window):
+- Time headway to its own leader (only when the leader is close, i.e.
+  headway below about 4 s and gap below about 50 m): >= 2.0 s leans
+  Cautious; 1.2-2.0 s leans Normal; <= 1.2 s leans Aggressive.
+- Minimum TTC to its own leader: >= 4 s leans Cautious; 2-4 s leans
+  Normal; < 2 s leans Aggressive.
+- Sustained acceleration: |a| <= 0.5 m/s2 is gentle; 0.5-1.5 is moderate;
+  > 1.5 is strong. Strong positive acceleration or late braking leans
+  Aggressive.
+- Speed variability and repeated close-open cycles lean Aggressive; steady
+  speed leans Normal.
+- More than one lane change in the window, or a lane change toward a
+  smaller gap, leans Aggressive.
+- Absolute speed is weak evidence in congested or heterogeneous
+  traffic. However, a large, sustained speed offset from both the ego
+  and the same-lane stream is informative; do not ignore it.
+  Do not label a slow vehicle Cautious if it keeps a short headway and
+  brakes late.
+
+Counterexamples:
+- A vehicle behind the ego that closes the gap because the ego is slower,
+  while keeping a normal headway to its own leader, is Normal, not
+  Aggressive.
+- A vehicle ahead that the ego approaches because it is slower, while
+  keeping a long headway to its own leader and braking gently, is
+  Cautious, not Normal.
+- A vehicle in a dense platoon with a short gap may be constrained by
+  traffic. If it does not accelerate hard or brake late, do not call it
+  Aggressive solely from the short gap.
+- A vehicle with no visible leader and a constant speed is weak
+  evidence only if its speed is close to both the ego and the stream;
+  a large sustained offset is informative (below -> Cautious, above
+  -> Aggressive).
+- A vehicle with a very large headway to a distant leader is unconstrained,
+  not Cautious; use its speed and acceleration instead.
+
+The three styles are equally frequent in this benchmark. Do not default to
+Normal or Cautious. Evidence is ordinal but overlapping; 0.9 means strong
+evidence, while weak evidence stays near 0.33.
+Classify each vehicle independently. Do not copy one vehicle's label to
+another or infer every vehicle from the scene-level impression.
+If a vehicle has near-constant speed (speed_std below about 0.1 m/s),
+no hard acceleration or braking, no lane changes, and unavailable
+leader evidence, do not automatically abstain. When its speed is
+persistently offset from both the ego and the same-lane stream, use
+the offset: about -0.75 m/s or less -> Cautious; about +2.0 m/s or
+more -> Aggressive; otherwise near [0.33, 0.33, 0.33]. Do not choose
+Aggressive just because another vehicle in the scene is aggressive.
+
+For each vehicle, use this order:
+1. Check whether leader_evidence is available. If it is unavailable,
+   skip the headway/TTC bands and use the secondary evidence above.
+2. If available, read its own-leader headway and minimum TTC over the
+   whole window.
+3. Check acceleration and braking, especially late braking and strong
+   positive acceleration.
+4. Check lane changes and lateral motion.
+5. Use ego-relative motion only as secondary evidence, never as the
+   primary label.
+6. If evidence is mixed, keep the distribution near the prior.
+
+Sampling interval: 0.100 s; ego current speed: 7.00 m/s.
+front_gap/headway/TTC are measured from the target vehicle to its own
+observed leader. NA means no leader or no meaningful closing TTC was
+observable.
+
+Vehicle summaries:
+- id=13: position=behind (dx_signed=-24.6m, dy=-4.0m), observed_frames=20 over 1.9s
+  own_style_evidence: leader_evidence=unavailable (leader too distant or missing); do not use headway/TTC bands; leader_relative_speed=NA; stream(mean)=5.91m/s; stream_relative=+2.57m/s
+  speed(start/mean/end/std)=8.5/8.5/8.5/0.01m/s, speed_slope=-0.01m/s2, accel(mean/min/max)=-0.01/-0.02/-0.01m/s2, hard_braking_frames=0, hard_acceleration_frames=0, lane_changes=0
+  interaction_context (secondary evidence; combine with speed level, acceleration, and gap trend): ego_relative_gap_rate=+1.36m/s, dx_rate=-1.36m/s, relative_speed=+1.49m/s, closing_speed=0.0m/s
+  sampled trajectory: t=0.0:v=8.5,dx=-22.0,dy=-4.0,lane=0 | t=0.5:v=8.5,dx=-22.5,dy=-4.0,lane=0 | t=1.0:v=8.5,dx=-23.2,dy=-4.0,lane=0 | t=1.5:v=8.5,dx=-24.0,dy=-4.0,lane=0 | t=1.9:v=8.5,dx=-24.6,dy=-4.0,lane=0
+- id=9: position=behind (dx_signed=-64.9m, dy=-4.0m), observed_frames=20 over 1.9s
+  own_style_evidence: leader_evidence=unavailable (leader too distant or missing); do not use headway/TTC bands; leader_relative_speed=NA; stream(mean)=6.41m/s; stream_relative=+0.40m/s
+  speed(start/mean/end/std)=6.9/6.8/6.8/0.05m/s, speed_slope=-0.10m/s2, accel(mean/min/max)=-0.10/-0.29/-0.01m/s2, hard_braking_frames=0, hard_acceleration_frames=0, lane_changes=0
+  interaction_context (secondary evidence; combine with speed level, acceleration, and gap trend): ego_relative_gap_rate=+3.03m/s, dx_rate=-3.03m/s, relative_speed=-0.19m/s, closing_speed=0.0m/s
+  sampled trajectory: t=0.0:v=6.9,dx=-59.2,dy=-4.0,lane=0 | t=0.5:v=6.8,dx=-60.4,dy=-4.0,lane=0 | t=1.0:v=6.8,dx=-62.0,dy=-4.0,lane=0 | t=1.5:v=6.8,dx=-63.6,dy=-4.0,lane=0 | t=1.9:v=6.8,dx=-64.9,dy=-4.0,lane=0
+- id=8: position=behind (dx_signed=-81.2m, dy=-4.0m), observed_frames=20 over 1.9s
+  own_style_evidence: leader_evidence=available; headway(mean/min)=2.59s/2.12s, min_TTC=NA, front_gap(mean/min)=15.35m/14.70m; leader_relative_speed=+0.86m/s; stream(mean)=6.67m/s; stream_relative=-0.72m/s
+  speed(start/mean/end/std)=6.9/6.0/5.6/0.38m/s, speed_slope=-0.69m/s2, accel(mean/min/max)=-0.69/-2.51/-0.01m/s2, hard_braking_frames=3, hard_acceleration_frames=0, lane_changes=0
+  interaction_context (secondary evidence; combine with speed level, acceleration, and gap trend): ego_relative_gap_rate=+3.87m/s, dx_rate=-3.87m/s, relative_speed=-1.05m/s, closing_speed=0.0m/s
+  sampled trajectory: t=0.0:v=6.9,dx=-73.9,dy=-4.0,lane=0 | t=0.5:v=6.1,dx=-75.3,dy=-4.0,lane=0 | t=1.0:v=5.8,dx=-77.3,dy=-4.0,lane=0 | t=1.5:v=5.7,dx=-79.5,dy=-4.0,lane=0 | t=1.9:v=5.6,dx=-81.2,dy=-4.0,lane=0
+Return one JSON object only, keyed by vehicle id. Each array must
+contain three non-negative numbers summing to 1, in the order
+[Cautious, Normal, Aggressive].
+{"13": ["p_cautious", "p_normal", "p_aggressive"], "9": ["p_cautious", "p_normal", "p_aggressive"], "8": ["p_cautious", "p_normal", "p_aggressive"]}
+================================================================================

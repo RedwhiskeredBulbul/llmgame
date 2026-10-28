@@ -1,0 +1,13 @@
+﻿baseline,ci_high,ci_low,comparison,mean_difference,metric,n_pairs,n_seed_clusters,p_holm_primary,p_sign_flip
+full_model,0.0,-0.6,oracle_type,-0.2,success,5,5,1.0,1.0
+full_model,0.6,0.0,oracle_type,0.2,collision,5,5,,1.0
+full_model,16.08000000000002,0.0,oracle_type,5.3600000000000065,restricted_task_time_s,5,5,1.0,1.0
+full_model,0.0,-0.15400646703134363,oracle_type,-0.05133548901044788,min_clearance_m,5,5,,1.0
+full_model,0.0,-0.17812290579871554,oracle_type,-0.059374301932905174,jerk_rms,5,5,,1.0
+full_model,27.02532398921902,-57.17635100707421,oracle_type,-10.430109009612384,control_p95_ms,5,5,1.0,0.6883311668833116
+full_model,0.6,0.0,uniform_belief,0.2,success,5,5,1.0,1.0
+full_model,0.0,-0.6,uniform_belief,-0.2,collision,5,5,,1.0
+full_model,0.0,-16.200000000000017,uniform_belief,-5.400000000000006,restricted_task_time_s,5,5,1.0,1.0
+full_model,0.10270502176372746,0.0,uniform_belief,0.034235007254575824,min_clearance_m,5,5,,1.0
+full_model,0.3142006167897837,0.0,uniform_belief,0.10473353892992791,jerk_rms,5,5,,1.0
+full_model,90.13281200081106,-0.9309480135561927,uniform_belief,31.610013992176352,control_p95_ms,5,5,1.0,0.3708629137086291

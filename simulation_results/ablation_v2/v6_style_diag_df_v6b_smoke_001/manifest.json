@@ -1,0 +1,139 @@
+{
+  "config": {
+    "protocol_version": "ablation-v2-v6b-style-diagnostic-df-smoke-20261023",
+    "phase": "v6b_style_diagnostic_df_smoke",
+    "variants": [
+      "full_model"
+    ],
+    "scenarios": [
+      "cutin"
+    ],
+    "seeds": [
+      10200,
+      10201
+    ],
+    "control_dt_s": 0.1,
+    "execution_mode": "trajectory_point",
+    "time_mode": "paused_simulation",
+    "decision": {
+      "control_dt_s": 0.1,
+      "av_optimizer": "scalar_grid",
+      "max_game_iterations": 3,
+      "acceleration_tolerance_ms2": 0.05,
+      "solve_budget_ms": 100.0,
+      "reward_times_s": [
+        0.1,
+        0.5,
+        1.0,
+        2.0,
+        4.0,
+        8.0
+      ],
+      "route_progress_bonus": 50.0,
+      "switch_penalty": 0.1
+    },
+    "llm": {
+      "model": "qwen-flash-2025-07-28",
+      "temperature": 0.0,
+      "prompt_version": "relative_evidence_v6b",
+      "history_len": 20,
+      "interval_steps": 10,
+      "temporal_alpha": 0.7,
+      "max_belief_age_sim_s": 3.0,
+      "sync_first_observation": true,
+      "timeout_s": 10.0,
+      "max_retries": 0,
+      "diagnostic_uniform_control": true
+    },
+    "runtime": {
+      "deadline_ms": 100.0,
+      "record_video": false,
+      "resume": true,
+      "max_steps": 25
+    },
+    "df_cutin_key": {
+      "required_target_lane": 0,
+      "required_progress_m": 290.0,
+      "horizon_s": 40.0,
+      "decision_open_x_m": 230.0,
+      "route_end_x_m": 350.0,
+      "ego_speed_ms": 7.0,
+      "speed_limit_ms": 7.0,
+      "clear_ahead_m": 250.0,
+      "clear_behind_m": 40.0,
+      "key_relative_x_m": -22.0,
+      "key_speed_ms": {
+        "Cautious": 6.0,
+        "Normal": 8.5,
+        "Aggressive": 10.5
+      },
+      "key_target_speed_ms": {
+        "Cautious": 6.0,
+        "Normal": 8.5,
+        "Aggressive": 12.0
+      },
+      "key_response": {
+        "Cautious": "yield",
+        "Normal": "idm",
+        "Aggressive": "force"
+      },
+      "response": {
+        "trigger_lateral_y_m": 3.5,
+        "response_range_m": 45.0,
+        "yield_deceleration_ms2": -2.0,
+        "force_acceleration_ms2": 2.0,
+        "force_speed_cap_ms": 15.0,
+        "force_min_gap_m": 6.0,
+        "force_emergency_deceleration_ms2": -5.0
+      },
+      "design": "DF_2_2 native road, dense lane-0 traffic, and independent random native type labels. The nearest native vehicle behind the ego is kept as the key; its native label is preserved and its initial speed, target speed, and crossing response are set by that label. Aggressive keys approach at 10.5 m/s and accelerate after the ego starts crossing; Normal keys keep native cooperative IDM; Cautious keys yield. No occlusion vehicles are used: the key is available in the first synchronous observation for all 50 seeds. Other lane-0 vehicles within [-40,+250] m of the ego are removed to open a merge corridor; all outside traffic and labels remain native. Ego starts in lane 1 at 7 m/s, the cut-in to lane 0 is required, and completion requires x>=310 m. Only Full Model and Uniform Belief are run. No controller/reward/prompt change; the key response is type-scripted and variant-independent. Diagnostic recognition run: the controller receives the uniform prior, so the state trajectory does not depend on the prompt; only the logged prompt version differs between the v5 and v6 runs. This isolates prompt generalization from closed-loop feedback. Prompt v6b treats a sustained speed offset from both the ego and the same-lane stream as evidence when the target has no observable leader, instead of forcing abstention on constant-speed vehicles.",
+      "occlusion": false
+    }
+  },
+  "git_commit": "0fca2abfaea16741d50d468831b276df3f388444",
+  "source_hashes": {
+    "experiments\\ablation_v2\\__init__.py": "30f7cbaf1d0d306a1716dd2a02dcd1347661916cbdbe1d569f8a6a71a38f66ba",
+    "experiments\\ablation_v2\\aggressive_boundary_scan.py": "ab5f3c92822e29c345e2d118cbf2e462c0606bdd33fb462e5e679358d8b012d0",
+    "experiments\\ablation_v2\\audit.py": "82f163299507f4556ad2e5a0536df7ecf75e6e57fd183d83e2b9c1b968695e25",
+    "experiments\\ablation_v2\\belief_provider.py": "a71db4d443d7a8d3fb78d6163c87bb4d18fa69ea4a681fad121c95842a93af12",
+    "experiments\\ablation_v2\\benchmark_models.py": "433f1281632d47a323ee9588a8692e31656f32f53234806db71c567b633c585a",
+    "experiments\\ablation_v2\\config.py": "599fe62cdf3d04c730c9927869f8c071b538364ad29290c0d2d8e2523cb62739",
+    "experiments\\ablation_v2\\controller.py": "1a27d67fb4e951686cdec355fe2fef9fcb9cf3c60d14d4272426321e80f0ae95",
+    "experiments\\ablation_v2\\final_report.py": "ffad1faeba501c33e0dbc92e67fecfac2cbd6aad8c1c5deb83e55746996be5ee",
+    "experiments\\ablation_v2\\forced_traffic_formal.py": "0b2d9534a09a430c102ac1e1df160cc6cf5732ef9e7f96f6837f0a2b6befdb66",
+    "experiments\\ablation_v2\\interaction_diagnostic.py": "d3b77180be4607a9a191b00f3539d63c9127b424a24577b7c64d60b231eeba53",
+    "experiments\\ablation_v2\\latency_sweep.py": "d70e5574f4133b84db73d2c26a368414305ce5f2c11025e56b33f91baf115cc3",
+    "experiments\\ablation_v2\\llm_observable_traffic.py": "09c83d14eae85d074c1677d946dce70ce70b1617dbd216e44eae1d16468f87d0",
+    "experiments\\ablation_v2\\llm_targeted_pilot.py": "8a4056adebbebf3679855014ab0626fececd9e620c8b44a14d5c59993eda98fa",
+    "experiments\\ablation_v2\\mechanisms.py": "8ed9ea22b3fb0886d723320145ad74b70ef9b39ea95f6e9a143c3e1abeb6cb3b",
+    "experiments\\ablation_v2\\metrics.py": "a8a92d7c06140396da86e4b9c0f85b22537f8c5271c6e29e15319d877dc40155",
+    "experiments\\ablation_v2\\pipeline.py": "31475a020575ba69cf768f0b16426f1b3f2b9030f0ef8c9ba69dee3128fd4d8c",
+    "experiments\\ablation_v2\\reporting.py": "4cfd8231165306d322abeae693966828d5bd0786fa17ec4dd42582371ee5a90d",
+    "experiments\\ablation_v2\\run.py": "4a255bb5d38dbf4965ae233afa7d21e423dd06377991bfe5998f762300734e7a",
+    "experiments\\ablation_v2\\runner.py": "7ac038f4d4587d146065bc4b334c0df0e3090ed4de8f08a0a84907fc684a8aaf",
+    "experiments\\ablation_v2\\sensitivity_scan.py": "de3cb2f7b2f6fc9789f4ecc9d95685a2e338a5230f35a59c7cf1873e5631aaa5",
+    "experiments\\ablation_v2\\style_diagnostics.py": "e8f5582506a97fbd39f0609db849acd8b491765d385ba758ff4c8dfe7e5f47e7",
+    "experiments\\ablation_v2\\targeted_interaction.py": "f08aa26ed3efd4420dc2a13192dc667910de13f908186afb98b9da31d44d070d",
+    "experiments\\ablation_v2\\type_observable_bounded_merge.py": "ddf64b2604c9882be125f11bcbfeecabbb79060c734985584f445892f2b62da1",
+    "experiments\\ablation_v2\\type_observable_df_cutin.py": "2f7bfcb12c6727b0f1c789774e0cffd2ae6a29e9bee21c93201a795184361f7c",
+    "experiments\\ablation_v2\\type_observable_df_cutin_key.py": "ff40671fb6422e75515d1ecce8cc34c1e02eebe31766e1e21fde555d379a0560",
+    "experiments\\ablation_v2\\type_observable_df_workzone.py": "4a0768ddcc6a822c11919bd9f9e7d0e4c19b313480f8e2c4c148462865b2e79a",
+    "experiments\\ablation_v2\\type_observable_front_merge.py": "e0c9d132166507147b7ffa805b9c4fade85e570c996220f05481f135deeea295",
+    "experiments\\ablation_v2\\type_observable_merge.py": "692be75e2bd8aea8a705c4ee659e91f3402663e26fc2a93635eb55a19e16c246",
+    "experiments\\ablation_v2\\type_observable_multilane_merge.py": "876c1203e79f9e2d94047ee7d22bbe395af29ff7afd4c3941bc94bf6118f6053",
+    "Game\\Game_solver.py": "1db8dc87036c9e71d47af9869df067b28979a3cad9ef0c5c072f357dccd1fd58",
+    "highway_env\\envs\\ablation_envs.py": "f79a420fa639668f3f405e6fccbda107988d98a2b1214a67d4bf256c1c293578",
+    "highway_env\\envs\\mpc_plan_env.py": "484e9f850f390ba8a2aa4b2504e082e4257a25f43f52e985e6bde554285495c1",
+    "highway_env\\vehicle\\behavior.py": "8a72c834df2faac72b8f93f56602075a48e55f8f035737c6372ffedd8689e979",
+    "highway_env\\vehicle\\controller.py": "71c58512426913aee7896e8b6c4daf3c4a385cb676b4474bf77cfdd44c1aaa28",
+    "LLMreasoning\\llmreason.py": "808cd34436e71d570ec877735730b559fa8d1629f223e98c39ad85e30f292d73",
+    "utils\\_from_env.py": "c15fabea3fb3cb1c7cb84d2df81162f8c58655a9e34af6b82cc88b8038a9bc27",
+    "utils\\Filter.py": "487d21f005b3e1ca4a10410e5ea4007476f1735cfd95c7ef5e34d105df35b99f"
+  },
+  "code_hash": "970bb8449fe803041bf5127dfedc58c6ccc6d4e5b2b84d1de0152774627b3b27",
+  "protocol_hash": "8b7f126dc8b556a3dee3e6f06b546112048817436cffed4d85d8b2f5c819d72d",
+  "algorithm_change": false,
+  "scene_change_only": true,
+  "llm_endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "data_source": "fresh seeded fictional simulator states; no pre-existing dataset"
+}

@@ -1,0 +1,77 @@
+{
+  "protocol_hash": "d9d759ccdecd2d15b4971aa74f3c0f8fa9864b5539b483f28cfd68e5e6b4b035",
+  "git_commit": "e6e3e68f436106eefc445b102d2d97a1ff429f9f",
+  "by_variant": {
+    "oracle_type": {
+      "episodes": 30,
+      "completed": 30,
+      "collisions": 0,
+      "route_end_failures": 0,
+      "runtime_errors": 0,
+      "probe_steps": 868,
+      "restricted_time_mean_s": 8.593333333333318
+    },
+    "uniform_belief": {
+      "episodes": 30,
+      "completed": 30,
+      "collisions": 0,
+      "route_end_failures": 0,
+      "runtime_errors": 0,
+      "probe_steps": 826,
+      "restricted_time_mean_s": 8.553333333333319
+    },
+    "oracle_without_probe": {
+      "episodes": 30,
+      "completed": 24,
+      "collisions": 6,
+      "route_end_failures": 0,
+      "runtime_errors": 0,
+      "probe_steps": 0,
+      "restricted_time_mean_s": 15.443333333333321
+    },
+    "oracle_without_interaction_response": {
+      "episodes": 30,
+      "completed": 30,
+      "collisions": 0,
+      "route_end_failures": 0,
+      "runtime_errors": 0,
+      "probe_steps": 898,
+      "restricted_time_mean_s": 8.629999999999987
+    }
+  },
+  "paired_effects": {
+    "uniform_belief": {
+      "oracle_better_success_pairs": 0,
+      "oracle_worse_success_pairs": 0,
+      "discordant_success_pairs": 0,
+      "mean_restricted_time_difference_s": 0.039999999999999855,
+      "oracle_fewer_collision_pairs": 0,
+      "oracle_more_collision_pairs": 0
+    },
+    "oracle_without_probe": {
+      "oracle_better_success_pairs": 6,
+      "oracle_worse_success_pairs": 0,
+      "discordant_success_pairs": 6,
+      "mean_restricted_time_difference_s": -6.8500000000000005,
+      "oracle_fewer_collision_pairs": 6,
+      "oracle_more_collision_pairs": 0
+    },
+    "oracle_without_interaction_response": {
+      "oracle_better_success_pairs": 0,
+      "oracle_worse_success_pairs": 0,
+      "discordant_success_pairs": 0,
+      "mean_restricted_time_difference_s": -0.036666666666666535,
+      "oracle_fewer_collision_pairs": 0,
+      "oracle_more_collision_pairs": 0
+    }
+  },
+  "gates": {
+    "complete": true,
+    "paired": true,
+    "no_runtime_errors": true,
+    "probe_activated": true,
+    "at_least_one_prespecified_ablation_differs": true
+  },
+  "all_gates_pass": true,
+  "interpretation": "Held-out targeted scenario evidence; no controller or algorithm change."
+}

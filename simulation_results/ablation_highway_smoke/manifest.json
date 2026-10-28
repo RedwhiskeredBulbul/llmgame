@@ -1,0 +1,39 @@
+{
+  "variants": [
+    "deterministic_type",
+    "uniform_belief"
+  ],
+  "scenarios": [
+    "DF_Highway"
+  ],
+  "seeds": "0",
+  "max_steps": 2,
+  "style": "Normal",
+  "history_len": 20,
+  "llm_interval_steps": 10,
+  "model": null,
+  "base_url": null,
+  "prototype_file": null,
+  "ttc_cap_s": 50.0,
+  "output_dir": "simulation_results/ablation_highway_smoke",
+  "verbose_solver": false,
+  "skip_warmup": false,
+  "variants_resolved": [
+    "deterministic_type",
+    "uniform_belief"
+  ],
+  "scenarios_resolved": [
+    "DF_Highway"
+  ],
+  "seeds_resolved": [
+    0
+  ],
+  "metric_definition": {
+    "SR": "collision-free objective completion; route means normal road-end termination; survive means reaching the evaluation horizon without collision",
+    "Min_TTC": "mean episode-minimum heading-aligned corridor TTC, capped at ttc_cap_s",
+    "Average_Speed": "mean of episode-average ego speeds",
+    "Acceleration_Variance": "mean of within-episode population variances",
+    "P95_Decision_Latency": "pooled per-step P95 from belief handling through low-level action"
+  },
+  "created_at": "2026-09-04T11:07:56+0800"
+}

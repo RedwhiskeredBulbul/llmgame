@@ -1,0 +1,444 @@
+{
+  "planned": 105,
+  "recorded": 105,
+  "all_planned_finished": true,
+  "paired_initial_states": true,
+  "runtime_error_episodes": [],
+  "smoke_only": false,
+  "full_llm_updates": 259,
+  "merge_full_probe_steps": 0,
+  "identical_trajectory_pairs": 60,
+  "trajectory_pairs": 60,
+  "label_predictions": 822,
+  "descriptive_prediction_accuracy": 0.27007299270072993,
+  "classification_note": "Smoothed predictions, correlated requests/vehicles, only completed Full episodes; diagnostic, not held-out classifier accuracy",
+  "formal_readiness": {
+    "complete": true,
+    "paired": true,
+    "no_runtime_errors": true,
+    "full_receives_predictions": true,
+    "probe_triggered_in_merge": false
+  },
+  "trajectory_comparisons": [
+    {
+      "case_id": "cutin-1000",
+      "comparison": "uniform_belief",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "cutin-1000",
+      "comparison": "hard_type",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "cutin-1000",
+      "comparison": "without_probe",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "cutin-1000",
+      "comparison": "oracle_type",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "cutin-1001",
+      "comparison": "uniform_belief",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "cutin-1001",
+      "comparison": "hard_type",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "cutin-1001",
+      "comparison": "without_probe",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "cutin-1001",
+      "comparison": "oracle_type",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "cutin-1002",
+      "comparison": "uniform_belief",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "cutin-1002",
+      "comparison": "hard_type",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "cutin-1002",
+      "comparison": "without_probe",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "cutin-1002",
+      "comparison": "oracle_type",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "cutin-1003",
+      "comparison": "uniform_belief",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "cutin-1003",
+      "comparison": "hard_type",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "cutin-1003",
+      "comparison": "without_probe",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "cutin-1003",
+      "comparison": "oracle_type",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "cutin-1004",
+      "comparison": "uniform_belief",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "cutin-1004",
+      "comparison": "hard_type",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "cutin-1004",
+      "comparison": "without_probe",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "cutin-1004",
+      "comparison": "oracle_type",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "merge-1000",
+      "comparison": "uniform_belief",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "merge-1000",
+      "comparison": "hard_type",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "merge-1000",
+      "comparison": "without_probe",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "merge-1000",
+      "comparison": "oracle_type",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "merge-1001",
+      "comparison": "uniform_belief",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "merge-1001",
+      "comparison": "hard_type",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "merge-1001",
+      "comparison": "without_probe",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "merge-1001",
+      "comparison": "oracle_type",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "merge-1002",
+      "comparison": "uniform_belief",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "merge-1002",
+      "comparison": "hard_type",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "merge-1002",
+      "comparison": "without_probe",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "merge-1002",
+      "comparison": "oracle_type",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "merge-1003",
+      "comparison": "uniform_belief",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "merge-1003",
+      "comparison": "hard_type",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "merge-1003",
+      "comparison": "without_probe",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "merge-1003",
+      "comparison": "oracle_type",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "merge-1004",
+      "comparison": "uniform_belief",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "merge-1004",
+      "comparison": "hard_type",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "merge-1004",
+      "comparison": "without_probe",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "merge-1004",
+      "comparison": "oracle_type",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "traffic-1000",
+      "comparison": "uniform_belief",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "traffic-1000",
+      "comparison": "hard_type",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "traffic-1000",
+      "comparison": "without_probe",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "traffic-1000",
+      "comparison": "oracle_type",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "traffic-1001",
+      "comparison": "uniform_belief",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "traffic-1001",
+      "comparison": "hard_type",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "traffic-1001",
+      "comparison": "without_probe",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "traffic-1001",
+      "comparison": "oracle_type",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "traffic-1002",
+      "comparison": "uniform_belief",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "traffic-1002",
+      "comparison": "hard_type",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "traffic-1002",
+      "comparison": "without_probe",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "traffic-1002",
+      "comparison": "oracle_type",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "traffic-1003",
+      "comparison": "uniform_belief",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "traffic-1003",
+      "comparison": "hard_type",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "traffic-1003",
+      "comparison": "without_probe",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "traffic-1003",
+      "comparison": "oracle_type",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "traffic-1004",
+      "comparison": "uniform_belief",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "traffic-1004",
+      "comparison": "hard_type",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "traffic-1004",
+      "comparison": "without_probe",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    },
+    {
+      "case_id": "traffic-1004",
+      "comparison": "oracle_type",
+      "same_length": true,
+      "max_state_action_difference": 0.0,
+      "identical": true
+    }
+  ]
+}

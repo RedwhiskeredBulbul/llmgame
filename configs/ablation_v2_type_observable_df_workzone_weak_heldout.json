@@ -1,0 +1,135 @@
+{
+  "protocol_version": "ablation-v2-type-observable-df-workzone-weak-heldout-v5-20261022",
+  "phase": "type_observable_df_workzone_weak_heldout",
+  "variants": [
+    "full_model",
+    "without_probe",
+    "uniform_belief",
+    "oracle_type"
+  ],
+  "scenarios": [
+    "traffic"
+  ],
+  "seeds": [
+    9750,
+    9751,
+    9752,
+    9753,
+    9754,
+    9755,
+    9756,
+    9757,
+    9758,
+    9759,
+    9760,
+    9761,
+    9762,
+    9763,
+    9764,
+    9765,
+    9766,
+    9767
+  ],
+  "control_dt_s": 0.1,
+  "execution_mode": "trajectory_point",
+  "time_mode": "paused_simulation",
+  "decision": {
+    "control_dt_s": 0.1,
+    "av_optimizer": "scalar_grid",
+    "max_game_iterations": 3,
+    "acceleration_tolerance_ms2": 0.05,
+    "solve_budget_ms": 100.0,
+    "reward_times_s": [
+      0.1,
+      0.5,
+      1.0,
+      2.0,
+      4.0,
+      8.0
+    ],
+    "route_progress_bonus": 2.0,
+    "switch_penalty": 0.1
+  },
+  "llm": {
+    "model": "qwen-flash-2025-07-28",
+    "temperature": 0.0,
+    "prompt_version": "relative_evidence_v5",
+    "history_len": 20,
+    "interval_steps": 10,
+    "temporal_alpha": 0.7,
+    "max_belief_age_sim_s": 3.0,
+    "sync_first_observation": true,
+    "timeout_s": 10.0,
+    "max_retries": 0
+  },
+  "runtime": {
+    "deadline_ms": 100.0,
+    "record_video": false,
+    "resume": false,
+    "max_steps": null
+  },
+  "observable_df_workzone": {
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -25.0,
+    "key_initial_speed_ms": {
+      "0": 8.0,
+      "1": 8.0,
+      "2": 8.0
+    },
+    "key_initial_speed_offsets_ms": {},
+    "key_target_speed_ms": {
+      "0": 12.0,
+      "1": 12.0,
+      "2": 12.0
+    },
+    "key_response": {
+      "0": "yield",
+      "1": "idm",
+      "2": "force"
+    },
+    "decision_open_x_m": 40.0,
+    "scene_speed_limit_ms": 10.0,
+    "ego_lane": 2,
+    "key_lane": 1,
+    "required_target_lane": 1,
+    "ending_lane": 2,
+    "ending_lane_x_m": 110.0,
+    "required_progress_m": 100.0,
+    "road_length_m": 800.0,
+    "horizon_s": 40.0,
+    "background": [
+      {
+        "lane": 3,
+        "relative_x_m": 60.0,
+        "speed_ms": 8.0
+      },
+      {
+        "lane": 0,
+        "relative_x_m": 90.0,
+        "speed_ms": 8.0
+      }
+    ],
+    "jitter": {
+      "ego_speed_ms": 0.0,
+      "key_relative_x_m": 0.0,
+      "key_initial_speed_ms": 0.0,
+      "key_target_speed_ms": 0.0
+    },
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "design": "Weak-identifiability work-zone merge: all key types share the same initial speed (8.0 m/s) and the same 2.0 m/s^2 ramp to 12.0 m/s; the type-specific yield/idm/force response is delayed until 2.5 s.  The first 20-frame LLM window is therefore type-identical (gap_rate about +0.07 m/s), while the decision at 2.1 s is made before the response.  Oracle Type knows the true label; Full Model must infer it from the ambiguous window.",
+    "key_ramp": {
+      "target_speed_ms": 12.0,
+      "acceleration_ms2": 2.0,
+      "duration_s": 2.0,
+      "hold_until_s": 2.5
+    }
+  }
+}

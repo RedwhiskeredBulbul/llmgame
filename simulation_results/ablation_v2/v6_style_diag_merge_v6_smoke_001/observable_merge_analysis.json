@@ -1,0 +1,158 @@
+{
+  "git_commit": "8dedd77f92ff9f010eda797540f3914a382ec921",
+  "protocol_hash": "f0eb13bfa142cbb42d879c1ec3105dece2e757ec0af5ff4279e4eaa9fbf721af",
+  "phase": "v6_style_diagnostic_merge_v6_smoke",
+  "by_variant": {
+    "full_model": {
+      "episodes": 2,
+      "completed": 0,
+      "collisions": 0,
+      "timeouts": 0,
+      "route_end_failures": 0,
+      "runtime_errors": 0,
+      "llm_requests": 2,
+      "llm_updates": 2,
+      "mean_belief_fallback_fraction": 0.0,
+      "probe_steps": 0,
+      "mean_restricted_time_s": 40.0,
+      "mean_min_clearance_m": 22.44615644512594
+    }
+  },
+  "paired_effects": {},
+  "action_divergence": {},
+  "llm_diagnostics": {
+    "model": "qwen-flash-2025-07-28",
+    "first_in_episode_vehicle_predictions": {
+      "samples": 6,
+      "parsed_predictions": 6,
+      "coverage": 1.0,
+      "accuracy": 0.3333333333333333,
+      "accuracy_95ci_wilson": [
+        0.09677141110578041,
+        0.700006684861608
+      ],
+      "conditional_accuracy": 0.3333333333333333,
+      "macro_f1": 0.16666666666666666,
+      "per_class": {
+        "Cautious": {
+          "support": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "Normal": {
+          "support": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "Aggressive": {
+          "support": 2,
+          "precision": 0.3333333333333333,
+          "recall": 1.0,
+          "f1": 0.5
+        }
+      },
+      "confusion_matrix": {
+        "Cautious": {
+          "Cautious": 0,
+          "Normal": 0,
+          "Aggressive": 2,
+          "Unparsed": 0
+        },
+        "Normal": {
+          "Cautious": 0,
+          "Normal": 0,
+          "Aggressive": 2,
+          "Unparsed": 0
+        },
+        "Aggressive": {
+          "Cautious": 0,
+          "Normal": 0,
+          "Aggressive": 2,
+          "Unparsed": 0
+        }
+      },
+      "mean_brier_score": 0.4956,
+      "mean_log_loss": 0.8588525811051132,
+      "mean_confidence": 0.46,
+      "mean_latency_s": 1.2395801000020583,
+      "errors": 0
+    },
+    "first_key_vehicle_predictions": {
+      "samples": 2,
+      "parsed_predictions": 2,
+      "coverage": 1.0,
+      "accuracy": 0.0,
+      "accuracy_95ci_wilson": [
+        0.0,
+        0.6576197724933469
+      ],
+      "conditional_accuracy": 0.0,
+      "macro_f1": 0.0,
+      "per_class": {
+        "Cautious": {
+          "support": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "Normal": {
+          "support": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "Aggressive": {
+          "support": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "confusion_matrix": {
+        "Cautious": {
+          "Cautious": 0,
+          "Normal": 0,
+          "Aggressive": 1,
+          "Unparsed": 0
+        },
+        "Normal": {
+          "Cautious": 0,
+          "Normal": 0,
+          "Aggressive": 1,
+          "Unparsed": 0
+        },
+        "Aggressive": {
+          "Cautious": 0,
+          "Normal": 0,
+          "Aggressive": 0,
+          "Unparsed": 0
+        }
+      },
+      "mean_brier_score": 0.6734,
+      "mean_log_loss": 1.1086626245216111,
+      "mean_confidence": 0.34,
+      "mean_latency_s": 1.2395801000020583,
+      "errors": 0
+    },
+    "response_events": 2,
+    "responses_after_episode": 0,
+    "response_errors": 0,
+    "recorded_total_tokens": 5265,
+    "note": "First accepted in-episode prediction per episode/vehicle; repeated temporal predictions are not treated as independent samples.",
+    "prompt_version": "relative_evidence_v6"
+  },
+  "gates": {
+    "complete": true,
+    "paired": true,
+    "no_runtime_errors": true,
+    "llm_requested": true,
+    "llm_updated": true,
+    "response_errors_zero": true
+  },
+  "all_gates_pass": true,
+  "algorithm_change": false,
+  "scene_change_only": true,
+  "interpretation": "Scenario opens the target lane only after the observation phase; the key vehicle is behind in the target lane and its type controls gap closure. Not confirmatory evidence."
+}

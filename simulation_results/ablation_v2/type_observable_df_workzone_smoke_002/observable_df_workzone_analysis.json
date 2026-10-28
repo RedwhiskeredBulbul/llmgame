@@ -1,0 +1,273 @@
+{
+  "git_commit": "1f155957800e18aa5e50bab8940dc1b48e26f3b2",
+  "protocol_hash": "f1ddb131c17298b28d68c79509c683fc065069cd997af5645f01c7d27e376612",
+  "phase": "type_observable_df_workzone_smoke2",
+  "by_variant": {
+    "full_model": {
+      "episodes": 3,
+      "completed": 3,
+      "collisions": 0,
+      "timeouts": 0,
+      "route_end_failures": 0,
+      "runtime_errors": 0,
+      "llm_requests": 15,
+      "llm_updates": 13,
+      "mean_belief_fallback_fraction": 0.40828924162257496,
+      "probe_steps": 70,
+      "mean_average_speed_ms": 8.367889911188717,
+      "mean_average_speed_completed_ms": 8.367889911188717,
+      "mean_completion_time_s": 11.399999999999975,
+      "mean_restricted_time_s": 11.399999999999975,
+      "mean_jerk_rms": 0.19864483662522067,
+      "mean_min_clearance_m": 16.062675650591625
+    },
+    "without_probe": {
+      "episodes": 3,
+      "completed": 2,
+      "collisions": 1,
+      "timeouts": 0,
+      "route_end_failures": 0,
+      "runtime_errors": 0,
+      "llm_requests": 11,
+      "llm_updates": 9,
+      "mean_belief_fallback_fraction": 0.4628111718275652,
+      "probe_steps": 0,
+      "mean_average_speed_ms": 8.219258397448813,
+      "mean_average_speed_completed_ms": 8.369624064935064,
+      "mean_completion_time_s": 10.799999999999978,
+      "mean_restricted_time_s": 20.533333333333317,
+      "mean_jerk_rms": 0.02980134232971758,
+      "mean_min_clearance_m": 15.796008984571676
+    },
+    "uniform_belief": {
+      "episodes": 3,
+      "completed": 2,
+      "collisions": 1,
+      "timeouts": 0,
+      "route_end_failures": 0,
+      "runtime_errors": 0,
+      "llm_requests": 0,
+      "llm_updates": 0,
+      "mean_belief_fallback_fraction": 0.0,
+      "probe_steps": 0,
+      "mean_average_speed_ms": 8.219258397448813,
+      "mean_average_speed_completed_ms": 8.369624064935064,
+      "mean_completion_time_s": 10.799999999999978,
+      "mean_restricted_time_s": 20.533333333333317,
+      "mean_jerk_rms": 0.02980134232971758,
+      "mean_min_clearance_m": 15.796008984571676
+    },
+    "oracle_type": {
+      "episodes": 3,
+      "completed": 3,
+      "collisions": 0,
+      "timeouts": 0,
+      "route_end_failures": 0,
+      "runtime_errors": 0,
+      "llm_requests": 0,
+      "llm_updates": 0,
+      "mean_belief_fallback_fraction": 0.0,
+      "probe_steps": 70,
+      "mean_average_speed_ms": 8.367889911188717,
+      "mean_average_speed_completed_ms": 8.367889911188717,
+      "mean_completion_time_s": 11.399999999999975,
+      "mean_restricted_time_s": 11.399999999999975,
+      "mean_jerk_rms": 0.19864483662522067,
+      "mean_min_clearance_m": 16.062675650591625
+    }
+  },
+  "paired_effects": {
+    "oracle_type": {
+      "better_success": 0,
+      "worse_success": 0,
+      "fewer_collisions": 0,
+      "more_collisions": 0,
+      "mean_average_speed_difference_ms": 0.0,
+      "mean_completion_time_difference_s": 0.0,
+      "mean_restricted_time_difference_s": 0.0,
+      "mean_probe_step_difference": 0.0
+    },
+    "oracle_vs_uniform": {
+      "better_success": 1,
+      "worse_success": 0,
+      "fewer_collisions": 1,
+      "more_collisions": 0,
+      "mean_average_speed_difference_ms": 0.1486315137399039,
+      "mean_completion_time_difference_s": 0.0,
+      "mean_restricted_time_difference_s": -9.133333333333342,
+      "mean_probe_step_difference": 23.333333333333332
+    },
+    "uniform_belief": {
+      "better_success": 1,
+      "worse_success": 0,
+      "fewer_collisions": 1,
+      "more_collisions": 0,
+      "mean_average_speed_difference_ms": 0.1486315137399039,
+      "mean_completion_time_difference_s": 0.0,
+      "mean_restricted_time_difference_s": -9.133333333333342,
+      "mean_probe_step_difference": 23.333333333333332
+    },
+    "without_probe": {
+      "better_success": 1,
+      "worse_success": 0,
+      "fewer_collisions": 1,
+      "more_collisions": 0,
+      "mean_average_speed_difference_ms": 0.1486315137399039,
+      "mean_completion_time_difference_s": 0.0,
+      "mean_restricted_time_difference_s": -9.133333333333342,
+      "mean_probe_step_difference": 23.333333333333332
+    }
+  },
+  "action_divergence": {
+    "full_model_vs_uniform_belief": {
+      "steps": 277,
+      "divergent_steps": 40,
+      "divergent_fraction": 0.1444043321299639
+    },
+    "oracle_type_vs_uniform_belief": {
+      "steps": 277,
+      "divergent_steps": 40,
+      "divergent_fraction": 0.1444043321299639
+    },
+    "full_model_vs_oracle_type": {
+      "steps": 342,
+      "divergent_steps": 0,
+      "divergent_fraction": 0.0
+    }
+  },
+  "llm_diagnostics": {
+    "model": "qwen-flash-2025-07-28",
+    "first_in_episode_vehicle_predictions": {
+      "samples": 18,
+      "parsed_predictions": 18,
+      "coverage": 1.0,
+      "accuracy": 0.3333333333333333,
+      "accuracy_95ci_wilson": [
+        0.1627877475083369,
+        0.5625053270405489
+      ],
+      "conditional_accuracy": 0.3333333333333333,
+      "macro_f1": 0.5,
+      "per_class": {
+        "Cautious": {
+          "support": 2,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Normal": {
+          "support": 14,
+          "precision": 1.0,
+          "recall": 0.14285714285714285,
+          "f1": 0.25
+        },
+        "Aggressive": {
+          "support": 2,
+          "precision": 0.14285714285714285,
+          "recall": 1.0,
+          "f1": 0.25
+        }
+      },
+      "confusion_matrix": {
+        "Cautious": {
+          "Cautious": 2,
+          "Normal": 0,
+          "Aggressive": 0,
+          "Unparsed": 0
+        },
+        "Normal": {
+          "Cautious": 0,
+          "Normal": 2,
+          "Aggressive": 12,
+          "Unparsed": 0
+        },
+        "Aggressive": {
+          "Cautious": 0,
+          "Normal": 0,
+          "Aggressive": 2,
+          "Unparsed": 0
+        }
+      },
+      "mean_brier_score": 1.130866666666667,
+      "mean_log_loss": 8.792739759002565,
+      "mean_confidence": 0.8300000000000001,
+      "mean_latency_s": 1.072951083323763,
+      "errors": 0
+    },
+    "first_key_vehicle_predictions": {
+      "samples": 6,
+      "parsed_predictions": 6,
+      "coverage": 1.0,
+      "accuracy": 1.0,
+      "accuracy_95ci_wilson": [
+        0.6096657120978346,
+        1.0
+      ],
+      "conditional_accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class": {
+        "Cautious": {
+          "support": 2,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Normal": {
+          "support": 2,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Aggressive": {
+          "support": 2,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "confusion_matrix": {
+        "Cautious": {
+          "Cautious": 2,
+          "Normal": 0,
+          "Aggressive": 0,
+          "Unparsed": 0
+        },
+        "Normal": {
+          "Cautious": 0,
+          "Normal": 2,
+          "Aggressive": 0,
+          "Unparsed": 0
+        },
+        "Aggressive": {
+          "Cautious": 0,
+          "Normal": 0,
+          "Aggressive": 2,
+          "Unparsed": 0
+        }
+      },
+      "mean_brier_score": 0.11259999999999999,
+      "mean_log_loss": 0.2822548897418482,
+      "mean_confidence": 0.7566666666666667,
+      "mean_latency_s": 1.072951083323763,
+      "errors": 0
+    },
+    "response_events": 22,
+    "responses_after_episode": 4,
+    "response_errors": 0,
+    "recorded_total_tokens": 61189,
+    "note": "First accepted in-episode prediction per episode/vehicle; repeated temporal predictions are not treated as independent samples.",
+    "prompt_version": "relative_evidence_v5"
+  },
+  "gates": {
+    "complete": true,
+    "paired": true,
+    "no_runtime_errors": true,
+    "llm_requested": true,
+    "llm_updated": true,
+    "response_errors_zero": true
+  },
+  "all_gates_pass": true,
+  "algorithm_change": false,
+  "scene_change_only": true,
+  "interpretation": "DF_Highway four-lane work-zone merge: the ego starts in the closed right lane (2), lane 1 is required after the observation gate, and the type-observable key vehicle is behind in lane 1. The DF road, vehicle classes and MPC trajectory action are kept; the work-zone lane closure and key vehicle are the scene change.  Not confirmatory evidence."
+}

@@ -1,0 +1,161 @@
+{
+  "protocol_version": "ablation-v2-type-observable-merge-alltyped-v5-20261022",
+  "phase": "type_observable_merge_alltyped_scale50",
+  "variants": [
+    "full_model",
+    "without_probe",
+    "uniform_belief",
+    "oracle_type"
+  ],
+  "scenarios": [
+    "merge"
+  ],
+  "seeds": [
+    9600,
+    9601,
+    9602,
+    9603,
+    9604,
+    9605,
+    9606,
+    9607,
+    9608,
+    9609,
+    9610,
+    9611,
+    9612,
+    9613,
+    9614,
+    9615,
+    9616,
+    9617,
+    9618,
+    9619,
+    9620,
+    9621,
+    9622,
+    9623,
+    9624,
+    9625,
+    9626,
+    9627,
+    9628,
+    9629,
+    9630,
+    9631,
+    9632,
+    9633,
+    9634,
+    9635,
+    9636,
+    9637,
+    9638,
+    9639,
+    9640,
+    9641,
+    9642,
+    9643,
+    9644,
+    9645,
+    9646,
+    9647,
+    9648,
+    9649
+  ],
+  "control_dt_s": 0.1,
+  "execution_mode": "trajectory_point",
+  "time_mode": "paused_simulation",
+  "decision": {
+    "control_dt_s": 0.1,
+    "av_optimizer": "scalar_grid",
+    "max_game_iterations": 3,
+    "acceleration_tolerance_ms2": 0.05,
+    "solve_budget_ms": 100.0,
+    "reward_times_s": [
+      0.1,
+      0.5,
+      1.0,
+      2.0,
+      4.0,
+      8.0
+    ],
+    "route_progress_bonus": 2.0,
+    "switch_penalty": 0.1
+  },
+  "llm": {
+    "model": "qwen-flash-2025-07-28",
+    "temperature": 0.0,
+    "prompt_version": "relative_evidence_v5",
+    "history_len": 20,
+    "interval_steps": 10,
+    "temporal_alpha": 0.7,
+    "max_belief_age_sim_s": 3.0,
+    "sync_first_observation": true,
+    "timeout_s": 10.0,
+    "max_retries": 0
+  },
+  "runtime": {
+    "deadline_ms": 100.0,
+    "record_video": false,
+    "resume": true,
+    "max_steps": null
+  },
+  "observable_merge": {
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -27.5,
+    "key_initial_speed_ms": {
+      "0": 7.5,
+      "1": 9.5,
+      "2": 11.6
+    },
+    "key_initial_speed_offsets_ms": {
+      "0": [
+        -0.05,
+        0.0,
+        0.05
+      ],
+      "1": [
+        -0.05,
+        0.0,
+        0.05
+      ],
+      "2": [
+        -0.05,
+        0.0,
+        0.05
+      ]
+    },
+    "key_target_speed_ms": {
+      "0": 8.0,
+      "1": 10.0,
+      "2": 12.0
+    },
+    "key_response": {
+      "0": "yield",
+      "1": "idm",
+      "2": "force"
+    },
+    "merge_open_x_m": 40.0,
+    "horizon_s": 40.0,
+    "jitter": {
+      "ego_speed_ms": 0.0,
+      "key_relative_x_m": 0.0,
+      "key_initial_speed_ms": 0.0,
+      "key_target_speed_ms": 0.0
+    },
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "design": "all-typed random-background replication of the two-lane required-lane merge: 50 unseen seeds; the key vehicle type is drawn from a seeded balanced permutation (17/17/16 across the 50 seeds) and both background vehicles receive independent uniform random types (Cautious/Normal/Aggressive) from a seed-derived RNG. Thus all three surrounding vehicles carry type labels and are classified by the LLM, while geometry, key response parameters, controller, reward, candidate set, prompt v5 and LLM settings are unchanged from the frozen scale-50 protocol. Key initial speeds cycle deterministically through the verified 0.1 m/s band around the commit/probe boundary; no RNG jitter.",
+    "randomize_key_type": true,
+    "key_type_seed": 20261022,
+    "randomize_background_types": true,
+    "type_seed_offset": 20261022
+  }
+}

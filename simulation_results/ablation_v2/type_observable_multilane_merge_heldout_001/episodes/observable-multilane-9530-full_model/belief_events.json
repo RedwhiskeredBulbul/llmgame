@@ -1,0 +1,130 @@
+[
+  {
+    "observation_sim_time": 1.9000000000000006,
+    "observation_wall": 363919.2505232,
+    "latency_ms": 805.3729999810457,
+    "error": null,
+    "prompt_hash": "ebaa9e4e577945fd53464bba6b5782b774d914ea97ed140cafaebe0cc14e5473",
+    "response": "{\n  \"1\": [0.33, 0.67, 0.00],\n  \"2\": [0.80, 0.20, 0.00]\n}",
+    "usage": {
+      "completion_tokens": 46,
+      "prompt_tokens": 1954,
+      "total_tokens": 2000,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "observable-multilane-9530-full_model",
+    "event": "response",
+    "request_id": 1,
+    "probabilities": {
+      "1": [
+        0.33,
+        0.67,
+        0.0
+      ],
+      "2": [
+        0.8,
+        0.2,
+        0.0
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 2.9000000000000012,
+    "observation_wall": 363920.4968832,
+    "latency_ms": 946.3591999956407,
+    "error": null,
+    "prompt_hash": "c7a0338ff5302c762b2a878b390e5b933296470accd93a2b15df4639caa0650b",
+    "response": "{\n  \"1\": [0.1, 0.2, 0.7],\n  \"2\": [0.8, 0.1, 0.1]\n}",
+    "usage": {
+      "completion_tokens": 40,
+      "prompt_tokens": 1950,
+      "total_tokens": 1990,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "observable-multilane-9530-full_model",
+    "event": "response",
+    "request_id": 2,
+    "probabilities": {
+      "1": [
+        0.261,
+        0.529,
+        0.21000000000000002
+      ],
+      "2": [
+        0.8,
+        0.16999999999999998,
+        0.030000000000000006
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 5.899999999999995,
+    "observation_wall": 363921.7175463,
+    "latency_ms": 1312.4158999999054,
+    "error": null,
+    "prompt_hash": "f32ab50ac3701b1cf96adcf465eca97553ab61f1464cf050a5b9aebd05f064a5",
+    "response": "{\n  \"1\": [0.33, 0.67, 0.0],\n  \"2\": [0.0, 0.0, 1.0]\n}",
+    "usage": {
+      "completion_tokens": 42,
+      "prompt_tokens": 1967,
+      "total_tokens": 2009,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "observable-multilane-9530-full_model",
+    "event": "response",
+    "request_id": 3,
+    "probabilities": {
+      "1": [
+        0.2817,
+        0.5713,
+        0.147
+      ],
+      "2": [
+        0.5599999999999999,
+        0.11899999999999998,
+        0.32100000000000006
+      ]
+    }
+  },
+  {
+    "probabilities": {
+      "1": [
+        0.8,
+        0.1,
+        0.1
+      ],
+      "2": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "3": [
+        0.33333333333333337,
+        0.33333333333333337,
+        0.33333333333333337
+      ]
+    },
+    "observation_sim_time": 9.89999999999998,
+    "observation_wall": 363923.3042148,
+    "latency_ms": 1015.0100999744609,
+    "error": null,
+    "prompt_hash": "2107d038c1ae0fa5f8d8b9e2a2330d0cc7bcd82b5a52e57671d2f4633e334a11",
+    "response": "{\n  \"1\": [0.8, 0.1, 0.1],\n  \"2\": [0.1, 0.1, 0.8],\n  \"3\": [0.33, 0.33, 0.33]\n}",
+    "usage": {
+      "completion_tokens": 62,
+      "prompt_tokens": 2181,
+      "total_tokens": 2243,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "event": "response_after_episode",
+    "episode_id": "observable-multilane-9530-full_model"
+  }
+]

@@ -1,0 +1,68 @@
+{
+  "case": {
+    "case_id": "targeted-3003",
+    "scenario": "merge",
+    "seed": 3003,
+    "difficulty": 1,
+    "behaviour_index": 0,
+    "template_index": 3,
+    "relative_x_m": 7.343402900133996,
+    "relative_speed_ms": -0.8454091832893522,
+    "ego_speed_ms": 6.037689587642754
+  },
+  "initial_state": [
+    {
+      "id": 888,
+      "position": [
+        20.0,
+        4.0
+      ],
+      "heading": 0.0,
+      "speed": 6.037689587642754,
+      "length": 5.0,
+      "width": 2.0,
+      "behaviour": "AV",
+      "target_speed": null
+    },
+    {
+      "id": 1,
+      "position": [
+        27.343402900133995,
+        0.0
+      ],
+      "heading": 0.0,
+      "speed": 5.1922804043534025,
+      "length": 5.0,
+      "width": 2.0,
+      "behaviour": "Cautious",
+      "target_speed": 8.0
+    },
+    {
+      "id": 2,
+      "position": [
+        52.0,
+        0.0
+      ],
+      "heading": 0.0,
+      "speed": 6.5,
+      "length": 5.0,
+      "width": 2.0,
+      "behaviour": "Normal",
+      "target_speed": 10.0
+    },
+    {
+      "id": 3,
+      "position": [
+        58.0,
+        4.0
+      ],
+      "heading": 0.0,
+      "speed": 5.0,
+      "length": 5.0,
+      "width": 2.0,
+      "behaviour": "Normal",
+      "target_speed": 10.0
+    }
+  ],
+  "initial_hash": "8e43da296167723a6706d294b091d6fc730bedc0351f1ea18b27540740e20eff"
+}

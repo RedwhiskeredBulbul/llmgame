@@ -1,0 +1,289 @@
+[
+  {
+    "observation_sim_time": 1.9000000000000006,
+    "observation_wall": 66419.9647156,
+    "latency_ms": 1096.0502000089036,
+    "error": null,
+    "prompt_hash": "545300c9d89317f96a1d20b507451eadb5efc4765e59d7d9e51f5711da1f3981",
+    "response": "{\n  \"12\": [0.33, 0.34, 0.33],\n  \"9\": [0.35, 0.35, 0.30],\n  \"8\": [0.40, 0.30, 0.30]\n}",
+    "usage": {
+      "completion_tokens": 69,
+      "prompt_tokens": 2847,
+      "total_tokens": 2916,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "df-cutin-key-9959-full_model",
+    "event": "response",
+    "request_id": 1,
+    "probabilities": {
+      "12": [
+        0.33,
+        0.34,
+        0.33
+      ],
+      "9": [
+        0.35,
+        0.35,
+        0.3
+      ],
+      "8": [
+        0.4,
+        0.3,
+        0.3
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 2.9000000000000012,
+    "observation_wall": 66422.1118283,
+    "latency_ms": 1681.2475999904564,
+    "error": null,
+    "prompt_hash": "c37803648e55da65628faa1c0b88f450f3fad53907cd1d0c2c1a9de09d924b99",
+    "response": "{\n  \"12\": [0.33, 0.34, 0.33],\n  \"9\": [0.75, 0.20, 0.05],\n  \"8\": [0.60, 0.30, 0.10]\n}",
+    "usage": {
+      "completion_tokens": 69,
+      "prompt_tokens": 2933,
+      "total_tokens": 3002,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "df-cutin-key-9959-full_model",
+    "event": "response",
+    "request_id": 2,
+    "probabilities": {
+      "12": [
+        0.33,
+        0.34,
+        0.33
+      ],
+      "9": [
+        0.47,
+        0.305,
+        0.225
+      ],
+      "8": [
+        0.45999999999999996,
+        0.3,
+        0.24
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 4.899999999999999,
+    "observation_wall": 66424.4162967,
+    "latency_ms": 1055.1220000052126,
+    "error": null,
+    "prompt_hash": "44ca7b94dc62ad94dc547f8b3673b3ca0af7a8d9d3206b59d64cb45710513bde",
+    "response": "{\n  \"12\": [0.3, 0.4, 0.3],\n  \"9\": [0.7, 0.2, 0.1],\n  \"8\": [0.8, 0.1, 0.1]\n}",
+    "usage": {
+      "completion_tokens": 60,
+      "prompt_tokens": 2849,
+      "total_tokens": 2909,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "df-cutin-key-9959-full_model",
+    "event": "response",
+    "request_id": 3,
+    "probabilities": {
+      "12": [
+        0.321,
+        0.358,
+        0.321
+      ],
+      "9": [
+        0.5389999999999999,
+        0.2735,
+        0.1875
+      ],
+      "8": [
+        0.562,
+        0.24,
+        0.19799999999999998
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 5.899999999999995,
+    "observation_wall": 66425.6052269,
+    "latency_ms": 1541.8743999907747,
+    "error": null,
+    "prompt_hash": "0cca5ddedffd895c30bc3c80bedf73e3ae6ab2dc9334a9c83ef623db327cc9a0",
+    "response": "{\n  \"12\": [0.33, 0.34, 0.33],\n  \"9\": [0.75, 0.25, 0.00],\n  \"8\": [0.90, 0.10, 0.00]\n}",
+    "usage": {
+      "completion_tokens": 69,
+      "prompt_tokens": 2849,
+      "total_tokens": 2918,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "df-cutin-key-9959-full_model",
+    "event": "response",
+    "request_id": 4,
+    "probabilities": {
+      "12": [
+        0.3237,
+        0.3526,
+        0.3237
+      ],
+      "9": [
+        0.6023,
+        0.26645,
+        0.13124999999999998
+      ],
+      "8": [
+        0.6634000000000001,
+        0.19799999999999998,
+        0.13859999999999997
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 7.899999999999988,
+    "observation_wall": 66427.8898673,
+    "latency_ms": 896.3346000091406,
+    "error": null,
+    "prompt_hash": "946b2e9dc38684431693f0b8ab39813dc8209c894f7caa08c5aa5575681485c7",
+    "response": "{\n  \"12\": [0.3, 0.6, 0.1],\n  \"9\": [0.7, 0.2, 0.1],\n  \"8\": [0.9, 0.1, 0.0]\n}",
+    "usage": {
+      "completion_tokens": 60,
+      "prompt_tokens": 2935,
+      "total_tokens": 2995,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "df-cutin-key-9959-full_model",
+    "event": "response",
+    "request_id": 5,
+    "probabilities": {
+      "12": [
+        0.31659,
+        0.42682000000000003,
+        0.25659
+      ],
+      "9": [
+        0.63161,
+        0.24651500000000004,
+        0.12187499999999998
+      ],
+      "8": [
+        0.73438,
+        0.16859999999999997,
+        0.09701999999999998
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 8.899999999999984,
+    "observation_wall": 66428.9189787,
+    "latency_ms": 814.7813000105089,
+    "error": null,
+    "prompt_hash": "8f6ec4f3a8f8095d3e27042b154ba392f8f78be4ce1e35b689081c96c26cf93e",
+    "response": "{\n  \"12\": [0.8, 0.15, 0.05],\n  \"9\": [0.7, 0.2, 0.1],\n  \"31\": [0.1, 0.2, 0.7]\n}",
+    "usage": {
+      "completion_tokens": 63,
+      "prompt_tokens": 2857,
+      "total_tokens": 2920,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "df-cutin-key-9959-full_model",
+    "event": "response",
+    "request_id": 6,
+    "probabilities": {
+      "12": [
+        0.46161300000000005,
+        0.34377399999999997,
+        0.19461299999999998
+      ],
+      "9": [
+        0.652127,
+        0.2325605,
+        0.11531249999999998
+      ],
+      "31": [
+        0.1,
+        0.2,
+        0.7
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 9.89999999999998,
+    "observation_wall": 66429.9272382,
+    "latency_ms": 1124.8755999986315,
+    "error": null,
+    "prompt_hash": "7ce8e758d0a4fd0b56daf4ba95ddd9031e9ce3ac09f4af47d49b6547d6faf74d",
+    "response": "{\n  \"12\": [0.8, 0.15, 0.05],\n  \"9\": [0.75, 0.2, 0.05],\n  \"31\": [0.1, 0.2, 0.7]\n}",
+    "usage": {
+      "completion_tokens": 65,
+      "prompt_tokens": 2857,
+      "total_tokens": 2922,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "df-cutin-key-9959-full_model",
+    "event": "response",
+    "request_id": 7,
+    "probabilities": {
+      "12": [
+        0.5631291,
+        0.28564179999999995,
+        0.15122909999999998
+      ],
+      "9": [
+        0.6814889,
+        0.22279235000000003,
+        0.09571874999999998
+      ],
+      "31": [
+        0.1,
+        0.2,
+        0.7
+      ]
+    }
+  },
+  {
+    "probabilities": {
+      "12": [
+        0.33,
+        0.34,
+        0.33
+      ],
+      "9": [
+        0.85,
+        0.1,
+        0.05
+      ],
+      "31": [
+        0.9,
+        0.05,
+        0.05
+      ]
+    },
+    "observation_sim_time": 11.899999999999974,
+    "observation_wall": 66431.8180161,
+    "latency_ms": 995.8557999925688,
+    "error": null,
+    "prompt_hash": "018a7e34c8eaf07cfe15a1065c5f9f363d44ece5f9e1600bd229314536bf73a6",
+    "response": "{\n  \"12\": [0.33, 0.34, 0.33],\n  \"9\": [0.85, 0.10, 0.05],\n  \"31\": [0.90, 0.05, 0.05]\n}",
+    "usage": {
+      "completion_tokens": 70,
+      "prompt_tokens": 2858,
+      "total_tokens": 2928,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "event": "response_after_episode",
+    "episode_id": "df-cutin-key-9959-full_model"
+  }
+]

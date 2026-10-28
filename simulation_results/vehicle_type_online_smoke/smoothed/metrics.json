@@ -1,0 +1,66 @@
+{
+  "samples": 18,
+  "parsed_predictions": 18,
+  "coverage": 1.0,
+  "accuracy": 0.5,
+  "accuracy_95ci_wilson": [
+    0.29031021505169974,
+    0.7096897849483003
+  ],
+  "conditional_accuracy": 0.5,
+  "macro_f1": 0.2222222222222222,
+  "per_class": {
+    "Cautious": {
+      "support": 9,
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666
+    },
+    "Normal": {
+      "support": 9,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "Aggressive": {
+      "support": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    }
+  },
+  "confusion_matrix": {
+    "Cautious": {
+      "Cautious": 9,
+      "Normal": 0,
+      "Aggressive": 0,
+      "Unparsed": 0
+    },
+    "Normal": {
+      "Cautious": 9,
+      "Normal": 0,
+      "Aggressive": 0,
+      "Unparsed": 0
+    },
+    "Aggressive": {
+      "Cautious": 0,
+      "Normal": 0,
+      "Aggressive": 0,
+      "Unparsed": 0
+    }
+  },
+  "mean_brier_score": 0.9999995209677112,
+  "mean_log_loss": 12.87296385562109,
+  "mean_confidence": 0.9999998776746276,
+  "mean_latency_s": 0.0,
+  "errors": 0,
+  "backend": "heuristic",
+  "model": "motion-heuristic-baseline",
+  "dataset": "continuous-DF_Cruise-online-ema",
+  "seeds": [
+    0,
+    1
+  ],
+  "requests": 6,
+  "temporal_alpha": 0.7
+}

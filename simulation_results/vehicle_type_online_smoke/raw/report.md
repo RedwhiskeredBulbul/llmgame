@@ -1,0 +1,18 @@
+# Vehicle behaviour-type experiment
+
+- Backend: heuristic
+- Model: motion-heuristic-baseline
+- Dataset: continuous-DF_Cruise-online-raw
+- Samples: 18
+- Accuracy (unparsed counted wrong): 50.000%
+- Parse coverage: 100.000%
+- Conditional accuracy: 50.000%
+- Macro F1: 0.222
+- Mean Brier score: 1.000
+- Mean latency: 0.000 s
+
+| Actual / predicted | Cautious | Normal | Aggressive | Unparsed |
+|---|---:|---:|---:|---:|
+| Cautious | 9 | 0 | 0 | 0 |
+| Normal | 9 | 0 | 0 | 0 |
+| Aggressive | 0 | 0 | 0 | 0 |

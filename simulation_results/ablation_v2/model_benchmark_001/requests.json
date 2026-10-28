@@ -1,0 +1,447 @@
+[
+  {
+    "model": "qwen-flash",
+    "trial": 0,
+    "prompt_hash": "8bf0c9fbba33d351ebb15d1d3f4fc2aa6f853df6eb4a295af1ff2920969f745d",
+    "latency_ms": 6347.360700019635,
+    "valid": true,
+    "error": null,
+    "response_model": "qwen-flash",
+    "usage": {
+      "completion_tokens": 24,
+      "prompt_tokens": 543,
+      "total_tokens": 567,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null
+      }
+    },
+    "response": "{\n  \"1002\": [0.7, 0.3, 0.0]\n}"
+  },
+  {
+    "model": "qwen3.5-flash",
+    "trial": 0,
+    "prompt_hash": "8bf0c9fbba33d351ebb15d1d3f4fc2aa6f853df6eb4a295af1ff2920969f745d",
+    "latency_ms": 2216.864199988777,
+    "valid": true,
+    "error": null,
+    "response_model": "qwen3.5-flash",
+    "usage": {
+      "completion_tokens": 38,
+      "prompt_tokens": 561,
+      "total_tokens": 599,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": null,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 38
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": null,
+        "image_tokens": null,
+        "text_tokens": 561
+      }
+    },
+    "response": "{\n  \"1002\": [\n    0.85,\n    0.14,\n    0.01\n  ]\n}"
+  },
+  {
+    "model": "qwen3.8-flash",
+    "trial": 0,
+    "prompt_hash": "8bf0c9fbba33d351ebb15d1d3f4fc2aa6f853df6eb4a295af1ff2920969f745d",
+    "latency_ms": 2352.7786000049673,
+    "valid": true,
+    "error": null,
+    "response_model": "qwen3.8-flash",
+    "usage": {
+      "completion_tokens": 38,
+      "prompt_tokens": 574,
+      "total_tokens": 612,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": 574
+      }
+    },
+    "response": "{\n  \"1002\": [\n    0.95,\n    0.04,\n    0.01\n  ]\n}"
+  },
+  {
+    "model": "qwen-turbo",
+    "trial": 0,
+    "prompt_hash": "8bf0c9fbba33d351ebb15d1d3f4fc2aa6f853df6eb4a295af1ff2920969f745d",
+    "latency_ms": 1294.8347000055946,
+    "valid": false,
+    "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You have exceeded your current request limit. For details, see: https://help.aliyun.com/zh/model-studio/error-code#rate-limit', 'type': 'limit_requests', 'param': None, 'code': 'limit_requests'}, 'request_id': '08486015-b6d8-949c-91a3-2ed0ddcc8b15'}",
+    "response_model": null,
+    "usage": null,
+    "response": null
+  },
+  {
+    "model": "qwen3.5-flash",
+    "trial": 1,
+    "prompt_hash": "33fe50fe52e6aade9d2b7b5e446ae266edc56faebe61c1cf0a315cee6db3bde2",
+    "latency_ms": 830.0517000025138,
+    "valid": true,
+    "error": null,
+    "response_model": "qwen3.5-flash",
+    "usage": {
+      "completion_tokens": 38,
+      "prompt_tokens": 561,
+      "total_tokens": 599,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": null,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 38
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": null,
+        "image_tokens": null,
+        "text_tokens": 561
+      }
+    },
+    "response": "{\n  \"1000\": [\n    0.85,\n    0.14,\n    0.01\n  ]\n}"
+  },
+  {
+    "model": "qwen3.8-flash",
+    "trial": 1,
+    "prompt_hash": "33fe50fe52e6aade9d2b7b5e446ae266edc56faebe61c1cf0a315cee6db3bde2",
+    "latency_ms": 1167.3261999967508,
+    "valid": true,
+    "error": null,
+    "response_model": "qwen3.8-flash",
+    "usage": {
+      "completion_tokens": 38,
+      "prompt_tokens": 574,
+      "total_tokens": 612,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": 574
+      }
+    },
+    "response": "{\n  \"1000\": [\n    0.85,\n    0.14,\n    0.01\n  ]\n}"
+  },
+  {
+    "model": "qwen-turbo",
+    "trial": 1,
+    "prompt_hash": "33fe50fe52e6aade9d2b7b5e446ae266edc56faebe61c1cf0a315cee6db3bde2",
+    "latency_ms": 45.18419998930767,
+    "valid": false,
+    "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You have exceeded your current request limit. For details, see: https://help.aliyun.com/zh/model-studio/error-code#rate-limit', 'type': 'limit_requests', 'param': None, 'code': 'limit_requests'}, 'request_id': 'c8a52f88-40c5-9e98-be3e-dea1525139f6'}",
+    "response_model": null,
+    "usage": null,
+    "response": null
+  },
+  {
+    "model": "qwen-flash",
+    "trial": 1,
+    "prompt_hash": "33fe50fe52e6aade9d2b7b5e446ae266edc56faebe61c1cf0a315cee6db3bde2",
+    "latency_ms": 628.2995000074152,
+    "valid": true,
+    "error": null,
+    "response_model": "qwen-flash",
+    "usage": {
+      "completion_tokens": 27,
+      "prompt_tokens": 543,
+      "total_tokens": 570,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null
+      }
+    },
+    "response": "{\n  \"1000\": [0.85, 0.15, 0.00]\n}"
+  },
+  {
+    "model": "qwen3.8-flash",
+    "trial": 2,
+    "prompt_hash": "4eb55808bd68237fece2fd4ffe657c0dbafd8da60a0909e727a52d931059d52f",
+    "latency_ms": 802.0209999813233,
+    "valid": true,
+    "error": null,
+    "response_model": "qwen3.8-flash",
+    "usage": {
+      "completion_tokens": 25,
+      "prompt_tokens": 575,
+      "total_tokens": 600,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": 575
+      }
+    },
+    "response": "{\n\"1005\": [0.4, 0.6, 0.0]\n}"
+  },
+  {
+    "model": "qwen-turbo",
+    "trial": 2,
+    "prompt_hash": "4eb55808bd68237fece2fd4ffe657c0dbafd8da60a0909e727a52d931059d52f",
+    "latency_ms": 52.66240000491962,
+    "valid": false,
+    "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You have exceeded your current request limit. For details, see: https://help.aliyun.com/zh/model-studio/error-code#rate-limit', 'type': 'limit_requests', 'param': None, 'code': 'limit_requests'}, 'request_id': '224f3273-fcb4-9466-b466-473f98dc6c9d'}",
+    "response_model": null,
+    "usage": null,
+    "response": null
+  },
+  {
+    "model": "qwen-flash",
+    "trial": 2,
+    "prompt_hash": "4eb55808bd68237fece2fd4ffe657c0dbafd8da60a0909e727a52d931059d52f",
+    "latency_ms": 411.76079999422655,
+    "valid": true,
+    "error": null,
+    "response_model": "qwen-flash",
+    "usage": {
+      "completion_tokens": 24,
+      "prompt_tokens": 544,
+      "total_tokens": 568,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null
+      }
+    },
+    "response": "{\n  \"1005\": [0.2, 0.6, 0.2]\n}"
+  },
+  {
+    "model": "qwen3.5-flash",
+    "trial": 2,
+    "prompt_hash": "4eb55808bd68237fece2fd4ffe657c0dbafd8da60a0909e727a52d931059d52f",
+    "latency_ms": 893.565199978184,
+    "valid": true,
+    "error": null,
+    "response_model": "qwen3.5-flash",
+    "usage": {
+      "completion_tokens": 38,
+      "prompt_tokens": 562,
+      "total_tokens": 600,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": null,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 38
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": null,
+        "image_tokens": null,
+        "text_tokens": 562
+      }
+    },
+    "response": "{\n  \"1005\": [\n    0.65,\n    0.32,\n    0.03\n  ]\n}"
+  },
+  {
+    "model": "qwen-turbo",
+    "trial": 3,
+    "prompt_hash": "056f2bf2e7593d2469064e5cdab06c1f09dba388c4de270b3ddca462d9f0e22d",
+    "latency_ms": 58.48310000146739,
+    "valid": false,
+    "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You have exceeded your current request limit. For details, see: https://help.aliyun.com/zh/model-studio/error-code#rate-limit', 'type': 'limit_requests', 'param': None, 'code': 'limit_requests'}, 'request_id': '5d1e451c-2602-952a-bbc2-9b17c582bfe3'}",
+    "response_model": null,
+    "usage": null,
+    "response": null
+  },
+  {
+    "model": "qwen-flash",
+    "trial": 3,
+    "prompt_hash": "056f2bf2e7593d2469064e5cdab06c1f09dba388c4de270b3ddca462d9f0e22d",
+    "latency_ms": 554.3248000030871,
+    "valid": true,
+    "error": null,
+    "response_model": "qwen-flash",
+    "usage": {
+      "completion_tokens": 26,
+      "prompt_tokens": 544,
+      "total_tokens": 570,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null
+      }
+    },
+    "response": "{\n  \"1001\": [0.85, 0.15, 0.0]\n}"
+  },
+  {
+    "model": "qwen3.5-flash",
+    "trial": 3,
+    "prompt_hash": "056f2bf2e7593d2469064e5cdab06c1f09dba388c4de270b3ddca462d9f0e22d",
+    "latency_ms": 976.1881000013091,
+    "valid": true,
+    "error": null,
+    "response_model": "qwen3.5-flash",
+    "usage": {
+      "completion_tokens": 38,
+      "prompt_tokens": 562,
+      "total_tokens": 600,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": null,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 38
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": null,
+        "image_tokens": null,
+        "text_tokens": 562
+      }
+    },
+    "response": "{\n  \"1001\": [\n    0.85,\n    0.14,\n    0.01\n  ]\n}"
+  },
+  {
+    "model": "qwen3.8-flash",
+    "trial": 3,
+    "prompt_hash": "056f2bf2e7593d2469064e5cdab06c1f09dba388c4de270b3ddca462d9f0e22d",
+    "latency_ms": 1172.4160999874584,
+    "valid": true,
+    "error": null,
+    "response_model": "qwen3.8-flash",
+    "usage": {
+      "completion_tokens": 38,
+      "prompt_tokens": 575,
+      "total_tokens": 613,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": 575
+      }
+    },
+    "response": "{\n  \"1001\": [\n    0.95,\n    0.04,\n    0.01\n  ]\n}"
+  },
+  {
+    "model": "qwen-flash",
+    "trial": 4,
+    "prompt_hash": "d7d3c5eec4555cc200ae4a0625376c2f0b9005ce1fd7a203e77c680b116af916",
+    "latency_ms": 1748.8782000145875,
+    "valid": true,
+    "error": null,
+    "response_model": "qwen-flash",
+    "usage": {
+      "completion_tokens": 27,
+      "prompt_tokens": 543,
+      "total_tokens": 570,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null
+      }
+    },
+    "response": "{\n  \"1003\": [0.75, 0.20, 0.05]\n}"
+  },
+  {
+    "model": "qwen3.5-flash",
+    "trial": 4,
+    "prompt_hash": "d7d3c5eec4555cc200ae4a0625376c2f0b9005ce1fd7a203e77c680b116af916",
+    "latency_ms": 735.9040000010282,
+    "valid": true,
+    "error": null,
+    "response_model": "qwen3.5-flash",
+    "usage": {
+      "completion_tokens": 29,
+      "prompt_tokens": 561,
+      "total_tokens": 590,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": null,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 29
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": null,
+        "image_tokens": null,
+        "text_tokens": 561
+      }
+    },
+    "response": "{\n  \"1003\": [0.85, 0.14, 0.01]\n}"
+  },
+  {
+    "model": "qwen3.8-flash",
+    "trial": 4,
+    "prompt_hash": "d7d3c5eec4555cc200ae4a0625376c2f0b9005ce1fd7a203e77c680b116af916",
+    "latency_ms": 1034.8133000079542,
+    "valid": true,
+    "error": null,
+    "response_model": "qwen3.8-flash",
+    "usage": {
+      "completion_tokens": 30,
+      "prompt_tokens": 574,
+      "total_tokens": 604,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": 574
+      }
+    },
+    "response": "{\n\"1003\": [\n0.85,\n0.14,\n0.01\n]\n}"
+  },
+  {
+    "model": "qwen-turbo",
+    "trial": 4,
+    "prompt_hash": "d7d3c5eec4555cc200ae4a0625376c2f0b9005ce1fd7a203e77c680b116af916",
+    "latency_ms": 129.7459999914281,
+    "valid": false,
+    "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You have exceeded your current request limit. For details, see: https://help.aliyun.com/zh/model-studio/error-code#rate-limit', 'type': 'limit_requests', 'param': None, 'code': 'limit_requests'}, 'request_id': '2f9927f2-5164-9581-9957-6d6c8300d731'}",
+    "response_model": null,
+    "usage": null,
+    "response": null
+  }
+]

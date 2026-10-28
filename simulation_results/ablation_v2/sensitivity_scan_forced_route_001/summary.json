@@ -1,0 +1,39 @@
+{
+  "by_scenario": {
+    "cutin": {
+      "states": 12,
+      "belief_action_changes": 0,
+      "belief_acceleration_changes": 0,
+      "response_action_changes": 0,
+      "response_acceleration_changes": 0
+    },
+    "traffic": {
+      "states": 12,
+      "belief_action_changes": 1,
+      "belief_acceleration_changes": 1,
+      "response_action_changes": 1,
+      "response_acceleration_changes": 1
+    }
+  },
+  "belief_sensitive_states": [
+    {
+      "state_id": "traffic-01",
+      "scenario": "traffic",
+      "belief_action_changes": true,
+      "belief_acceleration_spread": 0.09175072889956881,
+      "response_action_changes": true,
+      "response_acceleration_difference": 0.09175072889956881
+    }
+  ],
+  "response_sensitive_states": [
+    {
+      "state_id": "traffic-01",
+      "scenario": "traffic",
+      "belief_action_changes": true,
+      "belief_acceleration_spread": 0.09175072889956881,
+      "response_action_changes": true,
+      "response_acceleration_difference": 0.09175072889956881
+    }
+  ],
+  "interpretation": "Development routing only. Closed-loop held-out validation required."
+}

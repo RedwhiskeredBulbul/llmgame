@@ -1,0 +1,157 @@
+[
+  {
+    "observation_sim_time": 1.9000000000000006,
+    "observation_wall": 364126.0317046,
+    "latency_ms": 1041.5280999732204,
+    "error": null,
+    "prompt_hash": "8145ff5a9148733cb7bf1e0b73c927302588c2ea6fb1d11911af6853e2d21fd8",
+    "response": "{\n  \"1\": [0.33, 0.67, 0.00],\n  \"2\": [0.80, 0.10, 0.10]\n}",
+    "usage": {
+      "completion_tokens": 46,
+      "prompt_tokens": 1955,
+      "total_tokens": 2001,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "observable-multilane-9536-full_model",
+    "event": "response",
+    "request_id": 1,
+    "probabilities": {
+      "1": [
+        0.33,
+        0.67,
+        0.0
+      ],
+      "2": [
+        0.8,
+        0.1,
+        0.1
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 2.9000000000000012,
+    "observation_wall": 364127.6322886,
+    "latency_ms": 719.6800999809057,
+    "error": null,
+    "prompt_hash": "6c70113484657adc2e07896e8be628c16fe66d70b3d1a75a28b33a83bc92875b",
+    "response": "{\n  \"1\": [0.1, 0.8, 0.1],\n  \"3\": [0.1, 0.1, 0.8]\n}",
+    "usage": {
+      "completion_tokens": 40,
+      "prompt_tokens": 1915,
+      "total_tokens": 1955,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "observable-multilane-9536-full_model",
+    "event": "response",
+    "request_id": 2,
+    "probabilities": {
+      "1": [
+        0.261,
+        0.7090000000000001,
+        0.030000000000000006
+      ],
+      "3": [
+        0.1,
+        0.1,
+        0.8
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 4.899999999999999,
+    "observation_wall": 364128.5044841,
+    "latency_ms": 883.0656000063755,
+    "error": null,
+    "prompt_hash": "2a9135235bc43d7fddf0fe6715b0b8e3a4dfa781a2360a08fbf96fb5ced84565",
+    "response": "{\n  \"1\": [0.1, 0.1, 0.8],\n  \"3\": [0.1, 0.1, 0.8]\n}",
+    "usage": {
+      "completion_tokens": 40,
+      "prompt_tokens": 1967,
+      "total_tokens": 2007,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "observable-multilane-9536-full_model",
+    "event": "response",
+    "request_id": 3,
+    "probabilities": {
+      "1": [
+        0.2127,
+        0.5263,
+        0.26100000000000007
+      ],
+      "3": [
+        0.1,
+        0.1,
+        0.8
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 6.8999999999999915,
+    "observation_wall": 364129.5015831,
+    "latency_ms": 727.6876000105403,
+    "error": null,
+    "prompt_hash": "c82432ba360c5ddc559c21a92a6eaa09699127a0bc9cd1dfbb40542ac06213e7",
+    "response": "{\n  \"1\": [0.8, 0.1, 0.1],\n  \"3\": [0.1, 0.1, 0.8]\n}",
+    "usage": {
+      "completion_tokens": 40,
+      "prompt_tokens": 1963,
+      "total_tokens": 2003,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "observable-multilane-9536-full_model",
+    "event": "response",
+    "request_id": 4,
+    "probabilities": {
+      "1": [
+        0.38889000000000007,
+        0.39841,
+        0.21270000000000003
+      ],
+      "3": [
+        0.1,
+        0.1,
+        0.8
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 8.899999999999984,
+    "observation_wall": 364130.4962085,
+    "latency_ms": 655.0800999975763,
+    "error": null,
+    "prompt_hash": "0cd610f95eb571564ae373be055cab68812eb6e9207e8b944da36d325bc50ac5",
+    "response": "{\n  \"1\": [0.8, 0.1, 0.1],\n  \"3\": [0.1, 0.1, 0.8]\n}",
+    "usage": {
+      "completion_tokens": 40,
+      "prompt_tokens": 1966,
+      "total_tokens": 2006,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "observable-multilane-9536-full_model",
+    "event": "response",
+    "request_id": 5,
+    "probabilities": {
+      "1": [
+        0.512223,
+        0.30888699999999997,
+        0.17889
+      ],
+      "3": [
+        0.1,
+        0.1,
+        0.8
+      ]
+    }
+  }
+]

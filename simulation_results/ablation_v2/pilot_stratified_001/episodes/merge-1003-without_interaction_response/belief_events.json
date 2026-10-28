@@ -1,0 +1,37 @@
+[
+  {
+    "probabilities": {
+      "1": [
+        0.95,
+        0.05,
+        0.0
+      ],
+      "3": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "2": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "observation_sim_time": 1.9000000000000006,
+    "observation_wall": 143176.3300825,
+    "latency_ms": 1700.874300004216,
+    "error": null,
+    "prompt_hash": "3597d0188c5ae34eadfbe2feaf3d5a8e3281859eff3d4a3e40e171a1c1b17cb1",
+    "response": "{\n  \"1\": [0.95, 0.05, 0.00],\n  \"3\": [0.00, 0.00, 1.00],\n  \"2\": [0.00, 0.00, 1.00]\n}",
+    "usage": {
+      "completion_tokens": 68,
+      "prompt_tokens": 1097,
+      "total_tokens": 1165,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "event": "response_after_episode",
+    "episode_id": "merge-1003-without_interaction_response"
+  }
+]

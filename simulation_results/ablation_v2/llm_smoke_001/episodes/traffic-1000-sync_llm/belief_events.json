@@ -1,0 +1,86 @@
+[
+  {
+    "observation_sim_time": 1.9000000000000006,
+    "observation_wall": 142354.1516369,
+    "latency_ms": 2126.601700001629,
+    "error": null,
+    "prompt_hash": "0315097fbcaa0c31377f3ad6594fe0e13c556fbfd0129af5c6f7aee9aebbea07",
+    "response": "{\n  \"1\": [0.95, 0.05, 0.0],\n  \"4\": [0.2, 0.8, 0.0],\n  \"7\": [0.9, 0.1, 0.0]\n}",
+    "usage": {
+      "completion_tokens": 61,
+      "prompt_tokens": 1097,
+      "total_tokens": 1158,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null
+      }
+    },
+    "episode_id": "traffic-1000-sync_llm",
+    "event": "response",
+    "request_id": 1,
+    "probabilities": {
+      "1": [
+        0.95,
+        0.05,
+        0.0
+      ],
+      "4": [
+        0.2,
+        0.8,
+        0.0
+      ],
+      "7": [
+        0.9,
+        0.1,
+        0.0
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 2.9000000000000012,
+    "observation_wall": 142356.9643908,
+    "latency_ms": 888.7092999939341,
+    "error": null,
+    "prompt_hash": "3bd0e8af9b768af34cc74b0dd4d1921d36c4240c9a39c97c87f357daf72b05d7",
+    "response": "{\n  \"1\": [0.95, 0.05, 0.00],\n  \"4\": [0.10, 0.85, 0.05],\n  \"7\": [0.90, 0.10, 0.00]\n}",
+    "usage": {
+      "completion_tokens": 68,
+      "prompt_tokens": 1097,
+      "total_tokens": 1165,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null
+      }
+    },
+    "episode_id": "traffic-1000-sync_llm",
+    "event": "response",
+    "request_id": 2,
+    "probabilities": {
+      "1": [
+        0.95,
+        0.05,
+        0.0
+      ],
+      "4": [
+        0.17,
+        0.8150000000000001,
+        0.015000000000000005
+      ],
+      "7": [
+        0.8999999999999999,
+        0.09999999999999998,
+        0.0
+      ]
+    }
+  }
+]

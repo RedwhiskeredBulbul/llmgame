@@ -1,0 +1,181 @@
+[
+  {
+    "observation_sim_time": 1.9000000000000006,
+    "observation_wall": 191558.9654898,
+    "latency_ms": 2639.102500019362,
+    "error": null,
+    "prompt_hash": "cd024f8b85767c641df6833d97e640e5b2c51a02e71f180372c62783cb2dd1a3",
+    "response": "{\n  \"19\": [0.1, 0.1, 0.8],\n  \"20\": [0.1, 0.1, 0.8],\n  \"4\": [0.8, 0.1, 0.1]\n}",
+    "usage": {
+      "completion_tokens": 61,
+      "prompt_tokens": 2309,
+      "total_tokens": 2370,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "df22-feas-0-None-None-full_model",
+    "event": "response",
+    "request_id": 1,
+    "probabilities": {
+      "19": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "20": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "4": [
+        0.8,
+        0.1,
+        0.1
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 2.9000000000000012,
+    "observation_wall": 191562.7658522,
+    "latency_ms": 1077.2743000125047,
+    "error": null,
+    "prompt_hash": "f8b023bdda57338fc8f17d2737e225bd12395f5e5e62e8b6277f8a367905298d",
+    "response": "{\n  \"19\": [0.1, 0.1, 0.8],\n  \"20\": [0.1, 0.1, 0.8],\n  \"21\": [0.33, 0.34, 0.33]\n}",
+    "usage": {
+      "completion_tokens": 65,
+      "prompt_tokens": 2205,
+      "total_tokens": 2270,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "df22-feas-0-None-None-full_model",
+    "event": "response",
+    "request_id": 2,
+    "probabilities": {
+      "19": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "20": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "21": [
+        0.33,
+        0.34,
+        0.33
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 3.900000000000002,
+    "observation_wall": 191564.1846427,
+    "latency_ms": 1795.5007000127807,
+    "error": null,
+    "prompt_hash": "fe4bf8bd00f5b6c64a8cdd26d71b8cf881e66d3b2603e7a77a70462275246895",
+    "response": "{\n  \"19\": [0.1, 0.1, 0.8],\n  \"20\": [0.1, 0.1, 0.8],\n  \"21\": [0.1, 0.1, 0.8]\n}",
+    "usage": {
+      "completion_tokens": 62,
+      "prompt_tokens": 2318,
+      "total_tokens": 2380,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "df22-feas-0-None-None-full_model",
+    "event": "response",
+    "request_id": 3,
+    "probabilities": {
+      "19": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "20": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "21": [
+        0.261,
+        0.268,
+        0.47100000000000003
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 5.899999999999995,
+    "observation_wall": 191566.6579003,
+    "latency_ms": 912.9318000050262,
+    "error": null,
+    "prompt_hash": "5f7bbca068f6b8c96a9d693f9a142511e66f09f18022fd9d80398107163add82",
+    "response": "{\n  \"19\": [0.1, 0.1, 0.8],\n  \"20\": [0.1, 0.1, 0.8],\n  \"21\": [0.1, 0.1, 0.8]\n}",
+    "usage": {
+      "completion_tokens": 62,
+      "prompt_tokens": 2321,
+      "total_tokens": 2383,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "df22-feas-0-None-None-full_model",
+    "event": "response",
+    "request_id": 4,
+    "probabilities": {
+      "19": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "20": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "21": [
+        0.2127,
+        0.2176,
+        0.5697000000000001
+      ]
+    }
+  },
+  {
+    "probabilities": {
+      "19": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "20": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "21": [
+        0.1,
+        0.1,
+        0.8
+      ]
+    },
+    "observation_sim_time": 6.8999999999999915,
+    "observation_wall": 191567.8406837,
+    "latency_ms": 875.6288000149652,
+    "error": null,
+    "prompt_hash": "2b4de7441ed3f2f60de5f97657f89574d583590355d2f799fa2d0b32a4b45b7d",
+    "response": "{\n  \"19\": [0.1, 0.1, 0.8],\n  \"20\": [0.1, 0.1, 0.8],\n  \"21\": [0.1, 0.1, 0.8]\n}",
+    "usage": {
+      "completion_tokens": 62,
+      "prompt_tokens": 2294,
+      "total_tokens": 2356,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "event": "response_after_episode",
+    "episode_id": "df22-feas-0-None-None-full_model"
+  }
+]

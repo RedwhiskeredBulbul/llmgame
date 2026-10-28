@@ -1,0 +1,215 @@
+{
+  "git_commit": "0fca2abfaea16741d50d468831b276df3f388444",
+  "protocol_hash": "8b7f126dc8b556a3dee3e6f06b546112048817436cffed4d85d8b2f5c819d72d",
+  "phase": "v6b_style_diagnostic_df_smoke",
+  "occlusion_enabled": false,
+  "by_variant": {
+    "full_model": {
+      "episodes": 2,
+      "completed": 0,
+      "collisions": 0,
+      "timeouts": 0,
+      "runtime_errors": 0,
+      "probe_steps": 0,
+      "mean_speed_ms": 7.0,
+      "mean_restricted_time_s": 40.0,
+      "mean_min_clearance_m": 17.092420511502382
+    }
+  },
+  "by_key_type": {
+    "Cautious": {
+      "full_model": {
+        "episodes": 1,
+        "completed": 0,
+        "collisions": 0,
+        "timeouts": 0
+      }
+    },
+    "Normal": {
+      "full_model": {
+        "episodes": 1,
+        "completed": 0,
+        "collisions": 0,
+        "timeouts": 0
+      }
+    },
+    "Aggressive": {
+      "full_model": {
+        "episodes": 0,
+        "completed": 0,
+        "collisions": 0,
+        "timeouts": 0
+      }
+    }
+  },
+  "by_condition": {
+    "visible": {
+      "cases": 2,
+      "by_variant": {
+        "full_model": {
+          "episodes": 2,
+          "completed": 0,
+          "collisions": 0,
+          "timeouts": 0
+        }
+      },
+      "mcnemar": {}
+    }
+  },
+  "paired_effects": {},
+  "mcnemar": {},
+  "action_divergence": {},
+  "key_diagnostics": {
+    "samples": 2,
+    "first_observation_key_present": 2,
+    "first_observation_key_missing": 0,
+    "first_observation": {
+      "samples": 2,
+      "accuracy": 1.0,
+      "macro_f1": 0.6666666666666666,
+      "mean_brier_score": 0.13750000000000004,
+      "mean_latency_ms": 1362.6823499980674,
+      "confusion_matrix": {
+        "Cautious": {
+          "Cautious": 1,
+          "Normal": 0,
+          "Aggressive": 0,
+          "Unparsed": 0
+        },
+        "Normal": {
+          "Cautious": 0,
+          "Normal": 1,
+          "Aggressive": 0,
+          "Unparsed": 0
+        },
+        "Aggressive": {
+          "Cautious": 0,
+          "Normal": 0,
+          "Aggressive": 0,
+          "Unparsed": 0
+        }
+      }
+    },
+    "later_prediction": {
+      "samples": 2,
+      "accuracy": 1.0,
+      "macro_f1": 0.6666666666666666,
+      "mean_brier_score": 0.13750000000000004,
+      "mean_latency_ms": 1362.6823499980674,
+      "confusion_matrix": {
+        "Cautious": {
+          "Cautious": 1,
+          "Normal": 0,
+          "Aggressive": 0,
+          "Unparsed": 0
+        },
+        "Normal": {
+          "Cautious": 0,
+          "Normal": 1,
+          "Aggressive": 0,
+          "Unparsed": 0
+        },
+        "Aggressive": {
+          "Cautious": 0,
+          "Normal": 0,
+          "Aggressive": 0,
+          "Unparsed": 0
+        }
+      }
+    },
+    "by_true_label": {
+      "Cautious": {
+        "samples": 1,
+        "first_present": 1,
+        "first_missing": 0,
+        "first_accuracy": 1.0,
+        "first_predictions": {
+          "Cautious": 1,
+          "Normal": 0,
+          "Aggressive": 0
+        }
+      },
+      "Normal": {
+        "samples": 1,
+        "first_present": 1,
+        "first_missing": 0,
+        "first_accuracy": 1.0,
+        "first_predictions": {
+          "Cautious": 0,
+          "Normal": 1,
+          "Aggressive": 0
+        }
+      },
+      "Aggressive": {
+        "samples": 0,
+        "first_present": 0,
+        "first_missing": 0,
+        "first_accuracy": null,
+        "first_predictions": {
+          "Cautious": 0,
+          "Normal": 0,
+          "Aggressive": 0
+        }
+      }
+    },
+    "records": [
+      {
+        "case_id": "df-cutin-key-10200",
+        "key_type": "Cautious",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.85,
+          0.1,
+          0.05
+        ],
+        "first_latency_ms": 1581.6389999963576,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.85,
+          0.1,
+          0.05
+        ],
+        "later_latency_ms": 1581.6389999963576,
+        "first_correct": true,
+        "later_correct": true
+      },
+      {
+        "case_id": "df-cutin-key-10201",
+        "key_type": "Normal",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Normal",
+        "first_probabilities": [
+          0.2,
+          0.6,
+          0.2
+        ],
+        "first_latency_ms": 1143.7256999997771,
+        "later_predicted": "Normal",
+        "later_probabilities": [
+          0.2,
+          0.6,
+          0.2
+        ],
+        "later_latency_ms": 1143.7256999997771,
+        "first_correct": true,
+        "later_correct": true
+      }
+    ]
+  },
+  "gates": {
+    "complete": true,
+    "paired": true,
+    "no_runtime_errors": true,
+    "llm_requested": true,
+    "response_errors_zero": true
+  },
+  "all_gates_pass": true,
+  "algorithm_change": false,
+  "scene_change_only": true,
+  "interpretation": "DF_2_2 native road, native random-type background, and a native rear key vehicle whose initial speed and crossing response are type-consistent. No occlusion condition is used: the key is available in the first synchronous observation for every seed. The key response is type-scripted and independent of the controller variant. The comparison is limited to the configured variants; scene-level changes are documented in the protocol."
+}

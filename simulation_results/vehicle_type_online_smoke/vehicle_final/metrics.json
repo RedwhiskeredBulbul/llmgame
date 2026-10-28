@@ -1,0 +1,65 @@
+{
+  "samples": 7,
+  "parsed_predictions": 7,
+  "coverage": 1.0,
+  "accuracy": 0.42857142857142855,
+  "accuracy_95ci_wilson": [
+    0.15821985525146975,
+    0.7495416354723428
+  ],
+  "conditional_accuracy": 0.42857142857142855,
+  "macro_f1": 0.19999999999999998,
+  "per_class": {
+    "Cautious": {
+      "support": 3,
+      "precision": 0.42857142857142855,
+      "recall": 1.0,
+      "f1": 0.6
+    },
+    "Normal": {
+      "support": 4,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "Aggressive": {
+      "support": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    }
+  },
+  "confusion_matrix": {
+    "Cautious": {
+      "Cautious": 3,
+      "Normal": 0,
+      "Aggressive": 0,
+      "Unparsed": 0
+    },
+    "Normal": {
+      "Cautious": 4,
+      "Normal": 0,
+      "Aggressive": 0,
+      "Unparsed": 0
+    },
+    "Aggressive": {
+      "Cautious": 0,
+      "Normal": 0,
+      "Aggressive": 0,
+      "Unparsed": 0
+    }
+  },
+  "mean_brier_score": 1.142856808081302,
+  "mean_log_loss": 14.280982032354958,
+  "mean_confidence": 0.9999999147695914,
+  "mean_latency_s": 0.0,
+  "errors": 0,
+  "backend": "heuristic",
+  "model": "motion-heuristic-baseline",
+  "dataset": "continuous-DF_Cruise-final-vehicle",
+  "seeds": [
+    0,
+    1
+  ],
+  "temporal_alpha": 0.7
+}

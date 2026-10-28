@@ -1,0 +1,133 @@
+{
+  "protocol_version": "ablation-v2-v6-style-diagnostic-merge-v6-20261023",
+  "phase": "v6_style_diagnostic_merge_v6",
+  "variants": [
+    "full_model"
+  ],
+  "scenarios": [
+    "merge"
+  ],
+  "seeds": [
+    10300,
+    10301,
+    10302,
+    10303,
+    10304,
+    10305,
+    10306,
+    10307,
+    10308,
+    10309,
+    10310,
+    10311,
+    10312,
+    10313,
+    10314,
+    10315,
+    10316,
+    10317,
+    10318,
+    10319,
+    10320,
+    10321,
+    10322,
+    10323
+  ],
+  "control_dt_s": 0.1,
+  "execution_mode": "trajectory_point",
+  "time_mode": "paused_simulation",
+  "decision": {
+    "control_dt_s": 0.1,
+    "av_optimizer": "scalar_grid",
+    "max_game_iterations": 3,
+    "acceleration_tolerance_ms2": 0.05,
+    "solve_budget_ms": 100.0,
+    "reward_times_s": [
+      0.1,
+      0.5,
+      1.0,
+      2.0,
+      4.0,
+      8.0
+    ],
+    "route_progress_bonus": 2.0,
+    "switch_penalty": 0.1
+  },
+  "llm": {
+    "model": "qwen-flash-2025-07-28",
+    "temperature": 0.0,
+    "prompt_version": "relative_evidence_v6",
+    "history_len": 20,
+    "interval_steps": 10,
+    "temporal_alpha": 0.7,
+    "max_belief_age_sim_s": 3.0,
+    "sync_first_observation": true,
+    "timeout_s": 10.0,
+    "max_retries": 0,
+    "diagnostic_uniform_control": true
+  },
+  "runtime": {
+    "deadline_ms": 100.0,
+    "record_video": false,
+    "resume": true,
+    "max_steps": null
+  },
+  "observable_merge": {
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -27.5,
+    "key_initial_speed_ms": {
+      "0": 7.5,
+      "1": 9.5,
+      "2": 11.6
+    },
+    "key_initial_speed_offsets_ms": {
+      "0": [
+        -0.05,
+        0.0,
+        0.05
+      ],
+      "1": [
+        -0.05,
+        0.0,
+        0.05
+      ],
+      "2": [
+        -0.05,
+        0.0,
+        0.05
+      ]
+    },
+    "key_target_speed_ms": {
+      "0": 8.0,
+      "1": 10.0,
+      "2": 12.0
+    },
+    "key_response": {
+      "0": "yield",
+      "1": "idm",
+      "2": "force"
+    },
+    "merge_open_x_m": 40.0,
+    "horizon_s": 40.0,
+    "jitter": {
+      "ego_speed_ms": 0.0,
+      "key_relative_x_m": 0.0,
+      "key_initial_speed_ms": 0.0,
+      "key_target_speed_ms": 0.0
+    },
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "design": "all-typed random-background replication of the two-lane required-lane merge: 24 unseen seeds; the key vehicle type is drawn from a seeded balanced permutation and both background vehicles receive independent uniform random types (Cautious/Normal/Aggressive) from a seed-derived RNG. Thus all three surrounding vehicles carry type labels and are classified by the LLM, while geometry, key response parameters, controller, reward, candidate set, and LLM settings are unchanged from the frozen scale-50 protocol. Key initial speeds cycle deterministically through the verified 0.1 m/s band around the commit/probe boundary; no RNG jitter. Diagnostic recognition run: the controller receives the uniform prior, so the state trajectory does not depend on the prompt; only the logged prompt version differs between the v5 and v6 runs. This isolates prompt generalization from closed-loop feedback.",
+    "randomize_key_type": true,
+    "key_type_seed": 20261022,
+    "randomize_background_types": true,
+    "type_seed_offset": 20261022
+  }
+}

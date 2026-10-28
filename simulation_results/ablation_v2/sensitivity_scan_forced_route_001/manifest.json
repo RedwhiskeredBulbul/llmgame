@@ -1,0 +1,126 @@
+{
+  "git_commit": "baa449b634dc774215a808783623b986b86079e4",
+  "config": {
+    "protocol_version": "ablation-v2-pilot-20261016",
+    "phase": "pilot",
+    "variants": [
+      "full_model",
+      "uniform_belief",
+      "hard_type",
+      "without_interaction_response",
+      "without_probe",
+      "sync_llm",
+      "oracle_type"
+    ],
+    "scenarios": [
+      "merge",
+      "cutin",
+      "traffic"
+    ],
+    "seeds": [
+      1000,
+      1001,
+      1002,
+      1003,
+      1004
+    ],
+    "control_dt_s": 0.1,
+    "execution_mode": "trajectory_point",
+    "time_mode": "paused_simulation",
+    "decision": {
+      "control_dt_s": 0.1,
+      "av_optimizer": "scalar_grid",
+      "max_game_iterations": 3,
+      "acceleration_tolerance_ms2": 0.05,
+      "solve_budget_ms": 100.0,
+      "reward_times_s": [
+        0.1,
+        0.5,
+        1.0,
+        2.0,
+        4.0,
+        8.0
+      ],
+      "route_progress_bonus": 2.0,
+      "switch_penalty": 0.1
+    },
+    "llm": {
+      "model": "qwen-flash-2025-07-28",
+      "temperature": 0.0,
+      "history_len": 20,
+      "interval_steps": 10,
+      "temporal_alpha": 0.7,
+      "max_belief_age_sim_s": 2.0,
+      "timeout_s": 10.0,
+      "max_retries": 0
+    },
+    "runtime": {
+      "deadline_ms": 100.0,
+      "record_video": false,
+      "resume": true,
+      "max_steps": null
+    }
+  },
+  "scan_seed": 1200,
+  "ranges": {
+    "cutin": {
+      "ego_speed": [
+        15.0,
+        25.0
+      ],
+      "relative_x": [
+        -10.0,
+        20.0
+      ],
+      "relative_speed": [
+        -5.0,
+        5.0
+      ]
+    },
+    "traffic": {
+      "ego_speed": [
+        18.0,
+        30.0
+      ],
+      "relative_x": [
+        -15.0,
+        20.0
+      ],
+      "relative_speed": [
+        -8.0,
+        5.0
+      ]
+    }
+  },
+  "states_per_scenario": 12,
+  "forced_route": true,
+  "source_hashes": {
+    "experiments\\ablation_v2\\__init__.py": "0ddf94449fb4f4bb9b5d79bd04561a0f5b1c532d587d68a59318dd43c2cad6dc",
+    "experiments\\ablation_v2\\audit.py": "8ad20cf82bdb2f905966f0cc79485b3df838b9926a17260230f8060e10f30deb",
+    "experiments\\ablation_v2\\belief_provider.py": "2d9fc97cbf28dde46298d9b2d45aa0e1ccacd120e28bcd866cc3e9382a07a6fa",
+    "experiments\\ablation_v2\\benchmark_models.py": "a6ee46b0eb581c07ebdc0c81d58b4b681674f6e26e846a1d63252b79a2eef585",
+    "experiments\\ablation_v2\\config.py": "cdf9c096259bda9e03cb9d82f6d17054f23021a238c9cfc7ae99b308a54db1d1",
+    "experiments\\ablation_v2\\controller.py": "6924bf4910c5a48ac96172c7409aea59d96a4149d09fd326c9e09e2b0db1cc8f",
+    "experiments\\ablation_v2\\final_report.py": "a99d72a986ee3278d5841667b6290b4560372193235b57ddc827d16d85651eea",
+    "experiments\\ablation_v2\\interaction_diagnostic.py": "795244bc0b98481cc6f7bd16bba8430fc4a1e2b7fdb7e3228009dfce3000cb57",
+    "experiments\\ablation_v2\\latency_sweep.py": "11113f4b963e960e1a2287e406991d6afb941c2d66d5a195eadc26dbc4fcf50b",
+    "experiments\\ablation_v2\\mechanisms.py": "693eafb0c61b2e345a91ec8d07b11182eaf97c57610a32e58782ab8a38b0c418",
+    "experiments\\ablation_v2\\metrics.py": "3ffe0aefba3f7ad943ae9acc210aa70052efcc1b5f3e83b6330cd456e32bd981",
+    "experiments\\ablation_v2\\pipeline.py": "e6c2c3baa3c5021eeb864a2cef97a52955766fc62d03d7fed0db8abe1db4e82a",
+    "experiments\\ablation_v2\\reporting.py": "01ebfcf47077383f8e2d965afc50ce404ec2f217d26af1cdf62809d984a4e2c9",
+    "experiments\\ablation_v2\\run.py": "9a602a87ffe60418c9195a30a14cfb9232e3eea0d189cd39cb7046af4992f645",
+    "experiments\\ablation_v2\\runner.py": "3526cd7aa8f1060e6c939d4fdd5546b92e786a46c2398c1de5b3b89f07b07a82",
+    "experiments\\ablation_v2\\sensitivity_scan.py": "649d9b7d28481809299a9183118b88344fc84b8172ddc024122092600560aca1",
+    "experiments\\ablation_v2\\targeted_interaction.py": "e120ef6623df6f33dafcd74fdc92fc48b3c4d28169218021210d1d122a62e619",
+    "Game\\Game_solver.py": "1db8dc87036c9e71d47af9869df067b28979a3cad9ef0c5c072f357dccd1fd58",
+    "highway_env\\envs\\ablation_envs.py": "1a617e79c57985c02d2b32a0b0aa2b073a5734eca45a9972aab8f185c6a614f4",
+    "highway_env\\vehicle\\behavior.py": "8a72c834df2faac72b8f93f56602075a48e55f8f035737c6372ffedd8689e979",
+    "highway_env\\vehicle\\controller.py": "71c58512426913aee7896e8b6c4daf3c4a385cb676b4474bf77cfdd44c1aaa28",
+    "LLMreasoning\\llmreason.py": "9fbc8a180cd47e39acf02b51d14e58ea097412c147f9fac0dd21d6d2e97ef978",
+    "utils\\_from_env.py": "c15fabea3fb3cb1c7cb84d2df81162f8c58655a9e34af6b82cc88b8038a9bc27",
+    "utils\\Filter.py": "487d21f005b3e1ca4a10410e5ea4007476f1735cfd95c7ef5e34d105df35b99f"
+  },
+  "code_hash": "bb072ec58e1b4b4ddc86c738e704bbec671a54922d96eb954af163ab664b92e9",
+  "purpose": "development sensitivity scan; not performance evidence",
+  "algorithm_change": false
+}

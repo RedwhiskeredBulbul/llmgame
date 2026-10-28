@@ -1,0 +1,776 @@
+[
+  {
+    "case_id": "observable-df-workzone-9560",
+    "scenario": "traffic",
+    "seed": 9560,
+    "difficulty": 1,
+    "behaviour_index": 0,
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -30.5,
+    "key_initial_speed_ms": 7.45,
+    "key_target_speed_ms": 8.0,
+    "key_response": "yield",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "decision_open_x_m": 40.0,
+    "scene_speed_limit_ms": 10.0,
+    "ego_lane": 2,
+    "key_lane": 1,
+    "required_target_lane": 1,
+    "ending_lane": 2,
+    "ending_lane_x_m": 110.0,
+    "required_progress_m": 100.0,
+    "road_length_m": 800.0,
+    "background": [
+      {
+        "lane": 3,
+        "relative_x_m": 60.0,
+        "speed_ms": 8.0
+      },
+      {
+        "lane": 0,
+        "relative_x_m": 90.0,
+        "speed_ms": 8.0
+      }
+    ],
+    "horizon_s": 40.0
+  },
+  {
+    "case_id": "observable-df-workzone-9561",
+    "scenario": "traffic",
+    "seed": 9561,
+    "difficulty": 1,
+    "behaviour_index": 1,
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -30.5,
+    "key_initial_speed_ms": 9.45,
+    "key_target_speed_ms": 10.0,
+    "key_response": "idm",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "decision_open_x_m": 40.0,
+    "scene_speed_limit_ms": 10.0,
+    "ego_lane": 2,
+    "key_lane": 1,
+    "required_target_lane": 1,
+    "ending_lane": 2,
+    "ending_lane_x_m": 110.0,
+    "required_progress_m": 100.0,
+    "road_length_m": 800.0,
+    "background": [
+      {
+        "lane": 3,
+        "relative_x_m": 60.0,
+        "speed_ms": 8.0
+      },
+      {
+        "lane": 0,
+        "relative_x_m": 90.0,
+        "speed_ms": 8.0
+      }
+    ],
+    "horizon_s": 40.0
+  },
+  {
+    "case_id": "observable-df-workzone-9562",
+    "scenario": "traffic",
+    "seed": 9562,
+    "difficulty": 1,
+    "behaviour_index": 2,
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -30.5,
+    "key_initial_speed_ms": 11.549999999999999,
+    "key_target_speed_ms": 12.0,
+    "key_response": "force",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "decision_open_x_m": 40.0,
+    "scene_speed_limit_ms": 10.0,
+    "ego_lane": 2,
+    "key_lane": 1,
+    "required_target_lane": 1,
+    "ending_lane": 2,
+    "ending_lane_x_m": 110.0,
+    "required_progress_m": 100.0,
+    "road_length_m": 800.0,
+    "background": [
+      {
+        "lane": 3,
+        "relative_x_m": 60.0,
+        "speed_ms": 8.0
+      },
+      {
+        "lane": 0,
+        "relative_x_m": 90.0,
+        "speed_ms": 8.0
+      }
+    ],
+    "horizon_s": 40.0
+  },
+  {
+    "case_id": "observable-df-workzone-9563",
+    "scenario": "traffic",
+    "seed": 9563,
+    "difficulty": 1,
+    "behaviour_index": 0,
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -30.5,
+    "key_initial_speed_ms": 7.5,
+    "key_target_speed_ms": 8.0,
+    "key_response": "yield",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "decision_open_x_m": 40.0,
+    "scene_speed_limit_ms": 10.0,
+    "ego_lane": 2,
+    "key_lane": 1,
+    "required_target_lane": 1,
+    "ending_lane": 2,
+    "ending_lane_x_m": 110.0,
+    "required_progress_m": 100.0,
+    "road_length_m": 800.0,
+    "background": [
+      {
+        "lane": 3,
+        "relative_x_m": 60.0,
+        "speed_ms": 8.0
+      },
+      {
+        "lane": 0,
+        "relative_x_m": 90.0,
+        "speed_ms": 8.0
+      }
+    ],
+    "horizon_s": 40.0
+  },
+  {
+    "case_id": "observable-df-workzone-9564",
+    "scenario": "traffic",
+    "seed": 9564,
+    "difficulty": 1,
+    "behaviour_index": 1,
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -30.5,
+    "key_initial_speed_ms": 9.5,
+    "key_target_speed_ms": 10.0,
+    "key_response": "idm",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "decision_open_x_m": 40.0,
+    "scene_speed_limit_ms": 10.0,
+    "ego_lane": 2,
+    "key_lane": 1,
+    "required_target_lane": 1,
+    "ending_lane": 2,
+    "ending_lane_x_m": 110.0,
+    "required_progress_m": 100.0,
+    "road_length_m": 800.0,
+    "background": [
+      {
+        "lane": 3,
+        "relative_x_m": 60.0,
+        "speed_ms": 8.0
+      },
+      {
+        "lane": 0,
+        "relative_x_m": 90.0,
+        "speed_ms": 8.0
+      }
+    ],
+    "horizon_s": 40.0
+  },
+  {
+    "case_id": "observable-df-workzone-9565",
+    "scenario": "traffic",
+    "seed": 9565,
+    "difficulty": 1,
+    "behaviour_index": 2,
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -30.5,
+    "key_initial_speed_ms": 11.6,
+    "key_target_speed_ms": 12.0,
+    "key_response": "force",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "decision_open_x_m": 40.0,
+    "scene_speed_limit_ms": 10.0,
+    "ego_lane": 2,
+    "key_lane": 1,
+    "required_target_lane": 1,
+    "ending_lane": 2,
+    "ending_lane_x_m": 110.0,
+    "required_progress_m": 100.0,
+    "road_length_m": 800.0,
+    "background": [
+      {
+        "lane": 3,
+        "relative_x_m": 60.0,
+        "speed_ms": 8.0
+      },
+      {
+        "lane": 0,
+        "relative_x_m": 90.0,
+        "speed_ms": 8.0
+      }
+    ],
+    "horizon_s": 40.0
+  },
+  {
+    "case_id": "observable-df-workzone-9566",
+    "scenario": "traffic",
+    "seed": 9566,
+    "difficulty": 1,
+    "behaviour_index": 0,
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -30.5,
+    "key_initial_speed_ms": 7.55,
+    "key_target_speed_ms": 8.0,
+    "key_response": "yield",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "decision_open_x_m": 40.0,
+    "scene_speed_limit_ms": 10.0,
+    "ego_lane": 2,
+    "key_lane": 1,
+    "required_target_lane": 1,
+    "ending_lane": 2,
+    "ending_lane_x_m": 110.0,
+    "required_progress_m": 100.0,
+    "road_length_m": 800.0,
+    "background": [
+      {
+        "lane": 3,
+        "relative_x_m": 60.0,
+        "speed_ms": 8.0
+      },
+      {
+        "lane": 0,
+        "relative_x_m": 90.0,
+        "speed_ms": 8.0
+      }
+    ],
+    "horizon_s": 40.0
+  },
+  {
+    "case_id": "observable-df-workzone-9567",
+    "scenario": "traffic",
+    "seed": 9567,
+    "difficulty": 1,
+    "behaviour_index": 1,
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -30.5,
+    "key_initial_speed_ms": 9.55,
+    "key_target_speed_ms": 10.0,
+    "key_response": "idm",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "decision_open_x_m": 40.0,
+    "scene_speed_limit_ms": 10.0,
+    "ego_lane": 2,
+    "key_lane": 1,
+    "required_target_lane": 1,
+    "ending_lane": 2,
+    "ending_lane_x_m": 110.0,
+    "required_progress_m": 100.0,
+    "road_length_m": 800.0,
+    "background": [
+      {
+        "lane": 3,
+        "relative_x_m": 60.0,
+        "speed_ms": 8.0
+      },
+      {
+        "lane": 0,
+        "relative_x_m": 90.0,
+        "speed_ms": 8.0
+      }
+    ],
+    "horizon_s": 40.0
+  },
+  {
+    "case_id": "observable-df-workzone-9568",
+    "scenario": "traffic",
+    "seed": 9568,
+    "difficulty": 1,
+    "behaviour_index": 2,
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -30.5,
+    "key_initial_speed_ms": 11.65,
+    "key_target_speed_ms": 12.0,
+    "key_response": "force",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "decision_open_x_m": 40.0,
+    "scene_speed_limit_ms": 10.0,
+    "ego_lane": 2,
+    "key_lane": 1,
+    "required_target_lane": 1,
+    "ending_lane": 2,
+    "ending_lane_x_m": 110.0,
+    "required_progress_m": 100.0,
+    "road_length_m": 800.0,
+    "background": [
+      {
+        "lane": 3,
+        "relative_x_m": 60.0,
+        "speed_ms": 8.0
+      },
+      {
+        "lane": 0,
+        "relative_x_m": 90.0,
+        "speed_ms": 8.0
+      }
+    ],
+    "horizon_s": 40.0
+  },
+  {
+    "case_id": "observable-df-workzone-9569",
+    "scenario": "traffic",
+    "seed": 9569,
+    "difficulty": 1,
+    "behaviour_index": 0,
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -30.5,
+    "key_initial_speed_ms": 7.45,
+    "key_target_speed_ms": 8.0,
+    "key_response": "yield",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "decision_open_x_m": 40.0,
+    "scene_speed_limit_ms": 10.0,
+    "ego_lane": 2,
+    "key_lane": 1,
+    "required_target_lane": 1,
+    "ending_lane": 2,
+    "ending_lane_x_m": 110.0,
+    "required_progress_m": 100.0,
+    "road_length_m": 800.0,
+    "background": [
+      {
+        "lane": 3,
+        "relative_x_m": 60.0,
+        "speed_ms": 8.0
+      },
+      {
+        "lane": 0,
+        "relative_x_m": 90.0,
+        "speed_ms": 8.0
+      }
+    ],
+    "horizon_s": 40.0
+  },
+  {
+    "case_id": "observable-df-workzone-9570",
+    "scenario": "traffic",
+    "seed": 9570,
+    "difficulty": 1,
+    "behaviour_index": 1,
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -30.5,
+    "key_initial_speed_ms": 9.45,
+    "key_target_speed_ms": 10.0,
+    "key_response": "idm",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "decision_open_x_m": 40.0,
+    "scene_speed_limit_ms": 10.0,
+    "ego_lane": 2,
+    "key_lane": 1,
+    "required_target_lane": 1,
+    "ending_lane": 2,
+    "ending_lane_x_m": 110.0,
+    "required_progress_m": 100.0,
+    "road_length_m": 800.0,
+    "background": [
+      {
+        "lane": 3,
+        "relative_x_m": 60.0,
+        "speed_ms": 8.0
+      },
+      {
+        "lane": 0,
+        "relative_x_m": 90.0,
+        "speed_ms": 8.0
+      }
+    ],
+    "horizon_s": 40.0
+  },
+  {
+    "case_id": "observable-df-workzone-9571",
+    "scenario": "traffic",
+    "seed": 9571,
+    "difficulty": 1,
+    "behaviour_index": 2,
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -30.5,
+    "key_initial_speed_ms": 11.549999999999999,
+    "key_target_speed_ms": 12.0,
+    "key_response": "force",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "decision_open_x_m": 40.0,
+    "scene_speed_limit_ms": 10.0,
+    "ego_lane": 2,
+    "key_lane": 1,
+    "required_target_lane": 1,
+    "ending_lane": 2,
+    "ending_lane_x_m": 110.0,
+    "required_progress_m": 100.0,
+    "road_length_m": 800.0,
+    "background": [
+      {
+        "lane": 3,
+        "relative_x_m": 60.0,
+        "speed_ms": 8.0
+      },
+      {
+        "lane": 0,
+        "relative_x_m": 90.0,
+        "speed_ms": 8.0
+      }
+    ],
+    "horizon_s": 40.0
+  },
+  {
+    "case_id": "observable-df-workzone-9572",
+    "scenario": "traffic",
+    "seed": 9572,
+    "difficulty": 1,
+    "behaviour_index": 0,
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -30.5,
+    "key_initial_speed_ms": 7.5,
+    "key_target_speed_ms": 8.0,
+    "key_response": "yield",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "decision_open_x_m": 40.0,
+    "scene_speed_limit_ms": 10.0,
+    "ego_lane": 2,
+    "key_lane": 1,
+    "required_target_lane": 1,
+    "ending_lane": 2,
+    "ending_lane_x_m": 110.0,
+    "required_progress_m": 100.0,
+    "road_length_m": 800.0,
+    "background": [
+      {
+        "lane": 3,
+        "relative_x_m": 60.0,
+        "speed_ms": 8.0
+      },
+      {
+        "lane": 0,
+        "relative_x_m": 90.0,
+        "speed_ms": 8.0
+      }
+    ],
+    "horizon_s": 40.0
+  },
+  {
+    "case_id": "observable-df-workzone-9573",
+    "scenario": "traffic",
+    "seed": 9573,
+    "difficulty": 1,
+    "behaviour_index": 1,
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -30.5,
+    "key_initial_speed_ms": 9.5,
+    "key_target_speed_ms": 10.0,
+    "key_response": "idm",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "decision_open_x_m": 40.0,
+    "scene_speed_limit_ms": 10.0,
+    "ego_lane": 2,
+    "key_lane": 1,
+    "required_target_lane": 1,
+    "ending_lane": 2,
+    "ending_lane_x_m": 110.0,
+    "required_progress_m": 100.0,
+    "road_length_m": 800.0,
+    "background": [
+      {
+        "lane": 3,
+        "relative_x_m": 60.0,
+        "speed_ms": 8.0
+      },
+      {
+        "lane": 0,
+        "relative_x_m": 90.0,
+        "speed_ms": 8.0
+      }
+    ],
+    "horizon_s": 40.0
+  },
+  {
+    "case_id": "observable-df-workzone-9574",
+    "scenario": "traffic",
+    "seed": 9574,
+    "difficulty": 1,
+    "behaviour_index": 2,
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -30.5,
+    "key_initial_speed_ms": 11.6,
+    "key_target_speed_ms": 12.0,
+    "key_response": "force",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "decision_open_x_m": 40.0,
+    "scene_speed_limit_ms": 10.0,
+    "ego_lane": 2,
+    "key_lane": 1,
+    "required_target_lane": 1,
+    "ending_lane": 2,
+    "ending_lane_x_m": 110.0,
+    "required_progress_m": 100.0,
+    "road_length_m": 800.0,
+    "background": [
+      {
+        "lane": 3,
+        "relative_x_m": 60.0,
+        "speed_ms": 8.0
+      },
+      {
+        "lane": 0,
+        "relative_x_m": 90.0,
+        "speed_ms": 8.0
+      }
+    ],
+    "horizon_s": 40.0
+  },
+  {
+    "case_id": "observable-df-workzone-9575",
+    "scenario": "traffic",
+    "seed": 9575,
+    "difficulty": 1,
+    "behaviour_index": 0,
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -30.5,
+    "key_initial_speed_ms": 7.55,
+    "key_target_speed_ms": 8.0,
+    "key_response": "yield",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "decision_open_x_m": 40.0,
+    "scene_speed_limit_ms": 10.0,
+    "ego_lane": 2,
+    "key_lane": 1,
+    "required_target_lane": 1,
+    "ending_lane": 2,
+    "ending_lane_x_m": 110.0,
+    "required_progress_m": 100.0,
+    "road_length_m": 800.0,
+    "background": [
+      {
+        "lane": 3,
+        "relative_x_m": 60.0,
+        "speed_ms": 8.0
+      },
+      {
+        "lane": 0,
+        "relative_x_m": 90.0,
+        "speed_ms": 8.0
+      }
+    ],
+    "horizon_s": 40.0
+  },
+  {
+    "case_id": "observable-df-workzone-9576",
+    "scenario": "traffic",
+    "seed": 9576,
+    "difficulty": 1,
+    "behaviour_index": 1,
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -30.5,
+    "key_initial_speed_ms": 9.55,
+    "key_target_speed_ms": 10.0,
+    "key_response": "idm",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "decision_open_x_m": 40.0,
+    "scene_speed_limit_ms": 10.0,
+    "ego_lane": 2,
+    "key_lane": 1,
+    "required_target_lane": 1,
+    "ending_lane": 2,
+    "ending_lane_x_m": 110.0,
+    "required_progress_m": 100.0,
+    "road_length_m": 800.0,
+    "background": [
+      {
+        "lane": 3,
+        "relative_x_m": 60.0,
+        "speed_ms": 8.0
+      },
+      {
+        "lane": 0,
+        "relative_x_m": 90.0,
+        "speed_ms": 8.0
+      }
+    ],
+    "horizon_s": 40.0
+  },
+  {
+    "case_id": "observable-df-workzone-9577",
+    "scenario": "traffic",
+    "seed": 9577,
+    "difficulty": 1,
+    "behaviour_index": 2,
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -30.5,
+    "key_initial_speed_ms": 11.65,
+    "key_target_speed_ms": 12.0,
+    "key_response": "force",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "decision_open_x_m": 40.0,
+    "scene_speed_limit_ms": 10.0,
+    "ego_lane": 2,
+    "key_lane": 1,
+    "required_target_lane": 1,
+    "ending_lane": 2,
+    "ending_lane_x_m": 110.0,
+    "required_progress_m": 100.0,
+    "road_length_m": 800.0,
+    "background": [
+      {
+        "lane": 3,
+        "relative_x_m": 60.0,
+        "speed_ms": 8.0
+      },
+      {
+        "lane": 0,
+        "relative_x_m": 90.0,
+        "speed_ms": 8.0
+      }
+    ],
+    "horizon_s": 40.0
+  }
+]

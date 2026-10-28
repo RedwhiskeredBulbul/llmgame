@@ -1,0 +1,63 @@
+{
+  "samples": 150,
+  "parsed_predictions": 150,
+  "coverage": 1.0,
+  "accuracy": 0.32,
+  "accuracy_95ci_wilson": [
+    0.25064529057637863,
+    0.3983439973961289
+  ],
+  "conditional_accuracy": 0.32,
+  "macro_f1": 0.28586366821785997,
+  "per_class": {
+    "Cautious": {
+      "support": 59,
+      "precision": 0.38636363636363635,
+      "recall": 0.288135593220339,
+      "f1": 0.3300970873786408
+    },
+    "Normal": {
+      "support": 43,
+      "precision": 0.2872340425531915,
+      "recall": 0.627906976744186,
+      "f1": 0.39416058394160586
+    },
+    "Aggressive": {
+      "support": 48,
+      "precision": 0.3333333333333333,
+      "recall": 0.08333333333333333,
+      "f1": 0.13333333333333333
+    }
+  },
+  "confusion_matrix": {
+    "Cautious": {
+      "Cautious": 17,
+      "Normal": 35,
+      "Aggressive": 7,
+      "Unparsed": 0
+    },
+    "Normal": {
+      "Cautious": 15,
+      "Normal": 27,
+      "Aggressive": 1,
+      "Unparsed": 0
+    },
+    "Aggressive": {
+      "Cautious": 12,
+      "Normal": 32,
+      "Aggressive": 4,
+      "Unparsed": 0
+    }
+  },
+  "mean_brier_score": 0.8384,
+  "mean_log_loss": 1.5906771526305388,
+  "mean_confidence": 0.6276666666666667,
+  "mean_latency_s": 2.2899397959987984,
+  "errors": 0,
+  "backend": "qwen",
+  "model": "qwen-turbo",
+  "dataset": "simulation_results\\vehicle_type_dataset_v2_20f.jsonl",
+  "seed": 42,
+  "temporal_alpha": 0.0,
+  "prototype_file": "simulation_results\\vehicle_type_prototypes_train_50_99.json"
+}

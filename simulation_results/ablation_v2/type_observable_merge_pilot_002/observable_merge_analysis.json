@@ -1,0 +1,249 @@
+{
+  "git_commit": "bc83f4a24056bc14778dde42b7a538af250c2a10",
+  "protocol_hash": "97bb5fa1561ea094a6f2e1b65e6dbdf19c3bc95193eef03c395a4782eaa6cc61",
+  "phase": "type_observable_merge_pilot",
+  "by_variant": {
+    "full_model": {
+      "episodes": 9,
+      "completed": 8,
+      "collisions": 1,
+      "timeouts": 0,
+      "route_end_failures": 0,
+      "runtime_errors": 0,
+      "llm_requests": 45,
+      "llm_updates": 37,
+      "mean_belief_fallback_fraction": 0.3615423642820903,
+      "probe_steps": 140,
+      "mean_restricted_time_s": 13.355555555555538,
+      "mean_min_clearance_m": 14.337983038607055
+    },
+    "without_probe": {
+      "episodes": 9,
+      "completed": 6,
+      "collisions": 3,
+      "timeouts": 0,
+      "route_end_failures": 0,
+      "runtime_errors": 0,
+      "llm_requests": 31,
+      "llm_updates": 24,
+      "mean_belief_fallback_fraction": 0.3725031533081069,
+      "probe_steps": 0,
+      "mean_restricted_time_s": 18.99999999999999,
+      "mean_min_clearance_m": 14.179865949769777
+    },
+    "uniform_belief": {
+      "episodes": 9,
+      "completed": 6,
+      "collisions": 3,
+      "timeouts": 0,
+      "route_end_failures": 0,
+      "runtime_errors": 0,
+      "llm_requests": 0,
+      "llm_updates": 0,
+      "mean_belief_fallback_fraction": 0.0,
+      "probe_steps": 0,
+      "mean_restricted_time_s": 18.99999999999999,
+      "mean_min_clearance_m": 14.179865949769777
+    },
+    "oracle_type": {
+      "episodes": 9,
+      "completed": 9,
+      "collisions": 0,
+      "timeouts": 0,
+      "route_end_failures": 0,
+      "runtime_errors": 0,
+      "llm_requests": 0,
+      "llm_updates": 0,
+      "mean_belief_fallback_fraction": 0.0,
+      "probe_steps": 210,
+      "mean_restricted_time_s": 10.533333333333312,
+      "mean_min_clearance_m": 14.422770664304231
+    }
+  },
+  "paired_effects": {
+    "oracle_type": {
+      "better_success": 0,
+      "worse_success": 1,
+      "fewer_collisions": 0,
+      "more_collisions": 1,
+      "mean_restricted_time_difference_s": 2.822222222222226,
+      "mean_probe_step_difference": -7.777777777777778
+    },
+    "oracle_vs_uniform": {
+      "better_success": 3,
+      "worse_success": 0,
+      "fewer_collisions": 3,
+      "more_collisions": 0,
+      "mean_restricted_time_difference_s": -8.466666666666677,
+      "mean_probe_step_difference": 23.333333333333332
+    },
+    "uniform_belief": {
+      "better_success": 2,
+      "worse_success": 0,
+      "fewer_collisions": 2,
+      "more_collisions": 0,
+      "mean_restricted_time_difference_s": -5.644444444444452,
+      "mean_probe_step_difference": 15.555555555555555
+    },
+    "without_probe": {
+      "better_success": 2,
+      "worse_success": 0,
+      "fewer_collisions": 2,
+      "more_collisions": 0,
+      "mean_restricted_time_difference_s": -5.644444444444452,
+      "mean_probe_step_difference": 15.555555555555555
+    }
+  },
+  "action_divergence": {
+    "full_model_vs_uniform_belief": {
+      "steps": 681,
+      "divergent_steps": 72,
+      "divergent_fraction": 0.10572687224669604
+    },
+    "oracle_type_vs_uniform_belief": {
+      "steps": 681,
+      "divergent_steps": 108,
+      "divergent_fraction": 0.15859030837004406
+    },
+    "full_model_vs_oracle_type": {
+      "steps": 859,
+      "divergent_steps": 36,
+      "divergent_fraction": 0.04190919674039581
+    }
+  },
+  "llm_diagnostics": {
+    "model": "qwen-flash-2025-07-28",
+    "first_in_episode_vehicle_predictions": {
+      "samples": 54,
+      "parsed_predictions": 54,
+      "coverage": 1.0,
+      "accuracy": 0.2037037037037037,
+      "accuracy_95ci_wilson": [
+        0.11774054087421391,
+        0.3290230668833543
+      ],
+      "conditional_accuracy": 0.2037037037037037,
+      "macro_f1": 0.2672908486861975,
+      "per_class": {
+        "Cautious": {
+          "support": 6,
+          "precision": 0.4,
+          "recall": 1.0,
+          "f1": 0.5714285714285715
+        },
+        "Normal": {
+          "support": 42,
+          "precision": 1.0,
+          "recall": 0.047619047619047616,
+          "f1": 0.0909090909090909
+        },
+        "Aggressive": {
+          "support": 6,
+          "precision": 0.08108108108108109,
+          "recall": 0.5,
+          "f1": 0.13953488372093023
+        }
+      },
+      "confusion_matrix": {
+        "Cautious": {
+          "Cautious": 6,
+          "Normal": 0,
+          "Aggressive": 0,
+          "Unparsed": 0
+        },
+        "Normal": {
+          "Cautious": 6,
+          "Normal": 2,
+          "Aggressive": 34,
+          "Unparsed": 0
+        },
+        "Aggressive": {
+          "Cautious": 3,
+          "Normal": 0,
+          "Aggressive": 3,
+          "Unparsed": 0
+        }
+      },
+      "mean_brier_score": 1.2064296296296295,
+      "mean_log_loss": 1.9463169304513401,
+      "mean_confidence": 0.8262962962962962,
+      "mean_latency_s": 1.1195212444484544,
+      "errors": 0
+    },
+    "first_key_vehicle_predictions": {
+      "samples": 18,
+      "parsed_predictions": 18,
+      "coverage": 1.0,
+      "accuracy": 0.6111111111111112,
+      "accuracy_95ci_wilson": [
+        0.3861904160223791,
+        0.7969475342783638
+      ],
+      "conditional_accuracy": 0.6111111111111112,
+      "macro_f1": 0.5994152046783626,
+      "per_class": {
+        "Cautious": {
+          "support": 6,
+          "precision": 0.46153846153846156,
+          "recall": 1.0,
+          "f1": 0.631578947368421
+        },
+        "Normal": {
+          "support": 6,
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "f1": 0.5
+        },
+        "Aggressive": {
+          "support": 6,
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666
+        }
+      },
+      "confusion_matrix": {
+        "Cautious": {
+          "Cautious": 6,
+          "Normal": 0,
+          "Aggressive": 0,
+          "Unparsed": 0
+        },
+        "Normal": {
+          "Cautious": 4,
+          "Normal": 2,
+          "Aggressive": 0,
+          "Unparsed": 0
+        },
+        "Aggressive": {
+          "Cautious": 3,
+          "Normal": 0,
+          "Aggressive": 3,
+          "Unparsed": 0
+        }
+      },
+      "mean_brier_score": 0.5833666666666667,
+      "mean_log_loss": 0.9743868244759616,
+      "mean_confidence": 0.7938888888888889,
+      "mean_latency_s": 1.1195212444484544,
+      "errors": 0
+    },
+    "response_events": 61,
+    "responses_after_episode": 15,
+    "response_errors": 0,
+    "recorded_total_tokens": 149367,
+    "note": "First accepted in-episode prediction per episode/vehicle; repeated temporal predictions are not treated as independent samples.",
+    "prompt_version": "relative_evidence_v2"
+  },
+  "gates": {
+    "complete": true,
+    "paired": true,
+    "no_runtime_errors": true,
+    "llm_requested": true,
+    "llm_updated": true,
+    "response_errors_zero": true
+  },
+  "all_gates_pass": true,
+  "algorithm_change": false,
+  "scene_change_only": true,
+  "interpretation": "Scenario opens the target lane only after the observation phase; the key vehicle is behind in the target lane and its type controls gap closure. Not confirmatory evidence."
+}

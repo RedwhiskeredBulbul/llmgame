@@ -1,0 +1,23 @@
+{
+  "protocol_version": "ablation-v2-probe-fixed-pilot-20261016",
+  "phase": "pilot",
+  "variants": ["full_model", "uniform_belief", "hard_type", "without_interaction_response", "without_probe", "sync_llm", "oracle_type"],
+  "scenarios": ["merge"],
+  "seeds": [1000, 1001, 1002, 1003, 1004],
+  "control_dt_s": 0.1,
+  "execution_mode": "trajectory_point",
+  "time_mode": "paused_simulation",
+  "decision": {
+    "control_dt_s": 0.1, "av_optimizer": "scalar_grid",
+    "max_game_iterations": 3, "acceleration_tolerance_ms2": 0.05,
+    "solve_budget_ms": 100.0,
+    "reward_times_s": [0.1, 0.5, 1.0, 2.0, 4.0, 8.0],
+    "route_progress_bonus": 2.0, "switch_penalty": 0.1
+  },
+  "llm": {
+    "model": "qwen-flash-2025-07-28", "temperature": 0.0,
+    "history_len": 20, "interval_steps": 10, "temporal_alpha": 0.7,
+    "max_belief_age_sim_s": 2.0, "timeout_s": 10.0, "max_retries": 0
+  },
+  "runtime": {"deadline_ms": 100.0, "record_video": false, "resume": true, "max_steps": null}
+}

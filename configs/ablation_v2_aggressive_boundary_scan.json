@@ -1,0 +1,38 @@
+{
+  "protocol_version": "ablation-v2-aggressive-boundary-development-20261017",
+  "phase": "development_scan",
+  "variants": ["oracle_type", "uniform_belief"],
+  "scenarios": ["traffic"],
+  "seeds": [
+    5000, 5001, 5002, 5003, 5004, 5005, 5006, 5007,
+    5008, 5009, 5010, 5011, 5012, 5013, 5014, 5015,
+    5016, 5017, 5018, 5019, 5020, 5021, 5022, 5023
+  ],
+  "decision": {
+    "control_dt_s": 0.1,
+    "av_optimizer": "scalar_grid",
+    "max_game_iterations": 3,
+    "acceleration_tolerance_ms2": 0.05,
+    "solve_budget_ms": 100.0,
+    "reward_times_s": [0.1, 0.5, 1.0, 2.0, 4.0, 8.0],
+    "route_progress_bonus": 2.0,
+    "switch_penalty": 0.1
+  },
+  "boundary_scan": {
+    "center": {
+      "ego_speed_ms": 25.99681577036666,
+      "rear_relative_x_m": -5.3992976062063835,
+      "rear_relative_speed_ms": 0.944306761609031
+    },
+    "half_width": {
+      "ego_speed_ms": 0.25,
+      "rear_relative_x_m": 0.35,
+      "rear_relative_speed_ms": 0.20
+    },
+    "target_lane": 1,
+    "background_behaviour_index": 1,
+    "key_physical_type": "Aggressive",
+    "background_clearance_m": 12.0,
+    "purpose": "development localization only; all 24 states retained"
+  }
+}

@@ -1,0 +1,7 @@
+﻿variant,method,scenario,seed,step,speed_ms,acceleration_ms2,ttc_s,decision_latency_ms,selected_target_lane,llm_update,llm_latency_ms,llm_error
+deterministic_type,Deterministic Type,DF_3_1,0,0,11.944444444444445,0.0,13.56923076923077,7365.514000004623,0,0,,
+uniform_belief,Uniform Belief,DF_3_1,0,0,11.944444444444445,0.0,13.56923076923077,289.06230002758093,0,0,,
+deterministic_type,Deterministic Type,Adversarial_merge,0,0,16.666666666666668,0.0,50.0,128.27620000462048,3,0,,
+uniform_belief,Uniform Belief,Adversarial_merge,0,0,16.666666666666668,0.0,50.0,121.47600000025705,3,0,,
+deterministic_type,Deterministic Type,DF_CutIn,0,0,9.722222222222221,0.0,50.0,317.34350000624545,1,0,,
+uniform_belief,Uniform Belief,DF_CutIn,0,0,9.722222222222221,0.0,50.0,314.58289999864064,1,0,,

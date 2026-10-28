@@ -1,0 +1,650 @@
+[
+  {
+    "case_id": "observable-merge-10300",
+    "scenario": "merge",
+    "seed": 10300,
+    "difficulty": 1,
+    "behaviour_index": 2,
+    "background_types": [
+      0,
+      1
+    ],
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -27.5,
+    "key_initial_speed_ms": 11.549999999999999,
+    "key_target_speed_ms": 12.0,
+    "key_response": "force",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "merge_open_x_m": 40.0,
+    "horizon_s": 40.0
+  },
+  {
+    "case_id": "observable-merge-10301",
+    "scenario": "merge",
+    "seed": 10301,
+    "difficulty": 1,
+    "behaviour_index": 0,
+    "background_types": [
+      2,
+      2
+    ],
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -27.5,
+    "key_initial_speed_ms": 7.45,
+    "key_target_speed_ms": 8.0,
+    "key_response": "yield",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "merge_open_x_m": 40.0,
+    "horizon_s": 40.0
+  },
+  {
+    "case_id": "observable-merge-10302",
+    "scenario": "merge",
+    "seed": 10302,
+    "difficulty": 1,
+    "behaviour_index": 1,
+    "background_types": [
+      1,
+      0
+    ],
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -27.5,
+    "key_initial_speed_ms": 9.45,
+    "key_target_speed_ms": 10.0,
+    "key_response": "idm",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "merge_open_x_m": 40.0,
+    "horizon_s": 40.0
+  },
+  {
+    "case_id": "observable-merge-10303",
+    "scenario": "merge",
+    "seed": 10303,
+    "difficulty": 1,
+    "behaviour_index": 1,
+    "background_types": [
+      0,
+      0
+    ],
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -27.5,
+    "key_initial_speed_ms": 9.5,
+    "key_target_speed_ms": 10.0,
+    "key_response": "idm",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "merge_open_x_m": 40.0,
+    "horizon_s": 40.0
+  },
+  {
+    "case_id": "observable-merge-10304",
+    "scenario": "merge",
+    "seed": 10304,
+    "difficulty": 1,
+    "behaviour_index": 0,
+    "background_types": [
+      2,
+      2
+    ],
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -27.5,
+    "key_initial_speed_ms": 7.5,
+    "key_target_speed_ms": 8.0,
+    "key_response": "yield",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "merge_open_x_m": 40.0,
+    "horizon_s": 40.0
+  },
+  {
+    "case_id": "observable-merge-10305",
+    "scenario": "merge",
+    "seed": 10305,
+    "difficulty": 1,
+    "behaviour_index": 0,
+    "background_types": [
+      0,
+      0
+    ],
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -27.5,
+    "key_initial_speed_ms": 7.5,
+    "key_target_speed_ms": 8.0,
+    "key_response": "yield",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "merge_open_x_m": 40.0,
+    "horizon_s": 40.0
+  },
+  {
+    "case_id": "observable-merge-10306",
+    "scenario": "merge",
+    "seed": 10306,
+    "difficulty": 1,
+    "behaviour_index": 1,
+    "background_types": [
+      0,
+      0
+    ],
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -27.5,
+    "key_initial_speed_ms": 9.55,
+    "key_target_speed_ms": 10.0,
+    "key_response": "idm",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "merge_open_x_m": 40.0,
+    "horizon_s": 40.0
+  },
+  {
+    "case_id": "observable-merge-10307",
+    "scenario": "merge",
+    "seed": 10307,
+    "difficulty": 1,
+    "behaviour_index": 1,
+    "background_types": [
+      0,
+      1
+    ],
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -27.5,
+    "key_initial_speed_ms": 9.55,
+    "key_target_speed_ms": 10.0,
+    "key_response": "idm",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "merge_open_x_m": 40.0,
+    "horizon_s": 40.0
+  },
+  {
+    "case_id": "observable-merge-10308",
+    "scenario": "merge",
+    "seed": 10308,
+    "difficulty": 1,
+    "behaviour_index": 2,
+    "background_types": [
+      0,
+      0
+    ],
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -27.5,
+    "key_initial_speed_ms": 11.65,
+    "key_target_speed_ms": 12.0,
+    "key_response": "force",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "merge_open_x_m": 40.0,
+    "horizon_s": 40.0
+  },
+  {
+    "case_id": "observable-merge-10309",
+    "scenario": "merge",
+    "seed": 10309,
+    "difficulty": 1,
+    "behaviour_index": 0,
+    "background_types": [
+      2,
+      0
+    ],
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -27.5,
+    "key_initial_speed_ms": 7.45,
+    "key_target_speed_ms": 8.0,
+    "key_response": "yield",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "merge_open_x_m": 40.0,
+    "horizon_s": 40.0
+  },
+  {
+    "case_id": "observable-merge-10310",
+    "scenario": "merge",
+    "seed": 10310,
+    "difficulty": 1,
+    "behaviour_index": 2,
+    "background_types": [
+      2,
+      2
+    ],
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -27.5,
+    "key_initial_speed_ms": 11.549999999999999,
+    "key_target_speed_ms": 12.0,
+    "key_response": "force",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "merge_open_x_m": 40.0,
+    "horizon_s": 40.0
+  },
+  {
+    "case_id": "observable-merge-10311",
+    "scenario": "merge",
+    "seed": 10311,
+    "difficulty": 1,
+    "behaviour_index": 2,
+    "background_types": [
+      2,
+      1
+    ],
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -27.5,
+    "key_initial_speed_ms": 11.549999999999999,
+    "key_target_speed_ms": 12.0,
+    "key_response": "force",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "merge_open_x_m": 40.0,
+    "horizon_s": 40.0
+  },
+  {
+    "case_id": "observable-merge-10312",
+    "scenario": "merge",
+    "seed": 10312,
+    "difficulty": 1,
+    "behaviour_index": 2,
+    "background_types": [
+      0,
+      2
+    ],
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -27.5,
+    "key_initial_speed_ms": 11.6,
+    "key_target_speed_ms": 12.0,
+    "key_response": "force",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "merge_open_x_m": 40.0,
+    "horizon_s": 40.0
+  },
+  {
+    "case_id": "observable-merge-10313",
+    "scenario": "merge",
+    "seed": 10313,
+    "difficulty": 1,
+    "behaviour_index": 1,
+    "background_types": [
+      2,
+      0
+    ],
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -27.5,
+    "key_initial_speed_ms": 9.5,
+    "key_target_speed_ms": 10.0,
+    "key_response": "idm",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "merge_open_x_m": 40.0,
+    "horizon_s": 40.0
+  },
+  {
+    "case_id": "observable-merge-10314",
+    "scenario": "merge",
+    "seed": 10314,
+    "difficulty": 1,
+    "behaviour_index": 0,
+    "background_types": [
+      2,
+      2
+    ],
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -27.5,
+    "key_initial_speed_ms": 7.5,
+    "key_target_speed_ms": 8.0,
+    "key_response": "yield",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "merge_open_x_m": 40.0,
+    "horizon_s": 40.0
+  },
+  {
+    "case_id": "observable-merge-10315",
+    "scenario": "merge",
+    "seed": 10315,
+    "difficulty": 1,
+    "behaviour_index": 1,
+    "background_types": [
+      0,
+      2
+    ],
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -27.5,
+    "key_initial_speed_ms": 9.55,
+    "key_target_speed_ms": 10.0,
+    "key_response": "idm",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "merge_open_x_m": 40.0,
+    "horizon_s": 40.0
+  },
+  {
+    "case_id": "observable-merge-10316",
+    "scenario": "merge",
+    "seed": 10316,
+    "difficulty": 1,
+    "behaviour_index": 2,
+    "background_types": [
+      0,
+      2
+    ],
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -27.5,
+    "key_initial_speed_ms": 11.65,
+    "key_target_speed_ms": 12.0,
+    "key_response": "force",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "merge_open_x_m": 40.0,
+    "horizon_s": 40.0
+  },
+  {
+    "case_id": "observable-merge-10317",
+    "scenario": "merge",
+    "seed": 10317,
+    "difficulty": 1,
+    "behaviour_index": 1,
+    "background_types": [
+      2,
+      2
+    ],
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -27.5,
+    "key_initial_speed_ms": 9.55,
+    "key_target_speed_ms": 10.0,
+    "key_response": "idm",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "merge_open_x_m": 40.0,
+    "horizon_s": 40.0
+  },
+  {
+    "case_id": "observable-merge-10318",
+    "scenario": "merge",
+    "seed": 10318,
+    "difficulty": 1,
+    "behaviour_index": 1,
+    "background_types": [
+      2,
+      0
+    ],
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -27.5,
+    "key_initial_speed_ms": 9.45,
+    "key_target_speed_ms": 10.0,
+    "key_response": "idm",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "merge_open_x_m": 40.0,
+    "horizon_s": 40.0
+  },
+  {
+    "case_id": "observable-merge-10319",
+    "scenario": "merge",
+    "seed": 10319,
+    "difficulty": 1,
+    "behaviour_index": 2,
+    "background_types": [
+      2,
+      1
+    ],
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -27.5,
+    "key_initial_speed_ms": 11.549999999999999,
+    "key_target_speed_ms": 12.0,
+    "key_response": "force",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "merge_open_x_m": 40.0,
+    "horizon_s": 40.0
+  },
+  {
+    "case_id": "observable-merge-10320",
+    "scenario": "merge",
+    "seed": 10320,
+    "difficulty": 1,
+    "behaviour_index": 0,
+    "background_types": [
+      0,
+      2
+    ],
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -27.5,
+    "key_initial_speed_ms": 7.45,
+    "key_target_speed_ms": 8.0,
+    "key_response": "yield",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "merge_open_x_m": 40.0,
+    "horizon_s": 40.0
+  },
+  {
+    "case_id": "observable-merge-10321",
+    "scenario": "merge",
+    "seed": 10321,
+    "difficulty": 1,
+    "behaviour_index": 0,
+    "background_types": [
+      2,
+      0
+    ],
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -27.5,
+    "key_initial_speed_ms": 7.5,
+    "key_target_speed_ms": 8.0,
+    "key_response": "yield",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "merge_open_x_m": 40.0,
+    "horizon_s": 40.0
+  },
+  {
+    "case_id": "observable-merge-10322",
+    "scenario": "merge",
+    "seed": 10322,
+    "difficulty": 1,
+    "behaviour_index": 2,
+    "background_types": [
+      1,
+      0
+    ],
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -27.5,
+    "key_initial_speed_ms": 11.6,
+    "key_target_speed_ms": 12.0,
+    "key_response": "force",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "merge_open_x_m": 40.0,
+    "horizon_s": 40.0
+  },
+  {
+    "case_id": "observable-merge-10323",
+    "scenario": "merge",
+    "seed": 10323,
+    "difficulty": 1,
+    "behaviour_index": 0,
+    "background_types": [
+      0,
+      0
+    ],
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -27.5,
+    "key_initial_speed_ms": 7.5,
+    "key_target_speed_ms": 8.0,
+    "key_response": "yield",
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "merge_open_x_m": 40.0,
+    "horizon_s": 40.0
+  }
+]

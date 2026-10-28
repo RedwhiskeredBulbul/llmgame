@@ -1,0 +1,184 @@
+C:\Program1\anaconda\Lib\site-packages\pygame\pkgdata.py:25: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream, resource_exists
+[1/24] observable-merge-10300 full_model: collision requests=2 updates=1
+[2/24] observable-merge-10301 full_model: completed requests=3 updates=2
+[3/24] observable-merge-10302 full_model: completed requests=3 updates=3
+[4/24] observable-merge-10303 full_model: completed requests=3 updates=2
+[5/24] observable-merge-10304 full_model: completed requests=3 updates=2
+[6/24] observable-merge-10305 full_model: completed requests=3 updates=2
+[7/24] observable-merge-10306 full_model: completed requests=3 updates=3
+[8/24] observable-merge-10307 full_model: completed requests=3 updates=2
+[9/24] observable-merge-10308 full_model: collision requests=2 updates=1
+[10/24] observable-merge-10309 full_model: completed requests=3 updates=2
+[11/24] observable-merge-10310 full_model: collision requests=2 updates=2
+[12/24] observable-merge-10311 full_model: collision requests=2 updates=1
+[13/24] observable-merge-10312 full_model: collision requests=2 updates=1
+[14/24] observable-merge-10313 full_model: completed requests=3 updates=3
+[15/24] observable-merge-10314 full_model: completed requests=3 updates=2
+[16/24] observable-merge-10315 full_model: completed requests=3 updates=2
+[17/24] observable-merge-10316 full_model: collision requests=2 updates=2
+[18/24] observable-merge-10317 full_model: completed requests=3 updates=2
+[19/24] observable-merge-10318 full_model: completed requests=3 updates=2
+[20/24] observable-merge-10319 full_model: collision requests=2 updates=2
+[21/24] observable-merge-10320 full_model: completed requests=3 updates=2
+[22/24] observable-merge-10321 full_model: completed requests=3 updates=3
+[23/24] observable-merge-10322 full_model: collision requests=2 updates=1
+[24/24] observable-merge-10323 full_model: completed requests=3 updates=2
+{
+  "git_commit": "eee5edb2b28c42bfd6371f8d7aaef762837cce09",
+  "protocol_hash": "dcd50fd5776a05d721e6ece0cab88617d9718d6f80799783eef39a3a7cd3e13a",
+  "phase": "v6b_style_diagnostic_merge",
+  "by_variant": {
+    "full_model": {
+      "episodes": 24,
+      "completed": 16,
+      "collisions": 8,
+      "timeouts": 0,
+      "route_end_failures": 0,
+      "runtime_errors": 0,
+      "llm_requests": 64,
+      "llm_updates": 47,
+      "mean_belief_fallback_fraction": 0.0,
+      "probe_steps": 0,
+      "mean_restricted_time_s": 18.99999999999999,
+      "mean_min_clearance_m": 14.176338933624436
+    }
+  },
+  "paired_effects": {},
+  "action_divergence": {},
+  "llm_diagnostics": {
+    "model": "qwen-flash-2025-07-28",
+    "first_in_episode_vehicle_predictions": {
+      "samples": 72,
+      "parsed_predictions": 72,
+      "coverage": 1.0,
+      "accuracy": 0.8055555555555556,
+      "accuracy_95ci_wilson": [
+        0.6996724105411147,
+        0.8804852062054944
+      ],
+      "conditional_accuracy": 0.8055555555555556,
+      "macro_f1": 0.7838859998649288,
+      "per_class": {
+        "Cautious": {
+          "support": 30,
+          "precision": 1.0,
+          "recall": 0.7,
+          "f1": 0.8235294117647058
+        },
+        "Normal": {
+          "support": 14,
+          "precision": 0.75,
+          "recall": 0.6428571428571429,
+          "f1": 0.6923076923076924
+        },
+        "Aggressive": {
+          "support": 28,
+          "precision": 0.717948717948718,
+          "recall": 1.0,
+          "f1": 0.835820895522388
+        }
+      },
+      "confusion_matrix": {
+        "Cautious": {
+          "Cautious": 21,
+          "Normal": 3,
+          "Aggressive": 6,
+          "Unparsed": 0
+        },
+        "Normal": {
+          "Cautious": 0,
+          "Normal": 9,
+          "Aggressive": 5,
+          "Unparsed": 0
+        },
+        "Aggressive": {
+          "Cautious": 0,
+          "Normal": 0,
+          "Aggressive": 28,
+          "Unparsed": 0
+        }
+      },
+      "mean_brier_score": 0.34030277777777784,
+      "mean_log_loss": 1.0615955794895275,
+      "mean_confidence": 0.7465277777777778,
+      "mean_latency_s": 1.0653608666664998,
+      "errors": 0
+    },
+    "first_key_vehicle_predictions": {
+      "samples": 24,
+      "parsed_predictions": 24,
+      "coverage": 1.0,
+      "accuracy": 0.9583333333333334,
+      "accuracy_95ci_wilson": [
+        0.7975819352134406,
+        0.9926065438344942
+      ],
+      "conditional_accuracy": 0.9583333333333334,
+      "macro_f1": 0.9581699346405229,
+      "per_class": {
+        "Cautious": {
+          "support": 8,
+          "precision": 1.0,
+          "recall": 0.875,
+          "f1": 0.9333333333333333
+        },
+        "Normal": {
+          "support": 8,
+          "precision": 0.8888888888888888,
+          "recall": 1.0,
+          "f1": 0.9411764705882353
+        },
+        "Aggressive": {
+          "support": 8,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "confusion_matrix": {
+        "Cautious": {
+          "Cautious": 7,
+          "Normal": 1,
+          "Aggressive": 0,
+          "Unparsed": 0
+        },
+        "Normal": {
+          "Cautious": 0,
+          "Normal": 8,
+          "Aggressive": 0,
+          "Unparsed": 0
+        },
+        "Aggressive": {
+          "Cautious": 0,
+          "Normal": 0,
+          "Aggressive": 8,
+          "Unparsed": 0
+        }
+      },
+      "mean_brier_score": 0.17088333333333336,
+      "mean_log_loss": 0.36815684352008193,
+      "mean_confidence": 0.7129166666666666,
+      "mean_latency_s": 1.0653608666664998,
+      "errors": 0
+    },
+    "response_events": 47,
+    "responses_after_episode": 17,
+    "response_errors": 0,
+    "recorded_total_tokens": 187055,
+    "note": "First accepted in-episode prediction per episode/vehicle; repeated temporal predictions are not treated as independent samples.",
+    "prompt_version": "relative_evidence_v6b"
+  },
+  "gates": {
+    "complete": true,
+    "paired": true,
+    "no_runtime_errors": true,
+    "llm_requested": true,
+    "llm_updated": true,
+    "response_errors_zero": true
+  },
+  "all_gates_pass": true,
+  "algorithm_change": false,
+  "scene_change_only": true,
+  "interpretation": "Scenario opens the target lane only after the observation phase; the key vehicle is behind in the target lane and its type controls gap closure. Not confirmatory evidence."
+}

@@ -1,0 +1,1381 @@
+{
+  "git_commit": "8daa3a4904ead207b3feb58520a976ba640cf0f4",
+  "protocol_hash": "578b7ab3af34deff75717a474b98f209e04f57dbcb69b9319294f66191e8a449",
+  "phase": "type_observable_df_cutin_key_no_occlusion_50",
+  "occlusion_enabled": false,
+  "by_variant": {
+    "full_model": {
+      "episodes": 50,
+      "completed": 50,
+      "collisions": 0,
+      "timeouts": 0,
+      "runtime_errors": 0,
+      "probe_steps": 416,
+      "mean_speed_ms": 6.951462221509685,
+      "mean_restricted_time_s": 12.40799999999997,
+      "mean_min_clearance_m": 12.691761250064678
+    },
+    "uniform_belief": {
+      "episodes": 50,
+      "completed": 37,
+      "collisions": 13,
+      "timeouts": 0,
+      "runtime_errors": 0,
+      "probe_steps": 0,
+      "mean_speed_ms": 6.99069915577454,
+      "mean_restricted_time_s": 19.42799999999998,
+      "mean_min_clearance_m": 12.65087400415787
+    }
+  },
+  "by_key_type": {
+    "Cautious": {
+      "full_model": {
+        "episodes": 19,
+        "completed": 19,
+        "collisions": 0,
+        "timeouts": 0
+      },
+      "uniform_belief": {
+        "episodes": 19,
+        "completed": 19,
+        "collisions": 0,
+        "timeouts": 0
+      }
+    },
+    "Normal": {
+      "full_model": {
+        "episodes": 18,
+        "completed": 18,
+        "collisions": 0,
+        "timeouts": 0
+      },
+      "uniform_belief": {
+        "episodes": 18,
+        "completed": 18,
+        "collisions": 0,
+        "timeouts": 0
+      }
+    },
+    "Aggressive": {
+      "full_model": {
+        "episodes": 13,
+        "completed": 13,
+        "collisions": 0,
+        "timeouts": 0
+      },
+      "uniform_belief": {
+        "episodes": 13,
+        "completed": 0,
+        "collisions": 13,
+        "timeouts": 0
+      }
+    }
+  },
+  "by_condition": {
+    "visible": {
+      "cases": 50,
+      "by_variant": {
+        "full_model": {
+          "episodes": 50,
+          "completed": 50,
+          "collisions": 0,
+          "timeouts": 0
+        },
+        "uniform_belief": {
+          "episodes": 50,
+          "completed": 37,
+          "collisions": 13,
+          "timeouts": 0
+        }
+      },
+      "mcnemar": {
+        "full_model_vs_uniform_belief": {
+          "better": 13,
+          "worse": 0,
+          "p": 0.000244140625
+        }
+      }
+    }
+  },
+  "paired_effects": {
+    "uniform_belief": {
+      "better_success": 13,
+      "worse_success": 0,
+      "fewer_collisions": 13,
+      "more_collisions": 0,
+      "mean_restricted_time_difference_s": -7.020000000000007,
+      "mean_probe_step_difference": 8.32
+    }
+  },
+  "mcnemar": {
+    "full_model_vs_uniform_belief": {
+      "better": 13,
+      "worse": 0,
+      "p": 0.000244140625
+    }
+  },
+  "action_divergence": {
+    "full_model_vs_uniform_belief": {
+      "steps": 5229,
+      "divergent_steps": 312,
+      "divergent_fraction": 0.05966724039013196
+    }
+  },
+  "key_diagnostics": {
+    "samples": 50,
+    "first_observation_key_present": 50,
+    "first_observation_key_missing": 0,
+    "first_observation": {
+      "samples": 50,
+      "accuracy": 0.64,
+      "macro_f1": 0.5595238095238094,
+      "mean_brier_score": 0.5640000000000001,
+      "mean_latency_ms": 1247.8424519990222,
+      "confusion_matrix": {
+        "Cautious": {
+          "Cautious": 19,
+          "Normal": 0,
+          "Aggressive": 0,
+          "Unparsed": 0
+        },
+        "Normal": {
+          "Cautious": 18,
+          "Normal": 0,
+          "Aggressive": 0,
+          "Unparsed": 0
+        },
+        "Aggressive": {
+          "Cautious": 0,
+          "Normal": 0,
+          "Aggressive": 13,
+          "Unparsed": 0
+        }
+      }
+    },
+    "later_prediction": {
+      "samples": 50,
+      "accuracy": 0.64,
+      "macro_f1": 0.5595238095238094,
+      "mean_brier_score": 0.5640000000000001,
+      "mean_latency_ms": 1247.8424519990222,
+      "confusion_matrix": {
+        "Cautious": {
+          "Cautious": 19,
+          "Normal": 0,
+          "Aggressive": 0,
+          "Unparsed": 0
+        },
+        "Normal": {
+          "Cautious": 18,
+          "Normal": 0,
+          "Aggressive": 0,
+          "Unparsed": 0
+        },
+        "Aggressive": {
+          "Cautious": 0,
+          "Normal": 0,
+          "Aggressive": 13,
+          "Unparsed": 0
+        }
+      }
+    },
+    "by_true_label": {
+      "Cautious": {
+        "samples": 19,
+        "first_present": 19,
+        "first_missing": 0,
+        "first_accuracy": 1.0,
+        "first_predictions": {
+          "Cautious": 19,
+          "Normal": 0,
+          "Aggressive": 0
+        }
+      },
+      "Normal": {
+        "samples": 18,
+        "first_present": 18,
+        "first_missing": 0,
+        "first_accuracy": 0.0,
+        "first_predictions": {
+          "Cautious": 18,
+          "Normal": 0,
+          "Aggressive": 0
+        }
+      },
+      "Aggressive": {
+        "samples": 13,
+        "first_present": 13,
+        "first_missing": 0,
+        "first_accuracy": 1.0,
+        "first_predictions": {
+          "Cautious": 0,
+          "Normal": 0,
+          "Aggressive": 13
+        }
+      }
+    },
+    "records": [
+      {
+        "case_id": "df-cutin-key-9950",
+        "key_type": "Cautious",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "first_latency_ms": 1074.3064999987837,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "later_latency_ms": 1074.3064999987837,
+        "first_correct": true,
+        "later_correct": true
+      },
+      {
+        "case_id": "df-cutin-key-9951",
+        "key_type": "Aggressive",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Aggressive",
+        "first_probabilities": [
+          0.1,
+          0.1,
+          0.8
+        ],
+        "first_latency_ms": 2280.4331999941496,
+        "later_predicted": "Aggressive",
+        "later_probabilities": [
+          0.1,
+          0.1,
+          0.8
+        ],
+        "later_latency_ms": 2280.4331999941496,
+        "first_correct": true,
+        "later_correct": true
+      },
+      {
+        "case_id": "df-cutin-key-9952",
+        "key_type": "Normal",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "first_latency_ms": 1020.0230999980704,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "later_latency_ms": 1020.0230999980704,
+        "first_correct": false,
+        "later_correct": false
+      },
+      {
+        "case_id": "df-cutin-key-9953",
+        "key_type": "Cautious",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "first_latency_ms": 1187.6829999964684,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "later_latency_ms": 1187.6829999964684,
+        "first_correct": true,
+        "later_correct": true
+      },
+      {
+        "case_id": "df-cutin-key-9954",
+        "key_type": "Normal",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "first_latency_ms": 1049.925399995118,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "later_latency_ms": 1049.925399995118,
+        "first_correct": false,
+        "later_correct": false
+      },
+      {
+        "case_id": "df-cutin-key-9955",
+        "key_type": "Normal",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "first_latency_ms": 1306.1683000050834,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "later_latency_ms": 1306.1683000050834,
+        "first_correct": false,
+        "later_correct": false
+      },
+      {
+        "case_id": "df-cutin-key-9956",
+        "key_type": "Cautious",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "first_latency_ms": 889.0701999989687,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "later_latency_ms": 889.0701999989687,
+        "first_correct": true,
+        "later_correct": true
+      },
+      {
+        "case_id": "df-cutin-key-9957",
+        "key_type": "Aggressive",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Aggressive",
+        "first_probabilities": [
+          0.1,
+          0.1,
+          0.8
+        ],
+        "first_latency_ms": 1055.3076999931363,
+        "later_predicted": "Aggressive",
+        "later_probabilities": [
+          0.1,
+          0.1,
+          0.8
+        ],
+        "later_latency_ms": 1055.3076999931363,
+        "first_correct": true,
+        "later_correct": true
+      },
+      {
+        "case_id": "df-cutin-key-9958",
+        "key_type": "Normal",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "first_latency_ms": 1309.3303999994532,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "later_latency_ms": 1309.3303999994532,
+        "first_correct": false,
+        "later_correct": false
+      },
+      {
+        "case_id": "df-cutin-key-9959",
+        "key_type": "Normal",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "first_latency_ms": 1249.7258999937912,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "later_latency_ms": 1249.7258999937912,
+        "first_correct": false,
+        "later_correct": false
+      },
+      {
+        "case_id": "df-cutin-key-9960",
+        "key_type": "Aggressive",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Aggressive",
+        "first_probabilities": [
+          0.1,
+          0.1,
+          0.8
+        ],
+        "first_latency_ms": 1359.3858999956865,
+        "later_predicted": "Aggressive",
+        "later_probabilities": [
+          0.1,
+          0.1,
+          0.8
+        ],
+        "later_latency_ms": 1359.3858999956865,
+        "first_correct": true,
+        "later_correct": true
+      },
+      {
+        "case_id": "df-cutin-key-9961",
+        "key_type": "Cautious",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "first_latency_ms": 1104.9200999987079,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "later_latency_ms": 1104.9200999987079,
+        "first_correct": true,
+        "later_correct": true
+      },
+      {
+        "case_id": "df-cutin-key-9962",
+        "key_type": "Cautious",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "first_latency_ms": 994.1564999971888,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "later_latency_ms": 994.1564999971888,
+        "first_correct": true,
+        "later_correct": true
+      },
+      {
+        "case_id": "df-cutin-key-9963",
+        "key_type": "Cautious",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "first_latency_ms": 1132.3516000047675,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "later_latency_ms": 1132.3516000047675,
+        "first_correct": true,
+        "later_correct": true
+      },
+      {
+        "case_id": "df-cutin-key-9964",
+        "key_type": "Aggressive",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Aggressive",
+        "first_probabilities": [
+          0.1,
+          0.1,
+          0.8
+        ],
+        "first_latency_ms": 1374.7999999977765,
+        "later_predicted": "Aggressive",
+        "later_probabilities": [
+          0.1,
+          0.1,
+          0.8
+        ],
+        "later_latency_ms": 1374.7999999977765,
+        "first_correct": true,
+        "later_correct": true
+      },
+      {
+        "case_id": "df-cutin-key-9965",
+        "key_type": "Cautious",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "first_latency_ms": 985.4273999953875,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "later_latency_ms": 985.4273999953875,
+        "first_correct": true,
+        "later_correct": true
+      },
+      {
+        "case_id": "df-cutin-key-9966",
+        "key_type": "Normal",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "first_latency_ms": 1163.0593000008957,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "later_latency_ms": 1163.0593000008957,
+        "first_correct": false,
+        "later_correct": false
+      },
+      {
+        "case_id": "df-cutin-key-9967",
+        "key_type": "Normal",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "first_latency_ms": 1274.959399997897,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "later_latency_ms": 1274.959399997897,
+        "first_correct": false,
+        "later_correct": false
+      },
+      {
+        "case_id": "df-cutin-key-9968",
+        "key_type": "Normal",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "first_latency_ms": 1356.4297999982955,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "later_latency_ms": 1356.4297999982955,
+        "first_correct": false,
+        "later_correct": false
+      },
+      {
+        "case_id": "df-cutin-key-9969",
+        "key_type": "Aggressive",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Aggressive",
+        "first_probabilities": [
+          0.1,
+          0.1,
+          0.8
+        ],
+        "first_latency_ms": 1209.5396000004257,
+        "later_predicted": "Aggressive",
+        "later_probabilities": [
+          0.1,
+          0.1,
+          0.8
+        ],
+        "later_latency_ms": 1209.5396000004257,
+        "first_correct": true,
+        "later_correct": true
+      },
+      {
+        "case_id": "df-cutin-key-9970",
+        "key_type": "Normal",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "first_latency_ms": 1221.3399000029312,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "later_latency_ms": 1221.3399000029312,
+        "first_correct": false,
+        "later_correct": false
+      },
+      {
+        "case_id": "df-cutin-key-9971",
+        "key_type": "Aggressive",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Aggressive",
+        "first_probabilities": [
+          0.1,
+          0.1,
+          0.8
+        ],
+        "first_latency_ms": 1305.916499994055,
+        "later_predicted": "Aggressive",
+        "later_probabilities": [
+          0.1,
+          0.1,
+          0.8
+        ],
+        "later_latency_ms": 1305.916499994055,
+        "first_correct": true,
+        "later_correct": true
+      },
+      {
+        "case_id": "df-cutin-key-9972",
+        "key_type": "Normal",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "first_latency_ms": 1068.4633999990183,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "later_latency_ms": 1068.4633999990183,
+        "first_correct": false,
+        "later_correct": false
+      },
+      {
+        "case_id": "df-cutin-key-9973",
+        "key_type": "Cautious",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "first_latency_ms": 1100.6679000056465,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "later_latency_ms": 1100.6679000056465,
+        "first_correct": true,
+        "later_correct": true
+      },
+      {
+        "case_id": "df-cutin-key-9974",
+        "key_type": "Aggressive",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Aggressive",
+        "first_probabilities": [
+          0.1,
+          0.1,
+          0.8
+        ],
+        "first_latency_ms": 1109.8865999956615,
+        "later_predicted": "Aggressive",
+        "later_probabilities": [
+          0.1,
+          0.1,
+          0.8
+        ],
+        "later_latency_ms": 1109.8865999956615,
+        "first_correct": true,
+        "later_correct": true
+      },
+      {
+        "case_id": "df-cutin-key-9975",
+        "key_type": "Cautious",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "first_latency_ms": 1181.7359999986365,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "later_latency_ms": 1181.7359999986365,
+        "first_correct": true,
+        "later_correct": true
+      },
+      {
+        "case_id": "df-cutin-key-9976",
+        "key_type": "Normal",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "first_latency_ms": 1147.4581000002217,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "later_latency_ms": 1147.4581000002217,
+        "first_correct": false,
+        "later_correct": false
+      },
+      {
+        "case_id": "df-cutin-key-9977",
+        "key_type": "Aggressive",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Aggressive",
+        "first_probabilities": [
+          0.1,
+          0.1,
+          0.8
+        ],
+        "first_latency_ms": 1229.284099994402,
+        "later_predicted": "Aggressive",
+        "later_probabilities": [
+          0.1,
+          0.1,
+          0.8
+        ],
+        "later_latency_ms": 1229.284099994402,
+        "first_correct": true,
+        "later_correct": true
+      },
+      {
+        "case_id": "df-cutin-key-9978",
+        "key_type": "Aggressive",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Aggressive",
+        "first_probabilities": [
+          0.1,
+          0.1,
+          0.8
+        ],
+        "first_latency_ms": 1387.8715999962878,
+        "later_predicted": "Aggressive",
+        "later_probabilities": [
+          0.1,
+          0.1,
+          0.8
+        ],
+        "later_latency_ms": 1387.8715999962878,
+        "first_correct": true,
+        "later_correct": true
+      },
+      {
+        "case_id": "df-cutin-key-9979",
+        "key_type": "Cautious",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "first_latency_ms": 1183.8695000042208,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "later_latency_ms": 1183.8695000042208,
+        "first_correct": true,
+        "later_correct": true
+      },
+      {
+        "case_id": "df-cutin-key-9980",
+        "key_type": "Aggressive",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Aggressive",
+        "first_probabilities": [
+          0.1,
+          0.1,
+          0.8
+        ],
+        "first_latency_ms": 1107.3476000019582,
+        "later_predicted": "Aggressive",
+        "later_probabilities": [
+          0.1,
+          0.1,
+          0.8
+        ],
+        "later_latency_ms": 1107.3476000019582,
+        "first_correct": true,
+        "later_correct": true
+      },
+      {
+        "case_id": "df-cutin-key-9981",
+        "key_type": "Aggressive",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Aggressive",
+        "first_probabilities": [
+          0.1,
+          0.1,
+          0.8
+        ],
+        "first_latency_ms": 2017.41619999666,
+        "later_predicted": "Aggressive",
+        "later_probabilities": [
+          0.1,
+          0.1,
+          0.8
+        ],
+        "later_latency_ms": 2017.41619999666,
+        "first_correct": true,
+        "later_correct": true
+      },
+      {
+        "case_id": "df-cutin-key-9982",
+        "key_type": "Aggressive",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Aggressive",
+        "first_probabilities": [
+          0.1,
+          0.1,
+          0.8
+        ],
+        "first_latency_ms": 919.1668000057689,
+        "later_predicted": "Aggressive",
+        "later_probabilities": [
+          0.1,
+          0.1,
+          0.8
+        ],
+        "later_latency_ms": 919.1668000057689,
+        "first_correct": true,
+        "later_correct": true
+      },
+      {
+        "case_id": "df-cutin-key-9983",
+        "key_type": "Normal",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "first_latency_ms": 1266.1924999993062,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "later_latency_ms": 1266.1924999993062,
+        "first_correct": false,
+        "later_correct": false
+      },
+      {
+        "case_id": "df-cutin-key-9984",
+        "key_type": "Normal",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "first_latency_ms": 1198.644800002512,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "later_latency_ms": 1198.644800002512,
+        "first_correct": false,
+        "later_correct": false
+      },
+      {
+        "case_id": "df-cutin-key-9985",
+        "key_type": "Cautious",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "first_latency_ms": 1068.2598999992479,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "later_latency_ms": 1068.2598999992479,
+        "first_correct": true,
+        "later_correct": true
+      },
+      {
+        "case_id": "df-cutin-key-9986",
+        "key_type": "Cautious",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "first_latency_ms": 1190.7772999984445,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "later_latency_ms": 1190.7772999984445,
+        "first_correct": true,
+        "later_correct": true
+      },
+      {
+        "case_id": "df-cutin-key-9987",
+        "key_type": "Cautious",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "first_latency_ms": 1459.5828000019537,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "later_latency_ms": 1459.5828000019537,
+        "first_correct": true,
+        "later_correct": true
+      },
+      {
+        "case_id": "df-cutin-key-9988",
+        "key_type": "Normal",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "first_latency_ms": 1217.8029999995488,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "later_latency_ms": 1217.8029999995488,
+        "first_correct": false,
+        "later_correct": false
+      },
+      {
+        "case_id": "df-cutin-key-9989",
+        "key_type": "Normal",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "first_latency_ms": 1278.2283999986248,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "later_latency_ms": 1278.2283999986248,
+        "first_correct": false,
+        "later_correct": false
+      },
+      {
+        "case_id": "df-cutin-key-9990",
+        "key_type": "Aggressive",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Aggressive",
+        "first_probabilities": [
+          0.1,
+          0.1,
+          0.8
+        ],
+        "first_latency_ms": 1206.2829999995301,
+        "later_predicted": "Aggressive",
+        "later_probabilities": [
+          0.1,
+          0.1,
+          0.8
+        ],
+        "later_latency_ms": 1206.2829999995301,
+        "first_correct": true,
+        "later_correct": true
+      },
+      {
+        "case_id": "df-cutin-key-9991",
+        "key_type": "Normal",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "first_latency_ms": 1632.1993000019575,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "later_latency_ms": 1632.1993000019575,
+        "first_correct": false,
+        "later_correct": false
+      },
+      {
+        "case_id": "df-cutin-key-9992",
+        "key_type": "Cautious",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "first_latency_ms": 1187.0960000014747,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "later_latency_ms": 1187.0960000014747,
+        "first_correct": true,
+        "later_correct": true
+      },
+      {
+        "case_id": "df-cutin-key-9993",
+        "key_type": "Cautious",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "first_latency_ms": 1415.4854999942472,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "later_latency_ms": 1415.4854999942472,
+        "first_correct": true,
+        "later_correct": true
+      },
+      {
+        "case_id": "df-cutin-key-9994",
+        "key_type": "Cautious",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "first_latency_ms": 1532.5020000018412,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "later_latency_ms": 1532.5020000018412,
+        "first_correct": true,
+        "later_correct": true
+      },
+      {
+        "case_id": "df-cutin-key-9995",
+        "key_type": "Normal",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "first_latency_ms": 1249.6880000035162,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "later_latency_ms": 1249.6880000035162,
+        "first_correct": false,
+        "later_correct": false
+      },
+      {
+        "case_id": "df-cutin-key-9996",
+        "key_type": "Normal",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "first_latency_ms": 1116.1063999970793,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "later_latency_ms": 1116.1063999970793,
+        "first_correct": false,
+        "later_correct": false
+      },
+      {
+        "case_id": "df-cutin-key-9997",
+        "key_type": "Cautious",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "first_latency_ms": 1136.9451999999,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "later_latency_ms": 1136.9451999999,
+        "first_correct": true,
+        "later_correct": true
+      },
+      {
+        "case_id": "df-cutin-key-9998",
+        "key_type": "Cautious",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "first_latency_ms": 1263.001200000872,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "later_latency_ms": 1263.001200000872,
+        "first_correct": true,
+        "later_correct": true
+      },
+      {
+        "case_id": "df-cutin-key-9999",
+        "key_type": "Cautious",
+        "occluded": false,
+        "first_observation_sim_time": 1.9000000000000006,
+        "first_present": true,
+        "first_predicted": "Cautious",
+        "first_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "first_latency_ms": 1615.8997999955318,
+        "later_predicted": "Cautious",
+        "later_probabilities": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "later_latency_ms": 1615.8997999955318,
+        "first_correct": true,
+        "later_correct": true
+      }
+    ]
+  },
+  "gates": {
+    "complete": true,
+    "paired": true,
+    "no_runtime_errors": true,
+    "llm_requested": true,
+    "response_errors_zero": true
+  },
+  "all_gates_pass": true,
+  "algorithm_change": false,
+  "scene_change_only": true,
+  "interpretation": "DF_2_2 native road, native random-type background, and a native rear key vehicle whose initial speed and crossing response are type-consistent. No occlusion condition is used: the key is available in the first synchronous observation for every seed. The key response is type-scripted and independent of the controller variant. The comparison is limited to the configured variants; scene-level changes are documented in the protocol."
+}

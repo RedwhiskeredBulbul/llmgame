@@ -1,0 +1,109 @@
+[
+  {
+    "observation_sim_time": 0.8999999999999999,
+    "observation_wall": 226420.3670665,
+    "latency_ms": 1234.5848999975715,
+    "error": null,
+    "prompt_hash": "9aedbce04fe3e1103d5a8b54ecdf458c998ae1b0a6c6ea93a818f59fc6137cd1",
+    "response": "{\n  \"1\": [0.95, 0.05, 0.0],\n  \"2\": [0.0, 0.0, 1.0],\n  \"3\": [0.0, 0.0, 1.0]\n}",
+    "usage": {
+      "completion_tokens": 61,
+      "prompt_tokens": 1087,
+      "total_tokens": 1148,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "targeted-9015-without_probe",
+    "event": "response",
+    "request_id": 1,
+    "probabilities": {
+      "1": [
+        0.95,
+        0.05,
+        0.0
+      ],
+      "2": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "3": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 2.9000000000000012,
+    "observation_wall": 226421.75388,
+    "latency_ms": 841.7585999995936,
+    "error": null,
+    "prompt_hash": "2a41eea01374810851a875675ed943ae0759ff7b5c335bb8a443f7ffb3381742",
+    "response": "{\n  \"1\": [0.95, 0.05, 0.0],\n  \"2\": [0.0, 0.0, 1.0],\n  \"3\": [0.0, 0.0, 1.0]\n}",
+    "usage": {
+      "completion_tokens": 61,
+      "prompt_tokens": 1087,
+      "total_tokens": 1148,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "targeted-9015-without_probe",
+    "event": "response",
+    "request_id": 2,
+    "probabilities": {
+      "1": [
+        0.95,
+        0.05,
+        0.0
+      ],
+      "2": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "3": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "probabilities": {
+      "1": [
+        0.95,
+        0.05,
+        0.0
+      ],
+      "2": [
+        0.05,
+        0.9,
+        0.05
+      ],
+      "3": [
+        0.05,
+        0.9,
+        0.05
+      ]
+    },
+    "observation_sim_time": 4.899999999999999,
+    "observation_wall": 226422.6218647,
+    "latency_ms": 753.6149999941699,
+    "error": null,
+    "prompt_hash": "74faff6d5eaa46f5014567b0070450aef23d17c77258dbb148c896ca10fc6cb8",
+    "response": "{\n  \"1\": [0.95, 0.05, 0.00],\n  \"2\": [0.05, 0.90, 0.05],\n  \"3\": [0.05, 0.90, 0.05]\n}",
+    "usage": {
+      "completion_tokens": 68,
+      "prompt_tokens": 1085,
+      "total_tokens": 1153,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "event": "response_after_episode",
+    "episode_id": "targeted-9015-without_probe"
+  }
+]

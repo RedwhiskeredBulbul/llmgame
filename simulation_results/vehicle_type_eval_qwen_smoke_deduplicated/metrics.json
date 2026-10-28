@@ -1,0 +1,61 @@
+{
+  "samples": 3,
+  "parsed_predictions": 3,
+  "coverage": 1.0,
+  "accuracy": 0.3333333333333333,
+  "accuracy_95ci_wilson": [
+    0.06149194472039621,
+    0.7923403991979522
+  ],
+  "conditional_accuracy": 0.3333333333333333,
+  "macro_f1": 0.16666666666666666,
+  "per_class": {
+    "Cautious": {
+      "support": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "Normal": {
+      "support": 1,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "f1": 0.5
+    },
+    "Aggressive": {
+      "support": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    }
+  },
+  "confusion_matrix": {
+    "Cautious": {
+      "Cautious": 0,
+      "Normal": 1,
+      "Aggressive": 0,
+      "Unparsed": 0
+    },
+    "Normal": {
+      "Cautious": 0,
+      "Normal": 1,
+      "Aggressive": 0,
+      "Unparsed": 0
+    },
+    "Aggressive": {
+      "Cautious": 0,
+      "Normal": 1,
+      "Aggressive": 0,
+      "Unparsed": 0
+    }
+  },
+  "mean_brier_score": 0.8866666666666667,
+  "mean_log_loss": 1.3783888522474517,
+  "mean_confidence": 0.7666666666666666,
+  "mean_latency_s": 2.0653538333329684,
+  "errors": 0,
+  "backend": "qwen",
+  "model": "qwen-turbo",
+  "dataset": "synthetic-balanced-smoke-test",
+  "seed": 42
+}

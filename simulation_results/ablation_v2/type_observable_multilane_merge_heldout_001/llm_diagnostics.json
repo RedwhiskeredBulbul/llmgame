@@ -1,0 +1,122 @@
+{
+  "model": "qwen-flash-2025-07-28",
+  "first_in_episode_vehicle_predictions": {
+    "samples": 80,
+    "parsed_predictions": 80,
+    "coverage": 1.0,
+    "accuracy": 0.625,
+    "accuracy_95ci_wilson": [
+      0.5154872546314301,
+      0.7230582129846882
+    ],
+    "conditional_accuracy": 0.625,
+    "macro_f1": 0.623951182303585,
+    "per_class": {
+      "Cautious": {
+        "support": 28,
+        "precision": 0.5,
+        "recall": 0.8571428571428571,
+        "f1": 0.631578947368421
+      },
+      "Normal": {
+        "support": 26,
+        "precision": 1.0,
+        "recall": 0.46153846153846156,
+        "f1": 0.631578947368421
+      },
+      "Aggressive": {
+        "support": 26,
+        "precision": 0.7,
+        "recall": 0.5384615384615384,
+        "f1": 0.608695652173913
+      }
+    },
+    "confusion_matrix": {
+      "Cautious": {
+        "Cautious": 24,
+        "Normal": 0,
+        "Aggressive": 4,
+        "Unparsed": 0
+      },
+      "Normal": {
+        "Cautious": 12,
+        "Normal": 12,
+        "Aggressive": 2,
+        "Unparsed": 0
+      },
+      "Aggressive": {
+        "Cautious": 12,
+        "Normal": 0,
+        "Aggressive": 14,
+        "Unparsed": 0
+      }
+    },
+    "mean_brier_score": 0.6111700000000001,
+    "mean_log_loss": 1.0295342317365854,
+    "mean_confidence": 0.7805000000000001,
+    "mean_latency_s": 0.889785373750783,
+    "errors": 0
+  },
+  "first_key_vehicle_predictions": {
+    "samples": 36,
+    "parsed_predictions": 36,
+    "coverage": 1.0,
+    "accuracy": 1.0,
+    "accuracy_95ci_wilson": [
+      0.9035813714055363,
+      1.0
+    ],
+    "conditional_accuracy": 1.0,
+    "macro_f1": 1.0,
+    "per_class": {
+      "Cautious": {
+        "support": 12,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "Normal": {
+        "support": 12,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "Aggressive": {
+        "support": 12,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    },
+    "confusion_matrix": {
+      "Cautious": {
+        "Cautious": 12,
+        "Normal": 0,
+        "Aggressive": 0,
+        "Unparsed": 0
+      },
+      "Normal": {
+        "Cautious": 0,
+        "Normal": 12,
+        "Aggressive": 0,
+        "Unparsed": 0
+      },
+      "Aggressive": {
+        "Cautious": 0,
+        "Normal": 0,
+        "Aggressive": 12,
+        "Unparsed": 0
+      }
+    },
+    "mean_brier_score": 0.11259999999999998,
+    "mean_log_loss": 0.2822548897418482,
+    "mean_confidence": 0.7566666666666667,
+    "mean_latency_s": 0.8873203972244583,
+    "errors": 0
+  },
+  "response_events": 145,
+  "responses_after_episode": 29,
+  "response_errors": 0,
+  "recorded_total_tokens": 349471,
+  "note": "First accepted in-episode prediction per episode/vehicle; repeated temporal predictions are not treated as independent samples."
+}

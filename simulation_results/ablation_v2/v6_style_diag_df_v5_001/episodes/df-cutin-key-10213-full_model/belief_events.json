@@ -1,0 +1,109 @@
+[
+  {
+    "observation_sim_time": 1.9000000000000006,
+    "observation_wall": 62023.9217074,
+    "latency_ms": 1416.8613000001642,
+    "error": null,
+    "prompt_hash": "c9ad79385b6f58b82a76331572c0d48138684aef2f782422fe8c2fa24ed10ffc",
+    "response": "{\n  \"11\": [0.1, 0.1, 0.8],\n  \"7\": [0.8, 0.1, 0.1],\n  \"6\": [0.8, 0.1, 0.1]\n}",
+    "usage": {
+      "completion_tokens": 60,
+      "prompt_tokens": 2297,
+      "total_tokens": 2357,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "df-cutin-key-10213-full_model",
+    "event": "response",
+    "request_id": 1,
+    "probabilities": {
+      "11": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "7": [
+        0.8,
+        0.1,
+        0.1
+      ],
+      "6": [
+        0.8,
+        0.1,
+        0.1
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 2.9000000000000012,
+    "observation_wall": 62026.6422611,
+    "latency_ms": 1154.2115999982343,
+    "error": null,
+    "prompt_hash": "0483a2439f48d6cda50570f99faf2a7137ff5fdcdbf875765b0c9e98edfe05f2",
+    "response": "{\n  \"11\": [0.1, 0.1, 0.8],\n  \"7\": [0.8, 0.1, 0.1],\n  \"6\": [0.8, 0.1, 0.1]\n}",
+    "usage": {
+      "completion_tokens": 60,
+      "prompt_tokens": 2298,
+      "total_tokens": 2358,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "df-cutin-key-10213-full_model",
+    "event": "response",
+    "request_id": 2,
+    "probabilities": {
+      "11": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "7": [
+        0.8,
+        0.1,
+        0.1
+      ],
+      "6": [
+        0.8,
+        0.1,
+        0.1
+      ]
+    }
+  },
+  {
+    "probabilities": {
+      "11": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "7": [
+        0.8,
+        0.1,
+        0.1
+      ],
+      "6": [
+        0.8,
+        0.1,
+        0.1
+      ]
+    },
+    "observation_sim_time": 4.899999999999999,
+    "observation_wall": 62028.360286,
+    "latency_ms": 1143.577799994091,
+    "error": null,
+    "prompt_hash": "12f527da80c7ff2f4c968972f6a930f218923ce3d88f6c0ca2b667e33092aed1",
+    "response": "{\n  \"11\": [0.1, 0.1, 0.8],\n  \"7\": [0.8, 0.1, 0.1],\n  \"6\": [0.8, 0.1, 0.1]\n}",
+    "usage": {
+      "completion_tokens": 60,
+      "prompt_tokens": 2296,
+      "total_tokens": 2356,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "event": "response_after_episode",
+    "episode_id": "df-cutin-key-10213-full_model"
+  }
+]

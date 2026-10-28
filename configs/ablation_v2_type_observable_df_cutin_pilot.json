@@ -1,0 +1,69 @@
+{
+  "protocol_version": "ablation-v2-type-observable-df-cutin-pilot-v5-20261022",
+  "phase": "type_observable_df_cutin_pilot",
+  "variants": [
+    "full_model",
+    "without_probe",
+    "uniform_belief",
+    "oracle_type"
+  ],
+  "scenarios": [
+    "cutin"
+  ],
+  "seeds": [
+    9800,
+    9801,
+    9802,
+    9803,
+    9804,
+    9805
+  ],
+  "control_dt_s": 0.1,
+  "execution_mode": "trajectory_point",
+  "time_mode": "paused_simulation",
+  "decision": {
+    "control_dt_s": 0.1,
+    "av_optimizer": "scalar_grid",
+    "max_game_iterations": 3,
+    "acceleration_tolerance_ms2": 0.05,
+    "solve_budget_ms": 100.0,
+    "reward_times_s": [
+      0.1,
+      0.5,
+      1.0,
+      2.0,
+      4.0,
+      8.0
+    ],
+    "route_progress_bonus": 50.0,
+    "switch_penalty": 0.1
+  },
+  "llm": {
+    "model": "qwen-flash-2025-07-28",
+    "temperature": 0.0,
+    "prompt_version": "relative_evidence_v5",
+    "history_len": 20,
+    "interval_steps": 10,
+    "temporal_alpha": 0.7,
+    "max_belief_age_sim_s": 3.0,
+    "sync_first_observation": true,
+    "timeout_s": 10.0,
+    "max_retries": 0
+  },
+  "runtime": {
+    "deadline_ms": 100.0,
+    "record_video": false,
+    "resume": true,
+    "max_steps": null
+  },
+  "df_cutin": {
+    "required_target_lane": 0,
+    "horizon_s": 30.0,
+    "decision_open_x_m": 230.0,
+    "route_end_x_m": 350.0,
+    "ego_speed_ms": 6.94,
+    "speed_limit_ms": 6.94,
+    "clear_radius_m": 40.0,
+    "design": "Native CutinEnv (CutinEnv): two lanes, ego starts in the empty lane at x=200 at 6.94 m/s; the target lane is populated by the environment's own 43-48 Cautious/Normal/Aggressive vehicles with independent random labels and 5-20 m spacing at 6.94 m/s. The adapter requires a cut-in to lane 0, opens the decision at x=230, sets a 350 m route goal and a 6.94 m/s speed limit, and removes only the target-lane vehicles within 40 m of the ego's initial x to create a feasible local merge window. Remaining traffic keeps its native random type labels and native behaviour; no scripted yield/force response is added. All variants use the same scene, controller, reward, candidate set, prompt v5 and LLM settings."
+  }
+}

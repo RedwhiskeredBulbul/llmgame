@@ -1,0 +1,111 @@
+{
+  "protocol_version": "ablation-v2-type-observable-df-cutin-key-yield-pilot6b-20261025",
+  "phase": "type_observable_df_cutin_key_yield_pilot6",
+  "variants": [
+    "full_model",
+    "uniform_belief"
+  ],
+  "scenarios": [
+    "cutin"
+  ],
+  "seeds": [
+    9950,
+    9951,
+    9952,
+    9953,
+    9957,
+    9960
+  ],
+  "control_dt_s": 0.1,
+  "execution_mode": "trajectory_point",
+  "time_mode": "paused_simulation",
+  "decision": {
+    "control_dt_s": 0.1,
+    "av_optimizer": "scalar_grid",
+    "max_game_iterations": 3,
+    "acceleration_tolerance_ms2": 0.05,
+    "solve_budget_ms": 100.0,
+    "reward_times_s": [
+      0.1,
+      0.5,
+      1.0,
+      2.0,
+      4.0,
+      8.0
+    ],
+    "route_progress_bonus": 50.0,
+    "switch_penalty": 0.1,
+    "probe_bonus": 0.0,
+    "av_weights": [
+      0.1,
+      5.0,
+      0.0
+    ],
+    "commit_bonus": 12.0,
+    "force_ignore_idm_on_av_lc": true,
+    "collision_margin_m": 1.2
+  },
+  "llm": {
+    "model": "qwen-flash-2025-07-28",
+    "temperature": 0.0,
+    "prompt_version": "relative_evidence_v6b",
+    "history_len": 20,
+    "interval_steps": 10,
+    "temporal_alpha": 0.7,
+    "max_belief_age_sim_s": 3.0,
+    "sync_first_observation": true,
+    "timeout_s": 10.0,
+    "max_retries": 0
+  },
+  "runtime": {
+    "deadline_ms": 100.0,
+    "record_video": false,
+    "resume": true,
+    "max_steps": null
+  },
+  "df_cutin_key": {
+    "required_target_lane": 0,
+    "required_progress_m": 290.0,
+    "horizon_s": 40.0,
+    "decision_open_x_m": 230.0,
+    "route_end_x_m": 450.0,
+    "ego_speed_ms": 7.0,
+    "speed_limit_ms": 7.0,
+    "clear_ahead_m": 250.0,
+    "clear_behind_m": 100.0,
+    "key_relative_x_m": -32.0,
+    "key_speed_ms": {
+      "Cautious": 6.0,
+      "Normal": 8.5,
+      "Aggressive": 13.0
+    },
+    "key_target_speed_ms": {
+      "Cautious": 6.0,
+      "Normal": 8.5,
+      "Aggressive": 14.0
+    },
+    "key_response": {
+      "Cautious": "yield",
+      "Normal": "idm",
+      "Aggressive": "force"
+    },
+    "dynamic_key": true,
+    "key_queue_relative_x_m": [
+      -32.0,
+      -80.0
+    ],
+    "key_relevance_m": 100.0,
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": -1.0,
+      "force_emergency_deceleration_ms2": -5.0,
+      "force_brake": false
+    },
+    "design": "Pilot for the aggressive-yield hypothesis on the no-occlusion CutinEnv cut-in scene of v6b. Scene changes: (1) the aggressive key no longer emergency-brakes at a close gap (force_brake=false), so it physically passes the ego instead of rescuing a squeeze-in; (2) the nearest lane-0 vehicle behind the ego is the key, and once it is more than 5 m ahead the next nearest rear vehicle becomes the key (two-vehicle queue at -32/-80 m with type-consistent speed and response); (3) because this simulator follows trajectory points at a fixed 10 Hz spacing, a keep trajectory advances the ego at roughly 10 m/s regardless of the planned 7 m/s, so the aggressive key starts at 13 m/s (target 14 m/s) and passes before the progress boundary; (4) lane-0 vehicles from 100 m behind to 250 m ahead are cleared except the queue. Decision changes: the probe progress bonus is 0, commit uses a constant bonus of 12 instead of the urgency-scaled route bonus that grows without bound once the ego is past the nominal route end (route end is 450 m, success still requires x>=310), and the AV keeps the parent safety weight 0.1 (raising it made the soft reward insensitive). Two prediction-side mechanisms make the aggressive type genuinely hostile without any ego rule: (a) force_ignore_idm_on_av_lc lets the Force intent's predicted trajectory ignore the IDM follow cap while the AV is changing lanes, so the game evaluates the key as continuing rather than braking for the ego; (b) collision_margin_m=1.2 adds a physical safety buffer to every predicted-obstacle ellipse in the hard RULE4 collision check, so a 0.1-0.3 m squeeze is no longer accepted; both apply to every type and every candidate equally, and the default 0/False preserves earlier behavior. P(Aggressive)=P(Force) enters the same Bayesian game and the same expected-safety/collision machinery; the ego's yield is not hard-coded. The hypothesis is that commit and probe lose while the aggressive key is close, keep wins, and commit becomes feasible only after the key has passed, behind which the ego merges. Offline pure-belief calibration with this exact configuration: on 9951/9957/9960 the Force belief commits at step 91 with the key 2.4-2.5 m ahead and 1.58-1.60 m minimum clearance, while Uniform commits at step 31 with the key 20.2 m behind and collides; on 9950/9952/9953 both beliefs complete normally at step 31. Six seeds (9951/9957/9960 Aggressive; 9950/9953 Cautious; 9952 Normal) with Full and Uniform belief. Everything else, including the frozen LLM protocol, is unchanged.",
+    "occlusion": false
+  }
+}

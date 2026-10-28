@@ -1,0 +1,7 @@
+﻿baseline,ci_high,ci_low,comparison,mean_difference,metric,n_pairs,n_seed_clusters,p_holm_primary,p_sign_flip
+full_model,0.0,0.0,uniform_belief,0.0,success,6,6,1.0,1.0
+full_model,0.0,0.0,uniform_belief,0.0,collision,6,6,,1.0
+full_model,5.400000000000044,0.0,uniform_belief,1.8000000000000143,restricted_task_time_s,6,6,1.0,1.0
+full_model,0.0,-0.0369463454407456,uniform_belief,-0.012315448480248533,min_clearance_m,6,6,,1.0
+full_model,0.0,-0.08994032605243063,uniform_belief,-0.029980108684143542,jerk_rms,6,6,,1.0
+full_model,20.558093331540757,-23.315681651971943,uniform_belief,-1.9898025003689075,control_p95_ms,6,6,1.0,0.9078092190780922

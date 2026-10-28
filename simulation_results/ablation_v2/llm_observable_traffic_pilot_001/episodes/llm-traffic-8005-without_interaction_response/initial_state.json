@@ -1,0 +1,148 @@
+{
+  "case": {
+    "case_id": "llm-traffic-8005",
+    "scenario": "traffic",
+    "seed": 8005,
+    "difficulty": 1,
+    "behaviour_index": 2,
+    "ego_speed_ms": 28.932896407410247,
+    "relative_x_m": -6.000986298235458,
+    "key_speed_ms": 33.3458498385653,
+    "required_target_lane": 1,
+    "horizon_s": 12.0,
+    "required_progress_m": 60.0
+  },
+  "initial_state": [
+    {
+      "id": 888,
+      "position": [
+        20.0,
+        0.0
+      ],
+      "heading": 0.0,
+      "speed": 28.932896407410247,
+      "length": 5.0,
+      "width": 2.0,
+      "behaviour": "AV",
+      "target_speed": null
+    },
+    {
+      "id": 1,
+      "position": [
+        13.999013701764543,
+        4.0
+      ],
+      "heading": 0.0,
+      "speed": 33.3458498385653,
+      "length": 5.0,
+      "width": 2.0,
+      "behaviour": "Aggressive",
+      "target_speed": 33.3
+    },
+    {
+      "id": 2,
+      "position": [
+        105.27509903139183,
+        0.0
+      ],
+      "heading": 0.0,
+      "speed": 27.907023178831203,
+      "length": 5.0,
+      "width": 2.0,
+      "behaviour": "Normal",
+      "target_speed": 30.6
+    },
+    {
+      "id": 3,
+      "position": [
+        157.59400193684598,
+        0.0
+      ],
+      "heading": 0.0,
+      "speed": 26.098218439356344,
+      "length": 5.0,
+      "width": 2.0,
+      "behaviour": "Aggressive",
+      "target_speed": 33.3
+    },
+    {
+      "id": 4,
+      "position": [
+        56.29425183518734,
+        4.0
+      ],
+      "heading": 0.0,
+      "speed": 22.8328274519099,
+      "length": 5.0,
+      "width": 2.0,
+      "behaviour": "Cautious",
+      "target_speed": 25.0
+    },
+    {
+      "id": 5,
+      "position": [
+        102.57913734117382,
+        4.0
+      ],
+      "heading": 0.0,
+      "speed": 22.890110764244433,
+      "length": 5.0,
+      "width": 2.0,
+      "behaviour": "Normal",
+      "target_speed": 30.6
+    },
+    {
+      "id": 6,
+      "position": [
+        156.17099726387596,
+        4.0
+      ],
+      "heading": 0.0,
+      "speed": 21.196746991730915,
+      "length": 5.0,
+      "width": 2.0,
+      "behaviour": "Aggressive",
+      "target_speed": 33.3
+    },
+    {
+      "id": 7,
+      "position": [
+        55.57013359852917,
+        8.0
+      ],
+      "heading": 0.0,
+      "speed": 24.339018086492388,
+      "length": 5.0,
+      "width": 2.0,
+      "behaviour": "Cautious",
+      "target_speed": 25.0
+    },
+    {
+      "id": 8,
+      "position": [
+        107.47059330327654,
+        8.0
+      ],
+      "heading": 0.0,
+      "speed": 25.52911389490275,
+      "length": 5.0,
+      "width": 2.0,
+      "behaviour": "Normal",
+      "target_speed": 30.6
+    },
+    {
+      "id": 9,
+      "position": [
+        157.6827647653958,
+        8.0
+      ],
+      "heading": 0.0,
+      "speed": 25.640052579535528,
+      "length": 5.0,
+      "width": 2.0,
+      "behaviour": "Aggressive",
+      "target_speed": 33.3
+    }
+  ],
+  "initial_hash": "0b3cd63dcdbb71d26c71edbaa08477d06566a1ff92a022a0dab56c69e8e4d2f3"
+}

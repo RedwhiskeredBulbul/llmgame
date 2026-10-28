@@ -1,0 +1,27 @@
+{
+  "episodes": 24,
+  "summary": [
+    {
+      "scenario": "merge",
+      "variant": "full_model",
+      "episodes": 24,
+      "completed": 16,
+      "collisions": 8,
+      "timeouts": 0,
+      "runtime_errors": 0,
+      "smoke_episodes": 0,
+      "success_rate": 0.6666666666666666,
+      "restricted_task_time_s": 18.99999999999999,
+      "average_speed_ms": 8.070460843068751,
+      "min_clearance_m": 14.176338933624436,
+      "jerk_rms": 0.031790885917452986,
+      "control_p95_ms": 35.19002104105007,
+      "deadline_miss_rate": 0.01637026558959942,
+      "probe_selected_steps": 0.0,
+      "belief_fallback_fraction": 0.0,
+      "llm_updates": 1.9583333333333333,
+      "solver_fallback_count": 0.0
+    }
+  ],
+  "exploratory_pairs": []
+}

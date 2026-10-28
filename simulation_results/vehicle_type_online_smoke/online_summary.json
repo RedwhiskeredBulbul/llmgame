@@ -1,0 +1,246 @@
+{
+  "configuration": {
+    "backend": "heuristic",
+    "seeds": "0,1",
+    "steps": 28,
+    "dt": 0.5,
+    "history_len": 20,
+    "warmup_steps": 20,
+    "query_interval": 4,
+    "temporal_alpha": 0.7,
+    "stable_count": 3,
+    "prototype_file": "simulation_results\\vehicle_type_prototypes_train_50_99.json",
+    "model": null,
+    "output_dir": "simulation_results\\vehicle_type_online_smoke"
+  },
+  "requests": 6,
+  "observation_predictions": 18,
+  "unique_vehicles": 7,
+  "raw_metrics": {
+    "samples": 18,
+    "parsed_predictions": 18,
+    "coverage": 1.0,
+    "accuracy": 0.5,
+    "accuracy_95ci_wilson": [
+      0.29031021505169974,
+      0.7096897849483003
+    ],
+    "conditional_accuracy": 0.5,
+    "macro_f1": 0.2222222222222222,
+    "per_class": {
+      "Cautious": {
+        "support": 9,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666
+      },
+      "Normal": {
+        "support": 9,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "Aggressive": {
+        "support": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "confusion_matrix": {
+      "Cautious": {
+        "Cautious": 9,
+        "Normal": 0,
+        "Aggressive": 0,
+        "Unparsed": 0
+      },
+      "Normal": {
+        "Cautious": 9,
+        "Normal": 0,
+        "Aggressive": 0,
+        "Unparsed": 0
+      },
+      "Aggressive": {
+        "Cautious": 0,
+        "Normal": 0,
+        "Aggressive": 0,
+        "Unparsed": 0
+      }
+    },
+    "mean_brier_score": 0.9999997124092739,
+    "mean_log_loss": 13.025338649415595,
+    "mean_confidence": 0.9999999267774804,
+    "mean_latency_s": 0.0,
+    "errors": 0,
+    "backend": "heuristic",
+    "model": "motion-heuristic-baseline",
+    "dataset": "continuous-DF_Cruise-online-raw",
+    "seeds": [
+      0,
+      1
+    ],
+    "requests": 6,
+    "temporal_alpha": 0.7
+  },
+  "smoothed_metrics": {
+    "samples": 18,
+    "parsed_predictions": 18,
+    "coverage": 1.0,
+    "accuracy": 0.5,
+    "accuracy_95ci_wilson": [
+      0.29031021505169974,
+      0.7096897849483003
+    ],
+    "conditional_accuracy": 0.5,
+    "macro_f1": 0.2222222222222222,
+    "per_class": {
+      "Cautious": {
+        "support": 9,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666
+      },
+      "Normal": {
+        "support": 9,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "Aggressive": {
+        "support": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "confusion_matrix": {
+      "Cautious": {
+        "Cautious": 9,
+        "Normal": 0,
+        "Aggressive": 0,
+        "Unparsed": 0
+      },
+      "Normal": {
+        "Cautious": 9,
+        "Normal": 0,
+        "Aggressive": 0,
+        "Unparsed": 0
+      },
+      "Aggressive": {
+        "Cautious": 0,
+        "Normal": 0,
+        "Aggressive": 0,
+        "Unparsed": 0
+      }
+    },
+    "mean_brier_score": 0.9999995209677112,
+    "mean_log_loss": 12.87296385562109,
+    "mean_confidence": 0.9999998776746276,
+    "mean_latency_s": 0.0,
+    "errors": 0,
+    "backend": "heuristic",
+    "model": "motion-heuristic-baseline",
+    "dataset": "continuous-DF_Cruise-online-ema",
+    "seeds": [
+      0,
+      1
+    ],
+    "requests": 6,
+    "temporal_alpha": 0.7
+  },
+  "final_vehicle_metrics": {
+    "samples": 7,
+    "parsed_predictions": 7,
+    "coverage": 1.0,
+    "accuracy": 0.42857142857142855,
+    "accuracy_95ci_wilson": [
+      0.15821985525146975,
+      0.7495416354723428
+    ],
+    "conditional_accuracy": 0.42857142857142855,
+    "macro_f1": 0.19999999999999998,
+    "per_class": {
+      "Cautious": {
+        "support": 3,
+        "precision": 0.42857142857142855,
+        "recall": 1.0,
+        "f1": 0.6
+      },
+      "Normal": {
+        "support": 4,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "Aggressive": {
+        "support": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "confusion_matrix": {
+      "Cautious": {
+        "Cautious": 3,
+        "Normal": 0,
+        "Aggressive": 0,
+        "Unparsed": 0
+      },
+      "Normal": {
+        "Cautious": 4,
+        "Normal": 0,
+        "Aggressive": 0,
+        "Unparsed": 0
+      },
+      "Aggressive": {
+        "Cautious": 0,
+        "Normal": 0,
+        "Aggressive": 0,
+        "Unparsed": 0
+      }
+    },
+    "mean_brier_score": 1.142856808081302,
+    "mean_log_loss": 14.280982032354958,
+    "mean_confidence": 0.9999999147695914,
+    "mean_latency_s": 0.0,
+    "errors": 0,
+    "backend": "heuristic",
+    "model": "motion-heuristic-baseline",
+    "dataset": "continuous-DF_Cruise-final-vehicle",
+    "seeds": [
+      0,
+      1
+    ],
+    "temporal_alpha": 0.7
+  },
+  "per_seed": {
+    "0": {
+      "raw_total": 9,
+      "raw_correct": 3,
+      "smooth_correct": 3,
+      "raw_accuracy": 0.3333333333333333,
+      "smoothed_accuracy": 0.3333333333333333
+    },
+    "1": {
+      "raw_total": 9,
+      "raw_correct": 6,
+      "smooth_correct": 6,
+      "raw_accuracy": 0.6666666666666666,
+      "smoothed_accuracy": 0.6666666666666666
+    }
+  },
+  "seed_level_raw_accuracy": {
+    "mean": 0.5,
+    "95ci": [
+      0.1733333333333334,
+      0.8266666666666667
+    ]
+  },
+  "seed_level_smoothed_accuracy": {
+    "mean": 0.5,
+    "95ci": [
+      0.1733333333333334,
+      0.8266666666666667
+    ]
+  }
+}

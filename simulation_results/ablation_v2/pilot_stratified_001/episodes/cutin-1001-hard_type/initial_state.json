@@ -1,0 +1,64 @@
+{
+  "case": {
+    "case_id": "cutin-1001",
+    "scenario": "cutin",
+    "seed": 1001,
+    "difficulty": 1,
+    "behaviour_index": 1
+  },
+  "initial_state": [
+    {
+      "id": 888,
+      "position": [
+        20.0,
+        0.0
+      ],
+      "heading": 0.0,
+      "speed": 20.0,
+      "length": 5.0,
+      "width": 2.0,
+      "behaviour": "AV",
+      "target_speed": null
+    },
+    {
+      "id": 1,
+      "position": [
+        40.0,
+        4.0
+      ],
+      "heading": 0.0,
+      "speed": 18.0,
+      "length": 5.0,
+      "width": 2.0,
+      "behaviour": "Normal",
+      "target_speed": 30.6
+    },
+    {
+      "id": 2,
+      "position": [
+        90.0,
+        0.0
+      ],
+      "heading": 0.0,
+      "speed": 18.0,
+      "length": 5.0,
+      "width": 2.0,
+      "behaviour": "Normal",
+      "target_speed": 30.6
+    },
+    {
+      "id": 3,
+      "position": [
+        -15.0,
+        4.0
+      ],
+      "heading": 0.0,
+      "speed": 23.0,
+      "length": 5.0,
+      "width": 2.0,
+      "behaviour": "Aggressive",
+      "target_speed": 33.3
+    }
+  ],
+  "initial_hash": "7d7067eda31d344f0039f151f07eb6368ae86e3e9c49941a8edd91a090d3fd75"
+}

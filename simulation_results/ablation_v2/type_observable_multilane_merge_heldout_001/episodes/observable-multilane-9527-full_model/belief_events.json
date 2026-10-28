@@ -1,0 +1,157 @@
+[
+  {
+    "observation_sim_time": 1.9000000000000006,
+    "observation_wall": 363810.6821251,
+    "latency_ms": 884.9545000120997,
+    "error": null,
+    "prompt_hash": "117b3caed58e1a2c7c7fc6d0d960e2090975f8221df8a9247e92087126c81150",
+    "response": "{\n  \"1\": [0.33, 0.67, 0.00],\n  \"2\": [0.80, 0.20, 0.00]\n}",
+    "usage": {
+      "completion_tokens": 46,
+      "prompt_tokens": 1955,
+      "total_tokens": 2001,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "observable-multilane-9527-full_model",
+    "event": "response",
+    "request_id": 1,
+    "probabilities": {
+      "1": [
+        0.33,
+        0.67,
+        0.0
+      ],
+      "2": [
+        0.8,
+        0.2,
+        0.0
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 2.9000000000000012,
+    "observation_wall": 363812.0205207,
+    "latency_ms": 728.2635999727063,
+    "error": null,
+    "prompt_hash": "963676fa84f5ccac06e054582d09fd59376352b821f512964b01a1fa06cfac93",
+    "response": "{\n  \"1\": [0.1, 0.2, 0.7],\n  \"2\": [0.8, 0.1, 0.1]\n}",
+    "usage": {
+      "completion_tokens": 40,
+      "prompt_tokens": 1954,
+      "total_tokens": 1994,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "observable-multilane-9527-full_model",
+    "event": "response",
+    "request_id": 2,
+    "probabilities": {
+      "1": [
+        0.261,
+        0.529,
+        0.21000000000000002
+      ],
+      "2": [
+        0.8,
+        0.16999999999999998,
+        0.030000000000000006
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 4.899999999999999,
+    "observation_wall": 363812.8804924,
+    "latency_ms": 752.4479000130668,
+    "error": null,
+    "prompt_hash": "b72e68f91a7f76b00f51a6ac0ae006796f075f27ab27d91c826505d44c9c855c",
+    "response": "{\n  \"1\": [0.1, 0.1, 0.8],\n  \"2\": [0.8, 0.1, 0.1]\n}",
+    "usage": {
+      "completion_tokens": 40,
+      "prompt_tokens": 1979,
+      "total_tokens": 2019,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "observable-multilane-9527-full_model",
+    "event": "response",
+    "request_id": 3,
+    "probabilities": {
+      "1": [
+        0.2127,
+        0.40030000000000004,
+        0.387
+      ],
+      "2": [
+        0.8,
+        0.149,
+        0.051000000000000004
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 6.8999999999999915,
+    "observation_wall": 363813.7115437,
+    "latency_ms": 713.828099949751,
+    "error": null,
+    "prompt_hash": "69f23d73be3e7c115cdb980d01665dc7fbb1ce21dd2b42714f8ab3987e062abe",
+    "response": "{\n  \"1\": [0.8, 0.1, 0.1],\n  \"2\": [0.1, 0.1, 0.8]\n}",
+    "usage": {
+      "completion_tokens": 40,
+      "prompt_tokens": 1963,
+      "total_tokens": 2003,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "observable-multilane-9527-full_model",
+    "event": "response",
+    "request_id": 4,
+    "probabilities": {
+      "1": [
+        0.38889000000000007,
+        0.31021000000000004,
+        0.3009
+      ],
+      "2": [
+        0.59,
+        0.1343,
+        0.27570000000000006
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 8.899999999999984,
+    "observation_wall": 363814.4887989,
+    "latency_ms": 564.2648999928497,
+    "error": null,
+    "prompt_hash": "b20403cbcf5de6b4589bddb2da5c4c5227b1bd7029ed26469a32e818dd6afafb",
+    "response": "{\n  \"1\": [0.8, 0.1, 0.1],\n  \"2\": [0.1, 0.1, 0.8]\n}",
+    "usage": {
+      "completion_tokens": 40,
+      "prompt_tokens": 1966,
+      "total_tokens": 2006,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "observable-multilane-9527-full_model",
+    "event": "response",
+    "request_id": 5,
+    "probabilities": {
+      "1": [
+        0.5122230000000001,
+        0.247147,
+        0.24062999999999998
+      ],
+      "2": [
+        0.443,
+        0.12401000000000001,
+        0.4329900000000001
+      ]
+    }
+  }
+]

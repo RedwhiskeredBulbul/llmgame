@@ -1,0 +1,86 @@
+{
+  "protocol_version": "ablation-v2-llm-observable-traffic-pilot-v6b-20261023",
+  "phase": "llm_observable_traffic_pilot_v6b",
+  "variants": [
+    "full_model"
+  ],
+  "scenarios": [
+    "traffic"
+  ],
+  "seeds": [
+    8000,
+    8001,
+    8002,
+    8003,
+    8004,
+    8005
+  ],
+  "control_dt_s": 0.1,
+  "execution_mode": "trajectory_point",
+  "time_mode": "paused_simulation",
+  "decision": {
+    "control_dt_s": 0.1,
+    "av_optimizer": "scalar_grid",
+    "max_game_iterations": 3,
+    "acceleration_tolerance_ms2": 0.05,
+    "solve_budget_ms": 100.0,
+    "reward_times_s": [
+      0.1,
+      0.5,
+      1.0,
+      2.0,
+      4.0,
+      8.0
+    ],
+    "route_progress_bonus": 2.0,
+    "switch_penalty": 0.1
+  },
+  "llm": {
+    "model": "qwen-flash-2025-07-28",
+    "temperature": 0.0,
+    "history_len": 10,
+    "interval_steps": 5,
+    "temporal_alpha": 0.7,
+    "max_belief_age_sim_s": 3.0,
+    "timeout_s": 10.0,
+    "max_retries": 0,
+    "prompt_version": "relative_evidence_v6b"
+  },
+  "runtime": {
+    "deadline_ms": 100.0,
+    "record_video": false,
+    "resume": true,
+    "max_steps": null
+  },
+  "observable_traffic": {
+    "required_target_lane": 1,
+    "horizon_s": 12.0,
+    "required_progress_m": 60.0,
+    "ego_speed_range_ms": [
+      28.0,
+      29.0
+    ],
+    "rear_relative_x_range_m": [
+      -10.0,
+      -4.0
+    ],
+    "key_speed_ranges_ms": {
+      "0": [
+        24.5,
+        25.5
+      ],
+      "1": [
+        29.8,
+        31.0
+      ],
+      "2": [
+        32.8,
+        33.8
+      ]
+    },
+    "background_clearance_m": 15.0,
+    "type_balance": "Cautious, Normal, Aggressive each two cases",
+    "pilot_seed_policy": "8000-8005; all cases and responses retained",
+    "design": "Same six-seed high-speed mixed-traffic pilot as the legacy run, with only the prompt version changed to relative_evidence_v6b. One Full Model episode per seed; no controller, scene, or reward change. Key types remain balanced two per type and key speeds remain type-coded (Cautious 24.5-25.5, Normal 29.8-31.0, Aggressive 32.8-33.8 m/s against a 28-29 m/s ego). This run measures query-level type recognition on a moving ego; it is not a new closed-loop claim."
+  }
+}

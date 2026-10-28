@@ -1,0 +1,5 @@
+﻿variant,method,scenario,seed,step,speed_ms,acceleration_ms2,ttc_s,decision_latency_ms,selected_target_lane,llm_update,llm_latency_ms,llm_error
+deterministic_type,Deterministic Type,DF_Highway,0,0,25.0,0.0,48.816416265133,311.2377000215929,3,0,,
+deterministic_type,Deterministic Type,DF_Highway,0,1,25.0792,1.0,37.28689373743857,96.92370000993833,3,0,,
+uniform_belief,Uniform Belief,DF_Highway,0,0,25.0,0.0,48.816416265133,288.87409999151714,3,0,,
+uniform_belief,Uniform Belief,DF_Highway,0,1,25.0792,1.0,37.28689373743857,97.69199998117983,3,0,,

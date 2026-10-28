@@ -1,0 +1,23 @@
+{
+  "planned": 12,
+  "recorded": 12,
+  "all_planned_finished": true,
+  "paired_initial_states": true,
+  "runtime_error_episodes": [],
+  "smoke_only": false,
+  "full_llm_updates": 0,
+  "merge_full_probe_steps": 0,
+  "identical_trajectory_pairs": 0,
+  "trajectory_pairs": 0,
+  "label_predictions": 0,
+  "descriptive_prediction_accuracy": null,
+  "classification_note": "Smoothed predictions, correlated requests/vehicles, only completed Full episodes; diagnostic, not held-out classifier accuracy",
+  "formal_readiness": {
+    "complete": true,
+    "paired": true,
+    "no_runtime_errors": true,
+    "full_receives_predictions": false,
+    "probe_triggered_in_merge": false
+  },
+  "trajectory_comparisons": []
+}

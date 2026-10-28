@@ -1,0 +1,1006 @@
+{
+  "runs": {
+    "df_v6": {
+      "path": "simulation_results\\ablation_v2\\v6_style_diag_df_v6_smoke_002",
+      "episodes": 2,
+      "query_samples": 6,
+      "unique_vehicle_episodes": 6,
+      "missing_truth": 0,
+      "all": {
+        "n": 6,
+        "correct": 3,
+        "accuracy": 0.5,
+        "macro_f1": 0.5222222222222223,
+        "confusion": {
+          "Cautious": {
+            "Cautious": 1,
+            "Normal": 0,
+            "Aggressive": 0
+          },
+          "Normal": {
+            "Cautious": 0,
+            "Normal": 1,
+            "Aggressive": 2
+          },
+          "Aggressive": {
+            "Cautious": 1,
+            "Normal": 0,
+            "Aggressive": 1
+          }
+        },
+        "by_truth": {
+          "Cautious": {
+            "n": 1,
+            "correct": 1,
+            "accuracy": 1.0,
+            "predictions": {
+              "Cautious": 1,
+              "Normal": 0,
+              "Aggressive": 0
+            }
+          },
+          "Normal": {
+            "n": 3,
+            "correct": 1,
+            "accuracy": 0.3333333333333333,
+            "predictions": {
+              "Cautious": 0,
+              "Normal": 1,
+              "Aggressive": 2
+            }
+          },
+          "Aggressive": {
+            "n": 2,
+            "correct": 1,
+            "accuracy": 0.5,
+            "predictions": {
+              "Cautious": 1,
+              "Normal": 0,
+              "Aggressive": 1
+            }
+          }
+        },
+        "brier": 0.8025000000000001,
+        "log_loss": 1.3330665663335115,
+        "mean_confidence": 0.6833333333333335,
+        "mean_margin": 0.49166666666666675,
+        "mean_latency_ms": 1191.6232999974454,
+        "binary_hard": {
+          "tp": 1,
+          "tn": 2,
+          "fp": 2,
+          "fn": 1,
+          "precision": 0.3333333333333333,
+          "recall": 0.5,
+          "specificity": 0.5,
+          "balanced_accuracy": 0.5,
+          "accuracy": 0.5,
+          "predicted_positive": 3,
+          "truth_positive": 2
+        },
+        "binary_threshold": {
+          "tp": 1,
+          "tn": 2,
+          "fp": 2,
+          "fn": 1,
+          "precision": 0.3333333333333333,
+          "recall": 0.5,
+          "specificity": 0.5,
+          "balanced_accuracy": 0.5,
+          "accuracy": 0.5,
+          "predicted_positive": 3,
+          "truth_positive": 2
+        },
+        "coverage": {
+          "0.45": {
+            "n": 5,
+            "coverage": 0.8333333333333334,
+            "accuracy": 0.4,
+            "brier": 0.8540000000000001
+          },
+          "0.50": {
+            "n": 5,
+            "coverage": 0.8333333333333334,
+            "accuracy": 0.4,
+            "brier": 0.8540000000000001
+          },
+          "0.60": {
+            "n": 5,
+            "coverage": 0.8333333333333334,
+            "accuracy": 0.4,
+            "brier": 0.8540000000000001
+          }
+        }
+      },
+      "key": {
+        "n": 2,
+        "correct": 2,
+        "accuracy": 1.0,
+        "macro_f1": 0.6666666666666666,
+        "confusion": {
+          "Cautious": {
+            "Cautious": 1,
+            "Normal": 0,
+            "Aggressive": 0
+          },
+          "Normal": {
+            "Cautious": 0,
+            "Normal": 1,
+            "Aggressive": 0
+          },
+          "Aggressive": {
+            "Cautious": 0,
+            "Normal": 0,
+            "Aggressive": 0
+          }
+        },
+        "by_truth": {
+          "Cautious": {
+            "n": 1,
+            "correct": 1,
+            "accuracy": 1.0,
+            "predictions": {
+              "Cautious": 1,
+              "Normal": 0,
+              "Aggressive": 0
+            }
+          },
+          "Normal": {
+            "n": 1,
+            "correct": 1,
+            "accuracy": 1.0,
+            "predictions": {
+              "Cautious": 0,
+              "Normal": 1,
+              "Aggressive": 0
+            }
+          },
+          "Aggressive": {
+            "n": 0,
+            "correct": 0,
+            "accuracy": null,
+            "predictions": {
+              "Cautious": 0,
+              "Normal": 0,
+              "Aggressive": 0
+            }
+          }
+        },
+        "brier": 0.30499999999999994,
+        "log_loss": 0.5697171415941824,
+        "mean_confidence": 0.6000000000000001,
+        "mean_margin": 0.35000000000000003,
+        "mean_latency_ms": 1191.6232999974454,
+        "binary_hard": {
+          "tp": 0,
+          "tn": 0,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "specificity": 0.0,
+          "balanced_accuracy": 0.0,
+          "accuracy": 0.0,
+          "predicted_positive": 2,
+          "truth_positive": 0
+        },
+        "binary_threshold": {
+          "tp": 0,
+          "tn": 0,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "specificity": 0.0,
+          "balanced_accuracy": 0.0,
+          "accuracy": 0.0,
+          "predicted_positive": 2,
+          "truth_positive": 0
+        },
+        "coverage": {
+          "0.45": {
+            "n": 1,
+            "coverage": 0.5,
+            "accuracy": 1.0,
+            "brier": 0.06499999999999997
+          },
+          "0.50": {
+            "n": 1,
+            "coverage": 0.5,
+            "accuracy": 1.0,
+            "brier": 0.06499999999999997
+          },
+          "0.60": {
+            "n": 1,
+            "coverage": 0.5,
+            "accuracy": 1.0,
+            "brier": 0.06499999999999997
+          }
+        }
+      },
+      "background": {
+        "n": 4,
+        "correct": 1,
+        "accuracy": 0.25,
+        "macro_f1": 0.13333333333333333,
+        "confusion": {
+          "Cautious": {
+            "Cautious": 0,
+            "Normal": 0,
+            "Aggressive": 0
+          },
+          "Normal": {
+            "Cautious": 0,
+            "Normal": 0,
+            "Aggressive": 2
+          },
+          "Aggressive": {
+            "Cautious": 1,
+            "Normal": 0,
+            "Aggressive": 1
+          }
+        },
+        "by_truth": {
+          "Cautious": {
+            "n": 0,
+            "correct": 0,
+            "accuracy": null,
+            "predictions": {
+              "Cautious": 0,
+              "Normal": 0,
+              "Aggressive": 0
+            }
+          },
+          "Normal": {
+            "n": 2,
+            "correct": 0,
+            "accuracy": 0.0,
+            "predictions": {
+              "Cautious": 0,
+              "Normal": 0,
+              "Aggressive": 2
+            }
+          },
+          "Aggressive": {
+            "n": 2,
+            "correct": 1,
+            "accuracy": 0.5,
+            "predictions": {
+              "Cautious": 1,
+              "Normal": 0,
+              "Aggressive": 1
+            }
+          }
+        },
+        "brier": 1.05125,
+        "log_loss": 1.7147412787031762,
+        "mean_confidence": 0.7250000000000001,
+        "mean_margin": 0.5625,
+        "mean_latency_ms": 1191.6232999974454,
+        "binary_hard": {
+          "tp": 1,
+          "tn": 2,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.5,
+          "specificity": 1.0,
+          "balanced_accuracy": 0.75,
+          "accuracy": 0.75,
+          "predicted_positive": 1,
+          "truth_positive": 2
+        },
+        "binary_threshold": {
+          "tp": 1,
+          "tn": 2,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.5,
+          "specificity": 1.0,
+          "balanced_accuracy": 0.75,
+          "accuracy": 0.75,
+          "predicted_positive": 1,
+          "truth_positive": 2
+        },
+        "coverage": {
+          "0.45": {
+            "n": 4,
+            "coverage": 1.0,
+            "accuracy": 0.25,
+            "brier": 1.05125
+          },
+          "0.50": {
+            "n": 4,
+            "coverage": 1.0,
+            "accuracy": 0.25,
+            "brier": 1.05125
+          },
+          "0.60": {
+            "n": 4,
+            "coverage": 1.0,
+            "accuracy": 0.25,
+            "brier": 1.05125
+          }
+        }
+      },
+      "by_position": {
+        "ahead": {
+          "n": 0
+        },
+        "behind": {
+          "n": 6,
+          "correct": 3,
+          "accuracy": 0.5,
+          "macro_f1": 0.5222222222222223,
+          "confusion": {
+            "Cautious": {
+              "Cautious": 1,
+              "Normal": 0,
+              "Aggressive": 0
+            },
+            "Normal": {
+              "Cautious": 0,
+              "Normal": 1,
+              "Aggressive": 2
+            },
+            "Aggressive": {
+              "Cautious": 1,
+              "Normal": 0,
+              "Aggressive": 1
+            }
+          },
+          "by_truth": {
+            "Cautious": {
+              "n": 1,
+              "correct": 1,
+              "accuracy": 1.0,
+              "predictions": {
+                "Cautious": 1,
+                "Normal": 0,
+                "Aggressive": 0
+              }
+            },
+            "Normal": {
+              "n": 3,
+              "correct": 1,
+              "accuracy": 0.3333333333333333,
+              "predictions": {
+                "Cautious": 0,
+                "Normal": 1,
+                "Aggressive": 2
+              }
+            },
+            "Aggressive": {
+              "n": 2,
+              "correct": 1,
+              "accuracy": 0.5,
+              "predictions": {
+                "Cautious": 1,
+                "Normal": 0,
+                "Aggressive": 1
+              }
+            }
+          },
+          "brier": 0.8025000000000001,
+          "log_loss": 1.3330665663335115,
+          "mean_confidence": 0.6833333333333335,
+          "mean_margin": 0.49166666666666675,
+          "mean_latency_ms": 1191.6232999974454,
+          "binary_hard": {
+            "tp": 1,
+            "tn": 2,
+            "fp": 2,
+            "fn": 1,
+            "precision": 0.3333333333333333,
+            "recall": 0.5,
+            "specificity": 0.5,
+            "balanced_accuracy": 0.5,
+            "accuracy": 0.5,
+            "predicted_positive": 3,
+            "truth_positive": 2
+          },
+          "binary_threshold": {
+            "tp": 1,
+            "tn": 2,
+            "fp": 2,
+            "fn": 1,
+            "precision": 0.3333333333333333,
+            "recall": 0.5,
+            "specificity": 0.5,
+            "balanced_accuracy": 0.5,
+            "accuracy": 0.5,
+            "predicted_positive": 3,
+            "truth_positive": 2
+          },
+          "coverage": {
+            "0.45": {
+              "n": 5,
+              "coverage": 0.8333333333333334,
+              "accuracy": 0.4,
+              "brier": 0.8540000000000001
+            },
+            "0.50": {
+              "n": 5,
+              "coverage": 0.8333333333333334,
+              "accuracy": 0.4,
+              "brier": 0.8540000000000001
+            },
+            "0.60": {
+              "n": 5,
+              "coverage": 0.8333333333333334,
+              "accuracy": 0.4,
+              "brier": 0.8540000000000001
+            }
+          }
+        },
+        "alongside": {
+          "n": 0
+        }
+      },
+      "vehicle_first": {
+        "n": 6,
+        "correct": 3,
+        "accuracy": 0.5,
+        "brier": 0.8025000000000001,
+        "key_n": 2,
+        "key_accuracy": 1.0,
+        "background_n": 4,
+        "background_accuracy": 0.25
+      }
+    },
+    "merge_v6": {
+      "path": "simulation_results\\ablation_v2\\v6_style_diag_merge_v6_smoke_001",
+      "episodes": 2,
+      "query_samples": 6,
+      "unique_vehicle_episodes": 6,
+      "missing_truth": 0,
+      "all": {
+        "n": 6,
+        "correct": 2,
+        "accuracy": 0.3333333333333333,
+        "macro_f1": 0.16666666666666666,
+        "confusion": {
+          "Cautious": {
+            "Cautious": 0,
+            "Normal": 0,
+            "Aggressive": 2
+          },
+          "Normal": {
+            "Cautious": 0,
+            "Normal": 0,
+            "Aggressive": 2
+          },
+          "Aggressive": {
+            "Cautious": 0,
+            "Normal": 0,
+            "Aggressive": 2
+          }
+        },
+        "by_truth": {
+          "Cautious": {
+            "n": 2,
+            "correct": 0,
+            "accuracy": 0.0,
+            "predictions": {
+              "Cautious": 0,
+              "Normal": 0,
+              "Aggressive": 2
+            }
+          },
+          "Normal": {
+            "n": 2,
+            "correct": 0,
+            "accuracy": 0.0,
+            "predictions": {
+              "Cautious": 0,
+              "Normal": 0,
+              "Aggressive": 2
+            }
+          },
+          "Aggressive": {
+            "n": 2,
+            "correct": 2,
+            "accuracy": 1.0,
+            "predictions": {
+              "Cautious": 0,
+              "Normal": 0,
+              "Aggressive": 2
+            }
+          }
+        },
+        "brier": 0.49560000000000004,
+        "log_loss": 0.8588525811051132,
+        "mean_confidence": 0.46,
+        "mean_margin": 0.18166666666666667,
+        "mean_latency_ms": 1239.5801000020583,
+        "binary_hard": {
+          "tp": 2,
+          "tn": 4,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "specificity": 1.0,
+          "balanced_accuracy": 1.0,
+          "accuracy": 1.0,
+          "predicted_positive": 2,
+          "truth_positive": 2
+        },
+        "binary_threshold": {
+          "tp": 2,
+          "tn": 0,
+          "fp": 4,
+          "fn": 0,
+          "precision": 0.3333333333333333,
+          "recall": 1.0,
+          "specificity": 0.0,
+          "balanced_accuracy": 0.5,
+          "accuracy": 0.3333333333333333,
+          "predicted_positive": 6,
+          "truth_positive": 2
+        },
+        "coverage": {
+          "0.45": {
+            "n": 2,
+            "coverage": 0.3333333333333333,
+            "accuracy": 1.0,
+            "brier": 0.14
+          },
+          "0.50": {
+            "n": 2,
+            "coverage": 0.3333333333333333,
+            "accuracy": 1.0,
+            "brier": 0.14
+          },
+          "0.60": {
+            "n": 2,
+            "coverage": 0.3333333333333333,
+            "accuracy": 1.0,
+            "brier": 0.14
+          }
+        }
+      },
+      "key": {
+        "n": 2,
+        "correct": 0,
+        "accuracy": 0.0,
+        "macro_f1": 0.0,
+        "confusion": {
+          "Cautious": {
+            "Cautious": 0,
+            "Normal": 0,
+            "Aggressive": 1
+          },
+          "Normal": {
+            "Cautious": 0,
+            "Normal": 0,
+            "Aggressive": 1
+          },
+          "Aggressive": {
+            "Cautious": 0,
+            "Normal": 0,
+            "Aggressive": 0
+          }
+        },
+        "by_truth": {
+          "Cautious": {
+            "n": 1,
+            "correct": 0,
+            "accuracy": 0.0,
+            "predictions": {
+              "Cautious": 0,
+              "Normal": 0,
+              "Aggressive": 1
+            }
+          },
+          "Normal": {
+            "n": 1,
+            "correct": 0,
+            "accuracy": 0.0,
+            "predictions": {
+              "Cautious": 0,
+              "Normal": 0,
+              "Aggressive": 1
+            }
+          },
+          "Aggressive": {
+            "n": 0,
+            "correct": 0,
+            "accuracy": null,
+            "predictions": {
+              "Cautious": 0,
+              "Normal": 0,
+              "Aggressive": 0
+            }
+          }
+        },
+        "brier": 0.6734,
+        "log_loss": 1.1086626245216111,
+        "mean_confidence": 0.34,
+        "mean_margin": 0.010000000000000009,
+        "mean_latency_ms": 1239.5801000020583,
+        "binary_hard": {
+          "tp": 0,
+          "tn": 2,
+          "fp": 0,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "specificity": 1.0,
+          "balanced_accuracy": 0.5,
+          "accuracy": 1.0,
+          "predicted_positive": 0,
+          "truth_positive": 0
+        },
+        "binary_threshold": {
+          "tp": 0,
+          "tn": 0,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "specificity": 0.0,
+          "balanced_accuracy": 0.0,
+          "accuracy": 0.0,
+          "predicted_positive": 2,
+          "truth_positive": 0
+        },
+        "coverage": {
+          "0.45": {
+            "n": 0,
+            "coverage": 0.0,
+            "accuracy": null,
+            "brier": null
+          },
+          "0.50": {
+            "n": 0,
+            "coverage": 0.0,
+            "accuracy": null,
+            "brier": null
+          },
+          "0.60": {
+            "n": 0,
+            "coverage": 0.0,
+            "accuracy": null,
+            "brier": null
+          }
+        }
+      },
+      "background": {
+        "n": 4,
+        "correct": 2,
+        "accuracy": 0.5,
+        "macro_f1": 0.2222222222222222,
+        "confusion": {
+          "Cautious": {
+            "Cautious": 0,
+            "Normal": 0,
+            "Aggressive": 1
+          },
+          "Normal": {
+            "Cautious": 0,
+            "Normal": 0,
+            "Aggressive": 1
+          },
+          "Aggressive": {
+            "Cautious": 0,
+            "Normal": 0,
+            "Aggressive": 2
+          }
+        },
+        "by_truth": {
+          "Cautious": {
+            "n": 1,
+            "correct": 0,
+            "accuracy": 0.0,
+            "predictions": {
+              "Cautious": 0,
+              "Normal": 0,
+              "Aggressive": 1
+            }
+          },
+          "Normal": {
+            "n": 1,
+            "correct": 0,
+            "accuracy": 0.0,
+            "predictions": {
+              "Cautious": 0,
+              "Normal": 0,
+              "Aggressive": 1
+            }
+          },
+          "Aggressive": {
+            "n": 2,
+            "correct": 2,
+            "accuracy": 1.0,
+            "predictions": {
+              "Cautious": 0,
+              "Normal": 0,
+              "Aggressive": 2
+            }
+          }
+        },
+        "brier": 0.4067,
+        "log_loss": 0.7339475593968643,
+        "mean_confidence": 0.52,
+        "mean_margin": 0.2675,
+        "mean_latency_ms": 1239.5801000020583,
+        "binary_hard": {
+          "tp": 2,
+          "tn": 2,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "specificity": 1.0,
+          "balanced_accuracy": 1.0,
+          "accuracy": 1.0,
+          "predicted_positive": 2,
+          "truth_positive": 2
+        },
+        "binary_threshold": {
+          "tp": 2,
+          "tn": 0,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.5,
+          "recall": 1.0,
+          "specificity": 0.0,
+          "balanced_accuracy": 0.5,
+          "accuracy": 0.5,
+          "predicted_positive": 4,
+          "truth_positive": 2
+        },
+        "coverage": {
+          "0.45": {
+            "n": 2,
+            "coverage": 0.5,
+            "accuracy": 1.0,
+            "brier": 0.14
+          },
+          "0.50": {
+            "n": 2,
+            "coverage": 0.5,
+            "accuracy": 1.0,
+            "brier": 0.14
+          },
+          "0.60": {
+            "n": 2,
+            "coverage": 0.5,
+            "accuracy": 1.0,
+            "brier": 0.14
+          }
+        }
+      },
+      "by_position": {
+        "ahead": {
+          "n": 4,
+          "correct": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.2222222222222222,
+          "confusion": {
+            "Cautious": {
+              "Cautious": 0,
+              "Normal": 0,
+              "Aggressive": 1
+            },
+            "Normal": {
+              "Cautious": 0,
+              "Normal": 0,
+              "Aggressive": 1
+            },
+            "Aggressive": {
+              "Cautious": 0,
+              "Normal": 0,
+              "Aggressive": 2
+            }
+          },
+          "by_truth": {
+            "Cautious": {
+              "n": 1,
+              "correct": 0,
+              "accuracy": 0.0,
+              "predictions": {
+                "Cautious": 0,
+                "Normal": 0,
+                "Aggressive": 1
+              }
+            },
+            "Normal": {
+              "n": 1,
+              "correct": 0,
+              "accuracy": 0.0,
+              "predictions": {
+                "Cautious": 0,
+                "Normal": 0,
+                "Aggressive": 1
+              }
+            },
+            "Aggressive": {
+              "n": 2,
+              "correct": 2,
+              "accuracy": 1.0,
+              "predictions": {
+                "Cautious": 0,
+                "Normal": 0,
+                "Aggressive": 2
+              }
+            }
+          },
+          "brier": 0.4067,
+          "log_loss": 0.7339475593968643,
+          "mean_confidence": 0.52,
+          "mean_margin": 0.2675,
+          "mean_latency_ms": 1239.5801000020583,
+          "binary_hard": {
+            "tp": 2,
+            "tn": 2,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "specificity": 1.0,
+            "balanced_accuracy": 1.0,
+            "accuracy": 1.0,
+            "predicted_positive": 2,
+            "truth_positive": 2
+          },
+          "binary_threshold": {
+            "tp": 2,
+            "tn": 0,
+            "fp": 2,
+            "fn": 0,
+            "precision": 0.5,
+            "recall": 1.0,
+            "specificity": 0.0,
+            "balanced_accuracy": 0.5,
+            "accuracy": 0.5,
+            "predicted_positive": 4,
+            "truth_positive": 2
+          },
+          "coverage": {
+            "0.45": {
+              "n": 2,
+              "coverage": 0.5,
+              "accuracy": 1.0,
+              "brier": 0.14
+            },
+            "0.50": {
+              "n": 2,
+              "coverage": 0.5,
+              "accuracy": 1.0,
+              "brier": 0.14
+            },
+            "0.60": {
+              "n": 2,
+              "coverage": 0.5,
+              "accuracy": 1.0,
+              "brier": 0.14
+            }
+          }
+        },
+        "behind": {
+          "n": 2,
+          "correct": 0,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "confusion": {
+            "Cautious": {
+              "Cautious": 0,
+              "Normal": 0,
+              "Aggressive": 1
+            },
+            "Normal": {
+              "Cautious": 0,
+              "Normal": 0,
+              "Aggressive": 1
+            },
+            "Aggressive": {
+              "Cautious": 0,
+              "Normal": 0,
+              "Aggressive": 0
+            }
+          },
+          "by_truth": {
+            "Cautious": {
+              "n": 1,
+              "correct": 0,
+              "accuracy": 0.0,
+              "predictions": {
+                "Cautious": 0,
+                "Normal": 0,
+                "Aggressive": 1
+              }
+            },
+            "Normal": {
+              "n": 1,
+              "correct": 0,
+              "accuracy": 0.0,
+              "predictions": {
+                "Cautious": 0,
+                "Normal": 0,
+                "Aggressive": 1
+              }
+            },
+            "Aggressive": {
+              "n": 0,
+              "correct": 0,
+              "accuracy": null,
+              "predictions": {
+                "Cautious": 0,
+                "Normal": 0,
+                "Aggressive": 0
+              }
+            }
+          },
+          "brier": 0.6734,
+          "log_loss": 1.1086626245216111,
+          "mean_confidence": 0.34,
+          "mean_margin": 0.010000000000000009,
+          "mean_latency_ms": 1239.5801000020583,
+          "binary_hard": {
+            "tp": 0,
+            "tn": 2,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "specificity": 1.0,
+            "balanced_accuracy": 0.5,
+            "accuracy": 1.0,
+            "predicted_positive": 0,
+            "truth_positive": 0
+          },
+          "binary_threshold": {
+            "tp": 0,
+            "tn": 0,
+            "fp": 2,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "specificity": 0.0,
+            "balanced_accuracy": 0.0,
+            "accuracy": 0.0,
+            "predicted_positive": 2,
+            "truth_positive": 0
+          },
+          "coverage": {
+            "0.45": {
+              "n": 0,
+              "coverage": 0.0,
+              "accuracy": null,
+              "brier": null
+            },
+            "0.50": {
+              "n": 0,
+              "coverage": 0.0,
+              "accuracy": null,
+              "brier": null
+            },
+            "0.60": {
+              "n": 0,
+              "coverage": 0.0,
+              "accuracy": null,
+              "brier": null
+            }
+          }
+        },
+        "alongside": {
+          "n": 0
+        }
+      },
+      "vehicle_first": {
+        "n": 6,
+        "correct": 2,
+        "accuracy": 0.3333333333333333,
+        "brier": 0.49560000000000004,
+        "key_n": 2,
+        "key_accuracy": 0.0,
+        "background_n": 4,
+        "background_accuracy": 0.5
+      }
+    }
+  },
+  "pairs": {}
+}

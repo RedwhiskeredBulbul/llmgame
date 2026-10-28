@@ -1,0 +1,39 @@
+{
+  "protocol_version": "ablation-v2-forced-traffic-frozen-20261017",
+  "phase": "frozen",
+  "variants": ["oracle_type", "uniform_belief", "oracle_without_interaction_response"],
+  "scenarios": ["traffic"],
+  "seeds": [
+    4000, 4001, 4002, 4003, 4004, 4005, 4006, 4007, 4008, 4009,
+    4010, 4011, 4012, 4013, 4014, 4015, 4016, 4017, 4018, 4019,
+    4020, 4021, 4022, 4023, 4024, 4025, 4026, 4027, 4028, 4029
+  ],
+  "control_dt_s": 0.1,
+  "execution_mode": "trajectory_point",
+  "time_mode": "paused_simulation",
+  "decision": {
+    "control_dt_s": 0.1, "av_optimizer": "scalar_grid",
+    "max_game_iterations": 3, "acceleration_tolerance_ms2": 0.05,
+    "solve_budget_ms": 100.0,
+    "reward_times_s": [0.1, 0.5, 1.0, 2.0, 4.0, 8.0],
+    "route_progress_bonus": 2.0, "switch_penalty": 0.1
+  },
+  "llm": {
+    "model": "qwen-flash-2025-07-28", "temperature": 0.0,
+    "history_len": 20, "interval_steps": 10, "temporal_alpha": 0.7,
+    "max_belief_age_sim_s": 2.0, "timeout_s": 10.0, "max_retries": 0
+  },
+  "runtime": {"deadline_ms": 100.0, "record_video": false, "resume": true, "max_steps": null},
+  "forced_traffic": {
+    "required_target_lane": 1,
+    "horizon_s": 20.0,
+    "required_progress_m": 100.0,
+    "stable_lane_steps": 10,
+    "difficulty": 1,
+    "ego_speed_range_ms": [24.75, 27.25],
+    "rear_relative_x_range_m": [-6.75, -4.0],
+    "rear_relative_speed_range_ms": [0.4, 1.5],
+    "background_clearance_m": 12.0,
+    "formal_seed_policy": "4000-4029; balanced physical types; no post-result changes"
+  }
+}

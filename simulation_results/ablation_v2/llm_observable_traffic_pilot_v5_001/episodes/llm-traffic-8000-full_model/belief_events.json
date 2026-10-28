@@ -1,0 +1,325 @@
+[
+  {
+    "observation_sim_time": 0.8999999999999999,
+    "observation_wall": 67871.5683751,
+    "latency_ms": 1347.9461999959312,
+    "error": null,
+    "prompt_hash": "12edef70dc09081ae944efdbbbf2549837336caf2dd9bc2238b9b5023f2b5a9b",
+    "response": "{\n  \"1\": [0.8, 0.1, 0.1],\n  \"7\": [0.1, 0.1, 0.8],\n  \"4\": [0.1, 0.1, 0.8]\n}",
+    "usage": {
+      "completion_tokens": 59,
+      "prompt_tokens": 2374,
+      "total_tokens": 2433,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "llm-traffic-8000-full_model",
+    "event": "response",
+    "request_id": 1,
+    "probabilities": {
+      "1": [
+        0.8,
+        0.1,
+        0.1
+      ],
+      "7": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "4": [
+        0.1,
+        0.1,
+        0.8
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 2.400000000000001,
+    "observation_wall": 67873.6002488,
+    "latency_ms": 912.1184000105131,
+    "error": null,
+    "prompt_hash": "51a11e5b5adabbac5fbc2e34717cd4110616b60b90de1ffe8b9bff413aa8c4de",
+    "response": "{\n  \"7\": [0.1, 0.1, 0.8],\n  \"1\": [0.8, 0.1, 0.1],\n  \"4\": [0.1, 0.1, 0.8]\n}",
+    "usage": {
+      "completion_tokens": 59,
+      "prompt_tokens": 2358,
+      "total_tokens": 2417,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "llm-traffic-8000-full_model",
+    "event": "response",
+    "request_id": 2,
+    "probabilities": {
+      "7": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "1": [
+        0.8,
+        0.1,
+        0.1
+      ],
+      "4": [
+        0.1,
+        0.1,
+        0.8
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 3.4000000000000017,
+    "observation_wall": 67875.0196064,
+    "latency_ms": 979.5718000095803,
+    "error": null,
+    "prompt_hash": "8967925ea251efce2a6bae2cfc842e778f4c5b92a8efb05d329a27a9de2d23fc",
+    "response": "{\n  \"7\": [0.1, 0.1, 0.8],\n  \"4\": [0.1, 0.1, 0.8],\n  \"1\": [0.8, 0.1, 0.1]\n}",
+    "usage": {
+      "completion_tokens": 59,
+      "prompt_tokens": 2353,
+      "total_tokens": 2412,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "llm-traffic-8000-full_model",
+    "event": "response",
+    "request_id": 3,
+    "probabilities": {
+      "7": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "4": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "1": [
+        0.8,
+        0.1,
+        0.1
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 4.4,
+    "observation_wall": 67876.4176916,
+    "latency_ms": 954.4449999957578,
+    "error": null,
+    "prompt_hash": "2b4c1b96b2ff85377dd03a90ef8c151b73f5854d83db248a7476b4bdcfc1f778",
+    "response": "{\n  \"7\": [0.1, 0.1, 0.8],\n  \"4\": [0.1, 0.1, 0.8],\n  \"1\": [0.8, 0.1, 0.1]\n}",
+    "usage": {
+      "completion_tokens": 59,
+      "prompt_tokens": 2349,
+      "total_tokens": 2408,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "llm-traffic-8000-full_model",
+    "event": "response",
+    "request_id": 4,
+    "probabilities": {
+      "7": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "4": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "1": [
+        0.8,
+        0.1,
+        0.1
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 5.399999999999997,
+    "observation_wall": 67877.7969948,
+    "latency_ms": 911.1149000091245,
+    "error": null,
+    "prompt_hash": "37ecff43b8a0bd1947c63bf8cb8d92f6d8ef81e98815292f9349771ef9abe51b",
+    "response": "{\n  \"4\": [0.1, 0.1, 0.8],\n  \"7\": [0.8, 0.1, 0.1],\n  \"1\": [0.8, 0.1, 0.1]\n}",
+    "usage": {
+      "completion_tokens": 59,
+      "prompt_tokens": 2347,
+      "total_tokens": 2406,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "llm-traffic-8000-full_model",
+    "event": "response",
+    "request_id": 5,
+    "probabilities": {
+      "4": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "7": [
+        0.31000000000000005,
+        0.1,
+        0.59
+      ],
+      "1": [
+        0.8,
+        0.1,
+        0.1
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 6.399999999999993,
+    "observation_wall": 67879.5305109,
+    "latency_ms": 1118.998099991586,
+    "error": null,
+    "prompt_hash": "b8219a9501b72ecca22cf847b5237cdd25e00cf4b1c53aa46e81cf07c6e6af0d",
+    "response": "{\n  \"4\": [0.1, 0.1, 0.8],\n  \"7\": [0.8, 0.1, 0.1],\n  \"2\": [0.1, 0.1, 0.8]\n}",
+    "usage": {
+      "completion_tokens": 59,
+      "prompt_tokens": 2324,
+      "total_tokens": 2383,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "llm-traffic-8000-full_model",
+    "event": "response",
+    "request_id": 6,
+    "probabilities": {
+      "4": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "7": [
+        0.4570000000000001,
+        0.1,
+        0.443
+      ],
+      "2": [
+        0.1,
+        0.1,
+        0.8
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 7.899999999999988,
+    "observation_wall": 67881.0179638,
+    "latency_ms": 1111.6047000105027,
+    "error": null,
+    "prompt_hash": "510f45fa55b1b7ca2399934b1b034d4684e5702b7ee3108462426087d0cbd99e",
+    "response": "{\n  \"4\": [0.8, 0.1, 0.1],\n  \"7\": [0.8, 0.1, 0.1],\n  \"2\": [0.1, 0.1, 0.8]\n}",
+    "usage": {
+      "completion_tokens": 59,
+      "prompt_tokens": 2352,
+      "total_tokens": 2411,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "llm-traffic-8000-full_model",
+    "event": "response",
+    "request_id": 7,
+    "probabilities": {
+      "4": [
+        0.31000000000000005,
+        0.1,
+        0.59
+      ],
+      "7": [
+        0.5599000000000001,
+        0.1,
+        0.3401
+      ],
+      "2": [
+        0.1,
+        0.1,
+        0.8
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 9.399999999999983,
+    "observation_wall": 67882.1738174,
+    "latency_ms": 1028.696299996227,
+    "error": null,
+    "prompt_hash": "fcef4f8ef417981feda1759bed8be1784425ba53efdb0a0513fa349b17d72589",
+    "response": "{\n  \"4\": [0.8, 0.1, 0.1],\n  \"7\": [0.1, 0.8, 0.1],\n  \"2\": [0.1, 0.1, 0.8]\n}",
+    "usage": {
+      "completion_tokens": 59,
+      "prompt_tokens": 2350,
+      "total_tokens": 2409,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "episode_id": "llm-traffic-8000-full_model",
+    "event": "response",
+    "request_id": 8,
+    "probabilities": {
+      "4": [
+        0.4570000000000001,
+        0.1,
+        0.443
+      ],
+      "7": [
+        0.42193,
+        0.31000000000000005,
+        0.26807000000000003
+      ],
+      "2": [
+        0.1,
+        0.1,
+        0.8
+      ]
+    }
+  },
+  {
+    "probabilities": {
+      "4": [
+        0.8,
+        0.1,
+        0.1
+      ],
+      "7": [
+        0.8,
+        0.1,
+        0.1
+      ],
+      "2": [
+        0.1,
+        0.1,
+        0.8
+      ]
+    },
+    "observation_sim_time": 10.899999999999977,
+    "observation_wall": 67883.4879218,
+    "latency_ms": 1122.420300001977,
+    "error": null,
+    "prompt_hash": "387e943346c69e9336de1ff592eed0ba7c0e99aeb3574c829e538f315c0f451d",
+    "response": "{\n  \"4\": [0.8, 0.1, 0.1],\n  \"7\": [0.8, 0.1, 0.1],\n  \"2\": [0.1, 0.1, 0.8]\n}",
+    "usage": {
+      "completion_tokens": 59,
+      "prompt_tokens": 2356,
+      "total_tokens": 2415,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": null
+    },
+    "event": "response_after_episode",
+    "episode_id": "llm-traffic-8000-full_model"
+  }
+]

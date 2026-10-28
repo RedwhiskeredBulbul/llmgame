@@ -1,0 +1,177 @@
+{
+  "git_commit": "6a9ab7332e0e0d3abf34f37e2466c068ef4640ec",
+  "protocol_hash": "2d2aed232673cbd499fede0730caf5d2b37bfab26115f1b3e275c3affee504ec",
+  "phase": "type_observable_df_cutin_pilot",
+  "by_variant": {
+    "full_model": {
+      "episodes": 6,
+      "completed": 5,
+      "collisions": 1,
+      "timeouts": 0,
+      "runtime_errors": 0,
+      "probe_steps": 78,
+      "mean_speed_ms": 6.360430839432663,
+      "mean_restricted_time_s": 11.383333333333324,
+      "mean_min_clearance_m": 8.503956913010358
+    },
+    "without_probe": {
+      "episodes": 6,
+      "completed": 5,
+      "collisions": 1,
+      "timeouts": 0,
+      "runtime_errors": 0,
+      "probe_steps": 0,
+      "mean_speed_ms": 6.318399941370624,
+      "mean_restricted_time_s": 11.383333333333324,
+      "mean_min_clearance_m": 8.503956913010358
+    },
+    "uniform_belief": {
+      "episodes": 6,
+      "completed": 5,
+      "collisions": 1,
+      "timeouts": 0,
+      "runtime_errors": 0,
+      "probe_steps": 189,
+      "mean_speed_ms": 6.387506825013463,
+      "mean_restricted_time_s": 11.349999999999989,
+      "mean_min_clearance_m": 8.546923106056864
+    },
+    "oracle_type": {
+      "episodes": 6,
+      "completed": 5,
+      "collisions": 1,
+      "timeouts": 0,
+      "runtime_errors": 0,
+      "probe_steps": 79,
+      "mean_speed_ms": 6.365449789148702,
+      "mean_restricted_time_s": 11.366666666666658,
+      "mean_min_clearance_m": 8.503623288613866
+    }
+  },
+  "paired_effects": {
+    "oracle_type": {
+      "better_success": 0,
+      "worse_success": 0,
+      "fewer_collisions": 0,
+      "more_collisions": 0,
+      "mean_restricted_time_difference_s": 0.016666666666666607
+    },
+    "uniform_belief": {
+      "better_success": 0,
+      "worse_success": 0,
+      "fewer_collisions": 0,
+      "more_collisions": 0,
+      "mean_restricted_time_difference_s": 0.033333333333333215
+    },
+    "without_probe": {
+      "better_success": 0,
+      "worse_success": 0,
+      "fewer_collisions": 0,
+      "more_collisions": 0,
+      "mean_restricted_time_difference_s": 0.0
+    }
+  },
+  "mcnemar": {
+    "full_model_vs_without_probe": {
+      "better": 0,
+      "worse": 0,
+      "p": 1.0
+    },
+    "full_model_vs_uniform_belief": {
+      "better": 0,
+      "worse": 0,
+      "p": 1.0
+    },
+    "full_model_vs_oracle_type": {
+      "better": 0,
+      "worse": 0,
+      "p": 1.0
+    }
+  },
+  "action_divergence": {
+    "full_model_vs_uniform_belief": {
+      "steps": 505,
+      "divergent_steps": 20,
+      "divergent_fraction": 0.039603960396039604
+    },
+    "full_model_vs_oracle_type": {
+      "steps": 506,
+      "divergent_steps": 2,
+      "divergent_fraction": 0.003952569169960474
+    }
+  },
+  "llm_diagnostics": {
+    "samples": 24,
+    "accuracy": 0.4166666666666667,
+    "macro_f1": 0.3571428571428572,
+    "mean_brier_score": 0.8766666666666668,
+    "mean_latency_ms": 1067.455566660404,
+    "confusion_matrix": {
+      "Cautious": {
+        "Cautious": 4,
+        "Normal": 0,
+        "Aggressive": 4,
+        "Unparsed": 0
+      },
+      "Normal": {
+        "Cautious": 2,
+        "Normal": 0,
+        "Aggressive": 8,
+        "Unparsed": 0
+      },
+      "Aggressive": {
+        "Cautious": 0,
+        "Normal": 0,
+        "Aggressive": 6,
+        "Unparsed": 0
+      }
+    },
+    "binary_force": {
+      "accuracy": 0.5,
+      "macro_f1": 0.5,
+      "confusion": {
+        "tp": 6,
+        "fn": 0,
+        "fp": 12,
+        "tn": 6
+      }
+    },
+    "true_label_counts": {
+      "Normal": 86,
+      "Cautious": 78,
+      "Aggressive": 73
+    },
+    "predicted_label_counts": {
+      "Aggressive": 18,
+      "Cautious": 6
+    },
+    "by_true_label": {
+      "Cautious": {
+        "samples": 8,
+        "accuracy": 0.5,
+        "macro_f1": 0.2222222222222222
+      },
+      "Aggressive": {
+        "samples": 6,
+        "accuracy": 1.0,
+        "macro_f1": 0.3333333333333333
+      },
+      "Normal": {
+        "samples": 10,
+        "accuracy": 0.0,
+        "macro_f1": 0.0
+      }
+    }
+  },
+  "gates": {
+    "complete": true,
+    "paired": true,
+    "no_runtime_errors": true,
+    "llm_requested": true,
+    "response_errors_zero": true
+  },
+  "all_gates_pass": true,
+  "algorithm_change": false,
+  "scene_change_only": true,
+  "interpretation": "DF_2_2 native random-type traffic with a local merge window; no scripted key-vehicle response. Scene feasibility adapter, not a confirmatory benchmark."
+}

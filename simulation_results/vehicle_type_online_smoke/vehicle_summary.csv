@@ -1,0 +1,8 @@
+﻿seed,vehicle_id,true_label,observations,raw_correct,smoothed_correct,first_correct_time_s,stable_time_s,class_switches,last_prediction,streak_label,streak_count,final_prediction,final_correct,final_probabilities,raw_accuracy,smoothed_accuracy
+0,4,Normal,1,0,0,,,0,Cautious,Cautious,1,Cautious,False,"[0.9999999246800199, 7.531997999252603e-08, 2.4560027381051775e-16]",0.0,0.0
+0,3,Cautious,3,3,3,10.0,14.0,0,Cautious,Cautious,3,Cautious,True,"[1.0, 8.961141231464637e-18, 4.501104306270968e-36]",1.0,1.0
+0,1,Normal,3,0,0,,14.0,0,Cautious,Cautious,3,Cautious,False,"[1.0, 1.1028758486674217e-17, 5.284046279796527e-36]",0.0,0.0
+0,8,Normal,2,0,0,,,0,Cautious,Cautious,2,Cautious,False,"[1.0, 9.9311382173125e-18, 4.2735339418078e-36]",0.0,0.0
+1,4,Normal,3,0,0,,14.0,0,Cautious,Cautious,3,Cautious,False,"[0.9999994894621166, 5.105378663245464e-07, 1.7083633083268365e-14]",0.0,0.0
+1,8,Cautious,3,3,3,10.0,14.0,0,Cautious,Cautious,3,Cautious,True,"[0.9999999898720315, 1.0127968478982326e-08, 7.810045647551441e-18]",1.0,1.0
+1,5,Cautious,3,3,3,10.0,14.0,0,Cautious,Cautious,3,Cautious,True,"[0.9999999993729719, 6.270280675020155e-10, 3.312671908507768e-20]",1.0,1.0

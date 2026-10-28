@@ -1,0 +1,121 @@
+{
+  "protocol_version": "ablation-v2-type-observable-bounded-merge-lead45-v5-20261018",
+  "phase": "type_observable_bounded_merge_lead45_pilot",
+  "variants": [
+    "full_model",
+    "without_probe",
+    "uniform_belief",
+    "oracle_type"
+  ],
+  "scenarios": [
+    "merge"
+  ],
+  "seeds": [
+    9400,
+    9401,
+    9402,
+    9403,
+    9404,
+    9405,
+    9406,
+    9407,
+    9408
+  ],
+  "control_dt_s": 0.1,
+  "execution_mode": "trajectory_point",
+  "time_mode": "paused_simulation",
+  "decision": {
+    "control_dt_s": 0.1,
+    "av_optimizer": "scalar_grid",
+    "max_game_iterations": 3,
+    "acceleration_tolerance_ms2": 0.05,
+    "solve_budget_ms": 100.0,
+    "reward_times_s": [
+      0.1,
+      0.5,
+      1.0,
+      2.0,
+      4.0,
+      8.0
+    ],
+    "route_progress_bonus": 2.0,
+    "switch_penalty": 0.1
+  },
+  "llm": {
+    "model": "qwen-flash-2025-07-28",
+    "temperature": 0.0,
+    "prompt_version": "relative_evidence_v5",
+    "history_len": 20,
+    "interval_steps": 10,
+    "temporal_alpha": 0.7,
+    "max_belief_age_sim_s": 3.0,
+    "sync_first_observation": true,
+    "timeout_s": 10.0,
+    "max_retries": 0
+  },
+  "runtime": {
+    "deadline_ms": 100.0,
+    "record_video": false,
+    "resume": true,
+    "max_steps": null
+  },
+  "observable_merge": {
+    "ego_speed_ms": 7.0,
+    "key_relative_x_m": -27.5,
+    "key_initial_speed_ms": {
+      "0": 7.5,
+      "1": 9.5,
+      "2": 11.6
+    },
+    "key_initial_speed_offsets_ms": {
+      "0": [
+        -0.05,
+        0.0,
+        0.05
+      ],
+      "1": [
+        -0.05,
+        0.0,
+        0.05
+      ],
+      "2": [
+        -0.05,
+        0.0,
+        0.05
+      ]
+    },
+    "key_target_speed_ms": {
+      "0": 8.0,
+      "1": 10.0,
+      "2": 12.0
+    },
+    "key_response": {
+      "0": "yield",
+      "1": "idm",
+      "2": "force"
+    },
+    "merge_open_x_m": 40.0,
+    "horizon_s": 40.0,
+    "jitter": {
+      "ego_speed_ms": 0.0,
+      "key_relative_x_m": 0.0,
+      "key_initial_speed_ms": 0.0,
+      "key_target_speed_ms": 0.0
+    },
+    "response": {
+      "trigger_lateral_y_m": 3.5,
+      "response_range_m": 45.0,
+      "yield_deceleration_ms2": -2.0,
+      "force_acceleration_ms2": 2.0,
+      "force_speed_cap_ms": 15.0,
+      "force_min_gap_m": 6.0,
+      "force_emergency_deceleration_ms2": -5.0
+    },
+    "design": "scale-50 replication of the frozen type-observable merge: 50 unseen seeds (17 cautious, 17 normal, 16 aggressive), same geometry, response parameters, prompt v5 and LLM settings as the 18-seed held-out confirmation; initial speeds cycle deterministically through the verified 0.1 m/s band around the commit/probe boundary, with no RNG jitter"
+  },
+  "observable_bounded_merge": {
+    "target_lead_x_m": 45.0,
+    "target_lead_speed_ms": 8.0,
+    "design": "pilot: validated rear-key merge conflict bounded ahead by a slow target-lane lead 45 m ahead of the ego at 8 m/s; 9 unseen seeds (3 per type), prompt v5, same controller/reward/response as the 50-seed replication"
+  }
+}

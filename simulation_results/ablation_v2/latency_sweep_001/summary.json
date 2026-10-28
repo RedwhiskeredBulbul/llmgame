@@ -1,0 +1,196 @@
+{
+  "mock_only": true,
+  "real_api_requests": 0,
+  "trials": 30,
+  "delays_s": [
+    0.0,
+    0.5,
+    1.0,
+    2.0,
+    4.0
+  ],
+  "repetitions": 3,
+  "max_async_control_block_ms": 1.8456999969203025,
+  "rows": [
+    {
+      "delay_s": 0.0,
+      "repeat": 0,
+      "variant": "full_model",
+      "control_block_ms": 0.7836000004317611
+    },
+    {
+      "delay_s": 0.0,
+      "repeat": 0,
+      "variant": "sync_llm",
+      "control_block_ms": 0.06660001236014068
+    },
+    {
+      "delay_s": 0.0,
+      "repeat": 1,
+      "variant": "full_model",
+      "control_block_ms": 0.6182999932207167
+    },
+    {
+      "delay_s": 0.0,
+      "repeat": 1,
+      "variant": "sync_llm",
+      "control_block_ms": 0.05709999823011458
+    },
+    {
+      "delay_s": 0.0,
+      "repeat": 2,
+      "variant": "full_model",
+      "control_block_ms": 1.8456999969203025
+    },
+    {
+      "delay_s": 0.0,
+      "repeat": 2,
+      "variant": "sync_llm",
+      "control_block_ms": 0.06880000000819564
+    },
+    {
+      "delay_s": 0.5,
+      "repeat": 0,
+      "variant": "full_model",
+      "control_block_ms": 0.9446000040043145
+    },
+    {
+      "delay_s": 0.5,
+      "repeat": 0,
+      "variant": "sync_llm",
+      "control_block_ms": 500.6130999827292
+    },
+    {
+      "delay_s": 0.5,
+      "repeat": 1,
+      "variant": "full_model",
+      "control_block_ms": 0.8098999969661236
+    },
+    {
+      "delay_s": 0.5,
+      "repeat": 1,
+      "variant": "sync_llm",
+      "control_block_ms": 500.6119000026956
+    },
+    {
+      "delay_s": 0.5,
+      "repeat": 2,
+      "variant": "full_model",
+      "control_block_ms": 0.8285999938379973
+    },
+    {
+      "delay_s": 0.5,
+      "repeat": 2,
+      "variant": "sync_llm",
+      "control_block_ms": 500.3253000031691
+    },
+    {
+      "delay_s": 1.0,
+      "repeat": 0,
+      "variant": "full_model",
+      "control_block_ms": 1.5240000211633742
+    },
+    {
+      "delay_s": 1.0,
+      "repeat": 0,
+      "variant": "sync_llm",
+      "control_block_ms": 1000.7556999917142
+    },
+    {
+      "delay_s": 1.0,
+      "repeat": 1,
+      "variant": "full_model",
+      "control_block_ms": 1.6979000065475702
+    },
+    {
+      "delay_s": 1.0,
+      "repeat": 1,
+      "variant": "sync_llm",
+      "control_block_ms": 1000.5802999949083
+    },
+    {
+      "delay_s": 1.0,
+      "repeat": 2,
+      "variant": "full_model",
+      "control_block_ms": 1.0673999786376953
+    },
+    {
+      "delay_s": 1.0,
+      "repeat": 2,
+      "variant": "sync_llm",
+      "control_block_ms": 1000.3721000102814
+    },
+    {
+      "delay_s": 2.0,
+      "repeat": 0,
+      "variant": "full_model",
+      "control_block_ms": 1.2115999998059124
+    },
+    {
+      "delay_s": 2.0,
+      "repeat": 0,
+      "variant": "sync_llm",
+      "control_block_ms": 2000.2242999908049
+    },
+    {
+      "delay_s": 2.0,
+      "repeat": 1,
+      "variant": "full_model",
+      "control_block_ms": 1.6256999806500971
+    },
+    {
+      "delay_s": 2.0,
+      "repeat": 1,
+      "variant": "sync_llm",
+      "control_block_ms": 2000.3013999958057
+    },
+    {
+      "delay_s": 2.0,
+      "repeat": 2,
+      "variant": "full_model",
+      "control_block_ms": 0.7971000159159303
+    },
+    {
+      "delay_s": 2.0,
+      "repeat": 2,
+      "variant": "sync_llm",
+      "control_block_ms": 2000.3921999887098
+    },
+    {
+      "delay_s": 4.0,
+      "repeat": 0,
+      "variant": "full_model",
+      "control_block_ms": 1.7120999982580543
+    },
+    {
+      "delay_s": 4.0,
+      "repeat": 0,
+      "variant": "sync_llm",
+      "control_block_ms": 4000.626299995929
+    },
+    {
+      "delay_s": 4.0,
+      "repeat": 1,
+      "variant": "full_model",
+      "control_block_ms": 1.0657999955583364
+    },
+    {
+      "delay_s": 4.0,
+      "repeat": 1,
+      "variant": "sync_llm",
+      "control_block_ms": 4000.271700002486
+    },
+    {
+      "delay_s": 4.0,
+      "repeat": 2,
+      "variant": "full_model",
+      "control_block_ms": 0.9989000100176781
+    },
+    {
+      "delay_s": 4.0,
+      "repeat": 2,
+      "variant": "sync_llm",
+      "control_block_ms": 4000.400899996748
+    }
+  ]
+}

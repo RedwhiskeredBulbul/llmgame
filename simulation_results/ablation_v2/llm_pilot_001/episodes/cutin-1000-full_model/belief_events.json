@@ -1,0 +1,631 @@
+[
+  {
+    "observation_sim_time": 1.9000000000000006,
+    "observation_wall": 142734.4861609,
+    "latency_ms": 927.2922000091057,
+    "error": null,
+    "prompt_hash": "03867bd758a4519d2c84995c1c3bf919d7e2a0007500936e97651c2d5a17b49b",
+    "response": "{\n  \"1\": [0.85, 0.10, 0.05],\n  \"3\": [0.10, 0.70, 0.20],\n  \"2\": [0.70, 0.20, 0.10]\n}",
+    "usage": {
+      "completion_tokens": 68,
+      "prompt_tokens": 1125,
+      "total_tokens": 1193,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null
+      }
+    },
+    "episode_id": "cutin-1000-full_model",
+    "event": "response",
+    "request_id": 1,
+    "probabilities": {
+      "1": [
+        0.85,
+        0.1,
+        0.05
+      ],
+      "3": [
+        0.1,
+        0.7,
+        0.2
+      ],
+      "2": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 2.9000000000000012,
+    "observation_wall": 142735.6185233,
+    "latency_ms": 952.4789999995846,
+    "error": null,
+    "prompt_hash": "58cdc308c5c165ee4c721226b283b82beb5b4098494883be9ef59c38eed79dfb",
+    "response": "{\n  \"3\": [0.75, 0.20, 0.05],\n  \"1\": [0.10, 0.20, 0.70],\n  \"2\": [0.10, 0.20, 0.70]\n}",
+    "usage": {
+      "completion_tokens": 68,
+      "prompt_tokens": 1125,
+      "total_tokens": 1193,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null
+      }
+    },
+    "episode_id": "cutin-1000-full_model",
+    "event": "response",
+    "request_id": 2,
+    "probabilities": {
+      "3": [
+        0.29500000000000004,
+        0.5499999999999999,
+        0.155
+      ],
+      "1": [
+        0.625,
+        0.13,
+        0.24500000000000002
+      ],
+      "2": [
+        0.5199999999999999,
+        0.2,
+        0.28
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 3.900000000000002,
+    "observation_wall": 142736.7532642,
+    "latency_ms": 795.4436000145506,
+    "error": null,
+    "prompt_hash": "f1e654362309de5c6afc41d2032ff8ad50a6104dbc1861b8746fedd516a34bfb",
+    "response": "{\n  \"3\": [0.75, 0.20, 0.05],\n  \"1\": [0.10, 0.10, 0.80],\n  \"2\": [0.15, 0.15, 0.70]\n}",
+    "usage": {
+      "completion_tokens": 68,
+      "prompt_tokens": 1125,
+      "total_tokens": 1193,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null
+      }
+    },
+    "episode_id": "cutin-1000-full_model",
+    "event": "response",
+    "request_id": 3,
+    "probabilities": {
+      "3": [
+        0.43150000000000005,
+        0.44499999999999995,
+        0.1235
+      ],
+      "1": [
+        0.4675,
+        0.121,
+        0.4115000000000001
+      ],
+      "2": [
+        0.4089999999999999,
+        0.185,
+        0.406
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 4.899999999999999,
+    "observation_wall": 142737.8942654,
+    "latency_ms": 1221.3817999872845,
+    "error": null,
+    "prompt_hash": "663ea0500f145c2ae9e2046ce89bc11e9848be9eef9dc24c4a9f5d4e650839bc",
+    "response": "{\n  \"3\": [0.75, 0.20, 0.05],\n  \"1\": [0.10, 0.20, 0.70],\n  \"2\": [0.05, 0.15, 0.80]\n}",
+    "usage": {
+      "completion_tokens": 68,
+      "prompt_tokens": 1125,
+      "total_tokens": 1193,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null
+      }
+    },
+    "episode_id": "cutin-1000-full_model",
+    "event": "response",
+    "request_id": 4,
+    "probabilities": {
+      "3": [
+        0.52705,
+        0.37149999999999994,
+        0.10145
+      ],
+      "1": [
+        0.35725,
+        0.1447,
+        0.49805000000000005
+      ],
+      "2": [
+        0.30129999999999996,
+        0.17450000000000002,
+        0.5242
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 6.8999999999999915,
+    "observation_wall": 142739.287439,
+    "latency_ms": 729.1581000026781,
+    "error": null,
+    "prompt_hash": "d0af24234ed5559ac9d8b43b2b564da2a69fb670e0debc4c5b9cec8a83b9f9b9",
+    "response": "{\n  \"3\": [0.75, 0.20, 0.05],\n  \"1\": [0.90, 0.08, 0.02],\n  \"2\": [0.05, 0.10, 0.85]\n}",
+    "usage": {
+      "completion_tokens": 68,
+      "prompt_tokens": 1141,
+      "total_tokens": 1209,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null
+      }
+    },
+    "episode_id": "cutin-1000-full_model",
+    "event": "response",
+    "request_id": 5,
+    "probabilities": {
+      "3": [
+        0.5939350000000001,
+        0.32004999999999995,
+        0.086015
+      ],
+      "1": [
+        0.5200750000000001,
+        0.12528999999999998,
+        0.35463500000000003
+      ],
+      "2": [
+        0.22591,
+        0.15215000000000004,
+        0.62194
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 8.899999999999984,
+    "observation_wall": 142740.4903278,
+    "latency_ms": 857.3042000061832,
+    "error": null,
+    "prompt_hash": "3d12ee0b134e2e595c534703cffa4828d6edb46f86ec06571bb4aad0367182d0",
+    "response": "{\n  \"1\": [0.95, 0.05, 0.00],\n  \"3\": [0.00, 0.05, 0.95],\n  \"2\": [0.00, 0.10, 0.90]\n}",
+    "usage": {
+      "completion_tokens": 68,
+      "prompt_tokens": 1138,
+      "total_tokens": 1206,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null
+      }
+    },
+    "episode_id": "cutin-1000-full_model",
+    "event": "response",
+    "request_id": 6,
+    "probabilities": {
+      "1": [
+        0.6490525,
+        0.10270299999999999,
+        0.2482445
+      ],
+      "3": [
+        0.4157545,
+        0.23903499999999997,
+        0.34521050000000003
+      ],
+      "2": [
+        0.15813699999999997,
+        0.136505,
+        0.705358
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 10.899999999999977,
+    "observation_wall": 142741.7371482,
+    "latency_ms": 1237.5780000002123,
+    "error": null,
+    "prompt_hash": "0aeb8f54f131492682896cb4a353aa24ff5ee09b2bf1caf7bc502edb1841d995",
+    "response": "{\n  \"1\": [0.85, 0.15, 0.00],\n  \"3\": [0.05, 0.20, 0.75],\n  \"2\": [0.10, 0.90, 0.00]\n}",
+    "usage": {
+      "completion_tokens": 68,
+      "prompt_tokens": 1136,
+      "total_tokens": 1204,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null
+      }
+    },
+    "episode_id": "cutin-1000-full_model",
+    "event": "response",
+    "request_id": 7,
+    "probabilities": {
+      "1": [
+        0.7093367500000001,
+        0.1168921,
+        0.17377114999999999
+      ],
+      "3": [
+        0.30602815,
+        0.22732449999999998,
+        0.46664735
+      ],
+      "2": [
+        0.14069589999999998,
+        0.3655535000000001,
+        0.4937506
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 12.89999999999997,
+    "observation_wall": 142743.7243413,
+    "latency_ms": 944.6294999797828,
+    "error": null,
+    "prompt_hash": "e0bcb189ec9a7d367b4e2c9749bdc0858b5052c173127819df0e6cb536b55810",
+    "response": "{\n  \"1\": [0.95, 0.05, 0.0],\n  \"3\": [0.1, 0.7, 0.2],\n  \"2\": [0.0, 0.8, 0.2]\n}",
+    "usage": {
+      "completion_tokens": 61,
+      "prompt_tokens": 1139,
+      "total_tokens": 1200,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 1024,
+        "image_tokens": null,
+        "text_tokens": null
+      }
+    },
+    "episode_id": "cutin-1000-full_model",
+    "event": "response",
+    "request_id": 8,
+    "probabilities": {
+      "1": [
+        0.7815357250000001,
+        0.09682447,
+        0.12163980499999998
+      ],
+      "3": [
+        0.244219705,
+        0.36912715,
+        0.38665314500000003
+      ],
+      "2": [
+        0.09848712999999998,
+        0.4958874500000001,
+        0.40562541999999996
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 13.899999999999967,
+    "observation_wall": 142744.8216643,
+    "latency_ms": 949.7331000166014,
+    "error": null,
+    "prompt_hash": "685fef61c5582621f148c8b53358e4391cd8cdf04d4f5084e0a08e39b25ac734",
+    "response": "{\n  \"1\": [0.85, 0.15, 0.00],\n  \"3\": [0.10, 0.70, 0.20],\n  \"2\": [0.05, 0.90, 0.05]\n}",
+    "usage": {
+      "completion_tokens": 68,
+      "prompt_tokens": 1141,
+      "total_tokens": 1209,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null
+      }
+    },
+    "episode_id": "cutin-1000-full_model",
+    "event": "response",
+    "request_id": 9,
+    "probabilities": {
+      "1": [
+        0.8020750075,
+        0.112777129,
+        0.08514786349999998
+      ],
+      "3": [
+        0.2009537935,
+        0.468389005,
+        0.3306572015
+      ],
+      "2": [
+        0.08394099099999998,
+        0.6171212150000001,
+        0.298937794
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 14.899999999999963,
+    "observation_wall": 142745.9316989,
+    "latency_ms": 778.969099977985,
+    "error": null,
+    "prompt_hash": "6b19d5163e54bb3ebcf54af77afb69bd0401c42ed3eaf5eea0c02f6ced7ff340",
+    "response": "{\n  \"1\": [0.95, 0.05, 0.00],\n  \"3\": [0.10, 0.70, 0.20],\n  \"2\": [0.05, 0.90, 0.05]\n}",
+    "usage": {
+      "completion_tokens": 68,
+      "prompt_tokens": 1142,
+      "total_tokens": 1210,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null
+      }
+    },
+    "episode_id": "cutin-1000-full_model",
+    "event": "response",
+    "request_id": 10,
+    "probabilities": {
+      "1": [
+        0.84645250525,
+        0.0939439903,
+        0.059603504449999976
+      ],
+      "3": [
+        0.17066765544999998,
+        0.5378723035,
+        0.29146004105
+      ],
+      "2": [
+        0.07375869369999999,
+        0.7019848505000001,
+        0.22425645579999998
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 15.89999999999996,
+    "observation_wall": 142747.035416,
+    "latency_ms": 736.6505000100005,
+    "error": null,
+    "prompt_hash": "5478c7c4f67378df68e4fb30951ca3bda5f839bfd5e68f2b7a0b2cb94ca5dfae",
+    "response": "{\n  \"1\": [0.95, 0.05, 0.00],\n  \"3\": [0.10, 0.80, 0.10],\n  \"2\": [0.05, 0.90, 0.05]\n}",
+    "usage": {
+      "completion_tokens": 68,
+      "prompt_tokens": 1142,
+      "total_tokens": 1210,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 1024,
+        "image_tokens": null,
+        "text_tokens": null
+      }
+    },
+    "episode_id": "cutin-1000-full_model",
+    "event": "response",
+    "request_id": 11,
+    "probabilities": {
+      "1": [
+        0.877516753675,
+        0.08076079321,
+        0.04172245311499998
+      ],
+      "3": [
+        0.14946735881499998,
+        0.61651061245,
+        0.234022028735
+      ],
+      "2": [
+        0.06663108558999997,
+        0.7613893953499999,
+        0.17197951905999995
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 16.89999999999997,
+    "observation_wall": 142748.1412326,
+    "latency_ms": 875.482599978568,
+    "error": null,
+    "prompt_hash": "87df98074e090209b7c4e34d8942f14036d07e298dd847fba6f9a15be8a9c5d9",
+    "response": "{\n  \"1\": [0.95, 0.05, 0.00],\n  \"3\": [0.05, 0.85, 0.10],\n  \"2\": [0.00, 0.90, 0.10]\n}",
+    "usage": {
+      "completion_tokens": 68,
+      "prompt_tokens": 1142,
+      "total_tokens": 1210,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null
+      }
+    },
+    "episode_id": "cutin-1000-full_model",
+    "event": "response",
+    "request_id": 12,
+    "probabilities": {
+      "1": [
+        0.8992617275725,
+        0.071532555247,
+        0.029205717180499986
+      ],
+      "3": [
+        0.11962715117049998,
+        0.686557428715,
+        0.19381542011449998
+      ],
+      "2": [
+        0.046641759912999986,
+        0.8029725767450001,
+        0.150385663342
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 17.899999999999984,
+    "observation_wall": 142749.2339272,
+    "latency_ms": 833.2483000122011,
+    "error": null,
+    "prompt_hash": "5d066d1830348e9b0987fb05d7de06163555a7221a32e2d8d2fbf9bd3bf4b4a4",
+    "response": "{\n  \"1\": [0.95, 0.05, 0.00],\n  \"3\": [0.10, 0.85, 0.05],\n  \"2\": [0.05, 0.90, 0.05]\n}",
+    "usage": {
+      "completion_tokens": 68,
+      "prompt_tokens": 1142,
+      "total_tokens": 1210,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null
+      }
+    },
+    "episode_id": "cutin-1000-full_model",
+    "event": "response",
+    "request_id": 13,
+    "probabilities": {
+      "1": [
+        0.91448320930075,
+        0.0650727886729,
+        0.020444002026349987
+      ],
+      "3": [
+        0.11373900581935,
+        0.7355902001005,
+        0.15067079408015002
+      ],
+      "2": [
+        0.04764923193909998,
+        0.8320808037215,
+        0.12026996433939996
+      ]
+    }
+  },
+  {
+    "observation_sim_time": 18.9,
+    "observation_wall": 142750.2823674,
+    "latency_ms": 919.6716000151355,
+    "error": null,
+    "prompt_hash": "1b74c5d881d137bee3696bc4814f791e3b4d952170564d28cd4819f1ed969523",
+    "response": "{\n  \"3\": [0.75, 0.20, 0.05],\n  \"1\": [0.90, 0.05, 0.05],\n  \"2\": [0.10, 0.80, 0.10]\n}",
+    "usage": {
+      "completion_tokens": 68,
+      "prompt_tokens": 1142,
+      "total_tokens": 1210,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null
+      }
+    },
+    "episode_id": "cutin-1000-full_model",
+    "event": "response",
+    "request_id": 14,
+    "probabilities": {
+      "3": [
+        0.30461730407354504,
+        0.57491314007035,
+        0.12046955585610501
+      ],
+      "1": [
+        0.910138246510525,
+        0.060550952071030006,
+        0.02931080141844499
+      ],
+      "2": [
+        0.06335446235737001,
+        0.8224565626050501,
+        0.11418897503757998
+      ]
+    }
+  },
+  {
+    "probabilities": {
+      "3": [
+        0.75,
+        0.2,
+        0.05
+      ],
+      "1": [
+        0.9,
+        0.08,
+        0.02
+      ],
+      "2": [
+        0.1,
+        0.85,
+        0.05
+      ]
+    },
+    "observation_sim_time": 19.900000000000013,
+    "observation_wall": 142751.3566749,
+    "latency_ms": 929.4364000088535,
+    "error": null,
+    "prompt_hash": "dbe27a0be1a50bebd56a7a413b955a8e103025a87487ddf97caecb19564638f1",
+    "response": "{\n  \"3\": [0.75, 0.20, 0.05],\n  \"1\": [0.90, 0.08, 0.02],\n  \"2\": [0.10, 0.85, 0.05]\n}",
+    "usage": {
+      "completion_tokens": 68,
+      "prompt_tokens": 1142,
+      "total_tokens": 1210,
+      "completion_tokens_details": null,
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null
+      }
+    },
+    "event": "response_after_episode",
+    "episode_id": "cutin-1000-full_model"
+  }
+]
