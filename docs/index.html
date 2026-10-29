@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5f0">
+  <meta name="description" content="LLMGame by Lin Hai: intent-conditioned fast–slow decision-making for interactive autonomous driving, combining LLM reasoning and Bayesian–Stackelberg games.">
+  <meta property="og:title" content="LLMGame · Lin Hai">
+  <meta property="og:description" content="From intent reasoning to interactive driving. Explore the method, simulation results, and full real-vehicle demonstrations.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://redwhiskeredbulbul.github.io/llmgame/">
+  <link rel="canonical" href="https://redwhiskeredbulbul.github.io/llmgame/">
+  <title>LLMGame — Intent-Conditioned Driving</title>
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="header">
+    <a class="wordmark" href="#" aria-label="LLMGame home">LLM<span>Game</span><i></i></a>
+    <nav aria-label="Main navigation">
+      <a href="#method">Method</a><a href="#experiments">Experiments</a><a href="#results">Results</a><a href="#field">Field trials</a>
+    </nav>
+    <a class="code-link" href="https://github.com/RedwhiskeredBulbul/llmgame" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span> Interactive autonomous driving</p>
+        <h1>Reason about intent.<br>Drive with <em>strategy.</em></h1>
+        <p class="project-subtitle">LLMGame: Intent-Conditioned Fast–Slow Decision-Making</p>
+        <p class="hero-description">Connecting language-based reasoning with Bayesian–Stackelberg games to navigate changing preferences and human driving intentions.</p>
+        <p class="author">Lin Hai</p>
+        <div class="actions">
+          <a class="button primary" href="assets/paper/llmgame-manuscript.pdf" target="_blank" rel="noopener">Read manuscript <span>↗</span></a>
+          <a class="button secondary" href="#experiments">Watch experiments <span>↓</span></a>
+        </div>
+      </div>
+      <a class="hero-visual" href="#field" aria-label="View full real-vehicle demonstrations">
+        <img src="assets/posters/DJI_0351.jpg" alt="Aerial view of the autonomous vehicle interacting with another car on a closed road" fetchpriority="high" width="1280" height="720">
+        <div class="visual-top"><span>From simulation to the road</span><span class="crosshair">＋</span></div>
+        <div class="visual-bottom"><div><span class="small-label">Real-vehicle demonstration</span><strong>Intent meets interaction.</strong><span>Tongji Small Town · Shanghai</span></div><span class="round-arrow" aria-hidden="true">↙</span></div>
+      </a>
+    </section>
+
+    <section class="intro wrap" aria-labelledby="intro-heading">
+      <p class="eyebrow">The idea</p>
+      <div><h2 id="intro-heading">A driving decision is also<br>a decision about other people.</h2>
+        <p>Safe interaction depends on more than tracking motion. An autonomous vehicle must interpret whether another driver will yield or compete—and adapt when its passenger’s priorities change. LLMGame turns these high-level interpretations into explicit parameters for a fast game-theoretic decision loop.</p>
+      </div>
+    </section>
+
+    <section class="method wrap section-space" id="method" aria-labelledby="method-heading">
+      <div class="section-heading"><div><p class="eyebrow">01 / Method</p><h2 id="method-heading">Two timescales.<br>One coordinated decision.</h2></div><p>Slow reasoning supplies context.<br>Fast optimization turns it into motion.</p></div>
+      <figure class="architecture">
+        <a href="assets/images/architecture.png" target="_blank" rel="noopener" aria-label="Open original model architecture at full resolution"><img src="assets/images/architecture.png" alt="LLMGame architecture: passenger instructions and traffic observations feed language-based reasoning, which conditions the Bayesian game decision module and trajectory controller" width="2296" height="1358" loading="lazy"></a>
+        <figcaption><span>Model architecture</span><span>Original figure from the project presentation <span aria-hidden="true">↗</span></span></figcaption>
+      </figure>
+      <div class="method-steps">
+        <article><span class="step-number">01</span><h3>Understand the interaction</h3><p>Select relevant surrounding vehicles and represent the local driving context together with passenger instructions.</p></article>
+        <article><span class="step-number">02</span><h3>Reason about intent</h3><p>The slow reasoning loop updates beliefs over Yield, Normal, and Force behaviors, while translating preferences into safety, efficiency, and comfort weights.</p></article>
+        <article><span class="step-number">03</span><h3>Choose and execute</h3><p>The fast Bayesian–Stackelberg game selects maneuvers and acceleration. A trajectory controller executes the resulting plan as reasoning updates asynchronously.</p></article>
+      </div>
+    </section>
+
+    <section class="experiments section-space" id="experiments" aria-labelledby="experiments-heading">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow">02 / Simulation</p><h2 id="experiments-heading">See the decisions unfold.</h2></div><p>Full original recordings.<br>Select a scenario to explore.</p></div>
+        <div class="scenario-tabs" role="tablist" aria-label="Simulation scenarios">
+          <button role="tab" id="tab-highway" aria-controls="scenario-panel" aria-selected="true" data-scene="highway">Highway</button>
+          <button role="tab" id="tab-merge" aria-controls="scenario-panel" aria-selected="false" tabindex="-1" data-scene="merge">Ramp merge</button>
+          <button role="tab" id="tab-blocking" aria-controls="scenario-panel" aria-selected="false" tabindex="-1" data-scene="blocking">Adversarial blocking</button>
+          <button role="tab" id="tab-cutin" aria-controls="scenario-panel" aria-selected="false" tabindex="-1" data-scene="cutin">Dense cut-in</button>
+          <button role="tab" id="tab-instruction" aria-controls="scenario-panel" aria-selected="false" tabindex="-1" data-scene="instruction">Changing preferences</button>
+        </div>
+        <div id="scenario-panel" role="tabpanel" aria-labelledby="tab-highway" tabindex="0">
+          <div class="video-toolbar"><span id="scenario-label">Highway driving</span><div class="inference-toggle" id="inference-toggle" role="group" aria-label="Intent inference" hidden><span>Intent inference</span><button data-mode="on" aria-pressed="true">On</button><button data-mode="off" aria-pressed="false">Off</button></div><span class="recording-label">FULL RECORDING</span></div>
+          <div class="simulation-screen"><video id="simulation-video" controls playsinline preload="metadata" poster="assets/posters/media1.jpg" aria-label="Full highway simulation recording"><source src="assets/videos/media1.mp4" type="video/mp4">Your browser does not support video. <a href="assets/videos/media1.mp4">Download the recording</a>.</video></div>
+          <div class="scenario-description"><span id="scene-number">01 / 05</span><div><h3 id="scene-title">Interactive highway driving</h3><p id="scene-description">Observe the vehicle’s motion and surrounding traffic in the highway environment.</p></div><a id="simulation-download" href="assets/videos/media1.mp4" download>Original video <span aria-hidden="true">↓</span></a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="results wrap section-space" id="results" aria-labelledby="results-heading">
+      <div class="section-heading"><div><p class="eyebrow">03 / Quantitative evidence</p><h2 id="results-heading">Intent inference makes<br>the gap actionable.</h2></div><p>Dense two-lane cut-in ablation<br>50 paired, fixed-seed runs per variant</p></div>
+      <div class="results-layout">
+        <div class="success-chart"><p class="chart-label">Successful merges <span>Higher is better</span></p><div class="bar-row"><div><strong>LLMGame</strong><span>50 / 50</span></div><div class="bar-track"><div class="bar full"><span>100%</span></div></div></div><div class="bar-row"><div><strong>Uniform-belief ablation</strong><span>37 / 50</span></div><div class="bar-track"><div class="bar ablated"><span>74%</span></div></div></div><p class="chart-note">Same scenarios, controller, rewards, and action set. The ablation replaces inferred driver-type beliefs with a uniform distribution.</p></div>
+        <div class="result-table"><table><caption class="sr-only">Cut-in ablation results from manuscript Table I</caption><thead><tr><th scope="col">Measure</th><th scope="col">LLMGame</th><th scope="col">Uniform</th></tr></thead><tbody><tr><th scope="row">Collisions</th><td>0</td><td>13</td></tr><tr><th scope="row">Mean merge time</th><td>13.80 <small>s</small></td><td>19.43 <small>s</small></td></tr><tr><th scope="row">Mean speed</th><td>6.97 <small>m/s</small></td><td>6.99 <small>m/s</small></td></tr></tbody></table><div class="result-callout"><strong>26<span>pp</span></strong><p>increase in merge success<br>with inferred intent beliefs</p></div></div>
+      </div>
+      <p class="protocol">Source: manuscript, Table I. Seeds 9950–9999; failed trials contribute the 40 s horizon to mean merge time. These results describe the specified simulation protocol.</p>
+    </section>
+
+    <section class="field section-space" id="field" aria-labelledby="field-heading">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow">04 / Real-vehicle experiments</p><h2 id="field-heading">Taking the interaction<br>onto a real road.</h2></div><p>Closed-road trials at Tongji Small Town,<br>Shanghai, with a human-driven vehicle.</p></div>
+        <div class="field-grid">
+          <figure class="field-trial"><div class="field-video"><video id="field-351" controls playsinline preload="none" poster="assets/posters/DJI_0351.jpg" aria-label="Full real-vehicle experiment DJI 0351"><source src="https://media.githubusercontent.com/media/RedwhiskeredBulbul/llmgame/main/experiment_results/real_vehicle_videos/DJI_0351.MP4" type="video/mp4"></video></div><figcaption><span class="trial-number">Trial 01 / DJI_0351</span><h3>Merging ahead</h3><p>A cooperative interaction creates an opportunity for the autonomous vehicle to complete the lane change ahead.</p><a href="https://media.githubusercontent.com/media/RedwhiskeredBulbul/llmgame/main/experiment_results/real_vehicle_videos/DJI_0351.MP4" target="_blank" rel="noopener">Full original video · 33 s <span aria-hidden="true">↗</span></a></figcaption></figure>
+          <figure class="field-trial"><div class="field-video"><video id="field-354" controls playsinline preload="none" poster="assets/posters/DJI_0354.jpg" aria-label="Full real-vehicle experiment DJI 0354"><source src="https://media.githubusercontent.com/media/RedwhiskeredBulbul/llmgame/main/experiment_results/real_vehicle_videos/DJI_0354.MP4" type="video/mp4"></video></div><figcaption><span class="trial-number">Trial 02 / DJI_0354</span><h3>Yielding and merging behind</h3><p>When the interaction becomes competitive, the autonomous vehicle adapts its motion and completes the merge behind.</p><a href="https://media.githubusercontent.com/media/RedwhiskeredBulbul/llmgame/main/experiment_results/real_vehicle_videos/DJI_0354.MP4" target="_blank" rel="noopener">Full original video · 29 s <span aria-hidden="true">↗</span></a></figcaption></figure>
+        </div>
+        <p class="field-note">These qualitative trials demonstrate physical execution of interactive lane changes. They are separate from the simulation statistics above. Both recordings are provided in full, without trimming.</p>
+      </div>
+    </section>
+
+    <section class="resources wrap" aria-labelledby="resources-heading"><div><p class="eyebrow">Explore further</p><h2 id="resources-heading">From reasoning<br>to reproducible research.</h2><p>The method, evidence, and implementation in one place.</p></div><div class="resource-links"><a href="assets/paper/llmgame-manuscript.pdf" target="_blank" rel="noopener"><span><small>READ</small>Research manuscript</span><span>↗</span></a><a href="https://github.com/RedwhiskeredBulbul/llmgame" target="_blank" rel="noopener"><span><small>EXPLORE</small>Code & experiment recordings</span><span>↗</span></a></div></section>
+  </main>
+  <footer class="wrap"><a class="wordmark" href="#">LLM<span>Game</span><i></i></a><p>Lin Hai · Interactive autonomous driving</p><a href="#">Back to top ↑</a></footer>
+</body>
+</html>

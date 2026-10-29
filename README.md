@@ -1,6 +1,6 @@
 # LLMGame: LLM-Enhanced Game-Theoretic Decision-Making for Autonomous Driving
 
-[Project page](https://llmgame.lin18006969789.chatgpt.site) · Lin Hai
+[Project page](https://redwhiskeredbulbul.github.io/llmgame/) · Lin Hai
 
 LLMGame combines language-model reasoning with game-theoretic trajectory decisions for interactive autonomous driving.
 
