@@ -1,15 +1,13 @@
 'use strict';
 const scenarios = {
-  highway: {number:'01',title:'Interactive highway driving',label:'Highway driving',on:'media1',description:'Observe the vehicle’s motion and surrounding traffic in the highway environment.'},
-  merge: {number:'02',title:'Joining the traffic stream',label:'Ramp merge',on:'media2',description:'A ramp-merging scenario demonstrates the vehicle’s interaction with traffic in the target lane.'},
-  blocking: {number:'03',title:'Responding to an adversarial blocker',label:'Adversarial blocking',on:'media5',off:'media6',description:'With intent inference, the vehicle recognizes a competitive driver and yields to merge behind. Switch inference off to compare the original recording.',offDescription:'Without intent inference, the vehicle attempts to overtake the blocker and merge ahead, leading to a more confrontational interaction.'},
-  cutin: {number:'04',title:'Recognizing a brief yielding opportunity',label:'Dense two-lane cut-in',on:'media4',off:'media7',description:'With intent inference, the vehicle identifies the yielding interaction and commits to the available gap. Switch inference off to inspect the hesitant behavior.',offDescription:'Without intent inference, repeated probing and retreating miss the yielding window; the original recording ends in a collision.'},
-  instruction: {number:'05',title:'Adapting when passenger priorities change',label:'Changing preferences',on:'media8',description:'Passenger preferences change from comfort-oriented to urgent travel. The reasoning module translates the new instruction into updated decision parameters.'}
+  blocking: {number:'01',title:'Responding to an adversarial blocker',label:'Adversarial blocking',on:'media5',off:'media6',description:'With intent inference, the vehicle recognizes a competitive driver and yields to merge behind. Switch inference off to compare the original recording.',offDescription:'Without intent inference, the vehicle attempts to overtake the blocker and merge ahead, leading to a more confrontational interaction.'},
+  cutin: {number:'02',title:'Recognizing a brief yielding opportunity',label:'Dense two-lane cut-in',on:'media4',off:'media7',description:'With intent inference, the vehicle identifies the yielding interaction and commits to the available gap. Switch inference off to inspect the hesitant behavior.',offDescription:'Without intent inference, repeated probing and retreating miss the yielding window; the original recording ends in a collision.'},
+  instruction: {number:'03',title:'Adapting when passenger priorities change',label:'Changing preferences',on:'media8',description:'Passenger preferences change from comfort-oriented to urgent travel. The reasoning module translates the new instruction into updated decision parameters.'}
 };
 const tabs = [...document.querySelectorAll('[data-scene]')];
 const video = document.querySelector('#simulation-video');
 const modeButtons = [...document.querySelectorAll('[data-mode]')];
-let selected = 'highway';
+let selected = 'blocking';
 let mode = 'on';
 function renderScenario() {
   const scene = scenarios[selected];
@@ -20,7 +18,7 @@ function renderScenario() {
   video.setAttribute('aria-label', `Full ${scene.label} recording${scene.off ? `, intent inference ${mode}` : ''}`);
   video.load();
   document.querySelector('#scenario-label').textContent = scene.label;
-  document.querySelector('#scene-number').textContent = `${scene.number} / 05`;
+  document.querySelector('#scene-number').textContent = `${scene.number} / ${String(tabs.length).padStart(2, '0')}`;
   document.querySelector('#scene-title').textContent = scene.title;
   document.querySelector('#scene-description').textContent = mode === 'off' && scene.off ? scene.offDescription : scene.description;
   document.querySelector('#inference-toggle').hidden = !scene.off;

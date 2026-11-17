@@ -82,16 +82,14 @@
       <div class="wrap">
         <div class="section-heading"><div><p class="eyebrow">02 / Simulation</p><h2 id="experiments-heading">See the decisions unfold.</h2></div><p>Multi-scenario comparisons, type-belief ablations,<br>and responses to changing passenger instructions.</p></div>
         <div class="scenario-tabs" role="tablist" aria-label="Simulation scenarios">
-          <button role="tab" id="tab-highway" aria-controls="scenario-panel" aria-selected="true" data-scene="highway">Highway</button>
-          <button role="tab" id="tab-merge" aria-controls="scenario-panel" aria-selected="false" tabindex="-1" data-scene="merge">Ramp merge</button>
-          <button role="tab" id="tab-blocking" aria-controls="scenario-panel" aria-selected="false" tabindex="-1" data-scene="blocking">Adversarial blocking</button>
+          <button role="tab" id="tab-blocking" aria-controls="scenario-panel" aria-selected="true" data-scene="blocking">Adversarial blocking</button>
           <button role="tab" id="tab-cutin" aria-controls="scenario-panel" aria-selected="false" tabindex="-1" data-scene="cutin">Dense cut-in</button>
           <button role="tab" id="tab-instruction" aria-controls="scenario-panel" aria-selected="false" tabindex="-1" data-scene="instruction">Changing preferences</button>
         </div>
-        <div id="scenario-panel" role="tabpanel" aria-labelledby="tab-highway" tabindex="0">
-          <div class="video-toolbar"><span id="scenario-label">Highway driving</span><div class="inference-toggle" id="inference-toggle" role="group" aria-label="Intent inference" hidden><span>Intent inference</span><button data-mode="on" aria-pressed="true">On</button><button data-mode="off" aria-pressed="false">Off</button></div><span class="recording-label">FULL RECORDING</span></div>
-          <div class="simulation-screen"><video id="simulation-video" controls playsinline preload="metadata" poster="assets/posters/media1.jpg" aria-label="Full highway simulation recording"><source src="assets/videos/media1.mp4" type="video/mp4">Your browser does not support video. <a href="assets/videos/media1.mp4">Download the recording</a>.</video></div>
-          <div class="scenario-description"><span id="scene-number">01 / 05</span><div><h3 id="scene-title">Interactive highway driving</h3><p id="scene-description">Observe the vehicle’s motion and surrounding traffic in the highway environment.</p></div><a id="simulation-download" href="assets/videos/media1.mp4" download>Original video <span aria-hidden="true">↓</span></a></div>
+        <div id="scenario-panel" role="tabpanel" aria-labelledby="tab-blocking" tabindex="0">
+          <div class="video-toolbar"><span id="scenario-label">Adversarial blocking</span><div class="inference-toggle" id="inference-toggle" role="group" aria-label="Intent inference"><span>Intent inference</span><button data-mode="on" aria-pressed="true">On</button><button data-mode="off" aria-pressed="false">Off</button></div><span class="recording-label">FULL RECORDING</span></div>
+          <div class="simulation-screen"><video id="simulation-video" controls playsinline preload="metadata" poster="assets/posters/media5.jpg" aria-label="Full Adversarial blocking recording, intent inference on"><source src="assets/videos/media5.mp4" type="video/mp4">Your browser does not support video. <a href="assets/videos/media5.mp4">Download the recording</a>.</video></div>
+          <div class="scenario-description"><span id="scene-number">01 / 03</span><div><h3 id="scene-title">Responding to an adversarial blocker</h3><p id="scene-description">With intent inference, the vehicle recognizes a competitive driver and yields to merge behind. Switch inference off to compare the original recording.</p></div><a id="simulation-download" href="assets/videos/media5.mp4" download>Original video <span aria-hidden="true">↓</span></a></div>
         </div>
       </div>
     </section>
