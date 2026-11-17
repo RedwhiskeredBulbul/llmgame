@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f6f5f0">
-  <meta name="description" content="LLMGame by Lin Hai: intent-conditioned fast–slow decision-making for interactive autonomous driving, combining LLM reasoning and Bayesian–Stackelberg games.">
-  <meta property="og:title" content="LLMGame · Lin Hai">
+  <meta name="description" content="LLMGame: intent-conditioned fast–slow decision-making for interactive autonomous driving, combining LLM reasoning and Bayesian–Stackelberg games.">
+  <meta property="og:title" content="LLMGame · Intention and Interaction">
   <meta property="og:description" content="From intent reasoning to interactive driving. Explore the method, simulation results, and full real-vehicle demonstrations.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://redwhiskeredbulbul.github.io/llmgame/">
@@ -30,9 +30,9 @@
       <div class="hero-copy">
         <p class="eyebrow"><span class="dot"></span> Interactive autonomous driving</p>
         <h1>Reason about intent.<br>Drive with <em>strategy.</em></h1>
-        <p class="project-subtitle">LLMGame: Intent-Conditioned Fast–Slow Decision-Making</p>
-        <p class="hero-description">Connecting language-based reasoning with Bayesian–Stackelberg games to navigate changing preferences and human driving intentions.</p>
-        <p class="author">Lin Hai</p>
+        <p class="project-subtitle">An Intention- and Interaction-Driven Fast–Slow Decision-Making System for Autonomous Driving</p>
+        <p class="hero-description">Bridging passenger intentions and traffic interactions through LLM reasoning and Bayesian–Stackelberg games, with asynchronous coordination between slow reasoning and fast decisions.</p>
+        <p class="author">Hai Lin, Shiyu Fang, Jiarui Zhang, Peng Hang, and Jian Sun<span class="affiliation">Tongji University · Shanghai, China</span></p>
         <div class="actions">
           <a class="button primary" href="assets/paper/llmgame-manuscript.pdf" target="_blank" rel="noopener">Read manuscript <span>↗</span></a>
           <a class="button secondary" href="#experiments">Watch experiments <span>↓</span></a>
@@ -41,33 +41,46 @@
       <a class="hero-visual" href="#field" aria-label="View full real-vehicle demonstrations">
         <img src="assets/posters/DJI_0351.jpg" alt="Aerial view of the autonomous vehicle interacting with another car on a closed road" fetchpriority="high" width="1280" height="720">
         <div class="visual-top"><span>From simulation to the road</span><span class="crosshair">＋</span></div>
-        <div class="visual-bottom"><div><span class="small-label">Real-vehicle demonstration</span><strong>Intent meets interaction.</strong><span>Tongji Small Town · Shanghai</span></div><span class="round-arrow" aria-hidden="true">↙</span></div>
+        <div class="visual-bottom"><div><span class="small-label">Real-vehicle demonstration</span><strong>Intent meets interaction.</strong><span>Tongji Smart Town · Shanghai</span></div><span class="round-arrow" aria-hidden="true">↙</span></div>
       </a>
     </section>
 
     <section class="intro wrap" aria-labelledby="intro-heading">
       <p class="eyebrow">The idea</p>
       <div><h2 id="intro-heading">A driving decision is also<br>a decision about other people.</h2>
-        <p>Safe interaction depends on more than tracking motion. An autonomous vehicle must interpret whether another driver will yield or compete—and adapt when its passenger’s priorities change. LLMGame turns these high-level interpretations into explicit parameters for a fast game-theoretic decision loop.</p>
+        <p>Accommodating passenger preferences while responding to uncertain human driving behavior remains a central challenge. Interaction-driven games model how drivers respond to one another; intention-driven language reasoning interprets passenger requests and observed behavior. LLMGame connects the two through driving-style parameters and probabilistic beliefs over surrounding drivers’ behavioral types.</p>
       </div>
     </section>
 
     <section class="method wrap section-space" id="method" aria-labelledby="method-heading">
       <div class="section-heading"><div><p class="eyebrow">01 / Method</p><h2 id="method-heading">Two timescales.<br>One coordinated decision.</h2></div><p>Slow reasoning supplies context.<br>Fast optimization turns it into motion.</p></div>
       <figure class="architecture">
-        <a href="assets/images/architecture-english.png" target="_blank" rel="noopener" aria-label="Open original model architecture at full resolution"><img src="assets/images/architecture-english.png" alt="LLMGame architecture: passenger instructions and traffic observations feed language-based reasoning, which conditions the Bayesian game decision module and trajectory controller" width="4000" height="2250" loading="lazy"></a>
-        <figcaption><span>Model architecture</span><span>Original figure from the project presentation <span aria-hidden="true">↗</span></span></figcaption>
+        <a href="assets/images/overall-framework.svg" target="_blank" rel="noopener" aria-label="Open the overall framework diagram at full resolution"><img src="assets/images/overall-framework.svg" alt="Overall framework: the slow LLM system maps passenger instructions and traffic observations to driving-style parameters and driver-type beliefs; the fast game system selects a feasible maneuver and acceleration for trajectory tracking" width="1564" height="918" loading="lazy"></a>
+        <figcaption><span>Intention meets interaction</span><span>Overall framework · Open vector figure ↗</span></figcaption>
       </figure>
       <div class="method-steps">
         <article><span class="step-number">01</span><h3>Understand the interaction</h3><p>Select relevant surrounding vehicles and represent the local driving context together with passenger instructions.</p></article>
-        <article><span class="step-number">02</span><h3>Reason about intent</h3><p>The slow reasoning loop updates beliefs over Yield, Normal, and Force behaviors, while translating preferences into safety, efficiency, and comfort weights.</p></article>
-        <article><span class="step-number">03</span><h3>Choose and execute</h3><p>The fast Bayesian–Stackelberg game selects maneuvers and acceleration. A trajectory controller executes the resulting plan as reasoning updates asynchronously.</p></article>
+        <article><span class="step-number">02</span><h3>Reason about intent</h3><p>The slow system updates probabilities over Yield, Normal, and Force types and maps passenger preferences to bounded driving-style parameters and safety, efficiency, and comfort weights.</p></article>
+        <article><span class="step-number">03</span><h3>Choose and execute</h3><p>The ego vehicle acts as a Stackelberg leader and anticipates type-dependent follower responses. The fast system selects lateral maneuvers and longitudinal acceleration under safety and motion constraints.</p></article>
+      </div>
+      <div class="reasoning-detail">
+        <div class="reasoning-copy">
+          <p class="eyebrow">Inside the slow system</p>
+          <h3>From human intention<br>to decision parameters.</h3>
+          <p>Scene information, recent motion histories, road context, and the latest passenger instruction form the reasoning input. A structured prompt combines these observations with parameter definitions and driving knowledge.</p>
+          <p>The LLM returns driving-style parameters and behavioral-type probabilities. These outputs condition the fast system’s evaluation of candidate maneuvers and surrounding-vehicle responses.</p>
+          <p>Reasoning runs asynchronously, allowing planning and control to continue between updates. Passenger preferences shape the desired behavior; inferred type beliefs shape the anticipated interaction.</p>
+        </div>
+        <figure class="architecture slow-architecture">
+          <a href="assets/images/slow-system.svg" target="_blank" rel="noopener" aria-label="Open the slow-system diagram at full resolution"><img src="assets/images/slow-system.svg" alt="Slow-system prompt construction combines traffic observations, passenger instructions, system guidance, and parameter definitions to infer driving style and surrounding-driver type probabilities" width="840" height="1200" loading="lazy"></a>
+          <figcaption><span>Slow-system reasoning</span><span>Open vector figure ↗</span></figcaption>
+        </figure>
       </div>
     </section>
 
     <section class="experiments section-space" id="experiments" aria-labelledby="experiments-heading">
       <div class="wrap">
-        <div class="section-heading"><div><p class="eyebrow">02 / Simulation</p><h2 id="experiments-heading">See the decisions unfold.</h2></div><p>Full original recordings.<br>Select a scenario to explore.</p></div>
+        <div class="section-heading"><div><p class="eyebrow">02 / Simulation</p><h2 id="experiments-heading">See the decisions unfold.</h2></div><p>Multi-scenario comparisons, type-belief ablations,<br>and responses to changing passenger instructions.</p></div>
         <div class="scenario-tabs" role="tablist" aria-label="Simulation scenarios">
           <button role="tab" id="tab-highway" aria-controls="scenario-panel" aria-selected="true" data-scene="highway">Highway</button>
           <button role="tab" id="tab-merge" aria-controls="scenario-panel" aria-selected="false" tabindex="-1" data-scene="merge">Ramp merge</button>
@@ -87,24 +100,33 @@
       <div class="section-heading"><div><p class="eyebrow">03 / Quantitative evidence</p><h2 id="results-heading">Intent inference makes<br>the gap actionable.</h2></div><p>Dense two-lane cut-in ablation<br>50 paired, fixed-seed runs per variant</p></div>
       <div class="results-layout">
         <div class="success-chart"><p class="chart-label">Successful merges <span>Higher is better</span></p><div class="bar-row"><div><strong>LLMGame</strong><span>50 / 50</span></div><div class="bar-track"><div class="bar full"><span>100%</span></div></div></div><div class="bar-row"><div><strong>Uniform-belief ablation</strong><span>37 / 50</span></div><div class="bar-track"><div class="bar ablated"><span>74%</span></div></div></div><p class="chart-note">Same scenarios, controller, rewards, and action set. The ablation replaces inferred driver-type beliefs with a uniform distribution.</p></div>
-        <div class="result-table"><table><caption class="sr-only">Cut-in ablation results from manuscript Table I</caption><thead><tr><th scope="col">Measure</th><th scope="col">LLMGame</th><th scope="col">Uniform</th></tr></thead><tbody><tr><th scope="row">Collisions</th><td>0</td><td>13</td></tr><tr><th scope="row">Mean merge time</th><td>13.80 <small>s</small></td><td>19.43 <small>s</small></td></tr><tr><th scope="row">Mean speed</th><td>6.97 <small>m/s</small></td><td>6.99 <small>m/s</small></td></tr></tbody></table><div class="result-callout"><strong>26<span>pp</span></strong><p>increase in merge success<br>with inferred intent beliefs</p></div></div>
+        <div class="result-table"><table><caption class="sr-only">Cut-in type-belief ablation results</caption><thead><tr><th scope="col">Measure</th><th scope="col">LLMGame</th><th scope="col">Uniform</th></tr></thead><tbody><tr><th scope="row">Collisions</th><td>0</td><td>13</td></tr><tr><th scope="row">Mean merge time</th><td>13.80 <small>s</small></td><td>19.43 <small>s</small></td></tr><tr><th scope="row">Mean speed</th><td>6.97 <small>m/s</small></td><td>6.99 <small>m/s</small></td></tr></tbody></table><div class="result-callout"><strong>26<span>pp</span></strong><p>increase in merge success<br>with inferred intent beliefs</p></div></div>
       </div>
-      <p class="protocol">Source: manuscript, Table I. Seeds 9950–9999; failed trials contribute the 40 s horizon to mean merge time. These results describe the specified simulation protocol.</p>
+      <p class="protocol">Dense-traffic cut-in evaluation over the same 50 random seeds. The uniform-belief variant retains the decision and control pipeline and replaces inferred behavioral-type probabilities with a uniform distribution. The main benefit is more reliable task completion, with nearly identical mean travel speeds.</p>
+      <div class="inference-evidence">
+        <div class="inference-intro"><p class="eyebrow">Intention inference</p><h3>Recognizing the drivers<br>that shape the decision.</h3><p>Vehicle–query samples from the dense-traffic cut-in evaluation. Accuracy is measured over Yield, Normal, and Force types.</p></div>
+        <div class="inference-table"><table><caption class="sr-only">Three-class intention-inference accuracy by vehicle group</caption><thead><tr><th scope="col">Vehicle group</th><th scope="col">Samples</th><th scope="col">Accuracy</th></tr></thead><tbody><tr class="key-row"><th scope="row">Key vehicles</th><td>523</td><td>96.9%</td></tr><tr><th scope="row">All vehicles</th><td>1,332</td><td>70.9%</td></tr><tr><th scope="row">Background vehicles</th><td>809</td><td>54.0%</td></tr></tbody></table><p>For key vehicles, macro-F1 is 0.960 and the Brier score is 0.158. Mean LLM response latency is 0.97 s; the fast system continues operating between reasoning updates.</p></div>
+      </div>
     </section>
 
     <section class="field section-space" id="field" aria-labelledby="field-heading">
       <div class="wrap">
-        <div class="section-heading"><div><p class="eyebrow">04 / Real-vehicle experiments</p><h2 id="field-heading">Taking the interaction<br>onto a real road.</h2></div><p>Closed-road trials at Tongji Small Town,<br>Shanghai, with a human-driven vehicle.</p></div>
-        <div class="field-grid">
-          <figure class="field-trial"><div class="field-video"><video id="field-351" controls playsinline preload="none" poster="assets/posters/DJI_0351.jpg" aria-label="Full real-vehicle experiment DJI 0351"><source src="https://media.githubusercontent.com/media/RedwhiskeredBulbul/llmgame/main/experiment_results/real_vehicle_videos/DJI_0351.MP4" type="video/mp4"></video></div><figcaption><span class="trial-number">Trial 01 / DJI_0351</span><h3>Merging ahead</h3><p>A cooperative interaction creates an opportunity for the autonomous vehicle to complete the lane change ahead.</p><a href="https://media.githubusercontent.com/media/RedwhiskeredBulbul/llmgame/main/experiment_results/real_vehicle_videos/DJI_0351.MP4" target="_blank" rel="noopener">Full original video · 33 s <span aria-hidden="true">↗</span></a></figcaption></figure>
-          <figure class="field-trial"><div class="field-video"><video id="field-354" controls playsinline preload="none" poster="assets/posters/DJI_0354.jpg" aria-label="Full real-vehicle experiment DJI 0354"><source src="https://media.githubusercontent.com/media/RedwhiskeredBulbul/llmgame/main/experiment_results/real_vehicle_videos/DJI_0354.MP4" type="video/mp4"></video></div><figcaption><span class="trial-number">Trial 02 / DJI_0354</span><h3>Yielding and merging behind</h3><p>When the interaction becomes competitive, the autonomous vehicle adapts its motion and completes the merge behind.</p><a href="https://media.githubusercontent.com/media/RedwhiskeredBulbul/llmgame/main/experiment_results/real_vehicle_videos/DJI_0354.MP4" target="_blank" rel="noopener">Full original video · 29 s <span aria-hidden="true">↗</span></a></figcaption></figure>
+        <div class="section-heading"><div><p class="eyebrow">04 / Real-vehicle experiments</p><h2 id="field-heading">Taking the interaction<br>onto a real road.</h2></div><p>Tongji Smart Town test site · Shanghai<br>Interaction with a human-driven vehicle</p></div>
+        <p class="field-setting">The trials take place on a two-way, two-lane road in the western area of the test site. The black Hongqi autonomous vehicle (AV) must merge from the inner lane into the outer lane before an intersection, while the silver BYD human-driven vehicle (HV) responds to its merging maneuver.</p>
+        <div class="vehicle-grid">
+          <figure class="test-vehicle"><img src="assets/images/hongqi-av.webp" alt="Black Hongqi sedan used as the autonomous ego vehicle at the test site" width="2389" height="1304" loading="lazy"><figcaption><span class="trial-number">Autonomous vehicle · AV</span><h3>Hongqi</h3><p>The ego vehicle executes intention-conditioned lane-changing decisions.</p></figcaption></figure>
+          <figure class="test-vehicle"><img class="byd-photo" src="assets/images/byd-hv.webp" alt="Silver BYD sedan used as the human-driven interaction vehicle at the test site" width="909" height="596" loading="lazy"><figcaption><span class="trial-number">Human-driven vehicle · HV</span><h3>BYD</h3><p>The driver provides yielding and competing responses to the AV’s merge.</p></figcaption></figure>
         </div>
-        <p class="field-note">These qualitative trials demonstrate physical execution of interactive lane changes. They are separate from the simulation statistics above. Both recordings are provided in full, without trimming.</p>
+        <div class="field-grid">
+          <figure class="field-trial"><div class="field-video"><video id="field-351" controls playsinline preload="none" poster="assets/posters/DJI_0351.jpg" aria-label="Full real-vehicle experiment DJI 0351"><source src="https://media.githubusercontent.com/media/RedwhiskeredBulbul/llmgame/main/experiment_results/real_vehicle_videos/DJI_0351.MP4" type="video/mp4"></video></div><figcaption><span class="trial-number">Trial 01 / DJI_0351</span><h3>Merging ahead</h3><p>The AV approaches the lane boundary at 12 s to convey its merging intention. The HV decelerates at 16 s, revealing a yielding tendency and opening a gap. The AV completes the merge ahead at 20 s.</p><a href="https://media.githubusercontent.com/media/RedwhiskeredBulbul/llmgame/main/experiment_results/real_vehicle_videos/DJI_0351.MP4" target="_blank" rel="noopener">Full original video · 33 s <span aria-hidden="true">↗</span></a></figcaption></figure>
+          <figure class="field-trial"><div class="field-video"><video id="field-354" controls playsinline preload="none" poster="assets/posters/DJI_0354.jpg" aria-label="Full real-vehicle experiment DJI 0354"><source src="https://media.githubusercontent.com/media/RedwhiskeredBulbul/llmgame/main/experiment_results/real_vehicle_videos/DJI_0354.MP4" type="video/mp4"></video></div><figcaption><span class="trial-number">Trial 02 / DJI_0354</span><h3>Yielding and merging behind</h3><p>The AV approaches the target lane at 9 s. The HV accelerates and closes the gap at 10.4 s, shifting the inferred belief toward a competing response. The AV slows down and completes the merge behind at 16 s.</p><a href="https://media.githubusercontent.com/media/RedwhiskeredBulbul/llmgame/main/experiment_results/real_vehicle_videos/DJI_0354.MP4" target="_blank" rel="noopener">Full original video · 29 s <span aria-hidden="true">↗</span></a></figcaption></figure>
+        </div>
+        <p class="field-note">These sequences illustrate intention communication through motion and recognition of human responses: observed HV behavior informs the slow system’s inference, and the fast system translates the updated beliefs into speed and lane-change decisions. Both recordings are provided in full. These qualitative field examples are separate from the controlled simulation ablation.</p>
       </div>
     </section>
 
     <section class="resources wrap" aria-labelledby="resources-heading"><div><p class="eyebrow">Explore further</p><h2 id="resources-heading">From reasoning<br>to reproducible research.</h2><p>The method, evidence, and implementation in one place.</p></div><div class="resource-links"><a href="assets/paper/llmgame-manuscript.pdf" target="_blank" rel="noopener"><span><small>READ</small>Research manuscript</span><span>↗</span></a><a href="https://github.com/RedwhiskeredBulbul/llmgame" target="_blank" rel="noopener"><span><small>EXPLORE</small>Code & experiment recordings</span><span>↗</span></a></div></section>
   </main>
-  <footer class="wrap"><a class="wordmark" href="#">LLM<span>Game</span><i></i></a><p>Lin Hai · Interactive autonomous driving</p><a href="#">Back to top ↑</a></footer>
+  <footer class="wrap"><a class="wordmark" href="#">LLM<span>Game</span><i></i></a><p>Hai Lin et al. · Tongji University</p><a href="#">Back to top ↑</a></footer>
 </body>
 </html>
